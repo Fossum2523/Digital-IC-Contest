@@ -13,28 +13,13 @@ int partition(int arr[], int low, int high) {
     for (int j = low; j <= high; j++) {
         if(j < piv_index | (j > piv_index  & (i+1)< piv_index)){
             dick = 0;
-            // if (arr[j] <= pivot) {
-            //     i++;
-            //     // 交換 arr[i] 和 arr[j]
-            //     int temp = arr[i];
-            //     arr[i] = arr[j];
-            //     arr[j] = temp;
-            // }
         }
         else if(j > piv_index ){
             dick = 1;
-            // if (arr[j] <= pivot) {
-            //     i++;
-            //     // 交換 arr[i] 和 arr[j]
-            //     int temp = arr[i+1];
-            //     arr[i+1] = arr[j];
-            //     arr[j] = temp;
-            // }
         }
         
         if (arr[j] <= arr[piv_index] & j != piv_index) {
             i++;
-            // 交換 arr[i] 和 arr[j]
             int temp = arr[i+dick];
             arr[i+dick] = arr[j];
             arr[j] = temp;
