@@ -135,7 +135,7 @@ while (1):
         # 將圓1的最大值儲存，並與圓2交換，使得下次遞迴時可以比較正確得max old值 end-------------------------
 
 
-################# set first circle dots into point_map
+################# set second circle dots into point_map
 for ci in range(len(cir_point_y)):
     for k in range(40):
         if (sec_circle_rx + cir_point_x[ci])==object_x[k] and (sec_circle_ry + cir_point_y[ci])==object_y[k]:
