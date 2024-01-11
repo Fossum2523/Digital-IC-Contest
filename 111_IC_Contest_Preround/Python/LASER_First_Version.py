@@ -130,10 +130,6 @@ while (1):
         fir_circle_max_old = sec_circle_max_old
         sec_circle_max_old = temp
 
-        # temp = fir_circle_max
-        # fir_circle_max = sec_circle_max_old
-        # sec_circle_max_old = temp   
-
         iteration = iteration + 1
         # 將圓1的最大值儲存，並與圓2交換，使得下次遞迴時可以比較正確得max old值 end-------------------------
 
@@ -148,12 +144,12 @@ for ci in range(len(cir_point_y)):
 for i in range(16):
     print('[%2s]'%i,point_map[i*16:(i+1)*16])
 
+print("C1 = ({}, {}), C2 = ({}, {})".format(fir_circle_rx, fir_circle_ry, sec_circle_rx, sec_circle_ry))
 
 max = 0
 for i in range(256):
     max = max + point_map[i]
 print("max = ",max)
 
-print("C1 = ({}, {}), C2 = ({}, {})".format(fir_circle_rx, fir_circle_ry, sec_circle_rx, sec_circle_ry))
 print(object_x)
 print(object_y)
