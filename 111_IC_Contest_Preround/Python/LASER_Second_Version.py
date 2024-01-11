@@ -14,7 +14,7 @@ print(cir_point_y)
 # produce circle point end-------------------------
         
 # get object location str--------------------------
-f = open('./img3.pattern',"r")
+f = open('./img6.pattern',"r")
 text = f.read()
 f.close
 
@@ -57,13 +57,13 @@ for i in range(40):
 
 while (1):
     ################################## 1. 固定圓二位置，重新調整圓一位置，使得到的覆蓋量最大。 ######################
-    for ry in range(16): # x location for center of circcle
-        for rx in range(16):# y location for center of circcle
+    for ry in range(16): # y location for center of circcle
+        for rx in range(16):# x location for center of circcle
             point_cnt = 0
             # print("rx =",rx,"ry = ",ry) # checking circle center position
             for ci in range(len(cir_point_y)):# 49 point in circle 
-                if((rx + cir_point_x[ci]) + (ry + cir_point_y[ci]) * 16) and ((rx + cir_point_x[ci]) + (ry + cir_point_y[ci]) * 16)\
-                    and :
+                if (rx + cir_point_x[ci]) < 16 and (ry + cir_point_y[ci]) < 16\
+                    and (rx + cir_point_x[ci]) >=0 and (ry + cir_point_y[ci]) >=0:
                     if point_map[(rx + cir_point_x[ci]) + (ry + cir_point_y[ci]) * 16] == 3:
                         point_cnt = point_cnt + 1
             if point_cnt  >= fir_circle_max :
@@ -73,7 +73,8 @@ while (1):
 
     ############ 把圓二最大包到的點換成 2'b11
     for ci in range(len(cir_point_y)):
-        if((sec_circle_rx + cir_point_x[ci]) + (sec_circle_ry + cir_point_y[ci]) * 16) <256 and ((sec_circle_rx + cir_point_x[ci]) + (sec_circle_ry + cir_point_y[ci]) * 16)>0:
+        if (sec_circle_rx + cir_point_x[ci]) < 16 and (sec_circle_ry + cir_point_y[ci]) < 16\
+            and (sec_circle_rx + cir_point_x[ci]) >=0 and (sec_circle_ry + cir_point_y[ci]) >=0:
             if point_map[(sec_circle_rx + cir_point_x[ci]) + (sec_circle_ry + cir_point_y[ci]) * 16] == 1: 
                 point_map[(sec_circle_rx + cir_point_x[ci])+(sec_circle_ry + cir_point_y[ci])*16] = 3
 
@@ -86,7 +87,8 @@ while (1):
 
     ################# 把圓一最大包到的點換成 2'b01
     for ci in range(len(cir_point_y)):
-        if((fir_circle_rx + cir_point_x[ci]) + (fir_circle_ry + cir_point_y[ci]) * 16) <256 and ((fir_circle_rx + cir_point_x[ci]) + (fir_circle_ry + cir_point_y[ci]) * 16)>0:
+        if (fir_circle_rx + cir_point_x[ci]) < 16 and (fir_circle_ry + cir_point_y[ci]) < 16\
+        and (fir_circle_rx + cir_point_x[ci]) >=0 and (fir_circle_ry + cir_point_y[ci]) >=0:
             if point_map[(fir_circle_rx + cir_point_x[ci]) + (fir_circle_ry + cir_point_y[ci]) * 16] == 3: 
                 point_map[(fir_circle_rx + cir_point_x[ci])+(fir_circle_ry + cir_point_y[ci])*16]= 1
 
@@ -126,6 +128,12 @@ while (1):
         sec_circle_max_old = temp
         # 將圓1的最大值儲存，並與圓2交換，使得下次遞迴時可以比較正確得max old值 end-------------------------
 
+for ci in range(len(cir_point_y)):
+    if (sec_circle_rx + cir_point_x[ci]) < 16 and (sec_circle_ry + cir_point_y[ci]) < 16\
+        and (sec_circle_rx + cir_point_x[ci]) >=0 and (sec_circle_ry + cir_point_y[ci]) >=0:
+        if point_map[(sec_circle_rx + cir_point_x[ci]) + (sec_circle_ry + cir_point_y[ci]) * 16] == 3: 
+            point_map[(sec_circle_rx + cir_point_x[ci])+(sec_circle_ry + cir_point_y[ci])*16] = 1
+
 ################ draw point map
 for i in range(16):
     print('[%2s]'%i,point_map[i*16:(i+1)*16])
@@ -134,6 +142,6 @@ print("C1 = ({}, {}), C2 = ({}, {})".format(fir_circle_rx, fir_circle_ry, sec_ci
 
 max = 0
 for i in range(256):
-    if point_map[i]>0:
+    if point_map[i]==1:
         max = max + 1
 print("max = ",max)
