@@ -49,9 +49,8 @@ point_map =[]
 for i in range(256):
     point_map.append(0)
 
-# for i in range(40):
-#     point_map[object_y[i]*16+object_x[i]] = 1
-# # print(point_map)
+for i in range(40):
+    point_map[object_y[i]*16+object_x[i]] = 3
 
 # for i in range(16):
 #     print('[%2s]'%i,point_map[i*16:(i+1)*16])
@@ -63,21 +62,19 @@ while (1):
             point_cnt = 0
             # print("rx =",rx,"ry = ",ry) # checking circle center position
             for ci in range(len(cir_point_y)):# 49 point in circle 
-                for k in range(40): # check 40 points in target list
-                    if (rx + cir_point_x[ci])==object_x[k] and (ry + cir_point_y[ci])==object_y[k] \
-                        and point_map[(rx + cir_point_x[ci])+(ry + cir_point_y[ci])*16] != 1:
-                        # print(object_x[k],object_y[k])  # checking target position
+                if((rx + cir_point_x[ci]) + (ry + cir_point_y[ci]) * 16) <256 and ((rx + cir_point_x[ci]) + (ry + cir_point_y[ci]) * 16)>0:
+                    if point_map[(rx + cir_point_x[ci]) + (ry + cir_point_y[ci]) * 16] == 3:
                         point_cnt = point_cnt + 1
             if point_cnt  >= fir_circle_max :
                 fir_circle_max = point_cnt
                 fir_circle_rx = rx
                 fir_circle_ry = ry
 
-    ############ clear second circle dots in point_map
+    ############ 把圓二最大包到的點換成 2'b11
     for ci in range(len(cir_point_y)):
-        for k in range(40):
-            if (sec_circle_rx + cir_point_x[ci])==object_x[k] and (sec_circle_ry + cir_point_y[ci])==object_y[k]:
-                point_map[(sec_circle_rx + cir_point_x[ci])+(sec_circle_ry + cir_point_y[ci])*16] = 0
+        if((sec_circle_rx + cir_point_x[ci]) + (sec_circle_ry + cir_point_y[ci]) * 16) <256 and ((sec_circle_rx + cir_point_x[ci]) + (sec_circle_ry + cir_point_y[ci]) * 16)>0:
+            if point_map[(sec_circle_rx + cir_point_x[ci]) + (sec_circle_ry + cir_point_y[ci]) * 16] == 1: 
+                point_map[(sec_circle_rx + cir_point_x[ci])+(sec_circle_ry + cir_point_y[ci])*16] = 3
 
 
     ################ draw point map
@@ -86,10 +83,10 @@ while (1):
     
     print("\n")
 
-    ################# set first circle dots into point_map
+    ################# 把圓一最大包到的點換成 2'b01
     for ci in range(len(cir_point_y)):
-        for k in range(40):
-            if (fir_circle_rx + cir_point_x[ci])==object_x[k] and (fir_circle_ry + cir_point_y[ci])==object_y[k]:
+        if((fir_circle_rx + cir_point_x[ci]) + (fir_circle_ry + cir_point_y[ci]) * 16) <256 and ((fir_circle_rx + cir_point_x[ci]) + (fir_circle_ry + cir_point_y[ci]) * 16)>0:
+            if point_map[(fir_circle_rx + cir_point_x[ci]) + (fir_circle_ry + cir_point_y[ci]) * 16] == 3: 
                 point_map[(fir_circle_rx + cir_point_x[ci])+(fir_circle_ry + cir_point_y[ci])*16]= 1
 
     ################ draw point map
@@ -126,31 +123,16 @@ while (1):
         temp = fir_circle_max_old
         fir_circle_max_old = sec_circle_max_old
         sec_circle_max_old = temp
-
-        # temp = fir_circle_max
-        # fir_circle_max = sec_circle_max_old
-        # sec_circle_max_old = temp   
-
-        iteration = iteration + 1
         # 將圓1的最大值儲存，並與圓2交換，使得下次遞迴時可以比較正確得max old值 end-------------------------
-
-
-################# set first circle dots into point_map
-for ci in range(len(cir_point_y)):
-    for k in range(40):
-        if (sec_circle_rx + cir_point_x[ci])==object_x[k] and (sec_circle_ry + cir_point_y[ci])==object_y[k]:
-            point_map[(sec_circle_rx + cir_point_x[ci])+(sec_circle_ry + cir_point_y[ci])*16]= 1
 
 ################ draw point map
 for i in range(16):
     print('[%2s]'%i,point_map[i*16:(i+1)*16])
 
+print("C1 = ({}, {}), C2 = ({}, {})".format(fir_circle_rx, fir_circle_ry, sec_circle_rx, sec_circle_ry))
 
 max = 0
 for i in range(256):
-    max = max + point_map[i]
+    if point_map[i]>0:
+        max = max + 1
 print("max = ",max)
-
-print("C1 = ({}, {}), C2 = ({}, {})".format(fir_circle_rx, fir_circle_ry, sec_circle_rx, sec_circle_ry))
-print(object_x)
-print(object_y)
