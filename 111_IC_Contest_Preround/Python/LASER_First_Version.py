@@ -11,7 +11,7 @@ for i in range(0, 9 ,1):
 # produce circle point end-------------------------
         
 # get object location str--------------------------
-f = open('./img6.pattern',"r")
+f = open('./img3.pattern',"r")
 text = f.read()
 f.close
 
@@ -103,7 +103,7 @@ while (1):
         break
     else:
         fir_circle_max_old = fir_circle_max
-        sec_circle_max_old = sec_circle_max
+        # sec_circle_max_old = sec_circle_max
 
         temp = fir_circle_rx
         fir_circle_rx = sec_circle_rx
@@ -113,12 +113,16 @@ while (1):
         fir_circle_ry = sec_circle_ry
         sec_circle_ry = temp
 
-        sec_circle_max= fir_circle_max
+        # sec_circle_max= fir_circle_max
         fir_circle_max = 0
 
         temp = fir_circle_max_old
         fir_circle_max_old = sec_circle_max_old
         sec_circle_max_old = temp
+
+        # temp = fir_circle_max
+        # fir_circle_max = sec_circle_max_old
+        # sec_circle_max_old = temp   
 
         iteration = iteration + 1
 
@@ -138,3 +142,5 @@ max = 0
 for i in range(256):
     max = max + point_map[i]
 print("max = ",max)
+
+print("C1 = ({}, {}), C2 = ({}, {})".format(fir_circle_rx, fir_circle_ry, sec_circle_rx, sec_circle_ry))
