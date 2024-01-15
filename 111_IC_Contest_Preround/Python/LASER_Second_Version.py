@@ -14,7 +14,7 @@ print(cir_point_y)
 # produce circle point end-------------------------
         
 # get object location str--------------------------
-f = open('./img6.pattern',"r")
+f = open('./img1.pattern',"r")
 text = f.read()
 f.close
 
@@ -52,20 +52,21 @@ for i in range(256):
 for i in range(40):
     point_map[object_y[i]*16+object_x[i]] = 3
 
-# for i in range(16):
-#     print('[%2s]'%i,point_map[i*16:(i+1)*16])
-
+time = 0
 while (1):
+    time = time + 1
     ################################## 1. 固定圓二位置，重新調整圓一位置，使得到的覆蓋量最大。 ######################
     for ry in range(16): # y location for center of circcle
         for rx in range(16):# x location for center of circcle
             point_cnt = 0
-            # print("rx =",rx,"ry = ",ry) # checking circle center position
+            
             for ci in range(len(cir_point_y)):# 49 point in circle 
                 if (rx + cir_point_x[ci]) < 16 and (ry + cir_point_y[ci]) < 16\
                     and (rx + cir_point_x[ci]) >=0 and (ry + cir_point_y[ci]) >=0:
                     if point_map[(rx + cir_point_x[ci]) + (ry + cir_point_y[ci]) * 16] == 3:
                         point_cnt = point_cnt + 1
+            
+            print("rx =",rx,"ry = ",ry,"point_cnt",point_cnt) # checking circle center position
             if point_cnt  >= fir_circle_max :
                 fir_circle_max = point_cnt
                 fir_circle_rx = rx
@@ -144,4 +145,5 @@ max = 0
 for i in range(256):
     if point_map[i]==1:
         max = max + 1
+print(time)
 print("max = ",max)

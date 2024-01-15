@@ -12,7 +12,7 @@ for i in range(0, 9 ,1):
 # produce circle point end-------------------------
         
 # get object location str--------------------------
-f = open('./img6.pattern',"r")
+f = open('./img1.pattern',"r")
 text = f.read()
 f.close
 

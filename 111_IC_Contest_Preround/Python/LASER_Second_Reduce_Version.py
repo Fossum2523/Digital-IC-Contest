@@ -9,21 +9,10 @@ for i in range(0, 9 ,1):
         cir_point_x.append(j-4)
         cir_point_y.append(i-4)
 
-for i in range(49):
-    if(cir_point_x[i]<0):
-        print("Cir_Point_X[",i,"] <= -5'd",abs(cir_point_x[i]),";")
-    else :
-        print("Cir_Point_X[",i,"] <= 5'd",cir_point_x[i],";")
-print("---------------------------------------")
-for i in range(49):
-    if(cir_point_y[i]<0):
-        print("Cir_Point_Y[",i,"] <= -5'd",abs(cir_point_y[i]),";")
-    else :
-        print("Cir_Point_Y[",i,"] <= 5'd",cir_point_y[i],";")
 # produce circle point end-------------------------
         
 # get object location str--------------------------
-f = open('./img1.pattern',"r")
+f = open('./img6.pattern',"r")
 text = f.read()
 f.close
 
@@ -61,7 +50,7 @@ while (1):
         for rx in range(16):# x location for center of circcle
             point_cnt = 0
             # print("rx =",rx,"ry = ",ry) # checking circle center position
-            for ci in range(len(cir_point_y)):# 49 point in circle 
+            for ci in range(len(cir_point_y)):# 49 point in circle \
                 if (rx + cir_point_x[ci]) < 16 and (ry + cir_point_y[ci]) < 16\
                     and (rx + cir_point_x[ci]) >=0 and (ry + cir_point_y[ci]) >=0\
                     and point_map[(rx + cir_point_x[ci]) + (ry + cir_point_y[ci]) * 16] == 3:
@@ -85,7 +74,7 @@ while (1):
         and (fir_circle_rx + cir_point_x[ci]) >=0 and (fir_circle_ry + cir_point_y[ci]) >=0\
         and point_map[(fir_circle_rx + cir_point_x[ci]) + (fir_circle_ry + cir_point_y[ci]) * 16] == 3: 
             point_map[(fir_circle_rx + cir_point_x[ci])+(fir_circle_ry + cir_point_y[ci])*16]= 1
-
+     
     ###########  first_circle break or not
     if (fir_circle_max == fir_circle_max_old):
         break
@@ -105,5 +94,11 @@ while (1):
         sec_circle_max_old = fir_circle_max
         fir_circle_max = 0
         # 將圓1的最大值儲存，並與圓2交換，使得下次遞迴時可以比較正確得max old值 end-------------------------
+
+for ci in range(len(cir_point_y)):
+    if (sec_circle_rx + cir_point_x[ci]) < 16 and (sec_circle_ry + cir_point_y[ci]) < 16\
+        and (sec_circle_rx + cir_point_x[ci]) >=0 and (sec_circle_ry + cir_point_y[ci]) >=0\
+        and point_map[(sec_circle_rx + cir_point_x[ci]) + (sec_circle_ry + cir_point_y[ci]) * 16] == 3: 
+        point_map[(sec_circle_rx + cir_point_x[ci])+(sec_circle_ry + cir_point_y[ci])*16] = 1
 
 print("C1 = ({}, {}), C2 = ({}, {})".format(fir_circle_rx, fir_circle_ry, sec_circle_rx, sec_circle_ry))

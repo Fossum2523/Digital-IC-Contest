@@ -1,0 +1,124 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Jan 15 15:38:34 2024
+# Process ID: 18496
+# Current directory: C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23168 C:\Users\USER\Desktop\IC compete\111_IC_Contest_Preround\Verilog\Laser\Laser.xpr
+# Log file: C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/vivado.log
+# Journal file: C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config {C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/testfixture_behav.wcfg}
+source testfixture.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+current_wave_config {testfixture_behav.wcfg}
+add_wave {{/testfixture/u_LASER/RX}} {{/testfixture/u_LASER/RY}} 
+relaunch_sim
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+relaunch_sim
+run 100 us
+run 10 us
+relaunch_sim
+run 120 us
+relaunch_sim
+run 120 us
+relaunch_sim
+run 120 us
+relaunch_sim
+run 120 us
+relaunch_sim
+run 120 us
+relaunch_sim
+run 120 us
+relaunch_sim
+run 120 us
+run 120 us
+run 120 us
+run 120 us
+relaunch_sim
+run 120 us
+run 120 us
+run 120 us
+relaunch_sim
+run 500 us
+run 500 us
+run 500 us
+run 500 us
+run 500 us
+relaunch_sim
+run 500 us
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 500 us
+current_wave_config {testfixture_behav.wcfg}
+add_wave {{/testfixture/u_LASER/Point_CNT_1}} {{/testfixture/u_LASER/Point_CNT_2}} 
+relaunch_sim
+run 500 us
+relaunch_sim
+run 100 us
+relaunch_sim
+run 100 us
+current_wave_config {testfixture_behav.wcfg}
+add_wave {{/testfixture/u_LASER/a4}} {{/testfixture/u_LASER/b4}} {{/testfixture/u_LASER/adder_4}} {{/testfixture/u_LASER/a5}} {{/testfixture/u_LASER/b5}} {{/testfixture/u_LASER/adder_5}} 
+relaunch_sim
+run 100 us
+relaunch_sim
+run 100 us
+relaunch_sim
+run 100 us
+run 100 us
+current_wave_config {testfixture_behav.wcfg}
+add_wave {{/testfixture/u_LASER/Fir_Circle_Max}} {{/testfixture/u_LASER/Fir_Circle_Max_Old}} {{/testfixture/u_LASER/Sec_Circle_Max_Old}} 
+relaunch_sim
+run 100 us
+run 100 us
+relaunch_sim
+run 100 us
+run 100 us
+run 100 us
+relaunch_sim
+run 500 us
+run 500 us
+run 500 us
+run 500 us
+run 500 us
+relaunch_sim
+run 500 us
+run 500 us
+run 500 us
+run 500 us
+run 500 us
+save_wave_config {C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/testfixture_behav.wcfg}
+close_sim

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="testfixture_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="testfixture" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="7790001fs"></ZoomEndTime>
+      <Cursor1Time time="772000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="135"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="32" />
+   <wvobject fp_name="/testfixture/fd" type="array">
+      <obj_property name="ElementShortName">fd[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fd[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/tg_sum" type="array">
+      <obj_property name="ElementShortName">tg_sum[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tg_sum[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/patnum" type="array">
+      <obj_property name="ElementShortName">patnum[31:0]</obj_property>
+      <obj_property name="ObjectShortName">patnum[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/RST" type="logic">
+      <obj_property name="ElementShortName">RST</obj_property>
+      <obj_property name="ObjectShortName">RST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/X" type="array">
+      <obj_property name="ElementShortName">X[3:0]</obj_property>
+      <obj_property name="ObjectShortName">X[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/Y" type="array">
+      <obj_property name="ElementShortName">Y[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Y[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/C1X" type="array">
+      <obj_property name="ElementShortName">C1X[3:0]</obj_property>
+      <obj_property name="ObjectShortName">C1X[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/C1Y" type="array">
+      <obj_property name="ElementShortName">C1Y[3:0]</obj_property>
+      <obj_property name="ObjectShortName">C1Y[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/C2X" type="array">
+      <obj_property name="ElementShortName">C2X[3:0]</obj_property>
+      <obj_property name="ObjectShortName">C2X[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/C2Y" type="array">
+      <obj_property name="ElementShortName">C2Y[3:0]</obj_property>
+      <obj_property name="ObjectShortName">C2Y[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/DONE" type="logic">
+      <obj_property name="ElementShortName">DONE</obj_property>
+      <obj_property name="ObjectShortName">DONE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/state" type="array">
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_LASER/curr_state" type="array">
+      <obj_property name="ElementShortName">curr_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">curr_state[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_LASER/next_state" type="array">
+      <obj_property name="ElementShortName">next_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">next_state[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_LASER/Point_Map_0" type="array">
+      <obj_property name="ElementShortName">Point_Map_0[255:0]</obj_property>
+      <obj_property name="ObjectShortName">Point_Map_0[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_LASER/Point_Map_1" type="array">
+      <obj_property name="ElementShortName">Point_Map_1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">Point_Map_1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_LASER/DONE" type="logic">
+      <obj_property name="ElementShortName">DONE</obj_property>
+      <obj_property name="ObjectShortName">DONE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_LASER/counter" type="array">
+      <obj_property name="ElementShortName">counter[9:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_LASER/Cir_Point_X" type="array">
+      <obj_property name="ElementShortName">Cir_Point_X[48:0][4:0]</obj_property>
+      <obj_property name="ObjectShortName">Cir_Point_X[48:0][4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_LASER/Cir_Point_Y" type="array">
+      <obj_property name="ElementShortName">Cir_Point_Y[48:0][4:0]</obj_property>
+      <obj_property name="ObjectShortName">Cir_Point_Y[48:0][4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_LASER/CI" type="array">
+      <obj_property name="ElementShortName">CI[5:0]</obj_property>
+      <obj_property name="ObjectShortName">CI[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_LASER/a1" type="array">
+      <obj_property name="ElementShortName">a1[8:0]</obj_property>
+      <obj_property name="ObjectShortName">a1[8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_LASER/b1" type="array">
+      <obj_property name="ElementShortName">b1[8:0]</obj_property>
+      <obj_property name="ObjectShortName">b1[8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_LASER/adder_1" type="array">
+      <obj_property name="ElementShortName">adder_1[8:0]</obj_property>
+      <obj_property name="ObjectShortName">adder_1[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_LASER/a2" type="array">
+      <obj_property name="ElementShortName">a2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">a2[4:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_LASER/b2" type="array">
+      <obj_property name="ElementShortName">b2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">b2[4:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_LASER/adder_2" type="array">
+      <obj_property name="ElementShortName">adder_2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">adder_2[4:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_LASER/a3" type="array">
+      <obj_property name="ElementShortName">a3[4:0]</obj_property>
+      <obj_property name="ObjectShortName">a3[4:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_LASER/b3" type="array">
+      <obj_property name="ElementShortName">b3[4:0]</obj_property>
+      <obj_property name="ObjectShortName">b3[4:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_LASER/adder_3" type="array">
+      <obj_property name="ElementShortName">adder_3[4:0]</obj_property>
+      <obj_property name="ObjectShortName">adder_3[4:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_LASER/Point_CNT" type="array">
+      <obj_property name="ElementShortName">Point_CNT[5:0]</obj_property>
+      <obj_property name="ObjectShortName">Point_CNT[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

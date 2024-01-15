@@ -53,6 +53,8 @@ reg [255:0]Point_Map_1; //"11" for have the point/"01" for have the point but in
 reg [4:0]Cir_Point_X[48:0];
 reg [4:0]Cir_Point_Y[48:0];
 
+reg [5:0]Point_CNT_1;
+reg [5:0]Point_CNT_2;
 reg [9:0]counter;
 reg INXY_fg;
 
@@ -60,44 +62,70 @@ reg [5:0]Fir_Circle_Max;
 reg [5:0]Fir_Circle_Max_Old; 
 reg [5:0]Sec_Circle_Max_Old;
 
-reg [5:0]RX;
-reg [5:0]RY;
+reg [3:0]RX;
+reg [3:0]RY;
 reg [5:0]CI;
 
-wire [7:0]a1;
-wire [7:0]b1;
-wire [7:0]adder_1;
-wire [7:0]a2;
-wire [7:0]b2;
-wire [7:0]adder_2;
-wire [7:0]a3;
-wire [7:0]b3;
-wire [7:0]adder_3;
+wire signed[8:0]a1;
+wire signed[8:0]b1;
+wire signed[8:0]adder_1;
+wire signed[4:0]a2;
+wire signed[4:0]b2;
+wire signed[4:0]adder_2;
+wire signed[4:0]a3;
+wire signed[4:0]b3;
+wire signed[4:0]adder_3;
 wire [3:0]sf_object;
-wire [7:0]shifter;
+wire [8:0]shifter;
 //variable definition end----------------------------
 
 //adder sharing str----------------------------------
 assign a1 = (curr_state == INXY) ? shifter : 
-            (curr_state == FRCI) ? shifter :8'd0;
+            (curr_state == FRCI) ? shifter :
+            (curr_state == C2RC) ? shifter :
+            (curr_state == C1MK) ? shifter : 8'd0;
+
 assign b1 = (curr_state == INXY) ? X : 
-            (curr_state == FRCI) ? adder_2 :8'd0;
+            (curr_state == FRCI) ? adder_2 : 
+            (curr_state == C2RC) ? adder_2 : 
+            (curr_state == C1MK) ? adder_2 : 8'd0;
+
 assign adder_1 = a1 + b1;
 
-assign a2 = (curr_state == FRCI) ? RX: 8'd0;
-assign b2 = (curr_state == FRCI) ? Cir_Point_X[CI] : 8'd0;
+
+assign a2 = (curr_state == FRCI) ? RX: 
+            (curr_state == C2RC) ? C2X : 
+            (curr_state == C1MK) ? C1X : 8'd0;
+
+assign b2 = (curr_state == FRCI) ? Cir_Point_X[CI] : 
+            (curr_state == C2RC) ? Cir_Point_X[CI] : 
+            (curr_state == C1MK) ? Cir_Point_X[CI] : 8'd0;
+
 assign adder_2 = a2 + b2;
 
-assign a3 = (curr_state == FRCI) ? RY: 8'd0;
-assign b3 = (curr_state == FRCI) ? Cir_Point_Y[CI] : 8'd0;
+
+assign a3 = (curr_state == FRCI) ? RY: 
+            (curr_state == C2RC) ? C2Y :
+            (curr_state == C1MK) ? C1Y : 8'd0;
+
+assign b3 = (curr_state == FRCI) ? Cir_Point_Y[CI] : 
+            (curr_state == C2RC) ? Cir_Point_Y[CI] : 
+            (curr_state == C1MK) ? Cir_Point_Y[CI] : 8'd0;
+
 assign adder_3 = a3 + b3;
 //adder sharing end----------------------------------
 
-//left shifter sharing str--------------------------
+//left shifter sharing str---------------------------
 assign sf_object =  (curr_state == INXY) ? Y :
-                    (curr_state == FRCI) ? adder_3 : 4'd0; 
+                    (curr_state == FRCI) ? adder_3 : 
+                    (curr_state == C2RC) ? adder_3 : 
+                    (curr_state == C1MK) ? adder_3 : 4'd0; 
 assign shifter = sf_object <<< 4;
-//left shifter sharing end--------------------------
+//left shifter sharing end---------------------------
+
+//Comparators for parallel rx & rx+1 str-------------
+assign Cmp = Point_CNT_2 >= Point_CNT_1 ? 1'b1 : 1'b0;
+//Comparators for parallel rx & rx+1 end-------------
 
 //state control str----------------------------------
 always @(posedge CLK or posedge RST) begin
@@ -115,33 +143,35 @@ always @(*) begin
             else next_state = INXY;
         end
         WHLP:begin
-            next_state = FRCI;
+            if(Fir_Circle_Max == Fir_Circle_Max_Old)next_state = OVER;
+            else next_state = FRCI;
+
         end
         FRRY:begin
-            if(RY==16)next_state = C2RC;
-            else next_state = FRRY;
+            if(RY==4'd15)next_state = C2RC;
+            else next_state = FRCI;
         end
         FRRX:begin
-            if(RX==16)next_state = FRRY;
-            else next_state = WHLP;
+            if(RX==4'd15)next_state = FRRY;
+            else next_state = FRCI;
         end
         FRCI:begin
-            if(CI==10'd49)next_state = OVER;
+            if(CI==10'd48)next_state = PCLM;
             else next_state = FRCI;
         end
         PCLM:begin
             next_state = FRRX;
         end
         C2RC:begin
-            if(CI==10'd49)next_state = C1MK;
+            if(CI==10'd48)next_state = C1MK;
             else next_state = C2RC;
         end
         C1MK:begin
-            if(CI==10'd49)next_state = OVER;
+            if(CI==10'd48)next_state = WHLP;
             else next_state = C1MK;
         end
         OVER:begin
-
+            next_state = OVER;
         end
         default:begin
             next_state = IDLE;
@@ -160,8 +190,18 @@ always @(posedge CLK) begin
             INXY_fg <= 1'b0;
             DONE <= 1'b1;
             CI <= 6'd0;
-            RY <= 6'd0;
-            RX <= 6'd0;
+            RY <= 4'd0;
+            RX <= 4'd0;
+            Point_CNT_1 <= 6'd0;
+            Point_CNT_2 <= 6'd0;
+            C1X <= 4'd0;
+            C1Y <= 4'd0;
+            C2X <= 4'd0;
+            C2Y <= 4'd0;
+            Fir_Circle_Max <= 6'd0;
+            Fir_Circle_Max_Old <= 6'd0;
+            Sec_Circle_Max_Old <= 6'd0;
+
         end
         INXY:begin
             DONE <= 1'b0;
@@ -177,36 +217,70 @@ always @(posedge CLK) begin
             end
         end
         WHLP:begin
-            C1X <= C2X;
-            C1Y <= C2Y;
-            C2X <= C1X;
-            C2Y <= C1Y;
-            Fir_Circle_Max <= 6'd0;
-            Fir_Circle_Max_Old <= Sec_Circle_Max_Old; 
-            Sec_Circle_Max_Old <= Fir_Circle_Max;
+            if(Fir_Circle_Max != Fir_Circle_Max_Old)begin
+                C1X <= C2X;
+                C1Y <= C2Y;
+                C2X <= C1X;
+                C2Y <= C1Y;
+                Fir_Circle_Max <= 6'd0;
+                Fir_Circle_Max_Old <= Sec_Circle_Max_Old; 
+                Sec_Circle_Max_Old <= Fir_Circle_Max;
+            end
         end
         FRRY:begin
-
+            if(RY == 4'd15)RY <= 4'd0;
+            else RY <= RY + 1'b1;
         end
         FRRX:begin
-
+            if(RX == 4'd14)RX <= 4'd0;
+            else RX <= RX + 2'd2;
         end
         FRCI:begin
             if(adder_2 < 6'd16 && adder_2 >= 6'd0 && adder_3 < 6'd16 && adder_3 >= 6'd0 
             && Point_Map_0[adder_1]==1'b1 && Point_Map_1[adder_1]==1'b1)
-                CI <= CI + 1'b1;
+                Point_CNT_1 <= Point_CNT_1 + 1'b1;
+
+            if({adder_2[5:1],1'b1} < 6'd16 && {adder_2[5:1],1'b1} >= 6'd0 && adder_3 < 6'd16 && adder_3 >= 6'd0 
+            && Point_Map_0[adder_1]==1'b1 && Point_Map_1[adder_1]==1'b1)
+                Point_CNT_2 <= Point_CNT_2 + 1'b1;
+
+            if(CI==10'd48)CI <= 4'd0;
+            else CI <= CI + 1'b1;
         end
         PCLM:begin
-
+            Point_CNT_1 <= 6'd0;
+            Point_CNT_2 <= 6'd0;
+            if(Point_CNT_1 >= Fir_Circle_Max && ~Cmp)begin //can be good
+                Fir_Circle_Max <= Point_CNT_1;
+                C1X <= RX;
+                C1Y <= RY;
+            end       
+            if(Point_CNT_2 >= Fir_Circle_Max && Cmp)begin
+                Fir_Circle_Max <= Point_CNT_2;
+                C1X <= {RX[3:1],1'b1};
+                C1Y <= RY;
+            end
         end
         C2RC:begin
-
+            if(adder_2 < 6'd16 && adder_2 >= 6'd0 && adder_3 < 6'd16 && adder_3 >= 6'd0 
+            && Point_Map_0[adder_1]==1'b1 && Point_Map_1[adder_1]==1'b0)begin
+                Point_Map_1[adder_1] <= 1'b1;
+                Point_Map_0[adder_1] <= 1'b1;
+            end
+            if(CI==10'd48)CI <= 4'd0;
+            else CI <= CI + 1'b1;
         end
         C1MK:begin
-
+            if(adder_2 < 6'd16 && adder_2 >= 6'd0 && adder_3 < 6'd16 && adder_3 >= 6'd0 
+            && Point_Map_0[adder_1]==1'b1 && Point_Map_1[adder_1]==1'b1)begin
+                Point_Map_1[adder_1] <= 1'b0;
+                Point_Map_0[adder_1] <= 1'b1;
+            end
+            if(CI==10'd48)CI <= 4'd0;
+            else CI <= CI + 1'b1;
         end
         OVER:begin
-
+            DONE <= 1'b0;
         end
         default:begin
             
@@ -318,6 +392,3 @@ always @(posedge CLK) begin
     end
 end
 endmodule
-
-// [0, -2, -1, 0, 1, 2, -3, -2, -1, 0, 1, 2, 3, -3, -2, -1, 0, 1, 2, 3, -4, -3, -2, -1, 0, 1, 2, 3, 4, -3, -2, -1, 0, 1, 2, 3, -3, -2, -1, 0, 1, 2, 3, -2, -1, 0, 1, 2, 0]
-// [-4, -3, -3, -3, -3, -3, -2, -2, -2, -2, -2, -2, -2, -1, -1, -1, -1, -1, -1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 4]
