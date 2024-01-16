@@ -1,7 +1,7 @@
-Running: xsim.dir/testfixture_behav/xsimk.exe -simmode gui -wdb testfixture_behav.wdb -simrunnum 0 -socket 59897
+Running: xsim.dir/testfixture_behav/xsimk.exe -simmode gui -wdb testfixture_behav.wdb -simrunnum 0 -socket 59490
 Design successfully loaded
-Design Loading Memory Usage: 6140 KB (Peak: 6140 KB)
+Design Loading Memory Usage: 8120 KB (Peak: 8120 KB)
 Design Loading CPU Usage: 0 ms
 Simulation completed
-Simulation Memory Usage: 15868 KB (Peak: 15868 KB)
-Simulation CPU Usage: 796 ms
+Simulation Memory Usage: 10240 KB (Peak: 10240 KB)
+Simulation CPU Usage: 0 ms
