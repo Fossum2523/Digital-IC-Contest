@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2024-01-15T15:38:32</DateModified>
+  <DateModified>2024-01-21T17:51:15</DateModified>
   <ModuleName>LASER</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser_ISE/iseconfig/LASER.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser_ISE\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Theo/Desktop/IC_Contest/111_IC_Contest_Preround/Verilog/Laser_ISE/iseconfig/LASER.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Theo/Desktop/IC_Contest/111_IC_Contest_Preround/Verilog/Laser_ISE\</ImplementationReportsDirectory>
   <DateInitialized>2024-01-15T00:19:11</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "C:/Users/Theo/Desktop/IC_Contest/111_IC_Contest_Preround/Verilog/Laser_ISE/LASER.xst" -ofn "C:/Users/Theo/Desktop/IC_Contest/111_IC_Contest_Preround/Verilog/Laser_ISE/LASER.syr" 
+xst -intstyle ise -ifn "C:/Users/Theo/Desktop/IC_Contest/111_IC_Contest_Preround/Verilog/Laser_ISE/LASER.xst" -ofn "C:/Users/Theo/Desktop/IC_Contest/111_IC_Contest_Preround/Verilog/Laser_ISE/LASER.syr" 
+xst -intstyle ise -ifn "C:/Users/Theo/Desktop/IC_Contest/111_IC_Contest_Preround/Verilog/Laser_ISE/LASER.xst" -ofn "C:/Users/Theo/Desktop/IC_Contest/111_IC_Contest_Preround/Verilog/Laser_ISE/LASER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6vlx75t-ff484-1 LASER.ngc LASER.ngd  
+netgen -intstyle ise -rpw 100 -tpw 0 -ar Structure -tm LASER -w -dir netgen/translate -ofmt vhdl -sim LASER.ngd LASER_translate.vhd 
+xst -intstyle ise -ifn "C:/Users/Theo/Desktop/IC_Contest/111_IC_Contest_Preround/Verilog/Laser_ISE/LASER.xst" -ofn "C:/Users/Theo/Desktop/IC_Contest/111_IC_Contest_Preround/Verilog/Laser_ISE/LASER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6vlx75t-ff484-1 LASER.ngc LASER.ngd  
+map -intstyle ise -p xc6vlx75t-ff484-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LASER_map.ncd LASER.ngd LASER.pcf 

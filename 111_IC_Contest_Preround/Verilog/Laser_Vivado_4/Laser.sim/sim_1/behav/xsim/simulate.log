@@ -1,0 +1,42 @@
+Time resolution is 1 ps
+*******************************
+** Simulation Start          **
+*******************************
+               29000 , please pull down signal DONE
+               37000 , please pull down signal DONE
+== PATTERN img1.pattern
+---- Used Cycle:      26572
+---- Get Return: C1( 4,10),C2(11,12)
+---- cover =  30, optimum =  30
+           212957000 , please pull down signal DONE
+== PATTERN img2.pattern
+---- Used Cycle:      33215
+---- Get Return: C1( 5,11),C2(11, 6)
+---- cover =  28, optimum =  28
+           479021000 , please pull down signal DONE
+== PATTERN img3.pattern
+---- Used Cycle:      39858
+---- Get Return: C1(10, 5),C2( 5,10)
+---- cover =  29, optimum =  29
+           798229000 , please pull down signal DONE
+== PATTERN img4.pattern
+---- Used Cycle:      46501
+---- Get Return: C1(10, 5),C2( 4, 9)
+---- cover =  30, optimum =  30
+          1170581000 , please pull down signal DONE
+== PATTERN img5.pattern
+---- Used Cycle:      46501
+---- Get Return: C1( 8,12),C2( 2,10)
+---- cover =  23, optimum =  23
+          1542933000 , please pull down signal DONE
+== PATTERN img6.pattern
+---- Used Cycle:      39858
+---- Get Return: C1(13, 2),C2( 9, 9)
+---- cover =  30, optimum =  30
+
+*******************************
+**   Finish Simulation       **
+**   RUN CYCLE =     232767  **
+**   Cover total = 170/170   **
+*******************************
+$finish called at time : 1862132 ns : File "E:/Projects 專案/IC 同步資料夾/111_IC_Contest_Preround/Verilog/Laser_Vivado_3/Laser.srcs/sim_1/new/tb.sv" Line 254

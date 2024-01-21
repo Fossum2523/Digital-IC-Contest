@@ -14,7 +14,7 @@ for i in range(0, 9 ,1):
 # produce circle point end-------------------------
         
 # get object location str--------------------------
-f = open('./img5.pattern',"r")
+f = open('./img4.pattern',"r")
 text = f.read()
 f.close
 
