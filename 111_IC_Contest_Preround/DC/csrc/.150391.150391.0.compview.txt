@@ -1,0 +1,5 @@
+{"vcs1":{"timestamp_begin":1705824340.847768861, "rt":0.57, "ut":0.03, "st":0.01}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1705824340.644814636}
+{"VCS_COMP_START_TIME": 1705824340.644814636}
+{"VCS_COMP_END_TIME": 1705824349.146107371}
+{"VCS_USER_OPTIONS": "-R -sverilog tb.sv LASER_syn.v +define+USECOLOR+SDF +access+r +vcs+fsdbon +fsdb+mda +fsdbfile+LASER.fsdb -v /cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v +maxdelays"}

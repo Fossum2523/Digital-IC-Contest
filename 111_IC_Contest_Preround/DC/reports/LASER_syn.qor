@@ -1,0 +1,83 @@
+ 
+****************************************
+Report : qor
+Design : LASER
+Version: U-2022.12-SP6
+Date   : Sun Jan 21 16:19:17 2024
+****************************************
+
+
+  Timing Path Group (none)
+  -----------------------------------
+  Levels of Logic:               2.00
+  Critical Path Length:          0.71
+  Critical Path Slack:         uninit
+  Critical Path Clk Period:       n/a
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          0
+  Hierarchical Port Count:          0
+  Leaf Cell Count:               2746
+  Buf/Inv Cell Count:             287
+  Buf Cell Count:                  72
+  Inv Cell Count:                 215
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:      2168
+  Sequential Cell Count:          578
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:    19791.684048
+  Noncombinational Area: 15045.753826
+  Buf/Inv Area:           2121.750010
+  Total Buffer Area:           906.41
+  Total Inverter Area:        1215.34
+  Macro/Black Box Area:      0.000000
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:             34837.437874
+  Design Area:           34837.437874
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:          2796
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: mergic.ntust.edu.tw
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.00
+  Logic Optimization:                  0.00
+  Mapping Optimization:                0.00
+  -----------------------------------------
+  Overall Compile Time:                0.00
+  Overall Compile Wall Clock Time:     0.00
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

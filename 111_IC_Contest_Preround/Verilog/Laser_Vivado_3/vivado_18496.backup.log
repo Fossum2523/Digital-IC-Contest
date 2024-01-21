@@ -1,0 +1,1759 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Jan 15 15:38:34 2024
+# Process ID: 18496
+# Current directory: C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23168 C:\Users\USER\Desktop\IC compete\111_IC_Contest_Preround\Verilog\Laser\Laser.xpr
+# Log file: C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/vivado.log
+# Journal file: C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img1.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img4.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img5.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img2.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img3.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img6.pattern'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xelab -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testfixture_behav -key {Behavioral:sim_1:Functional:testfixture} -tclbatch {testfixture.tcl} -view {{C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/testfixture_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/testfixture_behav.wcfg}
+source testfixture.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+*******************************
+** Simulation Start          **
+*******************************
+               29000 , please pull down signal DONE
+               37000 , please pull down signal DONE
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testfixture_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 834.652 ; gain = 14.387
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img1.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img4.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img5.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img2.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img3.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img6.pattern'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LASER
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xelab -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LASER
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+*******************************
+** Simulation Start          **
+*******************************
+               29000 , please pull down signal DONE
+               37000 , please pull down signal DONE
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 838.188 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img1.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img4.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img5.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img2.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img3.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img6.pattern'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LASER
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xelab -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LASER
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+*******************************
+** Simulation Start          **
+*******************************
+               29000 , please pull down signal DONE
+               37000 , please pull down signal DONE
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 838.188 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img1.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img4.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img5.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img2.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img3.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img6.pattern'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xelab -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+*******************************
+** Simulation Start          **
+*******************************
+               29000 , please pull down signal DONE
+               37000 , please pull down signal DONE
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 838.188 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img1.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img4.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img5.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img2.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img3.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img6.pattern'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LASER
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xelab -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LASER
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+*******************************
+** Simulation Start          **
+*******************************
+               29000 , please pull down signal DONE
+               37000 , please pull down signal DONE
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 838.188 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img1.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img4.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img5.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img2.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img3.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img6.pattern'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LASER
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xelab -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LASER
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+*******************************
+** Simulation Start          **
+*******************************
+               29000 , please pull down signal DONE
+               37000 , please pull down signal DONE
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 840.355 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img1.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img4.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img5.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img2.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img3.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img6.pattern'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LASER
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xelab -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LASER
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+*******************************
+** Simulation Start          **
+*******************************
+               29000 , please pull down signal DONE
+               37000 , please pull down signal DONE
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 859.848 ; gain = 0.000
+run 10 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img1.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img4.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img5.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img2.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img3.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img6.pattern'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LASER
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xelab -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LASER
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+*******************************
+** Simulation Start          **
+*******************************
+               29000 , please pull down signal DONE
+               37000 , please pull down signal DONE
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 859.848 ; gain = 0.000
+run 10 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img1.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img4.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img5.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img2.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img3.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img6.pattern'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LASER
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xelab -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LASER
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+*******************************
+** Simulation Start          **
+*******************************
+               29000 , please pull down signal DONE
+               37000 , please pull down signal DONE
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 859.848 ; gain = 0.000
+run 10 us
+current_wave_config {testfixture_behav.wcfg}
+testfixture_behav.wcfg
+add_wave {{/testfixture/u_LASER/RX}} {{/testfixture/u_LASER/RY}} 
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img1.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img4.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img5.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img2.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img3.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img6.pattern'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xelab -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+*******************************
+** Simulation Start          **
+*******************************
+               29000 , please pull down signal DONE
+               37000 , please pull down signal DONE
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 859.848 ; gain = 0.000
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img1.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img4.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img5.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img2.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img3.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img6.pattern'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LASER
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xelab -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LASER
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+*******************************
+** Simulation Start          **
+*******************************
+               29000 , please pull down signal DONE
+               37000 , please pull down signal DONE
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1035.184 ; gain = 0.000
+run 100 us
+run 10 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img1.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img4.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img5.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img2.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img3.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img6.pattern'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LASER
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xelab -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LASER
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+*******************************
+** Simulation Start          **
+*******************************
+               29000 , please pull down signal DONE
+               37000 , please pull down signal DONE
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1035.184 ; gain = 0.000
+run 120 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img1.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img4.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img5.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img2.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img3.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img6.pattern'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LASER
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xelab -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LASER
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+*******************************
+** Simulation Start          **
+*******************************
+               29000 , please pull down signal DONE
+               37000 , please pull down signal DONE
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1035.184 ; gain = 0.000
+run 120 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img1.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img4.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img5.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img2.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img3.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img6.pattern'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LASER
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xelab -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LASER
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+*******************************
+** Simulation Start          **
+*******************************
+               29000 , please pull down signal DONE
+               37000 , please pull down signal DONE
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1035.184 ; gain = 0.000
+run 120 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img1.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img4.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img5.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img2.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img3.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img6.pattern'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LASER
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xelab -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LASER
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+*******************************
+** Simulation Start          **
+*******************************
+               29000 , please pull down signal DONE
+               37000 , please pull down signal DONE
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1035.184 ; gain = 0.000
+run 120 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img1.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img4.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img5.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img2.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img3.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img6.pattern'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LASER
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xelab -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LASER
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+*******************************
+** Simulation Start          **
+*******************************
+               29000 , please pull down signal DONE
+               37000 , please pull down signal DONE
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1035.184 ; gain = 0.000
+run 120 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img1.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img4.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img5.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img2.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img3.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img6.pattern'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LASER
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xelab -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LASER
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+*******************************
+** Simulation Start          **
+*******************************
+               29000 , please pull down signal DONE
+               37000 , please pull down signal DONE
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1035.184 ; gain = 0.000
+run 120 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img1.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img4.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img5.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img2.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img3.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img6.pattern'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LASER
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xelab -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LASER
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+*******************************
+** Simulation Start          **
+*******************************
+               29000 , please pull down signal DONE
+               37000 , please pull down signal DONE
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1035.184 ; gain = 0.000
+run 120 us
+run 120 us
+run 120 us
+run 120 us
+== PATTERN img1.pattern
+-- Max cycle pre pattern reached, force output result C1(10,12),C2( 0, 0)
+---- cover =  18, optimum =  30
+           400413000 , please pull down signal DONE
+           400421000 , please pull down signal DONE
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img1.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img4.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img5.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img2.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img3.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img6.pattern'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LASER
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xelab -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LASER
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+*******************************
+** Simulation Start          **
+*******************************
+               29000 , please pull down signal DONE
+               37000 , please pull down signal DONE
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1035.184 ; gain = 0.000
+run 120 us
+run 120 us
+run 120 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img1.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img4.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img5.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img2.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img3.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img6.pattern'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LASER
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xelab -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LASER
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+*******************************
+** Simulation Start          **
+*******************************
+               29000 , please pull down signal DONE
+               37000 , please pull down signal DONE
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1035.184 ; gain = 0.000
+run 500 us
+== PATTERN img1.pattern
+-- Max cycle pre pattern reached, force output result C1( 4,10),C2(11,12)
+---- cover =  30, optimum =  30
+           400413000 , please pull down signal DONE
+           400421000 , please pull down signal DONE
+run 500 us
+== PATTERN img2.pattern
+-- Max cycle pre pattern reached, force output result C1(11, 6),C2( 5,11)
+---- cover =  28, optimum =  28
+           800797000 , please pull down signal DONE
+           800805000 , please pull down signal DONE
+run 500 us
+== PATTERN img3.pattern
+-- Max cycle pre pattern reached, force output result C1(10, 5),C2( 6, 9)
+---- cover =  29, optimum =  29
+          1201181000 , please pull down signal DONE
+          1201189000 , please pull down signal DONE
+run 500 us
+== PATTERN img4.pattern
+-- Max cycle pre pattern reached, force output result C1( 5, 5),C2(10, 8)
+---- cover =  29, optimum =  30
+          1601565000 , please pull down signal DONE
+          1601573000 , please pull down signal DONE
+run 500 us
+== PATTERN img5.pattern
+-- Max cycle pre pattern reached, force output result C1( 3, 9),C2( 5,14)
+---- cover =  21, optimum =  23
+          2001949000 , please pull down signal DONE
+          2001957000 , please pull down signal DONE
+== PATTERN img6.pattern
+-- Max cycle pre pattern reached, force output result C1(13, 2),C2(10, 8)
+---- cover =  30, optimum =  30
+
+*******************************
+**   Finish Simulation       **
+**   RUN CYCLE =     300288  **
+**   Cover total = 167/170   **
+*******************************
+$finish called at time : 2402300 ns : File "C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sim_1/new/tb.sv" Line 227
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img1.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img4.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img5.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img2.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img3.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img6.pattern'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testfixture
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xelab -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LASER
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+*******************************
+** Simulation Start          **
+*******************************
+               29000 , please pull down signal DONE
+               37000 , please pull down signal DONE
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1035.184 ; gain = 0.000
+run 500 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img1.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img4.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img5.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img2.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img3.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img6.pattern'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LASER
+INFO: [VRFC 10-2458] undeclared symbol Cmp, assumed default net type wire [C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v:126]
+ERROR: [VRFC 10-4982] syntax error near 'always' [C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v:130]
+ERROR: [VRFC 10-2790] Verilog 2000 keyword always used in incorrect context [C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v:130]
+ERROR: [VRFC 10-2939] 'curr_state' is an unknown type [C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v:132]
+ERROR: [VRFC 10-2989] 'Point_CNT_2' is not declared [C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v:243]
+ERROR: [VRFC 10-2989] 'Point_CNT_2' is not declared [C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v:250]
+ERROR: [VRFC 10-2989] 'Point_CNT_2' is not declared [C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v:256]
+ERROR: [VRFC 10-2989] 'Point_CNT_2' is not declared [C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v:257]
+ERROR: [VRFC 10-2865] module 'LASER' ignored due to previous errors [C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img1.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img4.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img5.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img2.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img3.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img6.pattern'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LASER
+INFO: [VRFC 10-2458] undeclared symbol Cmp, assumed default net type wire [C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v:127]
+ERROR: [VRFC 10-4982] syntax error near 'always' [C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v:131]
+ERROR: [VRFC 10-2790] Verilog 2000 keyword always used in incorrect context [C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v:131]
+ERROR: [VRFC 10-2939] 'curr_state' is an unknown type [C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v:133]
+ERROR: [VRFC 10-2865] module 'LASER' ignored due to previous errors [C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img1.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img4.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img5.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img2.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img3.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img6.pattern'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LASER
+INFO: [VRFC 10-2458] undeclared symbol Cmp, assumed default net type wire [C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v:127]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xelab -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3283] element index 5 into 'adder_2' is out of bounds [C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v:243]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LASER
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+*******************************
+** Simulation Start          **
+*******************************
+               29000 , please pull down signal DONE
+               37000 , please pull down signal DONE
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1035.184 ; gain = 0.000
+run 500 us
+current_wave_config {testfixture_behav.wcfg}
+testfixture_behav.wcfg
+add_wave {{/testfixture/u_LASER/Point_CNT_1}} {{/testfixture/u_LASER/Point_CNT_2}} 
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img1.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img4.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img5.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img2.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img3.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img6.pattern'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xelab -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3283] element index 5 into 'adder_2' is out of bounds [C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v:243]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+*******************************
+** Simulation Start          **
+*******************************
+               29000 , please pull down signal DONE
+               37000 , please pull down signal DONE
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1035.184 ; gain = 0.000
+run 500 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img1.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img4.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img5.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img2.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img3.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img6.pattern'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xelab -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3283] element index 5 into 'adder_2' is out of bounds [C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v:243]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+*******************************
+** Simulation Start          **
+*******************************
+               29000 , please pull down signal DONE
+               37000 , please pull down signal DONE
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1035.184 ; gain = 0.000
+run 100 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img1.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img4.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img5.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img2.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img3.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img6.pattern'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LASER
+INFO: [VRFC 10-2458] undeclared symbol Cmp, assumed default net type wire [C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v:145]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xelab -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LASER
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+*******************************
+** Simulation Start          **
+*******************************
+               29000 , please pull down signal DONE
+               37000 , please pull down signal DONE
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1035.184 ; gain = 0.000
+run 100 us
+current_wave_config {testfixture_behav.wcfg}
+testfixture_behav.wcfg
+add_wave {{/testfixture/u_LASER/a4}} {{/testfixture/u_LASER/b4}} {{/testfixture/u_LASER/adder_4}} {{/testfixture/u_LASER/a5}} {{/testfixture/u_LASER/b5}} {{/testfixture/u_LASER/adder_5}} 
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img1.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img4.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img5.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img2.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img3.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img6.pattern'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xelab -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+*******************************
+** Simulation Start          **
+*******************************
+               29000 , please pull down signal DONE
+               37000 , please pull down signal DONE
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1035.184 ; gain = 0.000
+run 100 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img1.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img4.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img5.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img2.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img3.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img6.pattern'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LASER
+INFO: [VRFC 10-2458] undeclared symbol Cmp, assumed default net type wire [C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v:145]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xelab -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LASER
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+*******************************
+** Simulation Start          **
+*******************************
+               29000 , please pull down signal DONE
+               37000 , please pull down signal DONE
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1035.184 ; gain = 0.000
+run 100 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img1.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img4.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img5.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img2.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img3.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img6.pattern'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LASER
+INFO: [VRFC 10-2458] undeclared symbol Cmp, assumed default net type wire [C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v:145]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xelab -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LASER
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+*******************************
+** Simulation Start          **
+*******************************
+               29000 , please pull down signal DONE
+               37000 , please pull down signal DONE
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1035.184 ; gain = 0.000
+run 100 us
+run 100 us
+current_wave_config {testfixture_behav.wcfg}
+testfixture_behav.wcfg
+add_wave {{/testfixture/u_LASER/Fir_Circle_Max}} {{/testfixture/u_LASER/Fir_Circle_Max_Old}} {{/testfixture/u_LASER/Sec_Circle_Max_Old}} 
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img1.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img4.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img5.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img2.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img3.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img6.pattern'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xelab -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+*******************************
+** Simulation Start          **
+*******************************
+               29000 , please pull down signal DONE
+               37000 , please pull down signal DONE
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1035.184 ; gain = 0.000
+run 100 us
+run 100 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img1.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img4.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img5.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img2.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img3.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img6.pattern'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LASER
+INFO: [VRFC 10-2458] undeclared symbol Cmp, assumed default net type wire [C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v:145]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xelab -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LASER
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/USER/Desktop/IC -notrace
+couldn't read file "C:/Users/USER/Desktop/IC": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Mon Jan 15 23:01:15 2024...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+*******************************
+** Simulation Start          **
+*******************************
+               29000 , please pull down signal DONE
+               37000 , please pull down signal DONE
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1035.184 ; gain = 0.000
+run 100 us
+run 100 us
+run 100 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img1.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img4.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img5.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img2.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img3.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img6.pattern'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LASER
+INFO: [VRFC 10-2458] undeclared symbol Cmp, assumed default net type wire [C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sources_1/new/Laser.v:145]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xelab -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LASER
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+*******************************
+** Simulation Start          **
+*******************************
+               29000 , please pull down signal DONE
+               37000 , please pull down signal DONE
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1035.184 ; gain = 0.000
+run 500 us
+== PATTERN img1.pattern
+---- Used Cycle:      33215
+---- Get Return: C1(11,12),C2( 4,10)
+---- cover =  30, optimum =  30
+           266101000 , please pull down signal DONE
+run 500 us
+== PATTERN img2.pattern
+---- Used Cycle:      33215
+---- Get Return: C1( 5,11),C2(11, 6)
+---- cover =  28, optimum =  28
+           532165000 , please pull down signal DONE
+== PATTERN img3.pattern
+---- Used Cycle:      46501
+---- Get Return: C1( 5,10),C2(10, 5)
+---- cover =  29, optimum =  29
+           904517000 , please pull down signal DONE
+run 500 us
+== PATTERN img4.pattern
+---- Used Cycle:      53144
+---- Get Return: C1( 4, 9),C2(10, 5)
+---- cover =  30, optimum =  30
+          1330013000 , please pull down signal DONE
+run 500 us
+== PATTERN img5.pattern
+---- Used Cycle:      46501
+---- Get Return: C1( 8,12),C2( 2,10)
+---- cover =  23, optimum =  23
+          1702365000 , please pull down signal DONE
+run 500 us
+== PATTERN img6.pattern
+---- Used Cycle:      46501
+---- Get Return: C1( 9, 9),C2(13, 2)
+---- cover =  30, optimum =  30
+
+*******************************
+**   Finish Simulation       **
+**   RUN CYCLE =     259339  **
+**   Cover total = 170/170   **
+*******************************
+$finish called at time : 2074708 ns : File "C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sim_1/new/tb.sv" Line 254
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img1.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img4.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img5.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img2.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img3.pattern'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim/img6.pattern'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sim_1/new/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testfixture
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.sim/sim_1/behav/xsim'
+"xelab -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 1814de89809c4738ae9c4e36e7fbe50a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LASER
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+*******************************
+** Simulation Start          **
+*******************************
+               29000 , please pull down signal DONE
+               37000 , please pull down signal DONE
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1035.184 ; gain = 0.000
+run 500 us
+== PATTERN img1.pattern
+---- Used Cycle:      33215
+---- Get Return: C1(11,12),C2( 4,10)
+---- cover =  30, optimum =  30
+           266101000 , please pull down signal DONE
+run 500 us
+== PATTERN img2.pattern
+---- Used Cycle:      33215
+---- Get Return: C1( 5,11),C2(11, 6)
+---- cover =  28, optimum =  28
+           532165000 , please pull down signal DONE
+== PATTERN img3.pattern
+---- Used Cycle:      46501
+---- Get Return: C1( 5,10),C2(10, 5)
+---- cover =  29, optimum =  29
+           904517000 , please pull down signal DONE
+run 500 us
+== PATTERN img4.pattern
+-- Max cycle pre pattern reached, force output result C1( 5, 8),C2(10, 5)
+---- cover =  30, optimum =  30
+          1304893000 , please pull down signal DONE
+          1304901000 , please pull down signal DONE
+run 500 us
+== PATTERN img5.pattern
+---- Used Cycle:      46501
+---- Get Return: C1( 8,12),C2( 2,10)
+---- cover =  23, optimum =  23
+          1677253000 , please pull down signal DONE
+run 500 us
+== PATTERN img6.pattern
+---- Used Cycle:      46501
+---- Get Return: C1( 9, 9),C2(13, 2)
+---- cover =  30, optimum =  30
+
+*******************************
+**   Finish Simulation       **
+**   RUN CYCLE =     256200  **
+**   Cover total = 170/170   **
+*******************************
+$finish called at time : 2049596 ns : File "C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/Laser.srcs/sim_1/new/tb.sv" Line 254
+save_wave_config {C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser/testfixture_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 15 23:08:56 2024...
