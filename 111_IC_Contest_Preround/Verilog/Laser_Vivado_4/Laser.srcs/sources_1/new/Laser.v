@@ -163,13 +163,13 @@ always @(posedge CLK) begin
         INXY:begin
             DONE <= 1'b0;
             if(CI == 40)begin
-                object_x[CI] <= 1'b1;
-                object_y[CI] <= 1'b1;    
+                object_x[CI] <= X;
+                object_y[CI] <= Y;    
                 CI <= 6'b000_000;
             end
             else begin
-                object_x[CI] <= 1'b1;
-                object_y[CI] <= 1'b1;
+                object_x[CI] <= X;
+                object_y[CI] <= Y;
                 CI <= CI + 1;
             end
         end
@@ -191,8 +191,8 @@ always @(posedge CLK) begin
             else RY <= RY + 1'b1;
         end
         FRRX:begin
-            if(RX == 14)RX <= 4'd0;
-            else RX <= RX + 2'd2;
+            if(RX == 15)RX <= 4'd0;
+            else RX <= RX + 1'b1;
         end
         FRCI:begin
             if(adder_2 < 16 && adder_2 >= 0 && adder_3 < 16 && adder_3 >= 0 
