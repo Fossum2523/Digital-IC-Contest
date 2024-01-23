@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Theo/Desktop/IC_Contest/107_IC_Contest_Preround/Verilog/CONV_ISE/testfixture_isim_beh.exe" -prj "C:/Users/Theo/Desktop/IC_Contest/107_IC_Contest_Preround/Verilog/CONV_ISE/testfixture_beh.prj" "work.testfixture" "work.glbl" 

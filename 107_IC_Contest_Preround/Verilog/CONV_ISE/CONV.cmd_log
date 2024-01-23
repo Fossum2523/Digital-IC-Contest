@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Theo/Desktop/IC_Contest/107_IC_Contest_Preround/Verilog/CONV_ISE/CONV.xst" -ofn "C:/Users/Theo/Desktop/IC_Contest/107_IC_Contest_Preround/Verilog/CONV_ISE/CONV.syr" 
