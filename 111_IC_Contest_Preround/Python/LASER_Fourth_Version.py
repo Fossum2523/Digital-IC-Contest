@@ -1,5 +1,5 @@
 # get object location str--------------------------
-f = open('./img6.pattern',"r")
+f = open('./img4.pattern',"r")
 text = f.read()
 f.close
 
@@ -30,6 +30,7 @@ iteration = 0
 
 point_cnt = 0
 while(1):
+    iteration = iteration + 1
     for ry in range(16): # y location for center of circcle
         for rx in range(16):# x location for center of circcle
             point_cnt = 0
@@ -63,9 +64,11 @@ while(1):
             ol_object[ci] = 1
 
     ###########  first_circle break or not
+    print("C1 = ({}, {}), C2 = ({}, {})".format(fir_circle_rx, fir_circle_ry, sec_circle_rx, sec_circle_ry))
     if (fir_circle_rx == fir_circle_rx_old and fir_circle_ry == fir_circle_ry_old):
         break
     else:
+        
         # 圓1與圓2圓心交換 str----------------------------------------
         temp = fir_circle_rx
         fir_circle_rx = sec_circle_rx
@@ -80,5 +83,6 @@ while(1):
         fir_circle_rx_old = fir_circle_rx
         fir_circle_ry_old = fir_circle_ry
 
+print(iteration)
 print("C1 = ({}, {}), C2 = ({}, {})".format(fir_circle_rx, fir_circle_ry, sec_circle_rx, sec_circle_ry))
         
