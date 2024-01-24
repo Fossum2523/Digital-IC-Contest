@@ -6,7 +6,7 @@ module  CONV(
 	output		reg busy,	
 	input		ready,	
 			
-	output		reg [11:0]iaddr,
+	output		[11:0]iaddr,
 	input		[19:0]idata,	
 	
 	output	 	cwr,
@@ -56,16 +56,32 @@ reg [5:0]row;
 reg [5:0]column;
 reg kernel_sel;
 
-reg [19:0]kernel_w;
+reg signed[19:0]kernel_w;
 reg [3:0]curr_state;
 reg [3:0]next_state;
 
-reg [39:0]acc;
-reg [39:0]mul;
+reg signed[39:0]acc;
+reg signed[39:0]mul;
 wire [19:0]bias;
-//variable declaration end-------------------------
-assign bias = ~kernel_sel ? bias_0 : bias_1;
 
+wire signed [5:0]row_pos;
+wire signed [5:0]column_pos;
+
+wire signed [19:0]matrix_num;
+assign matrix_num = image_temp_row[kernel_row][kernel_column];
+
+//variable declaration end-------------------------
+assign csel = 3'd0; 
+
+assign cwr = curr_state == FRRC ? 1'b1 : 1'b0;
+assign caddr_wr = row * 64 + column;
+assign cdata_wr = acc[39] ? 20'd0 : acc[39:20]; 
+
+assign bias = ~kernel_sel ? bias_0 : bias_1;
+assign row_pos = row + kernel_row - 1;
+assign column_pos = column + kernel_column - 1;
+
+assign iaddr = (row + kernel_row - 1)*16 + (column + kernel_column - 1);
 always @(*) begin
 	if(~kernel_sel)begin
 		case ({kernel_column,kernel_row})
@@ -173,7 +189,7 @@ always @(posedge clk) begin
 			row <= 6'd0;
 			column <= 6'd0;
 			kernel_sel <= 1'd0;
-			iaddr <= 12'd0;
+			//iaddr <= 12'd0;
 			acc <= 20'd0;
 			busy <= 1'b0;
         end
@@ -192,20 +208,20 @@ always @(posedge clk) begin
 			else column = column + 1'd1;
         end
         FRKN:begin
-			if(kernel_row == 6'd63 && kernel_column == 6'd63)begin
-				kernel_row <= 6'd0;
+			if(kernel_row == 2'd2 && kernel_column == 2'd2)begin
+				kernel_row <= 2'd0;
 			end
-			else if(kernel_column == 6'd63)kernel_row = kernel_row + 1'd1;
+			else if(kernel_column == 2'd2)kernel_row = kernel_row + 1'd1;
 
-			if(kernel_column == 6'd63)begin
-				kernel_column <= 6'd0;
+			if(kernel_column == 2'd2)begin
+				kernel_column <= 2'd0;
 			end
 			else kernel_column = kernel_column + 1'd1;
 
-			iaddr <= (row + kernel_row - 1)*16 + (column + kernel_column - 1);
+			//iaddr <= (row + kernel_row - 1)*16 + (column + kernel_column - 1);
         end
         CNV1:begin
-			if ((row + kernel_row - 1) < 0 || (row + kernel_row - 1) > 63 || (column + kernel_column - 1) < 0 || (column + kernel_column - 1) > 63)
+			if (row_pos < 0 || row_pos  > 63 || column_pos  < 0 || column_pos > 63)
                 image_temp_row[kernel_row][kernel_column] <= 20'd0;
 
             else
@@ -223,8 +239,7 @@ always @(posedge clk) begin
 		KNCG:begin
 			if(~kernel_sel) kernel_sel <= 1'b1;
 			
-			acc 	<= 20'd0;
-			iaddr <= 12'd0;
+			acc <= 20'd0;
 		end
         OVER:begin
 				

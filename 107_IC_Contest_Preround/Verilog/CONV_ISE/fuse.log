@@ -12,8 +12,7 @@ Compiling module CONV
 Compiling module testfixture
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
 Compiled 3 Verilog Units
 Built simulation executable C:/Users/Theo/Desktop/IC_Contest/107_IC_Contest_Preround/Verilog/CONV_ISE/testfixture_isim_beh.exe
-Fuse Memory Usage: 28812 KB
+Fuse Memory Usage: 29508 KB
 Fuse CPU Usage: 468 ms
