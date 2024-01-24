@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser_ISE/xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.44 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.27 secs
  
 --> Parameter xsthdpdir set to C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser_ISE/xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.44 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.27 secs
  
 --> Reading design: LASER.prj
 
@@ -43,8 +43,8 @@ Analyzing Verilog file "C:\Users\USER\Desktop\IC compete\111_IC_Contest_Preround
 Parsing module <LASER>.
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 3.71 secs
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.13 secs
  
 --> 
 

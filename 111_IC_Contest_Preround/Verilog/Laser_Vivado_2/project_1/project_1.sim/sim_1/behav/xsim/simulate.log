@@ -1,0 +1,42 @@
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+*******************************
+** Simulation Start          **
+*******************************
+               29000 , please pull down signal DONE
+               37000 , please pull down signal DONE
+== PATTERN img1.pattern
+-- Max cycle pre pattern reached, force output result C1( 4,10),C2(11,12)
+---- cover =  30, optimum =  30
+           400413000 , please pull down signal DONE
+           400421000 , please pull down signal DONE
+== PATTERN img2.pattern
+-- Max cycle pre pattern reached, force output result C1(11, 6),C2( 5,11)
+---- cover =  28, optimum =  28
+           800797000 , please pull down signal DONE
+           800805000 , please pull down signal DONE
+== PATTERN img3.pattern
+-- Max cycle pre pattern reached, force output result C1(10, 5),C2( 6, 9)
+---- cover =  29, optimum =  29
+          1201181000 , please pull down signal DONE
+          1201189000 , please pull down signal DONE
+== PATTERN img4.pattern
+-- Max cycle pre pattern reached, force output result C1( 5, 5),C2(10, 8)
+---- cover =  29, optimum =  30
+          1601565000 , please pull down signal DONE
+          1601573000 , please pull down signal DONE
+== PATTERN img5.pattern
+-- Max cycle pre pattern reached, force output result C1( 3, 9),C2( 5,14)
+---- cover =  21, optimum =  23
+          2001949000 , please pull down signal DONE
+          2001957000 , please pull down signal DONE
+== PATTERN img6.pattern
+-- Max cycle pre pattern reached, force output result C1(13, 2),C2(10, 8)
+---- cover =  30, optimum =  30
+
+*******************************
+**   Finish Simulation       **
+**   RUN CYCLE =     300288  **
+**   Cover total = 167/170   **
+*******************************
+$finish called at time : 2402300 ns : File "C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser_Vivado_2/project_1/project_1.srcs/sim_1/new/tb.sv" Line 227

@@ -49,6 +49,7 @@ reg [3:0]next_state;
 
 reg [3:0]object_x[39:0];
 reg [3:0]object_y[39:0];
+reg [39:0]ol_object;
 
 reg [5:0]Point_CNT_1;
 reg [5:0]Point_CNT_2;
@@ -63,26 +64,37 @@ reg [3:0]RX;
 reg [3:0]RY;
 reg [5:0]CI;
 
+wire Cmp_1;
+wire Cmp_2;
+
 wire signed[3:0]a1;
 wire signed[3:0]b1;
-wire signed[3:0]minus_1;
+wire signed[3:0]x_dist;
+wire signed[3:0]a2;
+wire signed[3:0]b2;
+wire signed[3:0]y_dist;
+wire signed[3:0]t_dist;
 //variable definition end----------------------------
 
 //adder sharing str----------------------------------
 
-assign a1 = (curr_state == INXY and Cmp) ? object_x[CI]: RX;
+assign a1 = (curr_state == INXY && Cmp_1) ? object_x[CI]: RX;
 
-assign b1 = (curr_state == INXY and Cmp) ? RX : object_x[CI];
+assign b1 = (curr_state == INXY && Cmp_1) ? RX : object_x[CI];
 
-assign minus_1 = a1 - b1;
+assign x_dist = a1 - b1;
 
-assign a2 = 
+assign a2 = (curr_state == INXY && Cmp_2) ? object_y[CI]: RY;
 
-assign b2 =
+assign b2 = (curr_state == INXY && Cmp_2) ? RY : object_y[CI];
+
+assign y_dist = a2 - b2;
+
+assign t_dist = x_dist + y_dist;
 //adder sharing end----------------------------------
 
 //Comparators for parallel rx & rx+1 str-------------
-assign Cmp = object_x[CI] >= RX ? 1'b1 : 1'b0;
+assign Cmp_1 = object_x[CI] >= RX ? 1'b1 : 1'b0;
 //Comparators for parallel rx & rx+1 end-------------
 
 //state control str----------------------------------
@@ -110,7 +122,7 @@ always @(*) begin
             else next_state = FRCI;
         end
         FRRX:begin
-            if(RX==14)next_state = FRRY;
+            if(RX==15)next_state = FRRY;
             else next_state = FRCI;
         end
         FRCI:begin
@@ -121,11 +133,11 @@ always @(*) begin
             next_state = FRRX;
         end
         C2RC:begin
-            if(CI==48)next_state = C1MK;
+            if(CI==40)next_state = C1MK;
             else next_state = C2RC;
         end
         C1MK:begin
-            if(CI==48)next_state = WHLP;
+            if(CI==40)next_state = WHLP;
             else next_state = C1MK;
         end
         OVER:begin
@@ -142,8 +154,6 @@ end
 always @(posedge CLK) begin
     case(curr_state)
         IDLE:begin
-            Point_Map_0 <= 256'd0;
-            Point_Map_1 <= 256'd0;
             INXY_fg <= 1'b0;
             DONE <= 1'b1;
             CI <= 6'd0;
@@ -195,47 +205,35 @@ always @(posedge CLK) begin
             else RX <= RX + 1'b1;
         end
         FRCI:begin
-            if(adder_2 < 16 && adder_2 >= 0 && adder_3 < 16 && adder_3 >= 0 
-            && Point_Map_0[adder_1]==1 && Point_Map_1[adder_1]==1)
+            if((t_dist < 5 || (t_dist == 5 && x_dist < 4 && y_dist < 4)) 
+            && ol_object[CI] == 0)
                 Point_CNT_1 <= Point_CNT_1 + 1'b1;
-
-            if(adder_4 < 16 && adder_4 >= 0 && adder_3 < 16 && adder_3 >= 0 
-            && Point_Map_0[adder_5]==1 && Point_Map_1[adder_5]==1)
-                Point_CNT_2 <= Point_CNT_2 + 1'b1;
 
             if(CI==40)CI <= 4'd0;
             else CI <= CI + 1'b1;
         end
         PCLM:begin
             Point_CNT_1 <= 6'd0;
-            Point_CNT_2 <= 6'd0;
-            if(Point_CNT_1 >= Fir_Circle_Max && ~Cmp)begin //can be good
+            if(Point_CNT_1 >= Fir_Circle_Max)begin //can be good
                 Fir_Circle_Max <= Point_CNT_1;
                 C1X <= RX;
                 C1Y <= RY;
             end       
-            if(Point_CNT_2 >= Fir_Circle_Max && Cmp)begin
-                Fir_Circle_Max <= Point_CNT_2;
-                C1X <= {RX[3:1],1'b1};
-                C1Y <= RY;
-            end
         end
         C2RC:begin
-            if(adder_2 < 16 && adder_2 >= 0 && adder_3 < 16 && adder_3 >= 0 
-            && Point_Map_0[adder_1]==1 && Point_Map_1[adder_1]==0)begin
-                Point_Map_1[adder_1] <= 1'b1;
-                Point_Map_0[adder_1] <= 1'b1;
-            end
-            if(CI==10'd48)CI <= 4'd0;
+            if((t_dist < 5 || (t_dist == 5 && x_dist < 4 && y_dist < 4)) 
+            && ol_object[CI] == 1)
+                ol_object[CI] <= 0;
+
+            if(CI==40)CI <= 4'd0;
             else CI <= CI + 1'b1;
         end
         C1MK:begin
-            if(adder_2 < 16 && adder_2 >= 0 && adder_3 < 16 && adder_3 >= 0 
-            && Point_Map_0[adder_1]==1 && Point_Map_1[adder_1]==1)begin
-                Point_Map_1[adder_1] <= 1'b0;
-                Point_Map_0[adder_1] <= 1'b1;
-            end
-            if(CI==48)CI <= 4'd0;
+            if((t_dist < 5 || (t_dist == 5 && x_dist < 4 && y_dist < 4)) 
+            && ol_object[CI] == 0)
+                ol_object[CI] <= 1;
+
+            if(CI==40)CI <= 4'd0;
             else CI <= CI + 1'b1;
         end
         OVER:begin
