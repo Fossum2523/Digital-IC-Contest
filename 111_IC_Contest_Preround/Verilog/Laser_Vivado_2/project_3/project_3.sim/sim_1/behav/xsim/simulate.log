@@ -1,0 +1,43 @@
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+*******************************
+** Simulation Start          **
+*******************************
+               29000 , please pull down signal DONE
+               37000 , please pull down signal DONE
+== PATTERN img1.pattern
+---- Used Cycle:      33321
+---- Get Return: C1(15,15),C2(15,15)
+---- cover =   4, optimum =  30
+           266949000 , please pull down signal DONE
+== PATTERN img2.pattern
+---- Used Cycle:      33321
+---- Get Return: C1(15,15),C2(15,15)
+---- cover =   1, optimum =  28
+           533861000 , please pull down signal DONE
+== PATTERN img3.pattern
+---- Used Cycle:      33321
+---- Get Return: C1(15,15),C2(15,15)
+---- cover =   0, optimum =  29
+           800773000 , please pull down signal DONE
+== PATTERN img4.pattern
+---- Used Cycle:      33321
+---- Get Return: C1(15,15),C2(15,15)
+---- cover =   0, optimum =  30
+          1067685000 , please pull down signal DONE
+== PATTERN img5.pattern
+---- Used Cycle:      33321
+---- Get Return: C1(15,15),C2(15,15)
+---- cover =   0, optimum =  23
+          1334597000 , please pull down signal DONE
+== PATTERN img6.pattern
+---- Used Cycle:      33321
+---- Get Return: C1(15,15),C2(15,15)
+---- cover =   1, optimum =  30
+
+*******************************
+**   Finish Simulation       **
+**   RUN CYCLE =     200188  **
+**   Cover total =   6/170   **
+*******************************
+$finish called at time : 1601500 ns : File "C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser_Vivado_2/project_3/project_3.srcs/sim_1/new/tb.sv" Line 254

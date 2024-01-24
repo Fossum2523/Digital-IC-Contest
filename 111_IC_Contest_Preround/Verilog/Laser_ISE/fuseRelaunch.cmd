@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser_ISE/LASER_isim_beh.exe" -prj "C:/Users/USER/Desktop/IC compete/111_IC_Contest_Preround/Verilog/Laser_ISE/LASER_beh.prj" "work.LASER" "work.glbl" 
