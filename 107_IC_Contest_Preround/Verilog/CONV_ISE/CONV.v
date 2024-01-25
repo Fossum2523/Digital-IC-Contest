@@ -64,24 +64,31 @@ reg signed[39:0]acc;
 reg signed[39:0]mul;
 wire [19:0]bias;
 
-wire signed [5:0]row_pos;
-wire signed [5:0]column_pos;
+wire signed [6:0]row_pos;
+wire signed [6:0]column_pos;
 
 wire signed [19:0]matrix_num;
 assign matrix_num = image_temp_row[kernel_row][kernel_column];
 
 //variable declaration end-------------------------
-assign csel = 3'd0; 
+assign csel = 3'd1; 
 
-assign cwr = curr_state == FRRC ? 1'b1 : 1'b0;
+assign cwr = curr_state == WBDT ? 1'b1 : 1'b0; //35(100011) / 2^6 =
 assign caddr_wr = row * 64 + column;
-assign cdata_wr = acc[39] ? 20'd0 : acc[39:20]; 
+assign cdata_wr = acc[39] ? 20'd0 : acc[15] ? acc[35:16] + 1'b1 : acc[35:16] ; 
 
 assign bias = ~kernel_sel ? bias_0 : bias_1;
-assign row_pos = row + kernel_row - 1;
-assign column_pos = column + kernel_column - 1;
 
-assign iaddr = (row + kernel_row - 1)*16 + (column + kernel_column - 1);
+wire signed[6:0]object_row;
+wire signed[6:0]object_column;
+
+assign object_row = row + kernel_row;
+assign object_column = column + kernel_column;
+
+assign row_pos = object_row - 1;
+assign column_pos = object_column - 1;
+
+assign iaddr = row_pos * 64 + column_pos;
 always @(*) begin
 	if(~kernel_sel)begin
 		case ({kernel_column,kernel_row})
@@ -123,7 +130,7 @@ localparam [3:0]IDLE = 4'd0,
                 BIAS = 4'd7,
                 KNCG = 4'd8,
                 STAR = 4'd9,
-                S8 = 4'd10,
+                WBDT = 4'd10,
                 S9 = 4'd11,
                 FRKN0 = 4'd12,
                 FRKN1 = 4'd13,
@@ -173,6 +180,9 @@ always @(*) begin
 			if(kernel_sel) next_state = OVER;
 			else next_state = CNV1;
 		end
+		WBDT:begin
+			next_state = WBDT;
+		end
         OVER:begin
 
         end
@@ -200,23 +210,23 @@ always @(posedge clk) begin
 			if(row == 6'd63 && column == 6'd63)begin
 				row <= 6'd0;
 			end
-			else if(column == 6'd63)row = row + 1'd1;
+			else if(column == 6'd63)row <= row + 1'd1;
 
 			if(column == 6'd63)begin
 				column <= 6'd0;
 			end
-			else column = column + 1'd1;
+			else column <= column + 1'd1;
         end
         FRKN:begin
 			if(kernel_row == 2'd2 && kernel_column == 2'd2)begin
 				kernel_row <= 2'd0;
 			end
-			else if(kernel_column == 2'd2)kernel_row = kernel_row + 1'd1;
+			else if(kernel_column == 2'd2)kernel_row <= kernel_row + 1'd1;
 
 			if(kernel_column == 2'd2)begin
 				kernel_column <= 2'd0;
 			end
-			else kernel_column = kernel_column + 1'd1;
+			else kernel_column <= kernel_column + 1'd1;
 
 			//iaddr <= (row + kernel_row - 1)*16 + (column + kernel_column - 1);
         end
@@ -240,6 +250,9 @@ always @(posedge clk) begin
 			if(~kernel_sel) kernel_sel <= 1'b1;
 			
 			acc <= 20'd0;
+		end
+		WBDT:begin
+			
 		end
         OVER:begin
 				

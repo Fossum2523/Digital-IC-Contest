@@ -1,5 +1,5 @@
-set -tmpdir "C:/Users/Theo/Desktop/IC_Contest/107_IC_Contest_Preround/Verilog/CONV_ISE/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/Theo/Desktop/IC_Contest/107_IC_Contest_Preround/Verilog/CONV_ISE/xst"
+set -tmpdir "C:/Users/fossu/Desktop/IC_contest/107_IC_Contest_Preround/Verilog/CONV_ISE/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/fossu/Desktop/IC_contest/107_IC_Contest_Preround/Verilog/CONV_ISE/xst"
 run -compileonly yes
 -p xc6vlx75t-1-ff484
 -top CONV
