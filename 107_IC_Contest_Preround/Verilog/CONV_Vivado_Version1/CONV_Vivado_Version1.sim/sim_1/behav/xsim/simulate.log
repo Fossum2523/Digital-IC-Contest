@@ -1,0 +1,13 @@
+Time resolution is 1 ps
+-----------------------------------------------------
+
+START!!! Simulation Start .....
+
+-----------------------------------------------------
+
+WARNING: File ./dat_grad/cnn_sti.dat referenced from process on C:/Users/ib701/Desktop/彭冠霖/IC競賽同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version1/CONV_Vivado_Version1.srcs/sim_1/imports/2019_grad_cell/testfixture.v at line 94 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File ./dat_grad/cnn_layer0_exp0.dat referenced from process on C:/Users/ib701/Desktop/彭冠霖/IC競賽同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version1/CONV_Vivado_Version1.srcs/sim_1/imports/2019_grad_cell/testfixture.v at line 94 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File ./dat_grad/cnn_layer0_exp1.dat referenced from process on C:/Users/ib701/Desktop/彭冠霖/IC競賽同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version1/CONV_Vivado_Version1.srcs/sim_1/imports/2019_grad_cell/testfixture.v at line 94 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File ./dat_grad/cnn_layer1_exp0.dat referenced from process on C:/Users/ib701/Desktop/彭冠霖/IC競賽同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version1/CONV_Vivado_Version1.srcs/sim_1/imports/2019_grad_cell/testfixture.v at line 94 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File ./dat_grad/cnn_layer1_exp1.dat referenced from process on C:/Users/ib701/Desktop/彭冠霖/IC競賽同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version1/CONV_Vivado_Version1.srcs/sim_1/imports/2019_grad_cell/testfixture.v at line 94 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File ./dat_grad/cnn_layer2_exp.dat referenced from process on C:/Users/ib701/Desktop/彭冠霖/IC競賽同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version1/CONV_Vivado_Version1.srcs/sim_1/imports/2019_grad_cell/testfixture.v at line 94 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
