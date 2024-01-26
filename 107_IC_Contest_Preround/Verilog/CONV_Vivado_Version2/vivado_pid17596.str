@@ -16025,3 +16025,6 @@ typeControlKey(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, "RDIResource.
 // TclEventType: FILE_SET_CHANGE
 // Elapsed Time for: 'L.f': 04h:26m:10s
 // Elapsed Time for: 'L.f': 04h:26m:12s
+
+// Exiting Vivado with a status code 0 at 1/26/24, 2:00:34 AM CST...
+// Elapsed time: 04:50:54

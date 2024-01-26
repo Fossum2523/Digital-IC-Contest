@@ -3,109 +3,30 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Thu Jan 25 21:09:14 2024
-# Process ID: 2356
+# Start of session at: Fri Jan 26 13:41:50 2024
+# Process ID: 9128
 # Current directory: C:/Users/fossu/Desktop/IC_contest/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8848 C:\Users\fossu\Desktop\IC_contest\107_IC_Contest_Preround\Verilog\CONV_Vivado_Version2\CONV_Vivado_Version1.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10572 C:\Users\fossu\Desktop\IC_contest\107_IC_Contest_Preround\Verilog\CONV_Vivado_Version2\CONV_Vivado_Version1.xpr
 # Log file: C:/Users/fossu/Desktop/IC_contest/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/vivado.log
 # Journal file: C:/Users/fossu/Desktop/IC_contest/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2\vivado.jou
 # Running On: DESKTOP-5RUADSS, OS: Windows, CPU Frequency: 3593 MHz, CPU Physical cores: 12, Host memory: 34287 MB
 #-----------------------------------------------------------
-ststart_guopen_project C:/Users/fossu/Desktop/IC_contest/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.xpr
-r
+start_gui
+open_project C:/Users/fossu/Desktop/IC_contest/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.xpr
 update_compile_order -fileset sources_1
 launch_simulation
-launch_simulation
 source testfixture.tcl
-run 10 us
-current_wave_config {Untitled 1}
-add_wave {{/testfixture/u_CONV/clk}} {{/testfixture/u_CONV/reset}} {{/testfixture/u_CONV/busy}} {{/testfixture/u_CONV/ready}} {{/testfixture/u_CONV/iaddr}} {{/testfixture/u_CONV/idata}} {{/testfixture/u_CONV/cwr}} {{/testfixture/u_CONV/caddr_wr}} {{/testfixture/u_CONV/cdata_wr}} {{/testfixture/u_CONV/crd}} {{/testfixture/u_CONV/caddr_rd}} {{/testfixture/u_CONV/cdata_rd}} {{/testfixture/u_CONV/csel}} {{/testfixture/u_CONV/image_temp_row}} {{/testfixture/u_CONV/kernel_column}} {{/testfixture/u_CONV/kernel_row}} {{/testfixture/u_CONV/row}} {{/testfixture/u_CONV/column}} {{/testfixture/u_CONV/kernel_sel}} {{/testfixture/u_CONV/kernel_w}} {{/testfixture/u_CONV/curr_state}} {{/testfixture/u_CONV/next_state}} {{/testfixture/u_CONV/acc}} {{/testfixture/u_CONV/mul}} {{/testfixture/u_CONV/bias}} {{/testfixture/u_CONV/row_pos}} {{/testfixture/u_CONV/column_pos}} {{/testfixture/u_CONV/matrix_num}} 
+run all
 relaunch_sim
-run 10 us
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-add_files -fileset sim_1 -norecurse {C:/Users/fossu/Desktop/IC_contest/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.srcs/sim_1/imports/2019_grad_cell/dat_grad/cnn_weight0.dat C:/Users/fossu/Desktop/IC_contest/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.srcs/sim_1/imports/2019_grad_cell/dat_grad/cnn_bias0.dat C:/Users/fossu/Desktop/IC_contest/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.srcs/sim_1/imports/2019_grad_cell/dat_grad/cnn_layer0_exp0.dat C:/Users/fossu/Desktop/IC_contest/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.srcs/sim_1/imports/2019_grad_cell/dat_grad/cnn_layer0_exp1.dat C:/Users/fossu/Desktop/IC_contest/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.srcs/sim_1/imports/2019_grad_cell/dat_grad/cnn_layer2_exp.dat C:/Users/fossu/Desktop/IC_contest/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.srcs/sim_1/imports/2019_grad_cell/dat_grad/cnn_layer1_exp1.dat C:/Users/fossu/Desktop/IC_contest/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.srcs/sim_1/imports/2019_grad_cell/dat_grad/cnn_sti.dat C:/Users/fossu/Desktop/IC_contest/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.srcs/sim_1/imports/2019_grad_cell/dat_grad/cnn_layer1_exp0.dat}
+run all
 relaunch_sim
-relaunch_sim
-run 10 us
-run 10 us
-run 10 us
-relaunch_sim
-relaunch_sim
-relaunch_sim
-relaunch_sim
+run all
 relaunch_sim
 relaunch_sim
 relaunch_sim
 relaunch_sim
 run all
 relaunch_sim
-run 10 us
-run 10 us
-relaunch_sim
-run 10 us
-run 10 us
-relaunch_sim
-relaunch_sim
-run 10 us
-run 10 us
-current_wave_config {Untitled 1}
-add_wave {{/testfixture/u_CONV/object_row}} {{/testfixture/u_CONV/object_column}} 
-relaunch_sim
-run 10 us
-run 10 us
-run 10 us
-relaunch_sim
-run 30 us
-run 30 us
-run 30 us
-relaunch_sim
-run 30 us
-run 30 us
-relaunch_sim
-run 30 us
-run 30 us
-relaunch_sim
-relaunch_sim
-relaunch_sim
-run 30 us
-run 30 us
-relaunch_sim
-run 30 us
-run 30 us
-relaunch_sim
-run 30 us
-run 30 us
-relaunch_sim
-run 30 us
-run 30 us
-relaunch_sim
-run 30 us
-run 30 us
-run 30 us
-run 30 us
-run 30 us
-relaunch_sim
-run 30 us
-run 30 us
-run all
 relaunch_sim
 run all
-relaunch_sim
-current_wave_config {Untitled 1}
-add_wave {{/testfixture/L0_EXP0}} {{/testfixture/L0_EXP1}} {{/testfixture/L0_MEM0}} {{/testfixture/L0_MEM1}} {{/testfixture/L1_EXP0}} {{/testfixture/L1_EXP1}} {{/testfixture/L1_MEM0}} {{/testfixture/L1_MEM1}} {{/testfixture/L2_EXP}} {{/testfixture/L2_MEM}} 
-relaunch_sim
-run 30 us
-run 30 us
-current_wave_config {Untitled 1}
-add_wave {{/testfixture/L0_EXP0}} {{/testfixture/L0_EXP1}} {{/testfixture/L0_MEM0}} {{/testfixture/L0_MEM1}} 
-set_property display_limit 81920 [current_wave_config]
-current_wave_config {Untitled 1}
-add_wave {{/testfixture/L0_EXP0}} {{/testfixture/L0_EXP1}} {{/testfixture/L0_MEM0}} {{/testfixture/L0_MEM1}} 
-relaunch_sim
-run 30 us
-relaunch_sim
-run 30 us
-run 30 us
-run all
-relaunch_sim
-run all
+close_sim

@@ -57,8 +57,11 @@ reg [5:0]column;
 reg kernel_sel;
 
 reg signed[19:0]kernel_w;
-reg [3:0]curr_state;
-reg [3:0]next_state;
+reg [3:0]curr_state_layer0;
+reg [3:0]next_state_layer0;
+
+reg [1:0]curr_state_control;
+reg [1:0]next_state_control;
 
 reg signed[39:0]acc;
 reg signed[39:0]mul;
@@ -73,7 +76,7 @@ assign matrix_num = image_temp_row[kernel_row][kernel_column];
 //variable declaration end-------------------------
 assign csel = 3'd1+ kernel_sel; 
 
-assign cwr = curr_state == WBDT ? 1'b1 : 1'b0; //35(100011) / 2^6 =
+assign cwr = curr_state_layer0 == WBDT ? 1'b1 : 1'b0; //35(100011) / 2^6 =
 assign caddr_wr = row * 64 + column;
 assign cdata_wr = acc[39] ? 20'd0 : acc[15] ? acc[35:16] + 1'b1 : acc[35:16] ; 
 
@@ -89,6 +92,7 @@ assign row_pos = object_row - 1;
 assign column_pos = object_column - 1;
 
 assign iaddr = row_pos * 64 + column_pos;
+
 always @(*) begin
 	if(~kernel_sel)begin
 		case ({kernel_column,kernel_row})
@@ -120,92 +124,131 @@ always @(*) begin
 	end
 end
 
-localparam [3:0]IDLE = 4'd0,
-                OVER = 4'd1,
+localparam [3:0]IDL0 = 4'd0,
+                STAR = 4'd1,
                 FRRC = 4'd2,
                 FRKN = 4'd3,
                 CNV1 = 4'd4,
 				CNV2 = 4'd5,
 				CNV3 = 4'd6,
                 BIAS = 4'd7,
-                KNCG = 4'd8,
-                STAR = 4'd9,
-                WBDT = 4'd10,
-                S9 = 4'd11,
-                FRKN0 = 4'd12,
-                FRKN1 = 4'd13,
-                FRKN2 = 4'd14,
-                FRKN3 = 4'd15;
+			    WBDT = 4'd8,
+                KNCG = 4'd9,
+				OVR0 = 4'd10;
 
-//state control str----------------------------------
+localparam [1:0]IDLE = 2'd0,
+                LYR0 = 2'd1,
+                LYR1 = 2'd2,
+                LYR2 = 2'd3;
+
+//layer control str----------------------------------
 always @(posedge clk or posedge reset) begin
-    if(reset)curr_state <= IDLE;
-    else curr_state <= next_state;
+    if(reset)curr_state_control <= IDLE;
+    else curr_state_control <= next_state_control ;
 end
 
 always @(*) begin
-    case(curr_state)
+    case(curr_state_control)
         IDLE:begin
-			if(ready)next_state = STAR;
-			else next_state = IDLE;
+			if(ready)next_state_control = LYR0;
+			else next_state_control = IDLE;
         end
-		STAR:begin
-			next_state = CNV1;
+		LYR0:begin
+			if(curr_state_layer0 == OVR0)next_state_control = IDLE;
+			else next_state_control = LYR0;
 		end
+		LYR1:begin
+
+		end
+		LYR2:begin
+
+		end
+    endcase
+end
+//layer control end----------------------------------
+
+//layer control str----------------------------------
+always @(posedge clk) begin
+    case(curr_state_control)
+        IDLE:begin
+			busy <= 1'b0;
+        end
+		LYR0:begin
+			busy <= 1'b1;
+		end
+		LYR1:begin
+			busy <= 1'b0;
+		end
+		LYR2:begin
+
+		end
+    endcase
+end
+//layer control end----------------------------------
+
+//layer0 state str-----------------------------------
+always @(posedge clk or posedge reset) begin
+    if(reset)curr_state_layer0 <= IDL0;
+    else curr_state_layer0 <= next_state_layer0;
+end
+
+always @(*) begin
+    case(curr_state_layer0)
+        IDL0:begin
+			if(curr_state_control == LYR0)next_state_layer0 = CNV1;
+			else next_state_layer0 = IDLE;
+        end
         FRRC:begin
 			if(row == 6'd63 && column == 6'd63)begin
-				next_state = KNCG;
+				next_state_layer0 = KNCG;
 			end
-			else next_state = CNV1;
+			else next_state_layer0 = CNV1;
         end
         FRKN:begin
 			if(kernel_row == 2'd2 && kernel_column == 2'd2)begin
-				next_state = BIAS;
+				next_state_layer0 = BIAS;
 			end
-			else next_state = CNV1;
+			else next_state_layer0 = CNV1;
         end
         CNV1:begin
-			next_state = CNV2;
+			next_state_layer0 = CNV2;
         end
 		CNV2:begin      
-			next_state = CNV3;
+			next_state_layer0 = CNV3;
         end
 		CNV3:begin
-			next_state = FRKN;
+			next_state_layer0 = FRKN;
         end
         BIAS:begin
-			next_state = WBDT;
+			next_state_layer0 = WBDT;
         end
-		KNCG:begin
-			if(kernel_sel) next_state = OVER;
-			else next_state = CNV1;
-		end
 		WBDT:begin
-			next_state = FRRC;	
+			next_state_layer0 = FRRC;	
 		end
-        OVER:begin
-
+		KNCG:begin
+			if(kernel_sel) next_state_layer0 = OVR0;
+			else next_state_layer0 = CNV1;
+		end
+        OVR0:begin
+			next_state_layer0 = IDL0;
         end
+		default:next_state_layer0 = IDL0;
     endcase
 end
-//state control end----------------------------------
+//layer0 state str-----------------------------------
 
-//RTL operation str----------------------------------
+//layer0 RTL operation str---------------------------
 always @(posedge clk) begin
-    case(curr_state)
-        IDLE:begin
-			kernel_column 	<= 2'd0;
+    case(curr_state_layer0)
+        IDL0:begin
+			acc 			<= 20'd0;
+			busy 			<= 1'b0;
+			row 			<= 6'd0;
+			column 			<= 6'd0;
 			kernel_row 		<= 2'd0;
-			row <= 6'd0;
-			column <= 6'd0;
-			kernel_sel <= 1'd0;
-			//iaddr <= 12'd0;
-			acc <= 20'd0;
-			busy <= 1'b0;
+			kernel_column 	<= 2'd0;
+			kernel_sel 		<= 1'd0;
         end
-		STAR:begin
-			busy <= 1'b1;
-		end
         FRRC:begin
 			if(row == 6'd63 && column == 6'd63)begin
 				row <= 6'd0;
@@ -246,21 +289,28 @@ always @(posedge clk) begin
         BIAS:begin
 			acc <= acc + bias;
         end
+		WBDT:begin
+			acc <= 20'd0;
+		end
 		KNCG:begin
 			if(~kernel_sel) kernel_sel <= 1'b1;
 			
 			acc <= 20'd0;
 		end
-		WBDT:begin
-			acc <= 20'd0;
+        default:begin
+			acc 			<= 20'd0;
+			busy 			<= 1'b0;
+			row 			<= 6'd0;
+			column 			<= 6'd0;
+			kernel_row 		<= 2'd0;
+			kernel_column 	<= 2'd0;
+			kernel_sel 		<= 1'd0;
 		end
-        OVER:begin
-			busy <= 1'b0;
-        end
-        default:next_state = IDLE;
     endcase
 end
-//RTL operation end----------------------------------
+//layer0 RTL operation end---------------------------
+
+
 endmodule
 
 
