@@ -3,30 +3,143 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Fri Jan 26 13:41:50 2024
-# Process ID: 9128
-# Current directory: C:/Users/fossu/Desktop/IC_contest/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10572 C:\Users\fossu\Desktop\IC_contest\107_IC_Contest_Preround\Verilog\CONV_Vivado_Version2\CONV_Vivado_Version1.xpr
-# Log file: C:/Users/fossu/Desktop/IC_contest/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/vivado.log
-# Journal file: C:/Users/fossu/Desktop/IC_contest/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2\vivado.jou
+# Start of session at: Fri Jan 26 15:02:37 2024
+# Process ID: 10696
+# Current directory: C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15048 C:\Users\fossu\Desktop\IC同步資料夾\107_IC_Contest_Preround\Verilog\CONV_Vivado_Version2\CONV_Vivado_Version1.xpr
+# Log file: C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/vivado.log
+# Journal file: C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2\vivado.jou
 # Running On: DESKTOP-5RUADSS, OS: Windows, CPU Frequency: 3593 MHz, CPU Physical cores: 12, Host memory: 34287 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/fossu/Desktop/IC_contest/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.xpr
+open_project C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.xpr
 update_compile_order -fileset sources_1
 launch_simulation
 source testfixture.tcl
 run all
 relaunch_sim
 run all
+current_wave_config {Untitled 1}
+add_wave {{/testfixture/u_CONV/busy}} {{/testfixture/u_CONV/curr_state_control}} {{/testfixture/u_CONV/next_state_control}} 
+restart
+run all
+relaunch_sim
+run all
+current_wave_config {Untitled 1}
+add_wave {{/testfixture/u_CONV/curr_state_layer1}} {{/testfixture/u_CONV/next_state_layer1}} 
+restart
+run all
+relaunch_sim
+run all
+restart
+run all
+current_wave_config {Untitled 1}
+add_wave {{/testfixture/u_CONV/curr_state_layer1}} {{/testfixture/u_CONV/next_state_layer1}} 
+current_wave_config {Untitled 1}
+add_wave {{/testfixture/u_CONV/pixel_column}} {{/testfixture/u_CONV/pixel_row}} 
+current_wave_config {Untitled 1}
+add_wave {{/testfixture/u_CONV/row_layer1}} {{/testfixture/u_CONV/column_layer1}} 
+current_wave_config {Untitled 1}
+add_wave {{/testfixture/u_CONV/matrix_sel}} 
+current_wave_config {Untitled 1}
+add_wave {{/testfixture/u_CONV/row_pos_layer1}} {{/testfixture/u_CONV/column_pos_layer1}} 
+relaunch_sim
+run all
+relaunch_sim
+run all
+current_wave_config {Untitled 1}
+add_wave {{/testfixture/u_CONV/cwr}} {{/testfixture/u_CONV/caddr_wr}} {{/testfixture/u_CONV/cdata_wr}} {{/testfixture/u_CONV/crd}} {{/testfixture/u_CONV/caddr_rd}} {{/testfixture/u_CONV/cdata_rd}} {{/testfixture/u_CONV/csel}} 
+restart
+run all
+relaunch_sim
+run all
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/testfixture/u_CONV/max_num}} 
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+save_wave_config {C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/test_layer1.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/test_layer1.wcfg
+set_property xsim.view C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/test_layer1.wcfg [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/test_layer1.wcfg
+source testfixture.tcl
+current_wave_config {test_layer1.wcfg}
+add_wave {{/testfixture/L1_EXP1}} 
+close_sim
+launch_simulation
+open_wave_config C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/test_layer1.wcfg
+source testfixture.tcl
+current_wave_config {test_layer1.wcfg}
+add_wave {{/testfixture/L1_MEM0}} 
+save_wave_config {C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/test_layer1.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/test_layer1.wcfg
+source testfixture.tcl
+save_wave_config {C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/test_layer1.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/test_layer1.wcfg
+source testfixture.tcl
+run all
+current_wave_config {test_layer1.wcfg}
+add_wave {{/testfixture/u_CONV/curr_state_layer0}} {{/testfixture/u_CONV/next_state_layer0}} 
+current_wave_config {test_layer1.wcfg}
+add_wave {{/testfixture/u_CONV/pixel_cnt}} 
+current_wave_config {test_layer1.wcfg}
+add_wave {{/testfixture/u_CONV/flmm_sel}} 
+restart
+run all
+current_wave_config {test_layer1.wcfg}
+add_wave {{/testfixture/u_CONV/curr_state_layer2}} {{/testfixture/u_CONV/next_state_layer2}} 
+restart
+run all
+relaunch_sim
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+run all
 relaunch_sim
 run all
 relaunch_sim
 relaunch_sim
 relaunch_sim
 relaunch_sim
-run all
-relaunch_sim
 relaunch_sim
 run all
+relaunch_sim
 close_sim
