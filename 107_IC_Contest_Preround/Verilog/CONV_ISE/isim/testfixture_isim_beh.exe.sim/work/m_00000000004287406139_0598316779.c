@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/Theo/Desktop/IC_Contest/107_IC_Contest_Preround/Verilog/CONV_ISE/testfixture.v";
+static const char *ng0 = "C:/Users/USER/Desktop/IC_Compete_Sync/107_IC_Contest_Preround/Verilog/CONV_ISE/testfixture.v";
 static const char *ng1 = "-----------------------------------------------------\n";
 static const char *ng2 = "START!!! Simulation Start .....\n";
 static unsigned int ng3[] = {1U, 0U};

@@ -63,8 +63,13 @@ reg [3:0]next_state;
 reg [39:0]acc;
 reg [39:0]mul;
 wire [19:0]bias;
+
+wire signed[5:0]column_pos;
+wire signed[5:0]row_pos;
 //variable declaration end-------------------------
 assign bias = ~kernel_sel ? bias_0 : bias_1;
+assign row_pos = row + kernel_row - 1;
+assign column_pos = column + kernel_column - 1;
 
 always @(*) begin
 	if(~kernel_sel)begin
@@ -192,12 +197,12 @@ always @(posedge clk) begin
 			else column = column + 1'd1;
         end
         FRKN:begin
-			if(kernel_row == 6'd63 && kernel_column == 6'd63)begin
-				kernel_row <= 6'd0;
+			if(kernel_row == 2'd2 && kernel_column == 2'd2)begin
+				kernel_row <= 2'd0;
 			end
-			else if(kernel_column == 6'd63)kernel_row = kernel_row + 1'd1;
+			else if(kernel_column == 2'd2)kernel_row = kernel_row + 1'd1;
 
-			if(kernel_column == 6'd63)begin
+			if(kernel_column == 2'd2)begin
 				kernel_column <= 6'd0;
 			end
 			else kernel_column = kernel_column + 1'd1;
@@ -205,7 +210,7 @@ always @(posedge clk) begin
 			iaddr <= (row + kernel_row - 1)*16 + (column + kernel_column - 1);
         end
         CNV1:begin
-			if ((row + kernel_row - 1) < 0 || (row + kernel_row - 1) > 63 || (column + kernel_column - 1) < 0 || (column + kernel_column - 1) > 63)
+			if (row_pos < 0 || row_pos > 63 || column_pos < 0 || column_pos > 63)
                 image_temp_row[kernel_row][kernel_column] <= 20'd0;
 
             else
