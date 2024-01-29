@@ -7,6 +7,9 @@ START!!! Simulation Start .....
 
 Layer 0 (Convolutional Output) with Kernel 0 is correct !
 Layer 0 (Convolutional Output) with Kernel 1 is correct!
+Layer 1 (Max-pooling Output) with Kernel 0 is correct!
+Layer 1 (Max-pooling Output) with Kernel 1 is correct!
+Layer 2 (Flatten  Output) is correct!
  
 -----------------------------------------------------
 
@@ -14,10 +17,10 @@ Layer 0 (Convolutional Output) with Kernel 1 is correct!
 
 Congratulations! Layer 0 data have been generated successfully! The result is PASS!!
 
-Layer 1 output was fail! 
+Congratulations! Layer 1 data have been generated successfully! The result is PASS!!
 
-Layer 2 output was fail! 
+Congratulations! Layer 2 data have been generated successfully! The result is PASS!!
 
 -----------------------------------------------------
 
-$finish called at time : 3194980 ns : File "C:/Users/fossu/Desktop/IC_contest/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.srcs/sim_1/imports/2019_grad_cell/testfixture.v" Line 277
+$finish called at time : 3461300 ns : File "C:/Users/fossu/Desktop/IC_contest/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.srcs/sim_1/imports/2019_grad_cell/testfixture.v" Line 277
