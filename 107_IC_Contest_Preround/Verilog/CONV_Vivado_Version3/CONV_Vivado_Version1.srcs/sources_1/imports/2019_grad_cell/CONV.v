@@ -20,7 +20,7 @@ module  CONV(
 	output	 	[2:0]csel
 	);
 
-//kernel 0 paramter declaration str----------------
+//kernel 0 paramter declaration str----------------------------------
 parameter  signed kernel0_0 = 20'h0A89E;
 parameter  signed kernel0_1 = 20'h092D5;
 parameter  signed kernel0_2 = 20'h06D43;
@@ -30,9 +30,9 @@ parameter  signed kernel0_5 = 20'hF6E54;
 parameter  signed kernel0_6 = 20'hFA6D7;
 parameter  signed kernel0_7 = 20'hFC834;
 parameter  signed kernel0_8 = 20'hFAC19;
-//kernel 0 paramter declaration end----------------
+//kernel 0 paramter declaration end----------------------------------
 
-//kernel 1 paramter declaration str----------------
+//kernel 1 paramter declaration str----------------------------------
 parameter  signed kernel1_0 = 20'hFDB55;
 parameter  signed kernel1_1 = 20'h02992;
 parameter  signed kernel1_2 = 20'hFC994;
@@ -42,36 +42,48 @@ parameter  signed kernel1_5 = 20'h0202D;
 parameter  signed kernel1_6 = 20'h03BD7;
 parameter  signed kernel1_7 = 20'hFD369;
 parameter  signed kernel1_8 = 20'h05E68;
-//kernel 1 paramter declaration end----------------
+//kernel 1 paramter declaration end----------------------------------
 
-//bias paramter declaration str--------------------
+//bias paramter declaration str--------------------------------------
 parameter  signed bias_0 = 40'h00_1310_0000; 
-parameter  signed bias_1 = 40'hFF_7295_0000; 
-//bias paramter declaration end--------------------
+parameter  signed bias_1 = 40'hFF_7295_0000;
+//bias paramter declaration end--------------------------------------
 
-//control variable declaration str-----------------
+//control variable declaration str-----------------------------------
 reg [1:0]curr_state_control;
 reg [1:0]next_state_control;
-//control variable declaration end-----------------
+//control variable declaration end-----------------------------------
 
-//lyr0 variable declaration str--------------------
-reg signed [19:0]image_temp_row[2:0][2:0];
-
-reg [1:0]kernel_column;
-reg [1:0]kernel_row;
-reg [5:0]row;
-reg [5:0]column;
-reg kernel_sel;
-reg signed[19:0]kernel_w;
-
-reg signed[39:0]acc;
-reg signed[39:0]mul;
-
+//lyr0 variable declaration str--------------------------------------
+//Control layer 0's state//
 reg [3:0]curr_state_layer0;
 reg [3:0]next_state_layer0;
 
+//Store the nine 20-bit data required for this convolution//
+reg signed [19:0]image_temp_row[2:0][2:0]; 
+
+//Control Center, top, bottom, left, right, top left, bottom left, top right, bottom right
+reg [1:0]kernel_row;
+reg [1:0]kernel_column;
+
+//Control 4096 centers of convolution//
+reg [5:0]row;
+reg [5:0]column;
+
+//Choose kernel//
+reg kernel_sel;
+
+//Choose nine sub kernel with case & kernel_row & kernel_column// 
+reg signed[19:0]kernel_w;
+
+//Store nine times multiple and the bias in mul & acc//
+reg signed[39:0]acc;
+reg signed[39:0]mul;
+
+//Choose bias with different kernel//
 wire signed[39:0]bias;
 
+//Store 
 wire signed [6:0]row_pos;
 wire signed [6:0]column_pos;
 
@@ -79,9 +91,9 @@ wire signed[6:0]object_row;
 wire signed[6:0]object_column;
 
 wire [19:0]ReLU;
-//lyr0 variable declaration end--------------------
+//lyr0 variable declaration end--------------------------------------
 
-//lyr1 variable declaration str--------------------
+//lyr1 variable declaration str--------------------------------------
 reg [3:0]curr_state_layer1;
 reg [3:0]next_state_layer1;
 
@@ -97,16 +109,49 @@ reg matrix_sel;
 
 wire [5:0]row_pos_layer1;
 wire [5:0]column_pos_layer1;
-//lyr1 variable declaration end--------------------
+//lyr1 variable declaration end--------------------------------------
 
-//lyr2 variable declaration str--------------------
+//lyr2 variable declaration str--------------------------------------
 reg [2:0]curr_state_layer2;
 reg [2:0]next_state_layer2;
 reg [9:0]pixel_cnt;
 reg flmm_sel;
-//lyr2 variable declaration end--------------------
+//lyr2 variable declaration end--------------------------------------
 
-//control assign declaration str-----------------
+//local parameter str------------------------------------------------
+localparam [3:0]IDL0 = 4'd0,
+                FRRC = 4'd1,
+                FRKN = 4'd2,
+                CNV1 = 4'd3,
+				CNV2 = 4'd4,
+				CNV3 = 4'd5,
+                BIAS = 4'd6,
+			    WBDT = 4'd7,
+                KNCG = 4'd8,
+				OVR0 = 4'd9;
+
+localparam [3:0]IDL1 = 4'd0,
+                FRRC1 = 4'd1,
+                FR2P = 4'd2,
+                MAXP = 4'd3,
+				WBD1 = 4'd4,
+				MTCG = 4'd5,
+                OVR1 = 4'd6;
+
+localparam [2:0]IDL2 = 3'd0,
+				FRFL = 3'd1,
+				READ = 3'd2,
+				WBD2 = 3'd3,
+				FLCG = 3'd4,
+				OVR2 = 3'd5;
+
+localparam [1:0]IDLE = 2'd0,
+                LYR0 = 2'd1,
+                LYR1 = 2'd2,
+                LYR2 = 2'd3;
+//local parameter end------------------------------------------------
+
+//control assign declaration str-------------------------------------
 assign csel = 	curr_state_layer0 == WBDT && kernel_sel == 1'b0 ? 3'd1 :
 				curr_state_layer0 == WBDT && kernel_sel == 1'b1 ? 3'd2 :
 				curr_state_layer1 == MAXP && matrix_sel == 1'b0 ? 3'd1 : //layer1 kernel0 read
@@ -138,9 +183,9 @@ assign crd = 	curr_state_layer1 == MAXP ? 1'b1 :
 
 assign caddr_rd = 	(curr_state_control == LYR1) ? {row_pos_layer1,column_pos_layer1} :
 					(curr_state_control == LYR2) ? pixel_cnt : 12'd0;
-//control assign declaration end-----------------
+//control assign declaration end-------------------------------------
 
-//lyr0 assign declaration str--------------------
+//lyr0 assign declaration str----------------------------------------
 assign bias = ~kernel_sel ? bias_0 : bias_1;
 
 assign object_row = row + kernel_row;
@@ -150,13 +195,12 @@ assign row_pos = object_row - 1;
 assign column_pos = object_column - 1;
 
 assign ReLU = acc[39] ? 20'd0 : acc[15] ? acc[35:16] + 1'b1 : acc[35:16]; 
-//lyr0 assign declaration end--------------------
+//lyr0 assign declaration end----------------------------------------
 
-//lyr1 assign declaration str--------------------
+//lyr1 assign declaration str----------------------------------------
 assign row_pos_layer1 = {row_layer1,pixel_row};
 assign column_pos_layer1 = {column_layer1,pixel_column};
-//lyr1 assign declaration end--------------------
-
+//lyr1 assign declaration end----------------------------------------
 
 always @(*) begin
 	if(~kernel_sel)begin
@@ -189,38 +233,7 @@ always @(*) begin
 	end
 end
 
-localparam [3:0]IDL0 = 4'd0,
-                FRRC = 4'd1,
-                FRKN = 4'd2,
-                CNV1 = 4'd3,
-				CNV2 = 4'd4,
-				CNV3 = 4'd5,
-                BIAS = 4'd6,
-			    WBDT = 4'd7,
-                KNCG = 4'd8,
-				OVR0 = 4'd9;
-
-localparam [3:0]IDL1 = 4'd0,
-                FRRC1 = 4'd1,
-                FR2P = 4'd2,
-                MAXP = 4'd3,
-				WBD1 = 4'd4,
-				MTCG = 4'd5,
-                OVR1 = 4'd6;
-
-localparam [2:0]IDL2 = 3'd0,
-				FRFL = 3'd1,
-				READ = 3'd2,
-				WBD2 = 3'd3,
-				FLCG = 3'd4,
-				OVR2 = 3'd5;
-
-localparam [1:0]IDLE = 2'd0,
-                LYR0 = 2'd1,
-                LYR1 = 2'd2,
-                LYR2 = 2'd3;
-
-//layer control str----------------------------------
+//layer control str--------------------------------------------------
 always @(posedge clk or posedge reset) begin
     if(reset)curr_state_control <= IDLE;
     else curr_state_control <= next_state_control ;
@@ -248,9 +261,9 @@ always @(*) begin
 		end
     endcase
 end
-//layer control end----------------------------------
+//layer control end--------------------------------------------------
 
-//layer control str----------------------------------
+//layer control str--------------------------------------------------
 always @(posedge clk) begin
     case(curr_state_control)
         IDLE:begin
@@ -267,9 +280,9 @@ always @(posedge clk) begin
 		end
     endcase
 end
-//layer control end----------------------------------
+//layer control end--------------------------------------------------
 
-//layer0 state str-----------------------------------
+//layer0 state str---------------------------------------------------
 always @(posedge clk or posedge reset) begin
     if(reset)curr_state_layer0 <= IDL0;
     else curr_state_layer0 <= next_state_layer0;
@@ -318,9 +331,9 @@ always @(*) begin
 		default:next_state_layer0 = IDL0;
     endcase
 end
-//layer0 state str-----------------------------------
+//layer0 state str---------------------------------------------------
 
-//layer0 RTL operation str---------------------------
+//layer0 RTL operation str-------------------------------------------
 always @(posedge clk) begin
     case(curr_state_layer0)
         IDL0:begin
@@ -387,9 +400,9 @@ always @(posedge clk) begin
 		end
     endcase
 end
-//layer0 RTL operation end---------------------------
+//layer0 RTL operation end-------------------------------------------
 
-//layer1 state str-----------------------------------
+//layer1 state str---------------------------------------------------
 always @(posedge clk or posedge reset) begin
     if(reset)curr_state_layer1 <= IDL1;
     else curr_state_layer1 <= next_state_layer1;
@@ -429,9 +442,9 @@ always @(*) begin
 		default:next_state_layer1 = IDL1;
     endcase
 end
-//layer1 state str-----------------------------------
+//layer1 state str---------------------------------------------------
 
-//layer1 RTL operation str---------------------------
+//layer1 RTL operation str-------------------------------------------
 always @(posedge clk) begin
     case(curr_state_layer1 )
         IDL1:begin
@@ -482,9 +495,9 @@ always @(posedge clk) begin
 		end
     endcase
 end
-//layer1 RTL operation end---------------------------
+//layer1 RTL operation end-------------------------------------------
 
-//layer2 state str-----------------------------------
+//layer2 state str---------------------------------------------------
 always @(posedge clk or posedge reset) begin
     if(reset)curr_state_layer2 <= IDL2;
     else curr_state_layer2 <= next_state_layer2;
@@ -517,9 +530,9 @@ always @(*) begin
 	
     endcase
 end
-//layer1 state str-----------------------------------
+//layer1 state str---------------------------------------------------
 
-//layer1 RTL operation str---------------------------
+//layer1 RTL operation str-------------------------------------------
 always @(posedge clk) begin
     case(curr_state_layer2 )
         IDL2:begin
@@ -544,5 +557,5 @@ always @(posedge clk) begin
 		end
     endcase
 end
-//layer1 RTL operation end---------------------------
+//layer1 RTL operation end-------------------------------------------
 endmodule

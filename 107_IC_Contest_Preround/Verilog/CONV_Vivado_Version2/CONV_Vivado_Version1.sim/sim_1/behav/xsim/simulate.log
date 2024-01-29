@@ -1,0 +1,23 @@
+Time resolution is 1 ps
+-----------------------------------------------------
+
+START!!! Simulation Start .....
+
+-----------------------------------------------------
+
+Layer 0 (Convolutional Output) with Kernel 0 is correct !
+Layer 0 (Convolutional Output) with Kernel 1 is correct!
+ 
+-----------------------------------------------------
+
+--------------------- S U M M A R Y -----------------
+
+Congratulations! Layer 0 data have been generated successfully! The result is PASS!!
+
+Layer 1 output was fail! 
+
+Layer 2 output was fail! 
+
+-----------------------------------------------------
+
+$finish called at time : 3194980 ns : File "C:/Users/fossu/Desktop/IC_contest/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.srcs/sim_1/imports/2019_grad_cell/testfixture.v" Line 277
