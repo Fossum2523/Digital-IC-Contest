@@ -1,5 +1,6 @@
 Release 14.7 - xst P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+<<<<<<< HEAD
 --> Parameter TMPDIR set to C:/Users/USER/Desktop/IC_Compete_Sync/107_IC_Contest_Preround/Verilog/CONV_ISE/xst/projnav.tmp
 
 
@@ -11,6 +12,19 @@ Total CPU time to Xst completion: 0.24 secs
 
 Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.24 secs
+=======
+--> Parameter TMPDIR set to C:/Users/fossu/Desktop/IC_contest/107_IC_Contest_Preround/Verilog/CONV_ISE/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/fossu/Desktop/IC_contest/107_IC_Contest_Preround/Verilog/CONV_ISE/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+>>>>>>> 7cfc8db0d892962492674a191cb2e8967325a269
  
 --> Reading design: CONV.prj
 
@@ -39,12 +53,21 @@ TABLE OF CONTENTS
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
+<<<<<<< HEAD
 Analyzing Verilog file "C:\Users\USER\Desktop\IC_Compete_Sync\107_IC_Contest_Preround\Verilog\CONV_ISE\CONV.v" into library work
 Parsing module <CONV>.
 
 
 Total REAL time to Xst completion: 8.00 secs
 Total CPU time to Xst completion: 7.34 secs
+=======
+Analyzing Verilog file "C:\Users\fossu\Desktop\IC_contest\107_IC_Contest_Preround\Verilog\CONV_ISE\CONV.v" into library work
+Parsing module <CONV>.
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.03 secs
+>>>>>>> 7cfc8db0d892962492674a191cb2e8967325a269
  
 --> 
 

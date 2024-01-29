@@ -2,9 +2,37 @@ Command line:
    testfixture_isim_beh.exe
      -simmode  gui
      -simrunnum  0
+<<<<<<< HEAD
      -socket  58626
 
 Wed Jan 24 13:26:47 2024
 
 
  Elaboration Time: 0.0625 sec
+=======
+     -socket  60963
+
+Thu Jan 25 21:07:58 2024
+
+
+ Elaboration Time: 0.109375 sec
+
+ Current Memory Usage: 5155.23 Meg
+
+ Total Signals          : 37
+ Total Nets             : 170
+ Total Signal Drivers   : 20
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 36
+ Total Traceable Variables  : 96
+ Total Scalar Nets and Variables : 574858
+Total Line Count : 243
+
+ Total Simulation Time: 0.171875 sec
+
+ Current Memory Usage: 5155.23 Meg
+
+Thu Jan 25 21:08:10 2024
+
+>>>>>>> 7cfc8db0d892962492674a191cb2e8967325a269

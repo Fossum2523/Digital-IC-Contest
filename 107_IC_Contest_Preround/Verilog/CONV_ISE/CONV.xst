@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 set -tmpdir "C:/Users/USER/Desktop/IC_Compete_Sync/107_IC_Contest_Preround/Verilog/CONV_ISE/xst/projnav.tmp"
 set -xsthdpdir "C:/Users/USER/Desktop/IC_Compete_Sync/107_IC_Contest_Preround/Verilog/CONV_ISE/xst"
+=======
+set -tmpdir "C:/Users/fossu/Desktop/IC_contest/107_IC_Contest_Preround/Verilog/CONV_ISE/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/fossu/Desktop/IC_contest/107_IC_Contest_Preround/Verilog/CONV_ISE/xst"
+>>>>>>> 7cfc8db0d892962492674a191cb2e8967325a269
 run -compileonly yes
 -p xc6vlx75t-1-ff484
 -top CONV

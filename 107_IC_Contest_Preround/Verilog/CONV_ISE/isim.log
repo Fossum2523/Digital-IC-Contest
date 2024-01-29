@@ -1,5 +1,9 @@
 ISim log file
+<<<<<<< HEAD
 Running: C:\Users\USER\Desktop\IC_Compete_Sync\107_IC_Contest_Preround\Verilog\CONV_ISE\testfixture_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/USER/Desktop/IC_Compete_Sync/107_IC_Contest_Preround/Verilog/CONV_ISE/testfixture_isim_beh.wdb 
+=======
+Running: C:\Users\fossu\Desktop\IC_contest\107_IC_Contest_Preround\Verilog\CONV_ISE\CONV_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/fossu/Desktop/IC_contest/107_IC_Contest_Preround/Verilog/CONV_ISE/CONV_isim_beh.wdb 
+>>>>>>> 7cfc8db0d892962492674a191cb2e8967325a269
 ISim P.20131013 (signature 0x7708f090)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -10,6 +14,7 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
+<<<<<<< HEAD
 -----------------------------------------------------
 
 START!!! Simulation Start .....
@@ -77,3 +82,10 @@ START!!! Simulation Start .....
 -----------------------------------------------------
 
 Finished circuit initialization process.
+=======
+Finished circuit initialization process.
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+>>>>>>> 7cfc8db0d892962492674a191cb2e8967325a269

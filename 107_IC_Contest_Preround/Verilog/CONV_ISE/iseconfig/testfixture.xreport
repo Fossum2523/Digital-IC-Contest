@@ -1,12 +1,21 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
+<<<<<<< HEAD
   <DateModified>2024-01-24T13:10:08</DateModified>
   <ModuleName>CONV</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/USER/Desktop/IC_Compete_Sync/107_IC_Contest_Preround/Verilog/CONV_ISE/iseconfig/testfixture.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Users/USER/Desktop/IC_Compete_Sync/107_IC_Contest_Preround/Verilog/CONV_ISE</ImplementationReportsDirectory>
   <DateInitialized>2024-01-24T13:10:08</DateInitialized>
+=======
+  <DateModified>2024-01-24T15:26:27</DateModified>
+  <ModuleName>CONV</ModuleName>
+  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SavedFilePath>C:/Users/Theo/Desktop/IC_Contest/107_IC_Contest_Preround/Verilog/CONV_ISE/iseconfig/testfixture.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Theo/Desktop/IC_Contest/107_IC_Contest_Preround/Verilog/CONV_ISE</ImplementationReportsDirectory>
+  <DateInitialized>2024-01-24T15:26:27</DateInitialized>
+>>>>>>> 7cfc8db0d892962492674a191cb2e8967325a269
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

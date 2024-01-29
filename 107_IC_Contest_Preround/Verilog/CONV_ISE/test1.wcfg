@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Theo/Desktop/IC_Contest/107_IC_Contest_Preround/Verilog/CONV_ISE/testfixture_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="testfixture" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/testfixture/u_CONV/bias" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bias[19:0]</obj_property>
+      <obj_property name="ObjectShortName">bias[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_CONV/busy" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">busy</obj_property>
+      <obj_property name="ObjectShortName">busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_CONV/iaddr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">iaddr[11:0]</obj_property>
+      <obj_property name="ObjectShortName">iaddr[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_CONV/idata" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">idata[19:0]</obj_property>
+      <obj_property name="ObjectShortName">idata[19:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_CONV/image_temp_row" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">image_temp_row[2:0,2:0,19:0]</obj_property>
+      <obj_property name="ObjectShortName">image_temp_row[2:0,2:0,19:0]</obj_property>
+      <wvobject fp_name="/testfixture/u_CONV/image_temp_row[2]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[2,2:0,19:0]</obj_property>
+         <obj_property name="ObjectShortName">image_temp_row[2,2:0,19:0]</obj_property>
+         <wvobject fp_name="/testfixture/u_CONV/image_temp_row[2,2]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[2,2,19:0]</obj_property>
+            <obj_property name="ObjectShortName">image_temp_row[2,2,19:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/testfixture/u_CONV/image_temp_row[2,1]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[2,1,19:0]</obj_property>
+            <obj_property name="ObjectShortName">image_temp_row[2,1,19:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/testfixture/u_CONV/image_temp_row[2,0]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[2,0,19:0]</obj_property>
+            <obj_property name="ObjectShortName">image_temp_row[2,0,19:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/testfixture/u_CONV/image_temp_row[1]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[1,2:0,19:0]</obj_property>
+         <obj_property name="ObjectShortName">image_temp_row[1,2:0,19:0]</obj_property>
+         <wvobject fp_name="/testfixture/u_CONV/image_temp_row[1,2]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[1,2,19:0]</obj_property>
+            <obj_property name="ObjectShortName">image_temp_row[1,2,19:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/testfixture/u_CONV/image_temp_row[1,1]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[1,1,19:0]</obj_property>
+            <obj_property name="ObjectShortName">image_temp_row[1,1,19:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/testfixture/u_CONV/image_temp_row[1,0]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[1,0,19:0]</obj_property>
+            <obj_property name="ObjectShortName">image_temp_row[1,0,19:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/testfixture/u_CONV/image_temp_row[0]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[0,2:0,19:0]</obj_property>
+         <obj_property name="ObjectShortName">image_temp_row[0,2:0,19:0]</obj_property>
+         <wvobject fp_name="/testfixture/u_CONV/image_temp_row[0,2]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[0,2,19:0]</obj_property>
+            <obj_property name="ObjectShortName">image_temp_row[0,2,19:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/testfixture/u_CONV/image_temp_row[0,1]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[0,1,19:0]</obj_property>
+            <obj_property name="ObjectShortName">image_temp_row[0,1,19:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/testfixture/u_CONV/image_temp_row[0,0]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[0,0,19:0]</obj_property>
+            <obj_property name="ObjectShortName">image_temp_row[0,0,19:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_CONV/kernel_column" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">kernel_column[1:0]</obj_property>
+      <obj_property name="ObjectShortName">kernel_column[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_CONV/kernel_row" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">kernel_row[1:0]</obj_property>
+      <obj_property name="ObjectShortName">kernel_row[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_CONV/row" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">row[5:0]</obj_property>
+      <obj_property name="ObjectShortName">row[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_CONV/column" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">column[5:0]</obj_property>
+      <obj_property name="ObjectShortName">column[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_CONV/column_pos" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">column_pos[5:0]</obj_property>
+      <obj_property name="ObjectShortName">column_pos[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_CONV/row_pos" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">row_pos[5:0]</obj_property>
+      <obj_property name="ObjectShortName">row_pos[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_CONV/csel" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">csel[2:0]</obj_property>
+      <obj_property name="ObjectShortName">csel[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_CONV/cwr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cwr</obj_property>
+      <obj_property name="ObjectShortName">cwr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_CONV/caddr_wr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">caddr_wr[11:0]</obj_property>
+      <obj_property name="ObjectShortName">caddr_wr[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_CONV/cdata_wr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cdata_wr[19:0]</obj_property>
+      <obj_property name="ObjectShortName">cdata_wr[19:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_CONV/acc" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">acc[39:0]</obj_property>
+      <obj_property name="ObjectShortName">acc[39:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_CONV/kernel_w" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">kernel_w[19:0]</obj_property>
+      <obj_property name="ObjectShortName">kernel_w[19:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_CONV/matrix_num" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">matrix_num[19:0]</obj_property>
+      <obj_property name="ObjectShortName">matrix_num[19:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_CONV/mul" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mul[39:0]</obj_property>
+      <obj_property name="ObjectShortName">mul[39:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_CONV/curr_state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">curr_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">curr_state[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_CONV/kernel_sel" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">kernel_sel</obj_property>
+      <obj_property name="ObjectShortName">kernel_sel</obj_property>
+   </wvobject>
+</wave_config>
