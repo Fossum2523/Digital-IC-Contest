@@ -1,0 +1,31 @@
+# 計算CHIP總腳位數
+1. llength [get_ports]
+2. llength [get_object_name [get_ports]]
+3. sizeof_collection [get_ports]
+
+#檢查有無latch
+sizeof_collection [get_pins */CK] 減去 sizeof_collection [get_pins */Q] 看是否爲零
+
+# 遇到不會用的指令時
+1. create_clock -help                  # 顯示可以什麼參數
+2. man create_clock                    # 詳細說明怎麼用 （manual）
+
+# 有檔案連接不到lib時
+1. printvar search_path                # 可以看 search_path都連結到那些路徑
+2. print_variable_group system         # 可以看到整個系統目前所有的連結資訊
+
+# 用來解決 Input time violation
+# Setup time violation
+1. set_input_delay -max 0.3 -clock clk -clock_fall [get_ports A]   # input訊號從負緣開始算最大要delay 0.3ns才會到 portA
+2. set_input_delay -max 1.2 -clock clk -add_delay  [get_ports A]   # input訊號從正緣開始算最長要delay 1.2ns才會到 portA 
+                                                                                      # 兩條以上的input_delay要加 '-add_delay'
+# Hold time violation
+1. set_input_delay -min 0.2 -clock clk -add_delay [get_ports A]    # input訊號從正緣開始算最短要delay 0.2ns才會到 portA 
+
+# 用來解決 Output time violation
+# Setup time violation
+1. set_output_delay -max 0.15 -clock clk1 [get_ports OUT1]   # output訊號從正緣開始算最大要delay 0.15ns才會到 portOUT1
+2. set_output_delay -max 0.52 -clock clk2 -add_delay  [get_ports OUT1]   # output訊號從正緣開始算最長要delay 0.52ns才會到 portOUT1 
+                                                                                      # 兩條以上的input_delay要加 '-add_delay'
+# Hold time violation
+1. set_output_delay -min 0.1 -clock clk1 -add_delay [get_ports OUT1]    # output訊號從正緣開始算最短要delay 0.1ns才會到 portOUT1
