@@ -1,0 +1,5 @@
+-top top
+-clock clk 10
+-reset reset 1
+-verboseReport
+-covInput simv.vdb

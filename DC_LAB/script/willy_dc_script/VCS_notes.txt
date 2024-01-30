@@ -1,0 +1,17 @@
+VCS: Verilog Compiled Simulator
+
+Compile 指令：
+> vcs design.v design_tb.v
+- 檢查語法錯誤
+- 檢查階層連接
+- 檢查compile 選項
+- 執行最佳化
+- 生成 simv檔
+
+Run simulation 指令：
+> simv
+- 執行design with testbench
+
+Compile + Simulation 指令：
+> vcs -R design.v design_tb.v
+
