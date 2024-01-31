@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="testfixture_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="testfixture" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="4,560,749.200 ns"></ZoomStartTime>
+      <ZoomEndTime time="4,561,493.201 ns"></ZoomEndTime>
+      <Cursor1Time time="4,561,144.700 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="112"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="22" />
+   <wvobject fp_name="/testfixture/u_JAM/W" type="array">
+      <obj_property name="ElementShortName">W[2:0]</obj_property>
+      <obj_property name="ObjectShortName">W[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_JAM/J" type="array">
+      <obj_property name="ElementShortName">J[2:0]</obj_property>
+      <obj_property name="ObjectShortName">J[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_JAM/Cost" type="array">
+      <obj_property name="ElementShortName">Cost[6:0]</obj_property>
+      <obj_property name="ObjectShortName">Cost[6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_JAM/MatchCount" type="array">
+      <obj_property name="ElementShortName">MatchCount[3:0]</obj_property>
+      <obj_property name="ObjectShortName">MatchCount[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_JAM/MinCost" type="array">
+      <obj_property name="ElementShortName">MinCost[9:0]</obj_property>
+      <obj_property name="ObjectShortName">MinCost[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_JAM/Valid" type="logic">
+      <obj_property name="ElementShortName">Valid</obj_property>
+      <obj_property name="ObjectShortName">Valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_JAM/total_cost" type="array">
+      <obj_property name="ElementShortName">total_cost[9:0]</obj_property>
+      <obj_property name="ObjectShortName">total_cost[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_JAM/i" type="array">
+      <obj_property name="ElementShortName">i[3:0]</obj_property>
+      <obj_property name="ObjectShortName">i[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_JAM/cnt_40320" type="array">
+      <obj_property name="ElementShortName">cnt_40320[15:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_40320[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_JAM/p" type="array">
+      <obj_property name="ElementShortName">p[2:0]</obj_property>
+      <obj_property name="ObjectShortName">p[2:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_JAM/p_plus_1" type="array">
+      <obj_property name="ElementShortName">p_plus_1[2:0]</obj_property>
+      <obj_property name="ObjectShortName">p_plus_1[2:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_JAM/LCG_cnt" type="array">
+      <obj_property name="ElementShortName">LCG_cnt[2:0]</obj_property>
+      <obj_property name="ObjectShortName">LCG_cnt[2:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_JAM/min" type="array">
+      <obj_property name="ElementShortName">min[3:0]</obj_property>
+      <obj_property name="ObjectShortName">min[3:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_JAM/min_pos" type="array">
+      <obj_property name="ElementShortName">min_pos[2:0]</obj_property>
+      <obj_property name="ObjectShortName">min_pos[2:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_JAM/change_time" type="array">
+      <obj_property name="ElementShortName">change_time[1:0]</obj_property>
+      <obj_property name="ObjectShortName">change_time[1:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_JAM/CHMT_cnt" type="array">
+      <obj_property name="ElementShortName">CHMT_cnt[1:0]</obj_property>
+      <obj_property name="ObjectShortName">CHMT_cnt[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_JAM/CHMT_a" type="array">
+      <obj_property name="ElementShortName">CHMT_a[2:0]</obj_property>
+      <obj_property name="ObjectShortName">CHMT_a[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_JAM/CHMT_b" type="array">
+      <obj_property name="ElementShortName">CHMT_b[2:0]</obj_property>
+      <obj_property name="ObjectShortName">CHMT_b[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_JAM/CalCost_curr_state" type="array">
+      <obj_property name="ElementShortName">CalCost_curr_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">CalCost_curr_state[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_JAM/LX_Sort_curr_state" type="array">
+      <obj_property name="ElementShortName">LX_Sort_curr_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">LX_Sort_curr_state[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_JAM/arrange_1" type="array">
+      <obj_property name="ElementShortName">arrange_1[7:0][2:0]</obj_property>
+      <obj_property name="ObjectShortName">arrange_1[7:0][2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_JAM/arrange_2" type="array">
+      <obj_property name="ElementShortName">arrange_2[7:0][2:0]</obj_property>
+      <obj_property name="ObjectShortName">arrange_2[7:0][2:0]</obj_property>
+   </wvobject>
+</wave_config>

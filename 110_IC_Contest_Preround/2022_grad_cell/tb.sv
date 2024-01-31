@@ -46,11 +46,11 @@ JAM u_JAM(.CLK(CLK),
 
 always begin #(`CYCLE/2) CLK = ~CLK; end
 
-initial begin
-    $fsdbDumpfile("JAM.fsdb");
-    $fsdbDumpvars();
-    $fsdbDumpMDA;
-end
+//initial begin
+//    $fsdbDumpfile("JAM.fsdb");
+//    $fsdbDumpvars();
+//    $fsdbDumpMDA;
+//end
 
 //initial begin
 //    $dumpvars();
