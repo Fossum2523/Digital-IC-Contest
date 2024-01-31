@@ -1,22 +1,18 @@
-module CalCost(
+module CalCost_2(
     input [6:0]Cost,
     input start,
     input RST,
     input CLK,
-    input [2:0]arrange[7:0],
     output reg [3:0] MatchCount,
     output reg [9:0] MinCost,
-    output reg done,
-    output reg [2:0] W,
-    output reg [2:0] J
+    output reg done
 );
 
 localparam [3:0]IDLE = 4'd0,
                 OVER = 4'd1,
                 CAL_COST = 4'd2,
                 FOR_I = 4'd3,
-                CAL_MIN = 4'd4,
-                GET_COST = 4'd5;
+                CAL_MIN = 4'd4;
 
 
 //variable definition str----------------------------
@@ -40,18 +36,15 @@ end
 always @(*) begin
     case(curr_state)
         IDLE:begin
-            if (start) next_state = GET_COST;
+            if (start) next_state = CAL_COST;
             else next_state = IDLE;
-        end
-        GET_COST:begin
-            next_state = CAL_COST;
         end
         CAL_COST:begin
             next_state = FOR_I;
         end
         FOR_I:begin
             if (i == 7) next_state = CAL_MIN;
-            else next_state = GET_COST;
+            else next_state = CAL_COST;
         end
         CAL_MIN:begin
             next_state = OVER;
@@ -73,12 +66,6 @@ always @(posedge CLK) begin
             total_cost   <= 10'd0;
             i            <= 4'd0;
             done         <= 1'd0;
-            W            <= 3'd0;
-            J            <= 3'd0;
-        end
-        GET_COST:begin
-            W    <=  i;
-            J    <=  arrange[i];
         end
         CAL_COST:begin
             total_cost <= total_cost + {3'd0, Cost};
@@ -99,7 +86,6 @@ always @(posedge CLK) begin
         OVER:begin
             done <= 1'd1;
         end
-        default:next_state = IDLE;
     endcase
 end
 //RTL operation end----------------------------------
