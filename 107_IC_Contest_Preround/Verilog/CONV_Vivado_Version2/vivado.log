@@ -3,6 +3,7 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+<<<<<<< HEAD
 # Start of session at: Tue Jan 30 22:56:51 2024
 # Process ID: 8156
 # Current directory: E:/Projects 專案/IC 同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2
@@ -73,21 +74,103 @@ INFO: [Project 1-313] Project file moved from 'C:/Users/fossu/Desktop/IC_contest
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
 INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'E:/Projects 專案/IC 同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.gen/sources_1'.
+=======
+# Start of session at: Wed Jan 31 10:16:31 2024
+# Process ID: 17264
+# Current directory: C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11736 C:\Users\fossu\Desktop\IC同步資料夾\107_IC_Contest_Preround\Verilog\CONV_Vivado_Version2\CONV_Vivado_Version1.xpr
+# Log file: C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/vivado.log
+# Journal file: C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2\vivado.jou
+# Running On: DESKTOP-5RUADSS, OS: Windows, CPU Frequency: 3593 MHz, CPU Physical cores: 12, Host memory: 34287 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2'
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'C:/Users/fossu/Desktop/IC_contest/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2' since last save.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.gen/sources_1'.
+>>>>>>> 55671f385c0d08e2faf56855663cc70d316613a7
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
+<<<<<<< HEAD
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
 open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1500.965 ; gain = 334.047
+=======
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2023.2/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:35 . Memory (MB): peak = 1452.688 ; gain = 239.809
+>>>>>>> 55671f385c0d08e2faf56855663cc70d316613a7
 update_compile_order -fileset sources_1
 launch_simulation
 Command: launch_simulation 
 INFO: [Vivado 12-12493] Simulation top is 'testfixture'
 WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+<<<<<<< HEAD
 INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Projects 專案/IC 同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim'
+=======
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim'
+>>>>>>> 55671f385c0d08e2faf56855663cc70d316613a7
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.2/tps/boost_1_72_0'
 INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+<<<<<<< HEAD
 INFO: [SIM-utils-43] Exported 'E:/Projects 專案/IC 同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim/cnn_weight0.dat'
 INFO: [SIM-utils-43] Exported 'E:/Projects 專案/IC 同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim/cnn_bias0.dat'
 INFO: [SIM-utils-43] Exported 'E:/Projects 專案/IC 同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim/cnn_layer0_exp0.dat'
@@ -120,6 +203,40 @@ INFO: [VRFC 10-311] analyzing module glbl
 INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Projects 專案/IC 同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim'
+=======
+INFO: [SIM-utils-43] Exported 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim/cnn_weight0.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim/cnn_bias0.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim/cnn_layer0_exp0.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim/cnn_layer0_exp1.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim/cnn_layer2_exp.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim/cnn_layer1_exp1.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim/cnn_sti.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim/cnn_layer1_exp0.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim/cnn_weight0.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim/cnn_bias0.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim/cnn_layer0_exp0.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim/cnn_layer0_exp1.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim/cnn_layer2_exp.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim/cnn_layer1_exp1.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim/cnn_sti.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim/cnn_layer1_exp0.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+ECHO 已關閉。
+ECHO 已關閉。
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.srcs/sources_1/imports/2019_grad_cell/CONV.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CONV
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.srcs/sim_1/imports/2019_grad_cell/testfixture.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testfixture
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim'
+>>>>>>> 55671f385c0d08e2faf56855663cc70d316613a7
 "xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
 ECHO 已關閉。
 ECHO 已關閉。
@@ -282,14 +399,24 @@ Compiling module xil_defaultlib.CONV
 Compiling module xil_defaultlib.testfixture
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot testfixture_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1501.133 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
+<<<<<<< HEAD
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Projects 專案/IC 同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
    with args "testfixture_behav -key {Behavioral:sim_1:Functional:testfixture} -tclbatch {testfixture.tcl} -view {{E:/Projects 專案/IC 同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/Layer3_wave.wcfg}} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
 Time resolution is 1 ps
 open_wave_config {E:/Projects 專案/IC 同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/Layer3_wave.wcfg}
+=======
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testfixture_behav -key {Behavioral:sim_1:Functional:testfixture} -tclbatch {testfixture.tcl} -view {C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/Layer3_wave.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/Layer3_wave.wcfg
+>>>>>>> 55671f385c0d08e2faf56855663cc70d316613a7
 source testfixture.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
@@ -309,7 +436,11 @@ START!!! Simulation Start .....
 
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'testfixture_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+<<<<<<< HEAD
 launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1572.789 ; gain = 14.867
+=======
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 1521.531 ; gain = 42.559
+>>>>>>> 55671f385c0d08e2faf56855663cc70d316613a7
 run all
 Layer 0 (Convolutional Output) with Kernel 0 is correct !
 Layer 0 (Convolutional Output) with Kernel 1 is correct!
@@ -328,6 +459,7 @@ Layer 2 output was fail!
 
 -----------------------------------------------------
 
+<<<<<<< HEAD
 $finish called at time : 6799640 ns : File "E:/Projects 專案/IC 同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.srcs/sim_1/imports/2019_grad_cell/testfixture.v" Line 277
 add_bp {E:/Projects 專案/IC 同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.srcs/sim_1/imports/2019_grad_cell/testfixture.v} 257
 remove_bps -file {E:/Projects 專案/IC 同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.srcs/sim_1/imports/2019_grad_cell/testfixture.v} -line 257
@@ -339,3 +471,185 @@ close_sim
 INFO: [Simtcl 6-16] Simulation closed
 exit
 INFO: [Common 17-206] Exiting Vivado at Tue Jan 30 23:02:55 2024...
+=======
+$finish called at time : 3399820 ns : File "C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.srcs/sim_1/imports/2019_grad_cell/testfixture.v" Line 277
+current_wave_config {Layer3_wave.wcfg}
+Layer3_wave.wcfg
+add_wave {{/testfixture/u_CONV/busy}} 
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run all
+-----------------------------------------------------
+
+START!!! Simulation Start .....
+
+-----------------------------------------------------
+
+Layer 0 (Convolutional Output) with Kernel 0 is correct !
+Layer 0 (Convolutional Output) with Kernel 1 is correct!
+Layer 1 (Max-pooling Output) with Kernel 0 is correct!
+Layer 1 (Max-pooling Output) with Kernel 1 is correct!
+ 
+-----------------------------------------------------
+
+--------------------- S U M M A R Y -----------------
+
+Congratulations! Layer 0 data have been generated successfully! The result is PASS!!
+
+Congratulations! Layer 1 data have been generated successfully! The result is PASS!!
+
+Layer 2 output was fail! 
+
+-----------------------------------------------------
+
+$finish called at time : 3399820 ns : File "C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.srcs/sim_1/imports/2019_grad_cell/testfixture.v" Line 277
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim/cnn_weight0.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim/cnn_bias0.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim/cnn_layer0_exp0.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim/cnn_layer0_exp1.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim/cnn_layer2_exp.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim/cnn_layer1_exp1.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim/cnn_sti.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim/cnn_layer1_exp0.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim/cnn_weight0.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim/cnn_bias0.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim/cnn_layer0_exp0.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim/cnn_layer0_exp1.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim/cnn_layer2_exp.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim/cnn_layer1_exp1.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim/cnn_sti.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim/cnn_layer1_exp0.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+ECHO 已關閉。
+ECHO 已關閉。
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.srcs/sources_1/imports/2019_grad_cell/CONV.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CONV
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.srcs/sim_1/imports/2019_grad_cell/testfixture.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testfixture
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+ECHO 已關閉。
+ECHO 已關閉。
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.CONV
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+-----------------------------------------------------
+
+START!!! Simulation Start .....
+
+-----------------------------------------------------
+
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1534.648 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:21 ; elapsed = 00:00:18 . Memory (MB): peak = 1538.004 ; gain = 3.355
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\fossu\Desktop\IC同步資料夾\107_IC_Contest_Preround\Verilog\CONV_Vivado_Version2\CONV_Vivado_Version1.srcs\sim_1\imports\2019_grad_cell\testfixture.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\fossu\Desktop\IC同步資料夾\107_IC_Contest_Preround\Verilog\CONV_Vivado_Version2\CONV_Vivado_Version1.srcs\sources_1\imports\2019_grad_cell\CONV.v:]
+ERROR: [Common 17-180] Spawn failed: Illegal byte sequence
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testfixture_vlog.prj"
+ECHO 已關閉。
+ECHO 已關閉。
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.srcs/sources_1/imports/2019_grad_cell/CONV.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CONV
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.srcs/sim_1/imports/2019_grad_cell/testfixture.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testfixture
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+ECHO 已關閉。
+ECHO 已關閉。
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.CONV
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Time resolution is 1 ps
+-----------------------------------------------------
+
+START!!! Simulation Start .....
+
+-----------------------------------------------------
+
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1666.508 ; gain = 0.000
+run all
+Layer 0 (Convolutional Output) with Kernel 0 is correct !
+Layer 0 (Convolutional Output) with Kernel 1 is correct!
+Layer 1 (Max-pooling Output) with Kernel 0 is correct!
+Layer 1 (Max-pooling Output) with Kernel 1 is correct!
+Layer 2 (Flatten  Output) is correct!
+ 
+-----------------------------------------------------
+
+--------------------- S U M M A R Y -----------------
+
+Congratulations! Layer 0 data have been generated successfully! The result is PASS!!
+
+Congratulations! Layer 1 data have been generated successfully! The result is PASS!!
+
+Congratulations! Layer 2 data have been generated successfully! The result is PASS!!
+
+-----------------------------------------------------
+
+$finish called at time : 3461300 ns : File "C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.srcs/sim_1/imports/2019_grad_cell/testfixture.v" Line 277
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 31 10:47:08 2024...
+>>>>>>> 55671f385c0d08e2faf56855663cc70d316613a7

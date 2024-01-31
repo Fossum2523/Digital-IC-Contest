@@ -3,6 +3,7 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+<<<<<<< HEAD
 # Start of session at: Tue Jan 30 22:56:51 2024
 # Process ID: 8156
 # Current directory: E:/Projects 專案/IC 同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2
@@ -30,4 +31,29 @@ add_bp {E:/Projects 專案/IC 同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Viva
 remove_bps -file {E:/Projects 專案/IC 同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.srcs/sim_1/imports/2019_grad_cell/testfixture.v} -line 257
 add_bp {E:/Projects 專案/IC 同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.srcs/sim_1/imports/2019_grad_cell/testfixture.v} 257
 remove_bps -file {E:/Projects 專案/IC 同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.srcs/sim_1/imports/2019_grad_cell/testfixture.v} -line 257
+=======
+# Start of session at: Wed Jan 31 10:16:31 2024
+# Process ID: 17264
+# Current directory: C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11736 C:\Users\fossu\Desktop\IC同步資料夾\107_IC_Contest_Preround\Verilog\CONV_Vivado_Version2\CONV_Vivado_Version1.xpr
+# Log file: C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/vivado.log
+# Journal file: C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2\vivado.jou
+# Running On: DESKTOP-5RUADSS, OS: Windows, CPU Frequency: 3593 MHz, CPU Physical cores: 12, Host memory: 34287 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/Layer3_wave.wcfg
+source testfixture.tcl
+run all
+current_wave_config {Layer3_wave.wcfg}
+add_wave {{/testfixture/u_CONV/busy}} 
+restart
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+>>>>>>> 55671f385c0d08e2faf56855663cc70d316613a7
 close_sim

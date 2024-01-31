@@ -22,4 +22,8 @@ Layer 2 output was fail!
 
 -----------------------------------------------------
 
+<<<<<<< HEAD
 $finish called at time : 6799640 ns : File "E:/Projects 專案/IC 同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.srcs/sim_1/imports/2019_grad_cell/testfixture.v" Line 277
+=======
+$finish called at time : 3461300 ns : File "C:/Users/fossu/Desktop/IC同步資料夾/107_IC_Contest_Preround/Verilog/CONV_Vivado_Version2/CONV_Vivado_Version1.srcs/sim_1/imports/2019_grad_cell/testfixture.v" Line 277
+>>>>>>> 55671f385c0d08e2faf56855663cc70d316613a7

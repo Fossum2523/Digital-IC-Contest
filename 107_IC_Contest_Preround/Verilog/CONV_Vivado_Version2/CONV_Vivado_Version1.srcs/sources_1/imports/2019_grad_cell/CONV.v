@@ -288,6 +288,9 @@ always @(posedge clk) begin
 		LYR1:begin
 			busy <= 1'b1;
 		end
+		LYR2:begin
+			busy <= 1'b1;
+		end
 		default:busy <= 1'b0;
     endcase
 end
@@ -558,10 +561,6 @@ always @(posedge clk) begin
 		end
 		FLCG:begin
 			if(~flmm_sel)flmm_sel <= 1'b1;
-		end
-        default:begin
-			pixel_cnt 	<= 10'd0;
-			flmm_sel 	<= 1'b0;
 		end
     endcase
 end

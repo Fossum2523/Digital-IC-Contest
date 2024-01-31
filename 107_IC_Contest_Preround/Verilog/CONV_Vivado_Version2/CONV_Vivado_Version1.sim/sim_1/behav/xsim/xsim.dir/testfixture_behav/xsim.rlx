@@ -1,6 +1,10 @@
 
 { 
+<<<<<<< HEAD
     crc :  12367469048221328138  , 
+=======
+    crc :  5030369742253752494  , 
+>>>>>>> 55671f385c0d08e2faf56855663cc70d316613a7
     ccp_crc :  0  , 
     cmdline : " --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl" , 
     buildDate : "Oct 13 2023" , 
