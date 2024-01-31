@@ -68,7 +68,7 @@ end
 always @(posedge CLK) begin
     case(curr_state)
         IDLE:begin
-            MinCost      <= 10'd100;
+            MinCost      <= 10'd1023;
             MatchCount   <= 4'd0;
             total_cost   <= 10'd0;
             i            <= 4'd0;

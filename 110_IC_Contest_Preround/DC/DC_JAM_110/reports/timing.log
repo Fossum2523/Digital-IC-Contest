@@ -1,0 +1,35 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : JAM
+Version: S-2021.06-SP1
+Date   : Thu Feb  1 01:58:13 2024
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: i_reg[0] (rising edge-triggered flip-flop)
+  Endpoint: J[2] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  i_reg[0]/CK (DFFQX1)                     0.00       0.00 r
+  i_reg[0]/Q (DFFQX1)                      0.41       0.41 r
+  U1012/Y (CLKINVX1)                       0.10       0.51 f
+  U987/Y (NAND2X1)                         0.19       0.70 r
+  U967/Y (OAI22XL)                         0.14       0.83 f
+  U966/Y (AOI221XL)                        0.20       1.03 r
+  U961/Y (MXI2X1)                          0.11       1.14 f
+  J[2] (out)                               0.00       1.14 f
+  data arrival time                                   1.14
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
