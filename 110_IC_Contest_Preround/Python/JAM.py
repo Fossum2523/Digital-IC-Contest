@@ -69,6 +69,9 @@ for time_cnt in range(nl_num-1):
 
     # print(arrange)
 
+
+
+
     #step 3 end----------------------------------------------------------------------
 
     total_num = 0
