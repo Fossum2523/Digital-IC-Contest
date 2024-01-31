@@ -34,7 +34,7 @@ end
 initial begin
     RST= 1'b1; //clear FFs
     repeat (5 ) @(negedge CLK ) ; //wait for 5 CLK cycles
-    RST = 1'b1; //set ready to start
+    RST = 1'b0; //set ready to start
     repeat (5 ) @(negedge CLK ) ; //wait for 5 CLK cycles
 
     @(negedge CLK ) Cost = 50; 
@@ -76,9 +76,10 @@ initial begin
     start = 1'b1;
     @(negedge CLK ) start = 1'b0;
     wait (done);
+    $finish;
 end
 
-initial #6000000 $finish ; //when to finsish
+//initial #6000000 $finish ; //when to finsish
 
 initial //the value you want to monitor
     $monitor ( $realtime , "ns start=%d, Cost=%d, MinCost=%d, MatchCount=%d, done=%d \n" ,
