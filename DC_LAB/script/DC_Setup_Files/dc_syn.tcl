@@ -17,7 +17,7 @@ set_fix_multiple_port_nets -all -buffer_constants [get_designs *]
 set_max_area 0
 set compile_top_all_paths true   
 
-set_host_options -max_cores 8
+set_host_options -max_cores 16
 
 #Synthesis all design
 compile -map_effort high -area_effort high
