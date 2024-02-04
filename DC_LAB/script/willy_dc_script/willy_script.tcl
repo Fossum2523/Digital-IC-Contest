@@ -7,7 +7,7 @@ define_design_lib model -path ./model
 ##讀取檔案 資料型態 'pla' 檔案爲 'converter.pla'
 ##read_file -format pla  converter.pla
 ##讀取檔案 資料型態 'verilog'， -autoread 自動讀取，-top module叫做$DESIGN，-recursive 在{ }路徑下的檔案都尋找
-read_file -format verilog -autoread -top $DESIGN -recursive {./}
+read_file -format verilog -autoread -top $DESIGN -recursive {./} 
 
 #分析這些 HDL source 之中有無互相連結，把結果儲存到 library 'model'，analyze + autoread 有解密的功能
 #analyze + elaborate 才會有階層的概念，才能將引用的module參數作更改
@@ -15,7 +15,7 @@ read_file -format verilog -autoread -top $DESIGN -recursive {./}
 analyze -library model -format verilog -autoread -recursive ./
 
 #建置架構，名稱為'top'，架構爲'verilog'，library爲'model'
-elaborate top -architecture verilog -library model
+elaborate $DESIGN -architecture verilog -library model
 
 #把top level 設定到'top'
 current_design top

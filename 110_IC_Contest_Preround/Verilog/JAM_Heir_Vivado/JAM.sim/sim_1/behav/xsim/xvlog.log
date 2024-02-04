@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Projects 專案/IC 競賽/110_IC_Contest_Preround/Verilog/JAM_Heir_Vivado/CalCost.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CalCost
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Projects 專案/IC 競賽/110_IC_Contest_Preround/Verilog/JAM_Heir_Vivado/JAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module JAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Projects 專案/IC 競賽/110_IC_Contest_Preround/Verilog/JAM_Heir_Vivado/LX_Sort.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LX_Sort
