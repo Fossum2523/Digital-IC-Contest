@@ -1,0 +1,703 @@
+
+Warning-[LNX_OS_VERUN] Unsupported Linux version
+  Linux version 'CentOS Stream release 8' is not supported on 'x86_64' 
+  officially, assuming linux compatibility by default. Set VCS_ARCH_OVERRIDE 
+  to linux or suse32 to override.
+  Please refer to release notes for information on supported platforms.
+
+Command: vcs -R -sverilog tb.sv JAM_syn.v +define+USECOLOR+SDF +access+r +vcs+fsdbon \
++fsdb+mda +fsdbfile+JAM.fsdb -v /cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v \
++maxdelays -l run_gate.log
+*** Using c compiler gcc instead of cc ...
+                         Chronologic VCS (TM)
+            Version V-2023.12 -- Mon Feb  5 11:28:41 2024
+
+                    Copyright (c) 1991 - 2023 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'tb.sv'
+Parsing design file 'JAM_syn.v'
+Parsing library file '/cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v'
+Top Level Modules:
+       testfixture
+TimeScale is 1 ns / 1 ps
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 114
+JAM, "DFFX1 \inst1/min_reg[3] ( .D (\inst1/n442 ),  .CK (CLK),  .QN (n1325));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 115
+JAM, "DFFX1 \inst1/min_reg[2] ( .D (\inst1/n439 ),  .CK (CLK),  .QN (n2499));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 116
+JAM, "DFFX1 \inst1/min_reg[0] ( .D (\inst1/n441 ),  .CK (CLK),  .QN (n2498));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 117
+JAM, "DFFX1 \inst1/min_reg[1] ( .D (\inst1/n440 ),  .CK (CLK),  .QN (n1324));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 132
+JAM, "DFFX1 \inst1/min_pos_reg[2] ( .D (\inst1/n445 ),  .CK (CLK),  .QN (n1780));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 137
+JAM, "DFFX1 \inst1/arrange_reg[5][1] ( .D (\inst1/n414 ),  .CK (CLK),  .Q (n1240));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 138
+JAM, "DFFX1 \inst1/arrange_reg[6][0] ( .D (\inst1/n411 ),  .CK (CLK),  .Q (n1340));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 163
+JAM, "DFFX1 \inst0/MinCost_reg[0] ( .D (\inst0/n118 ),  .CK (CLK),  .QN (n2491));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 164
+JAM, "DFFX1 \inst0/arrange_reg[7][2] ( .D (n1760),  .CK (CLK),  .QN (n1305));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 165
+JAM, "DFFX1 \inst0/arrange_reg[7][1] ( .D (n593),  .CK (CLK),  .QN (n1301));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 166
+JAM, "DFFX1 \inst0/arrange_reg[7][0] ( .D (n1764),  .CK (CLK),  .QN (n1302));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 167
+JAM, "DFFX1 \inst0/arrange_reg[6][2] ( .D (n2052),  .CK (CLK),  .Q (n2484));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 168
+JAM, "DFFX1 \inst0/arrange_reg[4][2] ( .D (n2051),  .CK (CLK),  .Q (n2482));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 169
+JAM, "DFFX1 \inst0/arrange_reg[5][2] ( .D (n2053),  .CK (CLK),  .Q (n2483));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 170
+JAM, "DFFX1 \inst0/arrange_reg[1][0] ( .D (n2054),  .CK (CLK),  .Q (n2487));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 171
+JAM, "DFFX1 \inst0/arrange_reg[6][1] ( .D (n2042),  .CK (CLK),  .Q (n2485));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 172
+JAM, "DFFX1 \inst0/arrange_reg[5][0] ( .D (n2055),  .CK (CLK),  .Q (n2486));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 179
+JAM, "DFFX1 \inst0/arrange_reg[3][0] ( .D (n585),  .CK (CLK),  .QN (n2535));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 180
+JAM, "DFFX1 \inst0/arrange_reg[3][1] ( .D (n586),  .CK (CLK),  .QN (n2534));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 185
+JAM, "DFFX1 \inst0/arrange_reg[3][2] ( .D (\inst0/n137 ),  .CK (CLK),  .QN (n2503));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 188
+JAM, "DFFX1 \inst0/arrange_reg[2][1] ( .D (n1758),  .CK (CLK),  .QN (n2519));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 189
+JAM, "DFFX1 \inst0/arrange_reg[2][0] ( .D (\inst0/n135 ),  .CK (CLK),  .QN (n1300));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 190
+JAM, "DFFX1 \inst0/arrange_reg[2][2] ( .D (\inst0/n136 ),  .CK (CLK),  .QN (n1306));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 203
+JAM, "DFFRX1 \inst0/curr_state_reg[1] ( .D (\inst0/next_state [1]),  .CK (CLK),  .RN (n1944),  .QN (n2502));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 207
+JAM, "DFFRX1 \inst0/curr_state_reg[0] ( .D (\inst0/next_state [0]),  .CK (CLK),  .RN (n1944),  .QN (n2501));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 211
+JAM, "DFFX1 \inst1/arrange_reg[0][2] ( .D (\inst1/n402 ),  .CK (CLK),  .QN (n1320));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 216
+JAM, "DFFX1 \inst1/arrange_reg[0][0] ( .D (\inst1/n400 ),  .CK (CLK),  .QN (n2504));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 219
+JAM, "DFFX1 \inst1/arrange_reg[0][1] ( .D (\inst1/n401 ),  .CK (CLK),  .QN (n1321));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 222
+JAM, "DFFX1 \inst1/arrange_reg[4][1] ( .D (\inst1/n418 ),  .CK (CLK),  .Q (n1226));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 235
+JAM, "DFFX1 \inst1/arrange_reg[4][2] ( .D (\inst1/n417 ),  .CK (CLK),  .Q (n1225));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 262
+JAM, "DFFRX1 \inst0/curr_state_reg[2] ( .D (\inst0/next_state [2]),  .CK (CLK),  .RN (n1944),  .Q (n1214));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 286
+JAM, "DFFX1 \arrange_reg[1][0] ( .D (n570),  .CK (CLK),  .Q (\arrange[1][0] ));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 287
+JAM, "DFFX1 \arrange_reg[7][0] ( .D (n581),  .CK (CLK),  .Q (\arrange[7][0] ));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 288
+JAM, "DFFX1 \arrange_reg[3][1] ( .D (n578),  .CK (CLK),  .Q (\arrange[3][1] ));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 289
+JAM, "DFFX1 \arrange_reg[3][0] ( .D (n579),  .CK (CLK),  .Q (\arrange[3][0] ));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 290
+JAM, "DFFX1 \arrange_reg[2][1] ( .D (n580),  .CK (CLK),  .Q (\arrange[2][1] ));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 291
+JAM, "DFFX1 \arrange_reg[6][0] ( .D (n42),  .CK (CLK),  .Q (\arrange[6][0] ));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 292
+JAM, "DFFX1 \arrange_reg[5][1] ( .D (n43),  .CK (CLK),  .Q (\arrange[5][1] ));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 293
+JAM, "DFFX1 \arrange_reg[4][1] ( .D (n44),  .CK (CLK),  .Q (\arrange[4][1] ));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 300
+JAM, "DFFX1 \arrange_reg[5][0] ( .D (n577),  .CK (CLK),  .Q (\arrange[5][0] ));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 303
+JAM, "DFFX1 \arrange_reg[4][0] ( .D (n45),  .CK (CLK),  .Q (\arrange[4][0] ));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 304
+JAM, "DFFX1 \arrange_reg[6][1] ( .D (n572),  .CK (CLK),  .Q (\arrange[6][1] ));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 305
+JAM, "DFFX1 \arrange_reg[7][1] ( .D (n576),  .CK (CLK),  .Q (\arrange[7][1] ));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 306
+JAM, "DFFX1 \arrange_reg[1][2] ( .D (n49),  .CK (CLK),  .QN (n1951));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 307
+JAM, "DFFX1 \arrange_reg[1][1] ( .D (n50),  .CK (CLK),  .QN (n1954));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 308
+JAM, "DFFX1 \arrange_reg[3][2] ( .D (n46),  .CK (CLK),  .QN (n1952));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 309
+JAM, "DFFX1 \arrange_reg[2][2] ( .D (n47),  .CK (CLK),  .QN (n1953));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 310
+JAM, "DFFX1 \arrange_reg[2][0] ( .D (n48),  .CK (CLK),  .QN (n1955));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 311
+JAM, "DFFX1 \arrange_reg[0][2] ( .D (n51),  .CK (CLK),  .QN (n1948));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 312
+JAM, "DFFX1 \arrange_reg[0][1] ( .D (n52),  .CK (CLK),  .QN (n1950));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 313
+JAM, "DFFX1 \arrange_reg[0][0] ( .D (n70),  .CK (CLK),  .QN (n1949));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 322
+JAM, "DFFX1 \cnt_reg[10] ( .D (n58),  .CK (CLK),  .QN (n1977));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 325
+JAM, "DFFX1 \cnt_reg[6] ( .D (n62),  .CK (CLK),  .Q (cnt[6]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+JAM_syn.v, 332
+JAM, "EDFFXL Valid_reg( .D (n2603),  .E (n2058),  .CK (CLK),  .QN (n2545));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+   ***   $sdf_annotate() version 1.2R
+   ***    SDF file: "./JAM_syn.sdf"
+   ***    Annotation scope: testfixture.u_JAM
+   ***    No MTM selection argument specified
+   ***    No SCALE FACTORS argument specified
+   ***    No SCALE TYPE argument specified
+   ***    MTM selection defaulted to "TOOL_CONTROL":
+               (+maxdelays compiled, MAXIMUM delays selected)
+   ***    SCALE FACTORS defaulted to "1.0:1.0:1.0":
+   ***    SCALE TYPE defaulted to: "FROM_MTM"
+   ***    Turnoff delay: "FROM_FILE"
+   ***    Approximation (mipd) policy: "MAXIMUM"
+
+   ***    SDF annotation begin: Mon Feb  5 11:28:42 2024
+
+
+SDF Info: +pulse_r/100, +pulse_e/100 in effect
+
+Warning-[SDFCOM_NNTC] Need timing check option +neg_tchk
+./JAM_syn.sdf, 9343
+module: DFFX1, "instance: testfixture.u_JAM.\inst0/i_reg[2] "
+  SDF Error: Negative HOLD value replaced by 0.          
+  Add +neg_tchk to consider Negative delay value.
+
+
+Warning-[SDFCOM_NNTC] Need timing check option +neg_tchk
+./JAM_syn.sdf, 9359
+module: EDFFXL, "instance: testfixture.u_JAM.Valid_reg"
+  SDF Error: Negative HOLD value replaced by 0.          
+  Add +neg_tchk to consider Negative delay value.
+
+
+Warning-[SDFCOM_NNTC] Need timing check option +neg_tchk
+./JAM_syn.sdf, 9361
+module: EDFFXL, "instance: testfixture.u_JAM.Valid_reg"
+  SDF Error: Negative HOLD value replaced by 0.          
+  Add +neg_tchk to consider Negative delay value.
+
+
+Warning-[SDFCOM_NNTC] Need timing check option +neg_tchk
+./JAM_syn.sdf, 9379
+module: DFFRX2, "instance: testfixture.u_JAM.\curr_state_reg[0] "
+  SDF Error: Negative HOLD value replaced by 0.          
+  Add +neg_tchk to consider Negative delay value.
+
+
+Warning-[SDFCOM_NNTC] Need timing check option +neg_tchk
+./JAM_syn.sdf, 9381
+module: DFFRX2, "instance: testfixture.u_JAM.\curr_state_reg[0] "
+  SDF Error: Negative HOLD value replaced by 0.          
+  Add +neg_tchk to consider Negative delay value.
+
+
+Warning-[SDFCOM_NNTC] Need timing check option +neg_tchk
+./JAM_syn.sdf, 9398
+module: DFFX1, "instance: testfixture.u_JAM.\cnt_reg[15] "
+  SDF Error: Negative HOLD value replaced by 0.          
+  Add +neg_tchk to consider Negative delay value.
+
+
+Warning-[SDFCOM_NNTC] Need timing check option +neg_tchk
+./JAM_syn.sdf, 9414
+module: DFFX1, "instance: testfixture.u_JAM.\cnt_reg[14] "
+  SDF Error: Negative HOLD value replaced by 0.          
+  Add +neg_tchk to consider Negative delay value.
+
+
+Warning-[SDFCOM_NNTC] Need timing check option +neg_tchk
+./JAM_syn.sdf, 9430
+module: DFFX1, "instance: testfixture.u_JAM.\cnt_reg[13] "
+  SDF Error: Negative HOLD value replaced by 0.          
+  Add +neg_tchk to consider Negative delay value.
+
+
+Warning-[SDFCOM_NNTC] Need timing check option +neg_tchk
+./JAM_syn.sdf, 9446
+module: DFFX1, "instance: testfixture.u_JAM.\cnt_reg[12] "
+  SDF Error: Negative HOLD value replaced by 0.          
+  Add +neg_tchk to consider Negative delay value.
+
+
+Warning-[SDFCOM_NNTC] Need timing check option +neg_tchk
+./JAM_syn.sdf, 9462
+module: DFFX1, "instance: testfixture.u_JAM.\cnt_reg[6] "
+  SDF Error: Negative HOLD value replaced by 0.          
+  Add +neg_tchk to consider Negative delay value.
+
+All future errors not reported; use +sdfverbose to report them.
+
+          Total errors: 150
+          Total warnings: 0
+   ***    SDF annotation completed: Mon Feb  5 11:28:42 2024
+
+
+Starting vcs inline pass...
+45 modules and 2 UDPs read.
+	However, due to incremental compilation, no re-compilation is necessary.
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -m32 -m32 -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
+-Wl,-rpath=/usr/cad/synopsys/vcs/2023.12/linux/lib -L/usr/cad/synopsys/vcs/2023.12/linux/lib \
+-Wl,-rpath-link=./   objs/amcQw_d.o   _782623_archive_1.so _prev_archive_1.so objs/udps/exIG1.o \
+objs/udps/Cpxa2.o   SIM_l.o       rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o \
+rmar_llvm_0_0.o            -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile \
+-luclinative /usr/cad/synopsys/vcs/2023.12/linux/lib/vcs_tls.o   -Wl,-whole-archive \
+-lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   /usr/cad/synopsys/vcs/2023.12/linux/lib/vcs_save_restore_new.o \
+/usr/cad/synopsys/verdi/2023.12/share/PLI/VCS/LINUX/pli.a /usr/cad/synopsys/vcs/2023.12/linux/lib/ctype-stubs_32.a \
+-ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+Command: /home/merg112/m11202141/IC_Contest/110_IC_Contest_Preround/verilog_heir3_areaOK/./simv +define+USECOLOR+SDF +access+r +fsdb+mda +fsdbfile+JAM.fsdb +maxdelays -a run_gate.log
+Chronologic VCS simulator copyright 1991-2023
+Contains Synopsys proprietary information.
+Compiler version V-2023.12; Runtime version V-2023.12;  Feb  5 11:28 2024
+Doing SDF annotation ...... Done
+*Verdi* Loading libsscore_vcs202312.so
+FSDB Dumper for VCS, Release Verdi_V-2023.12, Linux, 11/15/2023
+(C) 1996 - 2023 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'JAM.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : Enable +mda dumping.
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : Enable +mda dumping.
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* : End of traversing the MDAs.
+*******************************
+** Simulation Start          **
+*******************************
+PATTERN:   1
+-------------- Cost Table --------------
+Jobs       0   1   2   3   4   5   6   7
+worker0:  11  25  53  41  59  32  25  59
+worker1:   4  11  25  11  59  31  53  11
+worker2:  11  59  15  11  15  15  53  53
+worker3:   4  59  32  34  53  41  34  59
+worker4:  15  32  41  34   4  59  34  32
+worker5:  41  59  59   4   4  41  34  34
+worker6:  53  31  25  41  59  32  31  53
+worker7:  11  31  25  11  34  34  53  32
+worker8:  11  31  25  11  34  34  53  32
+
+"/cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v", 17904: Timing violation in testfixture.u_JAM.\inst1/arrange_reg[6][0] 
+    $setup( negedge D:4980, posedge CK &&& (flag == 1'b1):5000, limit: 349 );
+
+"/cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v", 17904: Timing violation in testfixture.u_JAM.\inst1/arrange_reg[1][1] 
+    $setup( negedge D:4875, posedge CK &&& (flag == 1'b1):5000, limit: 353 );
+
+"/cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v", 17903: Timing violation in testfixture.u_JAM.\inst1/arrange_reg[5][0] 
+    $setup( posedge D:4919, posedge CK &&& (flag == 1'b1):5000, limit: 349 );
+
+"/cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v", 17903: Timing violation in testfixture.u_JAM.\inst1/arrange_reg[1][0] 
+    $setup( posedge D:4919, posedge CK &&& (flag == 1'b1):5000, limit: 349 );
+
+"/cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v", 17904: Timing violation in testfixture.u_JAM.\inst1/arrange_reg[0][0] 
+    $setup( negedge D:4873, posedge CK &&& (flag == 1'b1):5000, limit: 353 );
+
+"/cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v", 17903: Timing violation in testfixture.u_JAM.\inst1/arrange_reg[3][0] 
+    $setup( posedge D:4924, posedge CK &&& (flag == 1'b1):5000, limit: 350 );
+
+"/cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v", 17904: Timing violation in testfixture.u_JAM.\inst1/arrange_reg[0][1] 
+    $setup( negedge D:4875, posedge CK &&& (flag == 1'b1):5000, limit: 353 );
+
+"/cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v", 17904: Timing violation in testfixture.u_JAM.\inst1/arrange_reg[4][0] 
+    $setup( negedge D:4980, posedge CK &&& (flag == 1'b1):5000, limit: 349 );
+
+"/cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v", 17903: Timing violation in testfixture.u_JAM.\inst1/arrange_reg[7][2] 
+    $setup( posedge D:4901, posedge CK &&& (flag == 1'b1):5000, limit: 358 );
+
+"/cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v", 17903: Timing violation in testfixture.u_JAM.\inst1/arrange_reg[4][2] 
+    $setup( posedge D:4919, posedge CK &&& (flag == 1'b1):5000, limit: 349 );
+
+"/cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v", 17904: Timing violation in testfixture.u_JAM.\inst0/MatchCount_reg[1] 
+    $setup( negedge D:4857, posedge CK &&& (flag == 1'b1):5000, limit: 335 );
+
+"/cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v", 17904: Timing violation in testfixture.u_JAM.\inst0/MatchCount_reg[3] 
+    $setup( negedge D:4964, posedge CK &&& (flag == 1'b1):5000, limit: 337 );
+
+"/cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v", 17903: Timing violation in testfixture.u_JAM.\inst1/arrange_reg[5][2] 
+    $setup( posedge D:4919, posedge CK &&& (flag == 1'b1):5000, limit: 349 );
+
+"/cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v", 17903: Timing violation in testfixture.u_JAM.\inst1/arrange_reg[6][2] 
+    $setup( posedge D:4919, posedge CK &&& (flag == 1'b1):5000, limit: 349 );
+
+"/cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v", 17903: Timing violation in testfixture.u_JAM.\inst1/arrange_reg[2][1] 
+    $setup( posedge D:4919, posedge CK &&& (flag == 1'b1):5000, limit: 353 );
+
+"/cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v", 17904: Timing violation in testfixture.u_JAM.\inst1/arrange_reg[2][0] 
+    $setup( negedge D:4873, posedge CK &&& (flag == 1'b1):5000, limit: 349 );
+
+"/cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v", 17903: Timing violation in testfixture.u_JAM.\inst1/arrange_reg[3][1] 
+    $setup( posedge D:4924, posedge CK &&& (flag == 1'b1):5000, limit: 353 );
+
+"/cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v", 17903: Timing violation in testfixture.u_JAM.\inst1/arrange_reg[7][1] 
+    $setup( posedge D:4901, posedge CK &&& (flag == 1'b1):5000, limit: 358 );
+
+"/cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v", 17903: Timing violation in testfixture.u_JAM.\inst1/arrange_reg[6][1] 
+    $setup( posedge D:4919, posedge CK &&& (flag == 1'b1):5000, limit: 353 );
+
+"/cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v", 17904: Timing violation in testfixture.u_JAM.\cnt_reg[1] 
+    $setup( negedge D:4884, posedge CK &&& (flag == 1'b1):5000, limit: 333 );
+
+"/cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v", 17904: Timing violation in testfixture.u_JAM.\cnt_reg[5] 
+    $setup( negedge D:4884, posedge CK &&& (flag == 1'b1):5000, limit: 343 );
+
+"/cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v", 17904: Timing violation in testfixture.u_JAM.\cnt_reg[3] 
+    $setup( negedge D:4884, posedge CK &&& (flag == 1'b1):5000, limit: 333 );
+
+"/cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v", 17904: Timing violation in testfixture.u_JAM.\cnt_reg[9] 
+    $setup( negedge D:4879, posedge CK &&& (flag == 1'b1):5000, limit: 342 );
+
+"/cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v", 17904: Timing violation in testfixture.u_JAM.\cnt_reg[11] 
+    $setup( negedge D:4884, posedge CK &&& (flag == 1'b1):5000, limit: 333 );
+
+"/cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v", 17904: Timing violation in testfixture.u_JAM.\cnt_reg[13] 
+    $setup( negedge D:4879, posedge CK &&& (flag == 1'b1):5000, limit: 334 );
+
+----------------------------------------------------------------------
+Get Valid at cycle:    403641
+receive MinCost/MatchCount=  119/ 3 , golden MinCost/MatchCount= 119/ 3
+----------------------------------------------------------------------
+*************************
+**  FUNCTION  CORRECT  **
+*************************
+
+$finish called from file "tb.sv", line 186.
+$finish at simulation time           4036405000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 4036405000 ps
+CPU Time:     11.430 seconds;       Data structure size:   0.1Mb
+Mon Feb  5 11:28:50 2024
+CPU time: .232 seconds to compile + .126 seconds to elab + .169 seconds to link + 11.453 seconds in simulation

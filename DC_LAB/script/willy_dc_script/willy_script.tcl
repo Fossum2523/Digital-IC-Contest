@@ -12,7 +12,7 @@ read_file -format verilog -autoread -top $DESIGN -recursive {./}
 #分析這些 HDL source 之中有無互相連結，把結果儲存到 library 'model'，analyze + autoread 有解密的功能
 #analyze + elaborate 才會有階層的概念，才能將引用的module參數作更改
 #analyze -library model -format verilog "dir2/timer.v dir2/microwave.v dir2/micro_st.v dir2/loader.v dir2/display.v dir1/top.v"
-analyze -library model -format verilog -autoread -recursive ./
+analyze -library model -format verilog -autoread -recursive {./} -top $DESIGN
 
 #建置架構，名稱為'top'，架構爲'verilog'，library爲'model'
 elaborate $DESIGN -architecture verilog -library model
