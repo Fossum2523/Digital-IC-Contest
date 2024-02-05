@@ -1,3 +1,4 @@
+#for one pattern, if have problem may need to revise cost_rom.txt
 import numpy as np
 #read file str-------------------------------------------------------------------
 f = open('./cost_rom.txt',"r")
