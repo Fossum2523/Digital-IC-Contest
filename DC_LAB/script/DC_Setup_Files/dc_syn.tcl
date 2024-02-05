@@ -1,9 +1,16 @@
 #$DESIGN changes to your design name (use ctl+f)
 sh mkdir reports
+sh mkdir model
+define_design_lib model -path ./model
 
-#Read All Files
-read_file -format verilog  $DESIGN.v
-#read_file -format sverilog  $DESIGN.sv
+##Read All Files
+#read_file -format verilog  $DESIGN.v
+#read_file -format verilog -autoread -top $DESIGN -recursive {./} 
+
+#analyze -library model -format verilog "$DESIGN.v LX_Sort.v JAM.v" 
+analyze -library model -format verilog -autoread -recursive ./
+elaborate $DESIGN -architecture verilog -library model
+
 current_design $DESIGN
 link
 
@@ -17,7 +24,7 @@ set_fix_multiple_port_nets -all -buffer_constants [get_designs *]
 set_max_area 0
 set compile_top_all_paths true   
 
-set_host_options -max_cores 8
+set_host_options -max_cores 16
 
 #Synthesis all design
 compile -map_effort high -area_effort high

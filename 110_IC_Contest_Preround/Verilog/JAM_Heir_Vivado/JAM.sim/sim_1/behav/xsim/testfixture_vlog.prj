@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../CalCost.v" \
+"../../../../JAM.v" \
+"../../../../LX_Sort.v" \
+
+sv xil_defaultlib  \
+"../../../../tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
