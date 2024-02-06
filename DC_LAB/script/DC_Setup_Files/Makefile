@@ -40,4 +40,4 @@ verdi_unr:
 	verdi -cov -covdir simv.vdb -elfile unreachables.el
 
 clean:
-	rm -rf unrSimv* simv* csrc* *.log *key *fsdb *Log *bak *el *report no_trace* vhdl* partition* dprof* clk* *DB *dir work *lib
+	rm -rf unrSimv* simv* csrc* *.log *key *fsdb *Log *bak *el *report no_trace* vhdl* partition* dprof* clk* *DB *dir work *lib *syn.v *novas*
