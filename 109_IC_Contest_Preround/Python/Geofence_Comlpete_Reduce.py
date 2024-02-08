@@ -9,8 +9,10 @@ f.close
 spl = text.split()
 
 correct_num = 0
+#read file end-------------------------------------------------------------------
 
 for object_num in range(50):
+#read fence position str--------------------------------------
     gold_data = spl[object_num*21+2]
 
     fence_pos = np.zeros((6, 2))
@@ -24,15 +26,17 @@ for object_num in range(50):
                 obj2fence_dis[row][0] = int(spl[row*3+column+3+object_num*21])
 
     vector = np.zeros((5, 2))
-
-    for i in range(5):
+#read fence position end--------------------------------------
+    
+#build fence str----------------------------------------------
+    for i in range(5): # build vectors
         vector[i] = fence_pos[i+1] - fence_pos[0] 
 
     cross_result = 0
 
     arrange = np.array([0,0,0,0,0,0])
 
-    for change_vec in range(5) :
+    for change_vec in range(5) : # cross and get swap index
         negtive_num = 0
         for cross_pos in range(5) :
             if cross_pos != change_vec :
@@ -44,10 +48,13 @@ for object_num in range(50):
 
     fence_pos_new = np.zeros([6, 2])
     obj2fence_dis_new = np.zeros((6, 1))
-    for i in range(6):
+
+    for i in range(6): # swap 
         fence_pos_new[arrange[i]] = fence_pos[i]
         obj2fence_dis_new[arrange[i]] = obj2fence_dis[i]
+#build fence end----------------------------------------------
 
+#calculate polygon area str-----------------------------------
     polygon_area = 0
 
     for area_cnt in range(6):
@@ -59,7 +66,9 @@ for object_num in range(50):
     polygon_area = polygon_area / 2
 
     print("polygon_area = ",polygon_area)
-
+#calculate polygon area end-----------------------------------
+    
+#calculate triangle area str----------------------------------
     tri_area = 0
     for tri_cnt in range(6):
         if tri_cnt + 1 != 6:
@@ -81,6 +90,9 @@ for object_num in range(50):
 
     print("tri_area = ", int(tri_area))
 
+#calculate triangle area end----------------------------------
+    
+#determine if object inside the polygon str-------------------
     is_inside = 0
     if (tri_area > polygon_area):
         is_inside = "0"
@@ -94,6 +106,7 @@ for object_num in range(50):
         print("object {} is wrong".format(object_num))
     
     print("\n")
+#determine if object inside the polygon end-------------------
 
     
 
