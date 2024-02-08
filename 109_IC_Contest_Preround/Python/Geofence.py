@@ -52,7 +52,6 @@ for change_vec in range(5) :
     arrange[change_vec+1] = postive_num + 1
 
 print("before arrange vector sequance: \n", fence_pos)
-# print ("[0 1 2 3 4 5]")
 print(arrange)
 
 fence_pos = fence_pos[arrange]
