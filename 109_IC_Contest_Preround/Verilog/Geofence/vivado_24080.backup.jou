@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+<<<<<<< HEAD
+# Start of session at: Thu Feb  8 14:54:54 2024
+# Process ID: 24080
+# Current directory: E:/Projects/IC_Repisitory/109_IC_Contest_Preround/Verilog/Geofence
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6064 E:\Projects\IC_Repisitory\109_IC_Contest_Preround\Verilog\Geofence\Geofence.xpr
+# Log file: E:/Projects/IC_Repisitory/109_IC_Contest_Preround/Verilog/Geofence/vivado.log
+# Journal file: E:/Projects/IC_Repisitory/109_IC_Contest_Preround/Verilog/Geofence\vivado.jou
+# Running On: DESKTOP-9MD5LP4, OS: Windows, CPU Frequency: 2611 MHz, CPU Physical cores: 12, Host memory: 16778 MB
+#-----------------------------------------------------------
+start_gui
+open_project E:/Projects/IC_Repisitory/109_IC_Contest_Preround/Verilog/Geofence/Geofence.xpr
+update_compile_order -fileset sources_1
+=======
+# Start of session at: Thu Feb  8 14:55:44 2024
+# Process ID: 30452
+# Current directory: C:/Users/USER/Desktop/IC compete/109_IC_Contest_Preround/Verilog/Geofence
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12892 C:\Users\USER\Desktop\IC compete\109_IC_Contest_Preround\Verilog\Geofence\Geofence.xpr
+# Log file: C:/Users/USER/Desktop/IC compete/109_IC_Contest_Preround/Verilog/Geofence/vivado.log
+# Journal file: C:/Users/USER/Desktop/IC compete/109_IC_Contest_Preround/Verilog/Geofence\vivado.jou
+# Running On: LAPTOP-2P71OMBV, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 16542 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/USER/Desktop/IC compete/109_IC_Contest_Preround/Verilog/Geofence/Geofence.xpr}
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse -scan_for_includes C:/Users/USER/Desktop/IC_Compete_Sync/109_IC_Contest_Preround/2021_grad_cell/grad.data
+import_files -fileset sim_1 -norecurse C:/Users/USER/Desktop/IC_Compete_Sync/109_IC_Contest_Preround/2021_grad_cell/grad.data
+add_files -fileset sim_1 -norecurse -scan_for_includes C:/Users/USER/Desktop/IC_Compete_Sync/109_IC_Contest_Preround/2021_grad_cell/tb.sv
+import_files -fileset sim_1 -norecurse C:/Users/USER/Desktop/IC_Compete_Sync/109_IC_Contest_Preround/2021_grad_cell/tb.sv
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/USER/Desktop/IC compete/109_IC_Contest_Preround/Verilog/Geofence/Geofence.srcs/sources_1/new/Geofence.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/USER/Desktop/IC compete/109_IC_Contest_Preround/Verilog/Geofence/Geofence.srcs/sources_1/new/Geofence.v}}
+set_property source_mgmt_mode All [current_project]
+add_files -norecurse -scan_for_includes C:/Users/USER/Desktop/IC_Compete_Sync/109_IC_Contest_Preround/2021_grad_cell/2021_grad_cell/geofence.v
+import_files -norecurse C:/Users/USER/Desktop/IC_Compete_Sync/109_IC_Contest_Preround/2021_grad_cell/2021_grad_cell/geofence.v
+>>>>>>> d63f53ddda7fb77fdb56190cb722ef89a7ecc986

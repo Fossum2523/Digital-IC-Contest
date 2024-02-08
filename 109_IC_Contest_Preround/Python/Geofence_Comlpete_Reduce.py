@@ -29,19 +29,19 @@ for object_num in range(50):
 #read fence position end--------------------------------------
     
 #build fence str----------------------------------------------
-    for i in range(5): # build vectors
+    for i in range(5): # build vector
         vector[i] = fence_pos[i+1] - fence_pos[0] 
 
     cross_result = 0
 
     arrange = np.array([0,0,0,0,0,0])
 
-    for change_vec in range(5) : # cross and get swap index
+    for change_vec in range(5) : # change_vector
         negtive_num = 0
-        for cross_pos in range(5) :
+        for cross_pos in range(5) : # cross pos
             if cross_pos != change_vec :
                 cross_result = vector[change_vec][0] * vector[cross_pos][1] - vector[change_vec][1] * vector[cross_pos][0]
-                if cross_result < 0 :
+                if cross_result < 0 : # neg_num
                     negtive_num = negtive_num + 1
         
         arrange[change_vec+1] = negtive_num + 1
