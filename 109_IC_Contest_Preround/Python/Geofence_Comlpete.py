@@ -10,7 +10,7 @@ spl = text.split()
 
 correct_num = 0
 
-for object_num in range(50):
+for object_num in range(1):
     gold_data = spl[object_num*21+2]
 
     fence_pos = np.zeros((6, 2))
@@ -31,7 +31,7 @@ for object_num in range(50):
     for i in range(5):
         vector[i] = fence_pos[i+1] - fence_pos[0] 
 
-    # print(vector)
+    print(vector)
     cross_result = 0
 
     # print (vector)
@@ -62,7 +62,7 @@ for object_num in range(50):
         fence_pos_new[arrange[i]] = fence_pos[i]
         obj2fence_dis_new[arrange[i]] = obj2fence_dis[i]
 
-    # print("after arrange vector sequance: \n", fence_pos_new)
+    print("after arrange vector sequance: \n", fence_pos_new)
 
     # print(arrange)
 
