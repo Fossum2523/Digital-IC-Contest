@@ -32,34 +32,40 @@ reg [2:0]cnt;
 reg [2:0]vector_cnt;
 reg signed [10:0] x_pos [5:0];
 reg signed [10:0] y_pos [5:0];
-reg signed [10:0] r_dis [5:0];
+reg [10:0] r_dis [5:0];
 reg signed [10:0] vectorX [4:0];
 reg signed [10:0] vectorY [4:0];
 reg signed [21:0] cross_result;
 reg [2:0] negtive_num;
 reg [2:0] arrange [5:1];
 reg signed [22:0] polygon_area;
-reg signed [19:0] tri_area;
-reg signed [10:0] a;
-reg signed [10:0] b;
-reg signed [19:0] c;
+reg [39:0] tri_area;/////////////
+reg [10:0] a;
+reg [10:0] b;
+reg [10:0] c;
+reg [12:0] s;
+wire signed [11:0] s_a;
+wire signed [11:0] s_b;
+wire signed [11:0] s_c;
 wire signed [19:0] pre_c1;
 wire signed [19:0] pre_c2;
-reg signed [11:0] s;
-reg signed [19:0] sa;
-reg signed [19:0] bc;
-reg signed [19:0] sqrt1_in, sqrt2_in;
-wire [9:0] sqrt1_out, sqrt2_out;
+reg signed [15:0] sa;
+reg signed [15:0] bc;
+reg signed [31:0] sqrt1_in, sqrt2_in;
+wire [15:0] sqrt1_out, sqrt2_out;
 //variable definition end----------------------------
 
 //ALU sharing str----------------------------------
 DW_sqrt_inst sqrt1 (.radicand(sqrt1_in), .square_root(sqrt1_out));
 DW_sqrt_inst sqrt2 (.radicand(sqrt2_in), .square_root(sqrt2_out));
-defparam sqrt1.radicand_width = 20;
-defparam sqrt2.radicand_width = 20;
+defparam sqrt1.radicand_width = 32;
+defparam sqrt2.radicand_width = 32;
 
 assign pre_c1 = (x_pos[cnt] - x_pos[cnt + 3'd1]) * (x_pos[cnt] - x_pos[cnt + 3'd1]) + (y_pos[cnt] - y_pos[cnt + 3'd1]) * (y_pos[cnt] - y_pos[cnt + 3'd1]);
 assign pre_c2 = (x_pos[cnt] - x_pos[0]) * (x_pos[cnt] - x_pos[0]) + (y_pos[cnt] - y_pos[0]) * (y_pos[cnt] - y_pos[0]);
+assign s_a = $signed(s) - $signed({1'd0, a});
+assign s_b = $signed(s) - $signed({1'd0, b});
+assign s_c = $signed(s) - $signed({1'b0, c});
 //ALU sharing end----------------------------------
 
 //state control str----------------------------------
@@ -104,14 +110,14 @@ always @(*) begin
             next_state = CAL_TRI_AREA1;
         end
         CAL_TRI_AREA1:begin
-            if (cnt == 5) next_state = IS_INSIDE;
-            else next_state = CAL_TRI_AREA2;
+            next_state = CAL_TRI_AREA2;
         end
         CAL_TRI_AREA2:begin
             next_state = CAL_TRI_AREA3;
         end
         CAL_TRI_AREA3:begin
-            next_state = CAL_TRI_AREA1;
+            if (cnt == 5) next_state = IS_INSIDE;
+            else next_state = CAL_TRI_AREA1;
         end
         IS_INSIDE: begin
             next_state = OVER;
@@ -202,18 +208,20 @@ always @(posedge clk) begin
             polygon_area <= polygon_area >> 1;
         end
         CAL_TRI_AREA1:begin
-            if (cnt == 5) cnt <= 3'd0;
-            else cnt <= cnt + 3'd1;
+
         end
         CAL_TRI_AREA2:begin
 
         end
         CAL_TRI_AREA3:begin
             tri_area <= tri_area + sa * bc;
+
+            if (cnt == 5) cnt <= 3'd0;
+            else cnt <= cnt + 3'd1;
         end
         IS_INSIDE:begin
             valid <= 1'd1;
-            if (tri_area > polygon_area) is_inside <= 1'd0;
+            if (tri_area[39:12] > polygon_area) is_inside <= 1'd0;
             else is_inside <= 1'd1;
         end
         OVER:begin
@@ -228,25 +236,26 @@ always @(*) begin
             if (cnt + 3'd1 != 6)begin
                 a = r_dis[cnt];
                 b = r_dis[cnt + 3'd1];
-                sqrt1_in = pre_c1;
+                sqrt1_in = pre_c1 << 12;
             end
             else begin
                 a = r_dis[cnt];
                 b = r_dis[0];
-                sqrt1_in = pre_c2;
+                sqrt1_in = pre_c2 << 12;
             end
-            c = sqrt1_out;
+            c = sqrt1_out >> 6;
             s = (a + b + c) >> 1;
         end
         CAL_TRI_AREA2: begin
-            if ((s-a) < 0)
-                sqrt1_in = 20'd0;
+            if ((s_a) < 0)
+                sqrt1_in = 22'd0;//
             else 
-                sqrt1_in = s * (s - a);
-            if ((s-b) < 0 || (s-c) < 0)
-                sqrt2_in = 20'd0;
+                sqrt1_in = (s * (s_a)) << 12;//
+
+            if ((s_b) < 0 || (s_c) < 0)
+                sqrt2_in = 22'd0;//
             else 
-                sqrt2_in = (s - b) * (s - c);
+                sqrt2_in = ((s_b) * (s_c)) << 12;//
             sa = sqrt1_out;
             bc = sqrt2_out;
         end
