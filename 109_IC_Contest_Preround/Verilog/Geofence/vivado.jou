@@ -13,3 +13,73 @@
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/USER/Desktop/IC_Compete_Sync/109_IC_Contest_Preround/Verilog/Geofence/Geofence.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/USER/Desktop/IC_Compete_Sync/109_IC_Contest_Preround/Verilog/Geofence/goefence.wcfg
+source testfixture.tcl
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+restart
+run all
+relaunch_sim
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+restart
+run all
+save_wave_config {C:/Users/USER/Desktop/IC_Compete_Sync/109_IC_Contest_Preround/Verilog/Geofence/goefence.wcfg}
+close_sim

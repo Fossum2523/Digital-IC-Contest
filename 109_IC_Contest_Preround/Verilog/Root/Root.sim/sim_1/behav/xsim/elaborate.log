@@ -1,0 +1,24 @@
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Root_tb_behav xil_defaultlib.Root_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'in' [C:/Users/USER/Desktop/IC_Compete_Sync/109_IC_Contest_Preround/Verilog/Root/Root.srcs/sim_1/new/Root_tb.v:28]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/IC_Compete_Sync/109_IC_Contest_Preround/Verilog/Root/Root.srcs/sources_1/imports/2021_grad_cell/Root.v" Line 1. Module Root(bias=0) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/IC_Compete_Sync/109_IC_Contest_Preround/Verilog/Root/Root.srcs/sources_1/imports/2021_grad_cell/DW_sqrt_inst.v" Line 1. Module DW_sqrt_inst(radicand_width=16) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/IC_Compete_Sync/109_IC_Contest_Preround/Verilog/Root/Root.srcs/sources_1/imports/2021_grad_cell/DW_sqrt.v" Line 29. Module DW_sqrt(width=16) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/IC_Compete_Sync/109_IC_Contest_Preround/Verilog/Root/Root.srcs/sources_1/imports/2021_grad_cell/Root.v" Line 1. Module Root(bias=0) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/IC_Compete_Sync/109_IC_Contest_Preround/Verilog/Root/Root.srcs/sources_1/imports/2021_grad_cell/DW_sqrt_inst.v" Line 1. Module DW_sqrt_inst(radicand_width=16) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/IC_Compete_Sync/109_IC_Contest_Preround/Verilog/Root/Root.srcs/sources_1/imports/2021_grad_cell/DW_sqrt.v" Line 29. Module DW_sqrt(width=16) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.DW_sqrt(width=16)
+Compiling module xil_defaultlib.DW_sqrt_inst(radicand_width=16)
+Compiling module xil_defaultlib.Root(bias=0)
+Compiling module xil_defaultlib.Root_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Root_tb_behav

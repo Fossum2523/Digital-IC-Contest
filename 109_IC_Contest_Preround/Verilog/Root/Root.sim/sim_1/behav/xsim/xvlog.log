@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC_Compete_Sync/109_IC_Contest_Preround/Verilog/Root/Root.srcs/sources_1/imports/2021_grad_cell/DW_sqrt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DW_sqrt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC_Compete_Sync/109_IC_Contest_Preround/Verilog/Root/Root.srcs/sources_1/imports/2021_grad_cell/DW_sqrt_inst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DW_sqrt_inst
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC_Compete_Sync/109_IC_Contest_Preround/Verilog/Root/Root.srcs/sources_1/imports/2021_grad_cell/Root.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Root
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC_Compete_Sync/109_IC_Contest_Preround/Verilog/Root/Root.srcs/sim_1/new/Root_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Root_tb
