@@ -9,13 +9,12 @@ output reg [9:0] MinCost,
 output reg Valid );
 
 localparam [3:0]IDLE        = 4'd0,
-                FOR_I       = 4'd1,
-                CAL_COST    = 4'd2,
-                CAL_MIN     = 4'd3,
+                FORI        = 4'd1,
+                CALC        = 4'd2,
                 CHP1        = 4'd4,
                 LCG1        = 4'd5,
-                LCG2        = 4'd6,
-                LCG3        = 4'd7,
+                LCG1        = 4'd6,
+                LCG2        = 4'd7,
                 CHMT        = 4'd8,
                 FRAL        = 4'd9,
                 OVER        = 4'd10,
@@ -36,8 +35,8 @@ reg [3:0]LX_Sort_next_state;
 
 reg [15:0]cnt_40320;
 
-reg [2:0]arrange_1[7:0];
-reg [2:0]arrange_2[7:0];
+reg [2:0]curr_arrange[7:0];
+reg [2:0]next_arrange[7:0];
 
 reg [2:0]p;
 wire [2:0]p_plus_1;
@@ -60,7 +59,7 @@ assign CHMT_b = ~CHMT_cnt;
 assign change_time = ~p >> 1;
 
 assign  W   =  i;
-assign  J   =  arrange_1[i];
+assign  J   =  curr_arrange[i];
 //ALU sharing end----------------------------------
 
 //CalCost state control str----------------------------------
@@ -72,22 +71,22 @@ end
 always @(*) begin
     case(CalCost_curr_state)
         IDLE:begin
-            CalCost_next_state = FOR_I;
+            CalCost_next_state = FORI;
         end
         // FRAL:begin
         //     if(cnt_40320 == 16'd40319) CalCost_next_state = DONE;
-        //     else CalCost_next_state = FOR_I;
+        //     else CalCost_next_state = FORI;
         // end
-        FOR_I:begin
-            if (i == 7) CalCost_next_state = CAL_COST;
-            else CalCost_next_state = FOR_I;
+        FORI:begin
+            if (i == 7) CalCost_next_state = CALC;
+            else CalCost_next_state = FORI;
         end
-        CAL_COST:begin
+        CALC:begin
             CalCost_next_state = OVER;
         end
         OVER:begin
             if(cnt_40320 == 16'd40319) CalCost_next_state = DONE;
-            else if (LX_Sort_curr_state == OVER) CalCost_next_state = FOR_I;
+            else if (LX_Sort_curr_state == OVER) CalCost_next_state = FORI;
             else CalCost_next_state = OVER;
         end
         DONE:begin
@@ -108,13 +107,13 @@ always @(posedge CLK) begin
             i            <= 4'd0;
             Valid <= 1'b0;
         end
-        FOR_I:begin
+        FORI:begin
             if(i != 0)total_cost <= total_cost + {3'd0, Cost};
 
             if (i == 7) i <= 4'd0;
             else i <= i + 4'd1;
         end
-        CAL_COST:begin
+        CALC:begin
             total_cost <= total_cost + {3'd0, Cost};
         end
         OVER:begin
@@ -153,13 +152,13 @@ always @(*) begin
             else LX_Sort_next_state = CHP1;
         end
         CHP1:begin
-            LX_Sort_next_state = LCG2;
+            LX_Sort_next_state = LCG1;
+        end
+        LCG1:begin
+            if(LCG_cnt == 3'd7) LX_Sort_next_state = LCG2;
+            else LX_Sort_next_state = LCG1;
         end
         LCG2:begin
-            if(LCG_cnt == 3'd7) LX_Sort_next_state = LCG3;
-            else LX_Sort_next_state = LCG2;
-        end
-        LCG3:begin
             LX_Sort_next_state = CHMT;
         end
         CHMT:begin
@@ -179,22 +178,22 @@ end
 always @(posedge CLK) begin
     case(LX_Sort_curr_state)
         IDLE:begin
-            arrange_1[0] <= 0;
-            arrange_1[1] <= 1;
-            arrange_1[2] <= 2;
-            arrange_1[3] <= 3;
-            arrange_1[4] <= 4;
-            arrange_1[5] <= 5;
-            arrange_1[6] <= 6;
-            arrange_1[7] <= 7;
-            arrange_2[0] <= 0;
-            arrange_2[1] <= 1;
-            arrange_2[2] <= 2;
-            arrange_2[3] <= 3;
-            arrange_2[4] <= 4;
-            arrange_2[5] <= 5;
-            arrange_2[6] <= 6;
-            arrange_2[7] <= 7;
+            curr_arrange[0] <= 0;
+            curr_arrange[1] <= 1;
+            curr_arrange[2] <= 2;
+            curr_arrange[3] <= 3;
+            curr_arrange[4] <= 4;
+            curr_arrange[5] <= 5;
+            curr_arrange[6] <= 6;
+            curr_arrange[7] <= 7;
+            next_arrange[0] <= 0;
+            next_arrange[1] <= 1;
+            next_arrange[2] <= 2;
+            next_arrange[3] <= 3;
+            next_arrange[4] <= 4;
+            next_arrange[5] <= 5;
+            next_arrange[6] <= 6;
+            next_arrange[7] <= 7;
             p <= 3'd6;
             min <= 4'd9;
             min_pos <= 3'd0;
@@ -204,40 +203,40 @@ always @(posedge CLK) begin
             cnt_40320 <= 16'd0;
         end
         FRAL:begin
-            arrange_1[0] <= arrange_2[0];
-            arrange_1[1] <= arrange_2[1];
-            arrange_1[2] <= arrange_2[2];
-            arrange_1[3] <= arrange_2[3];
-            arrange_1[4] <= arrange_2[4];
-            arrange_1[5] <= arrange_2[5];
-            arrange_1[6] <= arrange_2[6];
-            arrange_1[7] <= arrange_2[7];
+            curr_arrange[0] <= next_arrange[0];
+            curr_arrange[1] <= next_arrange[1];
+            curr_arrange[2] <= next_arrange[2];
+            curr_arrange[3] <= next_arrange[3];
+            curr_arrange[4] <= next_arrange[4];
+            curr_arrange[5] <= next_arrange[5];
+            curr_arrange[6] <= next_arrange[6];
+            curr_arrange[7] <= next_arrange[7];
 
             if(cnt_40320 == 16'd40319);
             else cnt_40320 <= cnt_40320 + 1'b1;
         end
         CHP1:begin
-            if(arrange_2[7] > arrange_2[6]) begin
+            if(next_arrange[7] > next_arrange[6]) begin
                 LCG_cnt <= 3'd7;
                 p <= 3'd6;
             end
-            else if (arrange_2[6] > arrange_2[5])begin 
+            else if (next_arrange[6] > next_arrange[5])begin 
                 LCG_cnt <= 3'd6;
                 p <= 3'd5;
             end
-            else if (arrange_2[5] > arrange_2[4])begin 
+            else if (next_arrange[5] > next_arrange[4])begin 
                 LCG_cnt <= 3'd5;
                 p <= 3'd4;
             end
-            else if (arrange_2[4] > arrange_2[3])begin 
+            else if (next_arrange[4] > next_arrange[3])begin 
                 LCG_cnt <= 3'd4;
                 p <= 3'd3;
             end
-            else if (arrange_2[3] > arrange_2[2])begin 
+            else if (next_arrange[3] > next_arrange[2])begin 
                 LCG_cnt <= 3'd3;
                 p <= 3'd2;
             end
-            else if (arrange_2[2] > arrange_2[1])begin 
+            else if (next_arrange[2] > next_arrange[1])begin 
                 LCG_cnt <= 3'd2;
                 p <= 3'd1;
             end
@@ -246,23 +245,23 @@ always @(posedge CLK) begin
                 p <= 3'd0;
             end
         end
-        LCG2:begin
-            if(min > arrange_2[LCG_cnt] && arrange_2[LCG_cnt] > arrange_2[p])begin
-                min <= arrange_2[LCG_cnt];
+        LCG1:begin
+            if(min > next_arrange[LCG_cnt] && next_arrange[LCG_cnt] > next_arrange[p])begin
+                min <= next_arrange[LCG_cnt];
                 min_pos <= LCG_cnt;
             end
             if(LCG_cnt == 3'd7);
             else LCG_cnt <= LCG_cnt + 1'b1;
         end
-        LCG3:begin
-            arrange_2[min_pos] <= arrange_2[p];
-            arrange_2[p] <= arrange_2[min_pos];
+        LCG2:begin
+            next_arrange[min_pos] <= next_arrange[p];
+            next_arrange[p] <= next_arrange[min_pos];
         end
         CHMT:begin
             if(CHMT_cnt == change_time);
             else begin
-                arrange_2[CHMT_a] <= arrange_2[CHMT_b];
-                arrange_2[CHMT_b] <= arrange_2[CHMT_a];
+                next_arrange[CHMT_a] <= next_arrange[CHMT_b];
+                next_arrange[CHMT_b] <= next_arrange[CHMT_a];
                 CHMT_cnt <= CHMT_cnt + 1'b1;
             end
         end

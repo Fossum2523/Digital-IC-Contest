@@ -23,8 +23,8 @@ print(string_1)
 
 # pattern read str---------------------------------------
 pattern = []
-for i in range(len(test_pattern_1[0])):
-    pattern.append(test_pattern_1[0][i])
+for i in range(len(test_pattern_1[1])):
+    pattern.append(test_pattern_1[1][i])
 
 print(pattern)
 # pattern read end---------------------------------------
@@ -36,20 +36,39 @@ first_match_index = 0
 match = 0
 
 while (1):
-    if (pattern_index == (len(pattern)-1)):
+
+
+    if (pattern_index == len(pattern)):
         match = 1
         break
+    elif (string_index == len(test_string_1)) :
+        match = 0
+        break
     
+    print("pattern_index = ",pattern_index)
+    print("string_index = ",string_index)
+    print("pattern = ",ord(pattern[pattern_index]))
+    print("string = ",ord(string_1[string_index]))
+
     if (ord(pattern[pattern_index])-62 == ord(string_1[string_index])):
+        pattern_index = pattern_index + 1
+        string_index = string_index + 1
+        print("^")
+    elif (ord(pattern[pattern_index])-4 == ord(string_1[string_index])):
         pattern_index = pattern_index + 1
         string_index = string_index + 1
     elif (ord(pattern[pattern_index]) == ord(string_1[string_index])):
         pattern_index = pattern_index + 1
         string_index = string_index + 1
+        print("char")
     else:
         pattern_index = 0
         string_index = string_index + 1
-    
+        print("else")
+
+
+
+print(match)
 
 
     # for pattern_index in range(len(pattern)):
