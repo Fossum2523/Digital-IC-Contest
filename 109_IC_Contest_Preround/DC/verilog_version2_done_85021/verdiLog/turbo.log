@@ -1,0 +1,3 @@
+Command Line: /usr/cad/synopsys/verdi/2023.12/platform/LINUXAMD64/bin/Novas -f filelist.f -ssf novas.fsdb
+uname(Linux mergic.ntust.edu.tw 4.18.0-535.el8.x86_64 #1 SMP Sun Jan 14 23:40:17 UTC 2024 x86_64)
+au time 13.232563 1.668681 0.214888 delta 213987328 213987328 total 864620544 864620544

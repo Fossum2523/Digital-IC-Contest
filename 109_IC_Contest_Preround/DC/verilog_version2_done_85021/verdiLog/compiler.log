@@ -1,0 +1,40 @@
+*design* DebussyLib (btIdent Verdi_V-2023.12)
+Command arguments:
+    +define+verilog
+    -f filelist.f
+        geofence.v
+        DW_sqrt_inst.v
+        DW_sqrt.v
+        tb.sv
+
+
+*Error* Syntax error at ;
+"tb.sv", 14: 
+Highest level modules:
+testfixture
+
+
+*Error* failed to find identifier line
+"tb.sv", 121: 
+
+*Error* failed to find identifier line.substr
+"tb.sv", 123: 
+
+*Error* failed to find identifier line
+"tb.sv", 123: 
+
+*Error* failed to find identifier line.substr
+"tb.sv", 124: 
+
+*Error* failed to find identifier line
+"tb.sv", 125: 
+
+*Error* failed to find identifier line
+"tb.sv", 131: 
+
+*Error* failed to find identifier line
+"tb.sv", 132: 
+
+*Error* failed to find identifier line
+"tb.sv", 137: 
+Total	9 error(s),   0 warning(s)
