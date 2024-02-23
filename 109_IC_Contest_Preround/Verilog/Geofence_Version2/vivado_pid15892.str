@@ -3987,3 +3987,7 @@ selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN_ALL, "simulati
 // TclEventType: WAVEFORM_MODEL_EVENT
 // TclEventType: WAVEFORM_UPDATE_WAVEFORM
 // TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:19m:18s
+// Elapsed Time for: 'L.f': 01h:19m:20s

@@ -54,10 +54,6 @@ reg [15:0] sa;
 reg [15:0] bc;
 reg [23:0] sqrt1_in, sqrt2_in;
 wire [11:0] sqrt1_out, sqrt2_out;
-
-reg [23:0] root_test_in;
-reg [11:0] root_test_out;
-
 //variable definition end----------------------------
 
 //ALU sharing str----------------------------------
@@ -249,7 +245,6 @@ always @(*) begin
                 a = r_dis[cnt];
                 b = r_dis[cnt + 3'd1];
                 sqrt1_in = pre_c1 << 4;
-                root_test_out = sqrt1_in ** 0.5;
             end
             else begin
                 a = r_dis[cnt];
