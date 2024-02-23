@@ -20,7 +20,8 @@ localparam [3:0]IDLE = 4'd0,
                 CAL_POLYGON_AREA2 = 4'd8,
                 CAL_TRI_AREA1 = 4'd9,
                 CAL_TRI_AREA2 = 4'd10,
-                CAL_TRI_AREA3 = 4'd11,
+                CAL_TRI_AREA3 = 4'd14,
+                CAL_TRI_AREA4 = 4'd11,
                 IS_INSIDE = 4'd12,
                 OVER = 4'd13;
 
@@ -38,28 +39,35 @@ reg signed [10:0] vectorY [4:0];
 reg signed [20:0] cross_result;
 reg [2:0] negtive_num;
 reg [2:0] arrange [5:1];
-reg [19:0] polygon_area;///////////// test variable to here
-reg [39:0] tri_area;/////////////
+reg [19:0] polygon_area;
+reg [39:0] tri_area;
 reg [10:0] a;
 reg [10:0] b;
-reg [10:0] c;
-reg [12:0] s;
+reg [9:0] c;
+reg [11:0] s;
 wire signed [11:0] s_a;
 wire signed [11:0] s_b;
 wire signed [11:0] s_c;
 wire signed [19:0] pre_c1;
 wire signed [19:0] pre_c2;
-reg signed [15:0] sa;
-reg signed [15:0] bc;
-reg signed [31:0] sqrt1_in, sqrt2_in;
-wire [15:0] sqrt1_out, sqrt2_out;
+reg [15:0] sa;
+reg [15:0] bc;
+reg [23:0] sqrt1_in, sqrt2_in;
+wire [11:0] sqrt1_out, sqrt2_out;
+
+reg [23:0] root_test_in;
+reg [11:0] root_test_out;
+
 //variable definition end----------------------------
 
 //ALU sharing str----------------------------------
+// sqrt sqrt2 (.in(sqrt2_in), .out(sqrt2_out));
+// defparam sqrt2.in_width = 20, sqrt2.bias = 12;
+
 DW_sqrt_inst sqrt1 (.radicand(sqrt1_in), .square_root(sqrt1_out));
-DW_sqrt_inst sqrt2 (.radicand(sqrt2_in), .square_root(sqrt2_out));
-defparam sqrt1.radicand_width = 32;
-defparam sqrt2.radicand_width = 32;
+// DW_sqrt_inst sqrt2 (.radicand(sqrt2_in), .square_root(sqrt2_out));
+defparam sqrt1.radicand_width = 24;
+// defparam sqrt2.radicand_width = 24;
 
 assign pre_c1 = (x_pos[cnt] - x_pos[cnt + 3'd1]) ** 2 + (y_pos[cnt] - y_pos[cnt + 3'd1]) ** 2;
 assign pre_c2 = (x_pos[cnt] - x_pos[0]) ** 2 + (y_pos[cnt] - y_pos[0]) ** 2;
@@ -116,6 +124,9 @@ always @(*) begin
             next_state = CAL_TRI_AREA3;
         end
         CAL_TRI_AREA3:begin
+            next_state = CAL_TRI_AREA4;
+        end
+        CAL_TRI_AREA4:begin
             if (cnt == 5) next_state = IS_INSIDE;
             else next_state = CAL_TRI_AREA1;
         end
@@ -209,9 +220,12 @@ always @(posedge clk) begin
 
         end
         CAL_TRI_AREA2:begin
-
+            sa <= sqrt1_out;
         end
         CAL_TRI_AREA3:begin
+
+        end
+        CAL_TRI_AREA4:begin
             tri_area <= tri_area + sa * bc;
 
             if (cnt == 5) cnt <= 3'd0;
@@ -219,7 +233,7 @@ always @(posedge clk) begin
         end
         IS_INSIDE:begin
             valid <= 1'd1;
-            if (tri_area[39:12] > polygon_area) is_inside <= 1'd0;
+            if (tri_area[39:4] > polygon_area) is_inside <= 1'd0;
             else is_inside <= 1'd1;
         end
         OVER:begin
@@ -234,28 +248,31 @@ always @(*) begin
             if (cnt + 3'd1 != 6)begin
                 a = r_dis[cnt];
                 b = r_dis[cnt + 3'd1];
-                sqrt1_in = pre_c1 << 12;
+                sqrt1_in = pre_c1 << 4;
+                root_test_out = sqrt1_in ** 0.5;
             end
             else begin
                 a = r_dis[cnt];
                 b = r_dis[0];
-                sqrt1_in = pre_c2 << 12;
+                sqrt1_in = pre_c2 << 4;
             end
-            c = sqrt1_out >> 6;
+            c = sqrt1_out >> 2;
             s = (a + b + c) >> 1;
         end
         CAL_TRI_AREA2: begin
             if ((s_a) < 0)
-                sqrt1_in = 32'd0;//
+                sqrt1_in = 24'd0;//
             else 
-                sqrt1_in = (s * (s_a)) << 12;//
+                sqrt1_in = (s * (s_a)) << 4;//
 
+        end
+        CAL_TRI_AREA3: begin
             if ((s_b) < 0 || (s_c) < 0)
-                sqrt2_in = 32'd0;//
+                sqrt1_in = 24'd0;//
             else 
-                sqrt2_in = ((s_b) * (s_c)) << 12;//
-            sa = sqrt1_out;
-            bc = sqrt2_out;
+                sqrt1_in = ((s_b) * (s_c)) << 4;//
+            
+            bc = sqrt1_out;
         end
         default:begin
         end 
