@@ -3,14 +3,21 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Fri Feb 23 10:55:00 2024
-# Process ID: 15892
-# Current directory: E:/Projects/IC_Contest/109_IC_Contest_Preround/Verilog/Geofence_Version2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8628 E:\Projects\IC_Contest\109_IC_Contest_Preround\Verilog\Geofence_Version2\Geofence.xpr
-# Log file: E:/Projects/IC_Contest/109_IC_Contest_Preround/Verilog/Geofence_Version2/vivado.log
-# Journal file: E:/Projects/IC_Contest/109_IC_Contest_Preround/Verilog/Geofence_Version2\vivado.jou
-# Running On: DESKTOP-9MD5LP4, OS: Windows, CPU Frequency: 2611 MHz, CPU Physical cores: 12, Host memory: 16778 MB
+# Start of session at: Fri Feb 23 11:08:58 2024
+# Process ID: 25932
+# Current directory: C:/Users/USER/Desktop/IC_Compete_Sync/109_IC_Contest_Preround/Verilog/Geofence_Version2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25996 C:\Users\USER\Desktop\IC_Compete_Sync\109_IC_Contest_Preround\Verilog\Geofence_Version2\Geofence.xpr
+# Log file: C:/Users/USER/Desktop/IC_Compete_Sync/109_IC_Contest_Preround/Verilog/Geofence_Version2/vivado.log
+# Journal file: C:/Users/USER/Desktop/IC_Compete_Sync/109_IC_Contest_Preround/Verilog/Geofence_Version2\vivado.jou
+# Running On: LAPTOP-2P71OMBV, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 16542 MB
 #-----------------------------------------------------------
 start_gui
-open_project E:/Projects/IC_Contest/109_IC_Contest_Preround/Verilog/Geofence_Version2/Geofence.xpr
+open_project C:/Users/USER/Desktop/IC_Compete_Sync/109_IC_Contest_Preround/Verilog/Geofence_Version2/Geofence.xpr
 update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+open_run impl_1

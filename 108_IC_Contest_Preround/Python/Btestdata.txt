@@ -1,0 +1,15 @@
+abcdijk lmnop q rstuv
+1234
+abcd
+dijk
+pqrst
+pqr.t
+c...k
+^lmno
+rstuv$
+^rmn
+ijk l$
+v
+lmnoprst
+^ijk$
+^q$

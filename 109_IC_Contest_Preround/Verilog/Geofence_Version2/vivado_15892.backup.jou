@@ -3,10 +3,10 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Thu Feb 22 17:57:04 2024
-# Process ID: 22800
+# Start of session at: Fri Feb 23 10:55:00 2024
+# Process ID: 15892
 # Current directory: E:/Projects/IC_Contest/109_IC_Contest_Preround/Verilog/Geofence_Version2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16672 E:\Projects\IC_Contest\109_IC_Contest_Preround\Verilog\Geofence_Version2\Geofence.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8628 E:\Projects\IC_Contest\109_IC_Contest_Preround\Verilog\Geofence_Version2\Geofence.xpr
 # Log file: E:/Projects/IC_Contest/109_IC_Contest_Preround/Verilog/Geofence_Version2/vivado.log
 # Journal file: E:/Projects/IC_Contest/109_IC_Contest_Preround/Verilog/Geofence_Version2\vivado.jou
 # Running On: DESKTOP-9MD5LP4, OS: Windows, CPU Frequency: 2611 MHz, CPU Physical cores: 12, Host memory: 16778 MB
@@ -14,36 +14,3 @@
 start_gui
 open_project E:/Projects/IC_Contest/109_IC_Contest_Preround/Verilog/Geofence_Version2/Geofence.xpr
 update_compile_order -fileset sources_1
-launch_simulation
-open_wave_config E:/Projects/IC_Contest/109_IC_Contest_Preround/Verilog/Geofence_Version2/goefence.wcfg
-source testfixture.tcl
-run all
-relaunch_sim
-run all
-relaunch_sim
-run all
-run all
-relaunch_sim
-run all
-relaunch_sim
-run all
-relaunch_sim
-run all
-relaunch_sim
-run all
-relaunch_sim
-run all
-relaunch_sim
-run all
-relaunch_sim
-run all
-relaunch_sim
-run all
-run all
-relaunch_sim
-run all
-relaunch_sim
-run all
-relaunch_sim
-run all
-close_sim

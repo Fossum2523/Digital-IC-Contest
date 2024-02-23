@@ -3,18 +3,16 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Fri Feb 23 11:08:58 2024
-# Process ID: 25932
-# Current directory: C:/Users/USER/Desktop/IC_Compete_Sync/109_IC_Contest_Preround/Verilog/Geofence_Version2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25996 C:\Users\USER\Desktop\IC_Compete_Sync\109_IC_Contest_Preround\Verilog\Geofence_Version2\Geofence.xpr
-# Log file: C:/Users/USER/Desktop/IC_Compete_Sync/109_IC_Contest_Preround/Verilog/Geofence_Version2/vivado.log
-# Journal file: C:/Users/USER/Desktop/IC_Compete_Sync/109_IC_Contest_Preround/Verilog/Geofence_Version2\vivado.jou
-# Running On: LAPTOP-2P71OMBV, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 16542 MB
+# Start of session at: Fri Feb 23 10:55:00 2024
+# Process ID: 15892
+# Current directory: E:/Projects/IC_Contest/109_IC_Contest_Preround/Verilog/Geofence_Version2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8628 E:\Projects\IC_Contest\109_IC_Contest_Preround\Verilog\Geofence_Version2\Geofence.xpr
+# Log file: E:/Projects/IC_Contest/109_IC_Contest_Preround/Verilog/Geofence_Version2/vivado.log
+# Journal file: E:/Projects/IC_Contest/109_IC_Contest_Preround/Verilog/Geofence_Version2\vivado.jou
+# Running On: DESKTOP-9MD5LP4, OS: Windows, CPU Frequency: 2611 MHz, CPU Physical cores: 12, Host memory: 16778 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/USER/Desktop/IC_Compete_Sync/109_IC_Contest_Preround/Verilog/Geofence_Version2/Geofence.xpr
-INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
-Current project path is 'C:/Users/USER/Desktop/IC_Compete_Sync/109_IC_Contest_Preround/Verilog/Geofence_Version2'
+open_project E:/Projects/IC_Contest/109_IC_Contest_Preround/Verilog/Geofence_Version2/Geofence.xpr
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
@@ -71,56 +69,11 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-INFO: [Project 1-313] Project file moved from 'E:/Projects/IC_Contest/109_IC_Contest_Preround/Verilog/Geofence_Version2' since last save.
-INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/USER/Desktop/IC_Compete_Sync/109_IC_Contest_Preround/Verilog/Geofence_Version2/Geofence.gen/sources_1'.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'E:/Projects/IC_Contest/109_IC_Contest_Preround/Verilog/Geofence_Version2/Geofence.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
-open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 1483.367 ; gain = 76.000
+open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1471.879 ; gain = 378.637
 update_compile_order -fileset sources_1
-launch_runs synth_1 -jobs 8
-WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
-[Fri Feb 23 11:10:06 2024] Launched synth_1...
-Run output will be captured here: C:/Users/USER/Desktop/IC_Compete_Sync/109_IC_Contest_Preround/Verilog/Geofence_Version2/Geofence.runs/synth_1/runme.log
-open_run synth_1 -name synth_1
-Design is defaulting to impl run constrset: constrs_1
-Design is defaulting to synth run part: xc7k70tfbv676-1
-INFO: [Device 21-403] Loading part xc7k70tfbv676-1
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1882.789 ; gain = 0.000
-INFO: [Project 1-479] Netlist was created with Vivado 2023.2
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1974.477 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-open_run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 2139.113 ; gain = 608.781
-report_utilization -name utilization_1
-launch_runs impl_1 -jobs 8
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2591.848 ; gain = 0.000
-[Fri Feb 23 11:18:15 2024] Launched impl_1...
-Run output will be captured here: C:/Users/USER/Desktop/IC_Compete_Sync/109_IC_Contest_Preround/Verilog/Geofence_Version2/Geofence.runs/impl_1/runme.log
-open_run impl_1
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2594.641 ; gain = 0.000
-INFO: [Project 1-479] Netlist was created with Vivado 2023.2
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2650.766 ; gain = 0.000
-INFO: [Designutils 20-5722] Start Reading Physical Databases.
-Reading placement.
-Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2650.766 ; gain = 0.000
-Reading placer database...
-Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2653.805 ; gain = 3.039
-Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2653.805 ; gain = 0.000
-Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2653.805 ; gain = 0.000
-Reading routing.
-Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2654.066 ; gain = 0.262
-Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 2654.066 ; gain = 3.301
-Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 2654.066 ; gain = 3.301
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2654.066 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
