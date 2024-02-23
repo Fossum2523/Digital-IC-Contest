@@ -446,13 +446,4 @@ Object49: Golde/Return => 0/0, PASS
 Object50(out):  X     Y     R
           1:  321,  870,  130
           2:  432,  123,  883
-          3:  970,  280,  969
-          4:  567, 1003,  246
-          5:  321,  127,  873
-          6: 1010,  643,  775
-Object50: Golde/Return => 0/0, PASS
-
--------------------------------------------------
---    Simulation finish,  ALL PASS             --
--------------------------------------------------
-$finish called at time : 235250 ns : File "E:/Projects/IC_Contest/109_IC_Contest_Preround/Verilog/Geofence_Version2/Geofence.srcs/sim_1/imports/2021_grad_cell/tb.sv" Line 151
+          3:  970,  

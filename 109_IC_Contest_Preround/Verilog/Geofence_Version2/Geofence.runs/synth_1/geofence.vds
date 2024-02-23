@@ -215,7 +215,10 @@ WARNING: [Synth 8-3332] Sequential element (sqrt1_in_reg[4]) is unused and will 
 WARNING: [Synth 8-3332] Sequential element (sqrt1_in_reg[3]) is unused and will be removed from module geofence.
 WARNING: [Synth 8-3332] Sequential element (sqrt1_in_reg[2]) is unused and will be removed from module geofence.
 WARNING: [Synth 8-3332] Sequential element (sqrt1_in_reg[1]) is unused and will be removed from module geofence.
-WARNING: [Synth 8-3332] Sequential element (sqrt1_in_reg[0]) is unused and will be removed from module geofence.
+WARNING: [Synth 8-3332] Sequential element (sqrt1_in_reg[0]) is unussed and will be removed from module geofence.
+WARNING: [Synth 8-3332] Sequential element (sqrt2_in_reg[21]) is unused and will be removed from module geofence.
+WARNING: [Synth 8-3332] Sequential element (sqrt2_in_reg[20]) is unused and will be removed from module geofence.
+WARNING: [Synth 8-3332] Sequential element (sqrt2_in_reg[19]) is uned and will be removed from module geofence.
 WARNING: [Synth 8-3332] Sequential element (sqrt2_in_reg[31]) is unused and will be removed from module geofence.
 WARNING: [Synth 8-3332] Sequential element (sqrt2_in_reg[30]) is unused and will be removed from module geofence.
 WARNING: [Synth 8-3332] Sequential element (sqrt2_in_reg[29]) is unused and will be removed from module geofence.
@@ -225,10 +228,7 @@ WARNING: [Synth 8-3332] Sequential element (sqrt2_in_reg[26]) is unused and will
 WARNING: [Synth 8-3332] Sequential element (sqrt2_in_reg[25]) is unused and will be removed from module geofence.
 WARNING: [Synth 8-3332] Sequential element (sqrt2_in_reg[24]) is unused and will be removed from module geofence.
 WARNING: [Synth 8-3332] Sequential element (sqrt2_in_reg[23]) is unused and will be removed from module geofence.
-WARNING: [Synth 8-3332] Sequential element (sqrt2_in_reg[22]) is unused and will be removed from module geofence.
-WARNING: [Synth 8-3332] Sequential element (sqrt2_in_reg[21]) is unused and will be removed from module geofence.
-WARNING: [Synth 8-3332] Sequential element (sqrt2_in_reg[20]) is unused and will be removed from module geofence.
-WARNING: [Synth 8-3332] Sequential element (sqrt2_in_reg[19]) is unused and will be removed from module geofence.
+WARNING: [Synth 8-3332] Sequential element (sqrt2_in_reg[22]) is unuused and will be removed from module geofence.
 WARNING: [Synth 8-3332] Sequential element (sqrt2_in_reg[18]) is unused and will be removed from module geofence.
 WARNING: [Synth 8-3332] Sequential element (sqrt2_in_reg[17]) is unused and will be removed from module geofence.
 WARNING: [Synth 8-3332] Sequential element (sqrt2_in_reg[16]) is unused and will be removed from module geofence.
