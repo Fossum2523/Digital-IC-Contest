@@ -5,10 +5,10 @@ comp_end_word = '$'
 comp_any_char = '.'
 comp_any_char_plus = '*'
 
-# print(ord(comp_begin_word))
-# print(ord(comp_end_word))
-# print(ord(comp_any_char))
-# print(ord(comp_any_char_plus))
+print(ord(comp_begin_word))
+print(ord(comp_end_word))
+print(ord(comp_any_char))
+print(ord(comp_any_char_plus))
 
 f = open('Btestdata.txt',"r")
 text = f.read()
