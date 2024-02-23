@@ -1,0 +1,58 @@
+
+Warning-[LNX_OS_VERUN] Unsupported Linux version
+  Linux version 'CentOS Stream release 8' is not supported on 'x86_64' 
+  officially, assuming linux compatibility by default. Set VCS_ARCH_OVERRIDE 
+  to linux or suse32 to override.
+  Please refer to release notes for information on supported platforms.
+
+Command: vcs -full64 -debug_acc -fastcomp -j2 -Xkeyopt=rtopt -lca -f filelist.f +vcs+fsdbon \
+-kdb -l comp.log
+*** Using c compiler gcc instead of cc ...
+                         Chronologic VCS (TM)
+         Version V-2023.12_Full64 -- Fri Feb 23 14:25:00 2024
+
+                    Copyright (c) 1991 - 2023 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+
+Warning-[DEPRECATED_SWITCH] Deprecated switch specified
+  Deprecated switch '-fastcomp' will be obsolete in future releases.
+  Please remove it from your compile command-line to avoid a warning in future
+  releases.
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS Release Notes
+
+Parsing design file 'geofence.v'
+Parsing design file 'DW_sqrt_inst.v'
+Parsing design file 'DW_sqrt.v'
+Parsing included file 'DW_sqrt_function.inc'.
+Back to file 'DW_sqrt.v'.
+Parsing design file 'tb.sv'
+
+Error-[SE] Syntax error
+  Following verilog source has syntax error :
+  	Illegal port or variable declaration
+  "tb.sv", 14: token is ';'
+  string line;
+              ^
+
+2 warnings
+1 error
+CPU time: .080 seconds to compile
