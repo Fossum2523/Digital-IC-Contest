@@ -1,12 +1,15 @@
-2x1=2 2x2=4 2x3=6
-^2.2.2
-2.2.2
-^2.2.4$
-.
-^..
-^.$
-2.$
-2x4=7
-3=6-3
-1.2=2
-2*2=4
+abcdijk lmnop q rstuv
+1234
+abcd
+dijk
+pqrst
+pqr.t
+c...k
+^lmno
+rstuv$
+^rmn
+ijk l$
+v
+lmnoprst
+^ijk$
+^q$

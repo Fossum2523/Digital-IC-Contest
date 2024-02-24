@@ -52,6 +52,68 @@ pat:5:1:10:.ree *re
 pat:6:1:05:re. thr
 pat:7:0:00:ee*ee fr
 pat:8:1:12:ee*ee th
-pat:9:0:00:re*ee.$
+pat:9:0:00:re*ee.$ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 pat:a:0:00:^...$
 pat:b:1:15:^....$
+
+abcdijk lmnop q rstuv
+1234
+abcd
+dijk
+pqrst
+pqr.t
+c...k
+^lmno
+rstuv$
+^rmn
+ijk l$
+v
+lmnoprst
+^ijk$
+^q$
+
+2x1=2 2x2=4 2x3=6
+^2.2.2
+2.2.2
+^2.2.4$
+.
+^..
+^.$
+2.$
+2x4=7
+3=6-3
+1.2=2
+2*2=4
+
+She sees cheese
+ees.
+ees.$
+e..se
+e..ee$
+^ees*
+hee*se
+he.s
+*see$
+se*ce
+
+But she said the butter's bitter
+sa*said
+b*tter
+b*tter$
+ut*r
+ut*tted
+^ut*tter
+*tered
+
+He threw three free throws
+thr*the$
+^thro*th
+.ree th
+.ree  fr
+.ree *re
+re. thr
+ee*ee fr
+ee*ee th
+re*ee.$
+^...$
+^....$
