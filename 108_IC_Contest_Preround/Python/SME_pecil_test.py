@@ -31,7 +31,7 @@ for i in range(len(test_pattern_1[20])):
 print(pattern)
 # pattern read end---------------------------------------
 
-#--------------------
+# --------------------
 first_match_index = 0
 pattern_index = 0
 cnt = 0
