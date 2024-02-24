@@ -7,7 +7,7 @@ test_string_1 = "This is a pencil"
 string_1 = []
 test_pattern_1 = ["^This","his$","^is$","^a$","^a pencil$","^his","pen$","hi$","h.s",
                   "p.n.il","is.a.pe..il","p*l","pen*cil","is*pencil","pen*","*cil","pencil",
-                  "is","^is","h.s","Is*pencil","*pencil","pen","pen$","nn"]
+                  "is","^is","h.s","is*pencil","*pencil","pen","pen$","nn"]
 
 print(test_string_1)
 print(test_pattern_1)
@@ -40,6 +40,10 @@ print(len(pattern))
 print(len(test_string_1))
 
 for a in range(len(test_pattern_1)):
+# for a in range(20,21):
+    pattern = test_pattern_1[a]
+    print(pattern)
+    print(test_pattern_1[a])
     for string_order_index in range(len(test_string_1)+2):
     # for string_order_index in range(2):
         string_index = string_order_index
@@ -91,7 +95,10 @@ for a in range(len(test_pattern_1)):
         if match == 1:
             cnt = cnt + 1
             break
+    
         pattern_index = 0
+    
+    pattern_index = 0
 
 print(cnt)
 print(match)
