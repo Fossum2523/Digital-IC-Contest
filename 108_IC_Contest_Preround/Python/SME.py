@@ -10,7 +10,7 @@ print(ord(comp_end_word))
 print(ord(comp_any_char))
 print(ord(comp_any_char_plus))
 
-f = open('Btestdata.txt',"r")
+f = open('Btestdata_4.txt',"r")
 text = f.read()
 f.close
 s = text.split('\n')
@@ -41,14 +41,15 @@ print(string_1)
 match_index_of_string =[]
 match_fg = -1
 
+dot_fg = 0
 comp_begin_word_fg = 0 
 
 first_match_index = 0
 pattern_index = 0
 cnt = 0
 
-for a in range(len(test_pattern_1)):
-# for a in range(8,9):
+# for a in range(len(test_pattern_1)):
+for a in range(2,3):
     pattern = test_pattern_1[a]
     print(pattern)
     print(test_pattern_1[a])
@@ -68,15 +69,16 @@ for a in range(len(test_pattern_1)):
                 first_match_index = -1
                 match = 0
                 break
-            # print("----------------------------------------------------------")
-            # print("str_cnt =",str_cnt)
-            # print("match_fg = ",match_fg)
-            # print("comp_any_char_plus_fg =",comp_any_char_plus_fg)
-            # print("pattern_index = ",pattern_index)
-            # print("string_index = ",string_index)
-            # print("pattern = ",ord(pattern[pattern_index]),pattern[pattern_index])
-            # print("string = ",ord(string_1[string_index]),string_1[string_index])
-            # print("----------------------------------------------------------")
+            print("----------------------------------------------------------")
+            print("dot_fg =",dot_fg)
+            print("str_cnt =",str_cnt)
+            print("match_fg = ",match_fg)
+            print("comp_any_char_plus_fg =",comp_any_char_plus_fg)
+            print("pattern_index = ",pattern_index)
+            print("string_index = ",string_index)
+            print("pattern = ",ord(pattern[pattern_index]),pattern[pattern_index])
+            print("string = ",ord(string_1[string_index]),string_1[string_index])
+            print("----------------------------------------------------------")
             if (ord(pattern[pattern_index]) == 42):
                 if match_fg < 0:
                     match_fg = string_index
@@ -105,6 +107,8 @@ for a in range(len(test_pattern_1)):
                 if comp_any_char_plus_fg == 1 :
                     str_cnt = str_cnt + 1
                 string_index = string_index + 1
+
+                dot_fg = 1
                 print(".")
             elif (ord(pattern[pattern_index]) == ord(string_1[string_index])):
                 if match_fg < 0:
@@ -135,6 +139,10 @@ for a in range(len(test_pattern_1)):
                     pattern_index = 0
                     string_index = string_index + 1
                     match_fg = -1
+                
+                if dot_fg:
+                    dot_fg = 0
+                    string_index = string_index - 1
                 print("else")
         
         

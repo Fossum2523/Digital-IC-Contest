@@ -1,0 +1,12 @@
+He threw three free throws
+thr*the$
+^thro*th
+.ree th
+.ree  fr
+.ree *re
+re. thr
+ee*ee fr
+ee*ee th
+re*ee.$
+^...$
+^....$
