@@ -1,12 +1,8 @@
-He threw three free throws
-thr*the$
-^thro*th
-.ree th
-.ree  fr
-.ree *re
-re. thr
-ee*ee fr
-ee*ee th
-re*ee.$
-^...$
-^....$
+But she said the butter's bitter
+sa*said
+b*tter
+b*tter$
+ut*r
+ut*tted
+^ut*tter
+*tered

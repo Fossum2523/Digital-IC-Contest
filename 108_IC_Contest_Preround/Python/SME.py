@@ -49,7 +49,7 @@ pattern_index = 0
 cnt = 0
 
 # for a in range(len(test_pattern_1)):
-for a in range(2,3):
+for a in range(11,12):
     pattern = test_pattern_1[a]
     print(pattern)
     print(test_pattern_1[a])
@@ -79,10 +79,16 @@ for a in range(2,3):
             print("pattern = ",ord(pattern[pattern_index]),pattern[pattern_index])
             print("string = ",ord(string_1[string_index]),string_1[string_index])
             print("----------------------------------------------------------")
-            if (ord(pattern[pattern_index]) == 42):
+            if(comp_any_char_plus_fg == 2):
                 if match_fg < 0:
                     match_fg = string_index
-                pattern_index = pattern_index + 1
+                string_index = string_index + 1
+                print("*__")
+            elif (ord(pattern[pattern_index]) == 42):
+                if match_fg < 0 and string_index != 0:
+                    match_fg = string_index
+                if string_index != 0:
+                    pattern_index = pattern_index + 1
                 comp_any_char_plus_fg = 2
                 print("*")
             elif (ord(pattern[pattern_index]) == 94 and ord(string_1[string_index]) == 32):
@@ -122,11 +128,7 @@ for a in range(2,3):
                 pattern_index = pattern_index + 1
                 string_index = string_index + 1
                 print("char")
-            elif(comp_any_char_plus_fg == 2):
-                if match_fg < 0:
-                    match_fg = string_index
-                string_index = string_index + 1
-                print("*__")
+
             else:
                 if comp_any_char_plus_fg == 1 :
                     pattern_index = pattern_index - str_cnt

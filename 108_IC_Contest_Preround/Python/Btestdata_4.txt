@@ -10,3 +10,4 @@ ee*ee th
 re*ee.$
 ^...$
 ^....$
+^three
