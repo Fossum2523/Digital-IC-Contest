@@ -42,7 +42,17 @@ for test_data_pattern_index in range(len(test_pattern_1)): #for used to compare 
     star_cnt = 0            # Used to record how many char were compared after "*"
     
     while (1):
-        # "." str------------------------------------------------------- 
+        # "." str-------------------------------------------------------
+        # print("----------------------------------------------------------")
+        # print("dot_fg =",dot_fg)
+        # print("star_cnt =",star_cnt)
+        # print("star_fg =",star_fg)
+        # print("match_index = ",match_index)
+        # print("pattern_index = ",pattern_index)
+        # print("string_index = ",string_index)
+        # print("pattern = ",ord(pattern[pattern_index]),pattern[pattern_index])
+        # print("string = ",ord(string_1[string_index]),string_1[string_index])
+        # print("----------------------------------------------------------")  
         if(ord(pattern[pattern_index]) == 46):
             # pattern first match char with string and log string index
             # but can't be first string index, because the the first char of string is space which added extnedly by us
