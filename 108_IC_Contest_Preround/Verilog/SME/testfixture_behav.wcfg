@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="testfixture_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="\$unit_tb_term_sv " />
+            <top_module name="glbl" />
+            <top_module name="testfixture" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="2,830.001 ns"></ZoomEndTime>
+      <Cursor1Time time="1,000.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="256"></NameColumnWidth>
+      <ValueColumnWidth column_width="197"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/testfixture/u_SME/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_SME/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_SME/chardata" type="array">
+      <obj_property name="ElementShortName">chardata[7:0]</obj_property>
+      <obj_property name="ObjectShortName">chardata[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_SME/isstring" type="logic">
+      <obj_property name="ElementShortName">isstring</obj_property>
+      <obj_property name="ObjectShortName">isstring</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_SME/string_curr_state" type="array">
+      <obj_property name="ElementShortName">string_curr_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">string_curr_state[1:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_SME/string_next_state" type="array">
+      <obj_property name="ElementShortName">string_next_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">string_next_state[1:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_SME/string_fg" type="logic">
+      <obj_property name="ElementShortName">string_fg</obj_property>
+      <obj_property name="ObjectShortName">string_fg</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_SME/string_len" type="array">
+      <obj_property name="ElementShortName">string_len[5:0]</obj_property>
+      <obj_property name="ObjectShortName">string_len[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_SME/string" type="array">
+      <obj_property name="ElementShortName">string[33:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">string[33:0][7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_SME/ispattern" type="logic">
+      <obj_property name="ElementShortName">ispattern</obj_property>
+      <obj_property name="ObjectShortName">ispattern</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_SME/pattern_curr_state" type="array">
+      <obj_property name="ElementShortName">pattern_curr_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">pattern_curr_state[1:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_SME/pattern_next_state" type="array">
+      <obj_property name="ElementShortName">pattern_next_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">pattern_next_state[1:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_SME/pattern_fg" type="logic">
+      <obj_property name="ElementShortName">pattern_fg</obj_property>
+      <obj_property name="ObjectShortName">pattern_fg</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_SME/pattern_len" type="array">
+      <obj_property name="ElementShortName">pattern_len[2:0]</obj_property>
+      <obj_property name="ObjectShortName">pattern_len[2:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_SME/pattern" type="array">
+      <obj_property name="ElementShortName">pattern[7:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">pattern[7:0][7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <wvobject fp_name="/testfixture/u_SME/pattern[7]" type="array">
+         <obj_property name="ElementShortName">[7][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testfixture/u_SME/pattern[6]" type="array">
+         <obj_property name="ElementShortName">[6][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testfixture/u_SME/pattern[5]" type="array">
+         <obj_property name="ElementShortName">[5][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testfixture/u_SME/pattern[4]" type="array">
+         <obj_property name="ElementShortName">[4][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testfixture/u_SME/pattern[3]" type="array">
+         <obj_property name="ElementShortName">[3][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testfixture/u_SME/pattern[2]" type="array">
+         <obj_property name="ElementShortName">[2][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testfixture/u_SME/pattern[1]" type="array">
+         <obj_property name="ElementShortName">[1][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testfixture/u_SME/pattern[0]" type="array">
+         <obj_property name="ElementShortName">[0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

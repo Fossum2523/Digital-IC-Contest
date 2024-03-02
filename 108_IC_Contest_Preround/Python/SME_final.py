@@ -53,6 +53,8 @@ for test_data_pattern_index in range(len(test_pattern_1)): #for used to compare 
         # print("pattern = ",ord(pattern[pattern_index]),pattern[pattern_index])
         # print("string = ",ord(string_1[string_index]),string_1[string_index])
         # print("----------------------------------------------------------")  
+
+        # "." str-------------------------------------------------------
         if(ord(pattern[pattern_index]) == 46):
             # pattern first match char with string and log string index
             # but can't be first string index, because the the first char of string is space which added extnedly by us
