@@ -14,3 +14,6 @@
 start_gui
 open_project C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.xpr
 update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/testfixture_behav.wcfg
+source testfixture.tcl

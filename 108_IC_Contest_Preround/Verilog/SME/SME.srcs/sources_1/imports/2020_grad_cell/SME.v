@@ -56,12 +56,12 @@ reg [3:0]next_state;
 
 reg match;
 reg [4:0] match_index;
-reg string_index;
-reg pattern_index;
+reg [5:0] string_index;
+reg [2:0] pattern_index;
 
 reg dot_fg;
 reg begin_word_fg;
-reg star_fg;
+reg [1:0]star_fg;
 reg stat_cnt;
 //variable definition end----------------------------
 

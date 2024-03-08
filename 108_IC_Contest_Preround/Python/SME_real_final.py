@@ -26,6 +26,7 @@ string_1.append(' ')
 
 #--------------------
 match_index_of_string =[] #log "all" test data match index
+match_of_string =[] #log "all" test data if match
 
 # print(string_1)
 for test_data_pattern_index in range(len(test_pattern_1)): #for used to compare each pattern
@@ -191,10 +192,13 @@ for test_data_pattern_index in range(len(test_pattern_1)): #for used to compare 
             break
         # string don't have pattern
         elif string_index == (len(string_1)) :
-            match_index = -1
+            match = 0
+            match_index = 0
             break
         # Determine whether pattern is found in string-----------------
-        
+
+    match_of_string.append(match) 
     match_index_of_string.append(match_index)
 
+print(match_of_string)
 print(match_index_of_string)
