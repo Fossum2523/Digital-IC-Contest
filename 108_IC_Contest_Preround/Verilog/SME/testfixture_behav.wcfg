@@ -12,13 +12,13 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="77,476.666 ns"></ZoomStartTime>
-      <ZoomEndTime time="77,849.667 ns"></ZoomEndTime>
-      <Cursor1Time time="78,660.000 ns"></Cursor1Time>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="378.001 ns"></ZoomEndTime>
+      <Cursor1Time time="490.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="256"></NameColumnWidth>
-      <ValueColumnWidth column_width="192"></ValueColumnWidth>
+      <ValueColumnWidth column_width="187"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="26" />
    <wave_markers>
@@ -31,6 +31,11 @@
    <wvobject fp_name="/testfixture/u_SME/reset" type="logic">
       <obj_property name="ElementShortName">reset</obj_property>
       <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testfixture/u_SME/test" type="array">
+      <obj_property name="ElementShortName">test[7:0]</obj_property>
+      <obj_property name="ObjectShortName">test[7:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/testfixture/u_SME/chardata" type="array">
       <obj_property name="ElementShortName">chardata[7:0]</obj_property>
@@ -68,182 +73,6 @@
       <obj_property name="CustomSignalColor">#00FFFF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/testfixture/u_SME/string" type="array">
-      <obj_property name="ElementShortName">string[33:0][7:0]</obj_property>
-      <obj_property name="ObjectShortName">string[33:0][7:0]</obj_property>
-      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
-      <obj_property name="UseCustomSignalColor">true</obj_property>
-      <wvobject fp_name="/testfixture/u_SME/string[33]" type="array">
-         <obj_property name="ElementShortName">[33][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[33][7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testfixture/u_SME/string[32]" type="array">
-         <obj_property name="ElementShortName">[32][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[32][7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testfixture/u_SME/string[31]" type="array">
-         <obj_property name="ElementShortName">[31][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[31][7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testfixture/u_SME/string[30]" type="array">
-         <obj_property name="ElementShortName">[30][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[30][7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testfixture/u_SME/string[29]" type="array">
-         <obj_property name="ElementShortName">[29][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[29][7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testfixture/u_SME/string[28]" type="array">
-         <obj_property name="ElementShortName">[28][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[28][7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testfixture/u_SME/string[27]" type="array">
-         <obj_property name="ElementShortName">[27][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[27][7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testfixture/u_SME/string[26]" type="array">
-         <obj_property name="ElementShortName">[26][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[26][7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testfixture/u_SME/string[25]" type="array">
-         <obj_property name="ElementShortName">[25][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[25][7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testfixture/u_SME/string[24]" type="array">
-         <obj_property name="ElementShortName">[24][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[24][7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testfixture/u_SME/string[23]" type="array">
-         <obj_property name="ElementShortName">[23][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[23][7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testfixture/u_SME/string[22]" type="array">
-         <obj_property name="ElementShortName">[22][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[22][7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testfixture/u_SME/string[21]" type="array">
-         <obj_property name="ElementShortName">[21][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[21][7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testfixture/u_SME/string[20]" type="array">
-         <obj_property name="ElementShortName">[20][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[20][7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testfixture/u_SME/string[19]" type="array">
-         <obj_property name="ElementShortName">[19][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[19][7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testfixture/u_SME/string[18]" type="array">
-         <obj_property name="ElementShortName">[18][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[18][7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testfixture/u_SME/string[17]" type="array">
-         <obj_property name="ElementShortName">[17][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[17][7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testfixture/u_SME/string[16]" type="array">
-         <obj_property name="ElementShortName">[16][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[16][7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testfixture/u_SME/string[15]" type="array">
-         <obj_property name="ElementShortName">[15][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[15][7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testfixture/u_SME/string[14]" type="array">
-         <obj_property name="ElementShortName">[14][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[14][7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testfixture/u_SME/string[13]" type="array">
-         <obj_property name="ElementShortName">[13][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[13][7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testfixture/u_SME/string[12]" type="array">
-         <obj_property name="ElementShortName">[12][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[12][7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testfixture/u_SME/string[11]" type="array">
-         <obj_property name="ElementShortName">[11][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[11][7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testfixture/u_SME/string[10]" type="array">
-         <obj_property name="ElementShortName">[10][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[10][7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testfixture/u_SME/string[9]" type="array">
-         <obj_property name="ElementShortName">[9][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[9][7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testfixture/u_SME/string[8]" type="array">
-         <obj_property name="ElementShortName">[8][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[8][7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testfixture/u_SME/string[7]" type="array">
-         <obj_property name="ElementShortName">[7][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[7][7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testfixture/u_SME/string[6]" type="array">
-         <obj_property name="ElementShortName">[6][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[6][7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testfixture/u_SME/string[5]" type="array">
-         <obj_property name="ElementShortName">[5][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[5][7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testfixture/u_SME/string[4]" type="array">
-         <obj_property name="ElementShortName">[4][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[4][7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testfixture/u_SME/string[3]" type="array">
-         <obj_property name="ElementShortName">[3][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[3][7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testfixture/u_SME/string[2]" type="array">
-         <obj_property name="ElementShortName">[2][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[2][7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testfixture/u_SME/string[1]" type="array">
-         <obj_property name="ElementShortName">[1][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[1][7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testfixture/u_SME/string[0]" type="array">
-         <obj_property name="ElementShortName">[0][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[0][7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-      </wvobject>
-   </wvobject>
    <wvobject fp_name="/testfixture/u_SME/ispattern" type="logic">
       <obj_property name="ElementShortName">ispattern</obj_property>
       <obj_property name="ObjectShortName">ispattern</obj_property>
@@ -280,7 +109,6 @@
       <obj_property name="CustomSignalColor">#FFFF00</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/testfixture/u_SME/pattern[7]" type="array">
          <obj_property name="ElementShortName">[7][7:0]</obj_property>
          <obj_property name="ObjectShortName">[7][7:0]</obj_property>

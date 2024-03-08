@@ -12,11 +12,11 @@ output valid;
 // reg valid;
 
 localparam [1:0]IDLE_STRING = 2'd0,
-                GET_STRING = 2'd1,
+                GET_STRING_1 = 2'd1,
                 GET_STRING_DONE = 2'd2;
 
 localparam [1:0]IDLE_PATTERN = 2'd0,
-                GET_PATTERN = 2'd1,
+                GET_PATTERN_1 = 2'd1,
                 GET_PATTERN_DONE = 2'd2;
 
 localparam [3:0]IDLE = 4'd0,
@@ -44,7 +44,7 @@ reg [5:0]string_len_comp;
 
 reg string_fg;
 reg [5:0]string_len;
-reg [7:0]string[33:0];
+reg [7:0]string_v[33:0];
 
 reg [1:0]pattern_curr_state;
 reg [1:0]pattern_next_state;
@@ -66,6 +66,8 @@ reg dot_fg;
 reg begin_word_fg;
 reg [1:0]star_fg;
 reg [5:0]star_cnt;
+
+reg [7:0]latch_chardata;
 //variable definition end----------------------------
 
 //ALU sharing str----------------------------------
@@ -90,13 +92,13 @@ always @(*) begin
             if(pattern[pattern_index] == 46)
                 next_state = DOT_WORD;
 
-            else if(pattern[pattern_index] == 94 && string[string_index] == 32)
+            else if(pattern[pattern_index] == 94 && string_v[string_index] == 32)
                 next_state = BEGIN_WORD;
 
-            else if(pattern[pattern_index] == 36 && string[string_index] == 32)
+            else if(pattern[pattern_index] == 36 && string_v[string_index] == 32)
                 next_state = DOLLAR_WORD;
 
-            else if(pattern[pattern_index] == string[string_index])
+            else if(pattern[pattern_index] == string_v[string_index])
                 next_state = CHAR;
 
             else if (star_fg == 2)
@@ -259,81 +261,85 @@ always @(posedge clk) begin
 end
 //RTL operation end----------------------------------
 
-//string state control str----------------------------------
-always @(posedge clk) begin
-    string_curr_state <= string_next_state;
+// latch chardata 1 cycle str---------------------------
+always @(posedge clk or posedge reset) begin
+    if (reset) latch_chardata <= 8'd0;
+    else latch_chardata <= chardata;
+end
+// latch chardata 1 cycle end---------------------------
+
+//string_v state control str----------------------------------
+always @(posedge clk or posedge reset) begin
+    if (reset) string_curr_state <= IDLE_STRING;
+    else string_curr_state <= string_next_state;
 end
 
 always @(*) begin
     case(string_curr_state)
         IDLE_STRING:begin
-            string_next_state = GET_STRING;
+            if(isstring)
+                string_next_state = GET_STRING_1;
+            else
+                string_next_state = IDLE_STRING;
         end
-        GET_STRING:begin
-            if(isstring || ~string_fg)
-                string_next_state = GET_STRING;
+        GET_STRING_1:begin
+            if(isstring)
+                string_next_state = GET_STRING_1;
             else
                 string_next_state = GET_STRING_DONE;
         end
         GET_STRING_DONE:begin
-            if(curr_state == OVER)
-                string_next_state = GET_STRING;
-            else
-                string_next_state = GET_STRING_DONE;
+            string_next_state = IDLE_STRING;
         end
         default: string_next_state = IDLE_STRING;
     endcase
 end
-//string state control end----------------------------------
+//string_v state control end----------------------------------
 
-//string RTL operation str----------------------------------
+//string_v RTL operation str----------------------------------
 always @(posedge clk) begin
     case(string_curr_state)
         IDLE_STRING:begin
-            string_fg <= 1'b0;
             string_len <= 6'd1;
-            string[0] <= 8'd32;
+            string_v[0] <= 8'd32;
         end
-        GET_STRING:begin
-            if(isstring)begin
-                string_fg <= 1'b1;
-                string_len <= string_len + 1'b1;
-                string[string_len] <= chardata;
-            end
+        GET_STRING_1:begin
+            string_len <= string_len + 1'b1;
+            string_v[string_len] <= latch_chardata;
         end
         GET_STRING_DONE:begin
-            if(curr_state == OVER)begin
-                string_fg <= 1'b0;
-                string_len <= 6'd1;  
-            end
-            else begin
-                string_len_comp <= string_len + 6'b1;
-                string[string_len] <= 8'd32;
-            end
+            string_len_comp <= string_len + 6'b1;
+            string_v[string_len] <= 8'd32;
         end
     endcase
 end
-//string RTL operation end----------------------------------
+//string_v RTL operation end----------------------------------
 
 //pattern state control str----------------------------------
-always @(posedge clk) begin
-    pattern_curr_state <= pattern_next_state;
+always @(posedge clk or posedge reset) begin
+    if(reset)
+        pattern_curr_state <= IDLE_PATTERN;
+    else
+        pattern_curr_state <= pattern_next_state;
 end
 
 always @(*) begin
     case(pattern_curr_state)
         IDLE_PATTERN:begin
-            pattern_next_state = GET_PATTERN;
+            if(ispattern)
+                pattern_next_state = GET_PATTERN_1;
+            else
+                pattern_next_state = IDLE_PATTERN;
         end
-        GET_PATTERN:begin
-            if(ispattern || ~pattern_fg)
-                pattern_next_state = GET_PATTERN;
+        GET_PATTERN_1:begin
+            if(ispattern)
+                pattern_next_state = GET_PATTERN_1;
             else
                 pattern_next_state = GET_PATTERN_DONE;
         end
         GET_PATTERN_DONE:begin
             if(curr_state == OVER)
-                pattern_next_state = GET_PATTERN;
+                pattern_next_state = IDLE_PATTERN;
             else
                 pattern_next_state = GET_PATTERN_DONE;
         end
@@ -346,21 +352,14 @@ end
 always @(posedge clk) begin
     case(pattern_curr_state)
         IDLE_PATTERN:begin
-            pattern_fg <= 1'b0;
             pattern_len <= 6'd0;
         end
-        GET_PATTERN:begin
-            if(ispattern)begin
-                pattern_fg <= 1'b1;
-                pattern_len <= pattern_len + 1'b1;
-                pattern[pattern_len] <= chardata;
-            end
+        GET_PATTERN_1:begin
+            pattern_len <= pattern_len + 1'b1;
+            pattern[pattern_len] <= latch_chardata;
         end
         GET_PATTERN_DONE:begin
-            if(curr_state == OVER)begin
-                pattern_fg <= 1'b0;
-                pattern_len <= 6'd0;
-            end
+
         end
     endcase
 end

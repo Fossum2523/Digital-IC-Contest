@@ -1,0 +1,1939 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Mar  8 10:22:39 2024
+# Process ID: 19548
+# Current directory: C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14552 C:\Users\USER\Desktop\IC_Compete_Sync\108_IC_Contest_Preround\Verilog\SME\SME.xpr
+# Log file: C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/vivado.log
+# Journal file: C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME\vivado.jou
+# Running On: LAPTOP-2P71OMBV, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 16542 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 1502.945 ; gain = 394.691
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim/Btestdata.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj testfixture_vlog.prj"
+ECHO ¤wÃö³¬¡C
+ECHO ¤wÃö³¬¡C
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SME
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+ECHO ¤wÃö³¬¡C
+ECHO ¤wÃö³¬¡C
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" Line 1. Module SME doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" Line 1. Module SME doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_tb_term_sv
+Compiling module xil_defaultlib.SME
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testfixture_behav -key {Behavioral:sim_1:Functional:testfixture} -tclbatch {testfixture.tcl} -view {C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/testfixture_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/testfixture_behav.wcfg
+source testfixture.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+----------------------
+-- Simulation Start --
+----------------------
+  __________________________________________________________
+  == String 1  "abcdijk lmnop q rstuv"
+  -- Pattern 1  "1234"
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testfixture_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1598.258 ; gain = 73.746
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: µ{§ÇµLªk¦s¨úÀÉ®×¡A¦]¬°ÀÉ®×¥¿¥Ñ¥t¤@­Óµ{§Ç¨Ï¥Î¡C: "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim/simulate.log"
+INFO: [Common 17-17] undo 'relaunch_sim'
+INFO: [Common 17-17] undo 'relaunch_sim'
+ERROR: [Common 17-69] Command failed: boost::filesystem::remove: µ{§ÇµLªk¦s¨úÀÉ®×¡A¦]¬°ÀÉ®×¥¿¥Ñ¥t¤@­Óµ{§Ç¨Ï¥Î¡C: "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim/simulate.log"
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim/Btestdata.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj testfixture_vlog.prj"
+ECHO ¤wÃö³¬¡C
+ECHO ¤wÃö³¬¡C
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SME
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+ECHO ¤wÃö³¬¡C
+ECHO ¤wÃö³¬¡C
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" Line 1. Module SME doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" Line 1. Module SME doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_tb_term_sv
+Compiling module xil_defaultlib.SME
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Time resolution is 1 ps
+----------------------
+-- Simulation Start --
+----------------------
+  __________________________________________________________
+  == String 1  "abcdijk lmnop q rstuv"
+  -- Pattern 1  "1234"
+       cycle 27, expect(0,00) , get([1;31m1[0m,01) >> Fail
+  -- Pattern 2  "abcd"
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2626.160 ; gain = 0.000
+run 5 us
+       cycle 11d, expect(1,00) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 3  "dijk"
+current_wave_config {testfixture_behav.wcfg}
+testfixture_behav.wcfg
+add_wave {{/testfixture/u_SME/curr_state}} 
+current_wave_config {testfixture_behav.wcfg}
+testfixture_behav.wcfg
+add_wave {{/testfixture/u_SME/match}} {{/testfixture/u_SME/match_index}} {{/testfixture/u_SME/string_index}} {{/testfixture/u_SME/pattern_index}} {{/testfixture/u_SME/dot_fg}} {{/testfixture/u_SME/begin_word_fg}} {{/testfixture/u_SME/star_fg}} {{/testfixture/u_SME/star_cnt}} 
+current_wave_config {testfixture_behav.wcfg}
+testfixture_behav.wcfg
+add_wave {{/testfixture/u_SME/valid}} 
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run all
+----------------------
+-- Simulation Start --
+----------------------
+  __________________________________________________________
+  == String 1  "abcdijk lmnop q rstuv"
+  -- Pattern 1  "1234"
+       cycle 27, expect(0,00) , get([1;31m1[0m,01) >> Fail
+  -- Pattern 2  "abcd"
+       cycle 11d, expect(1,00) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 3  "dijk"
+       cycle 213, expect(1,03) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 4  "pqrst"
+       cycle 222, expect(0,00) , get([1;31m1[0m,01) >> Fail
+  -- Pattern 5  "pqr.t"
+       cycle 231, expect(0,00) , get([1;31m1[0m,01) >> Fail
+  -- Pattern 6  "c...k"
+       cycle 25e, expect(1,02) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 7  "^lmno"
+       cycle 26d, expect(1,08) , get(1,[1;31m01[0m) >> Wrong index
+  -- Pattern 8  "rstuv$"
+       cycle 365, expect(1,10) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 9  "^rmn"
+       cycle 45b, expect(0,00) , get(0,00) >> Pass
+  -- Pattern a  "ijk l$"
+       cycle 4ec, expect(0,00) , get([1;31m1[0m,01) >> Fail
+  -- Pattern b  "v"
+--------------------------------------------------
+-- Failed waiting valid signal, Simulation STOP --
+--------------------------------------------------
+$finish called at time : 20000010 ns : File "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sim_1/imports/2020_grad_cell/tb_term.sv" Line 70
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: µ{§ÇµLªk¦s¨úÀÉ®×¡A¦]¬°ÀÉ®×¥¿¥Ñ¥t¤@­Óµ{§Ç¨Ï¥Î¡C: "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim/simulate.log"
+INFO: [Common 17-17] undo 'relaunch_sim'
+INFO: [Common 17-17] undo 'relaunch_sim'
+ERROR: [Common 17-69] Command failed: boost::filesystem::remove: µ{§ÇµLªk¦s¨úÀÉ®×¡A¦]¬°ÀÉ®×¥¿¥Ñ¥t¤@­Óµ{§Ç¨Ï¥Î¡C: "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim/simulate.log"
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj testfixture_vlog.prj"
+ECHO ¤wÃö³¬¡C
+ECHO ¤wÃö³¬¡C
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SME
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+ECHO ¤wÃö³¬¡C
+ECHO ¤wÃö³¬¡C
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" Line 1. Module SME doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" Line 1. Module SME doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_tb_term_sv
+Compiling module xil_defaultlib.SME
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+----------------------
+-- Simulation Start --
+----------------------
+  __________________________________________________________
+  == String 1  "abcdijk lmnop q rstuv"
+  -- Pattern 1  "1234"
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2626.160 ; gain = 0.000
+run all
+       cycle 61, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 2  "abcd"
+       cycle 76, expect(1,00) , get(1,[1;31m01[0m) >> Wrong index
+  -- Pattern 3  "dijk"
+       cycle 94, expect(1,03) , get(1,[1;31m04[0m) >> Wrong index
+  -- Pattern 4  "pqrst"
+       cycle dd, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 5  "pqr.t"
+       cycle 126, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 6  "c...k"
+       cycle 145, expect(1,02) , get(1,[1;31m04[0m) >> Wrong index
+  -- Pattern 7  "^lmno"
+       cycle 173, expect(1,08) , get(1,08) >> Pass
+  -- Pattern 8  "rstuv$"
+       cycle 1bd, expect(1,10) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 9  "^rmn"
+       cycle 205, expect(0,00) , get(0,00) >> Pass
+  -- Pattern a  "ijk l$"
+       cycle 24f, expect(0,00) , get(0,00) >> Pass
+  -- Pattern b  "v"
+--------------------------------------------------
+-- Failed waiting valid signal, Simulation STOP --
+--------------------------------------------------
+$finish called at time : 20000010 ns : File "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sim_1/imports/2020_grad_cell/tb_term.sv" Line 70
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: µ{§ÇµLªk¦s¨úÀÉ®×¡A¦]¬°ÀÉ®×¥¿¥Ñ¥t¤@­Óµ{§Ç¨Ï¥Î¡C: "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim/simulate.log"
+INFO: [Common 17-17] undo 'relaunch_sim'
+INFO: [Common 17-17] undo 'relaunch_sim'
+ERROR: [Common 17-69] Command failed: boost::filesystem::remove: µ{§ÇµLªk¦s¨úÀÉ®×¡A¦]¬°ÀÉ®×¥¿¥Ñ¥t¤@­Óµ{§Ç¨Ï¥Î¡C: "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim/simulate.log"
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj testfixture_vlog.prj"
+ECHO ¤wÃö³¬¡C
+ECHO ¤wÃö³¬¡C
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SME
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+ECHO ¤wÃö³¬¡C
+ECHO ¤wÃö³¬¡C
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" Line 1. Module SME doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" Line 1. Module SME doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_tb_term_sv
+Compiling module xil_defaultlib.SME
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Time resolution is 1 ps
+----------------------
+-- Simulation Start --
+----------------------
+  __________________________________________________________
+  == String 1  "abcdijk lmnop q rstuv"
+  -- Pattern 1  "1234"
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2626.160 ; gain = 0.000
+run all
+       cycle 62, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 2  "abcd"
+       cycle 78, expect(1,00) , get(1,00) >> Pass
+  -- Pattern 3  "dijk"
+       cycle 97, expect(1,03) , get(1,03) >> Pass
+  -- Pattern 4  "pqrst"
+       cycle e1, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 5  "pqr.t"
+       cycle 12b, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 6  "c...k"
+       cycle 14b, expect(1,02) , get(1,[1;31m03[0m) >> Wrong index
+  -- Pattern 7  "^lmno"
+       cycle 17a, expect(1,08) , get(1,08) >> Pass
+  -- Pattern 8  "rstuv$"
+       cycle 1c5, expect(1,10) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 9  "^rmn"
+       cycle 20e, expect(0,00) , get(0,00) >> Pass
+  -- Pattern a  "ijk l$"
+       cycle 259, expect(0,00) , get(0,00) >> Pass
+  -- Pattern b  "v"
+       cycle 29f, expect(1,14) , get(1,14) >> Pass
+  -- Pattern c  "lmnoprst"
+       cycle 2ad, expect(0,00) , get(0,1f) >> Pass
+  -- Pattern d  "^ijk$"
+       cycle 2f7, expect(0,00) , get(0,00) >> Pass
+  -- Pattern e  "^q$"
+       cycle 330, expect(1,0e) , get(1,0e) >> Pass
+  __________________________________________________________
+  == String 2  "2x1=2 2x2=4 2x3=6"
+  -- Pattern 1  "^2.2.2"
+       cycle 38c, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 2  "2.2.2"
+       cycle 3d6, expect(1,04) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 3  "^2.2.4$"
+       cycle 422, expect(1,06) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 4  "."
+       cycle 429, expect(1,00) , get(1,00) >> Pass
+  -- Pattern 5  "^.."
+       cycle 438, expect(1,00) , get(1,00) >> Pass
+  -- Pattern 6  "^.$"
+       cycle 471, expect(0,00) , get([1;31m1[0m,0e) >> Fail
+  -- Pattern 7  "2.$"
+       cycle 4b9, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 8  "2x4=7"
+       cycle 503, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 9  "3=6-3"
+       cycle 54d, expect(0,00) , get(0,00) >> Pass
+  -- Pattern a  "1.2=2"
+       cycle 597, expect(0,00) , get(0,00) >> Pass
+  -- Pattern b  "2*2=4"
+       cycle 5e1, expect(1,00) , get([1;31m0,00[0m) >> Fail
+  __________________________________________________________
+  == String 3  "She sees cheese"
+  -- Pattern 1  "ees."
+       cycle 639, expect(1,05) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 2  "ees.$"
+       cycle 683, expect(1,0b) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 3  "e..se"
+       cycle 6cd, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 4  "e..ee$"
+       cycle 718, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 5  "^ees*"
+       cycle 762, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 6  "hee*se"
+       cycle 7ad, expect(1,0a) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 7  "he.s"
+       cycle 7f6, expect(1,01) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 8  "*see$"
+       cycle 846, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 9  "se*ce"
+       cycle 890, expect(0,00) , get(0,00) >> Pass
+  __________________________________________________________
+  == String 4  "But she said the butter's bitter"
+  -- Pattern 1  "sa*said"
+       cycle 8fc, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 2  "b*tter"
+       cycle 94d, expect(1,11) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 3  "b*tter$"
+       cycle 99f, expect(1,11) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 4  "ut*r"
+       cycle 9e8, expect(1,01) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 5  "ut*tted"
+       cycle a34, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 6  "^ut*tter"
+       cycle a45, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 7  "*tered"
+       cycle a96, expect(0,00) , get(0,00) >> Pass
+  __________________________________________________________
+  == String 5  "He threw three free throws"
+  -- Pattern 1  "thr*the$"
+       cycle abe, expect(0,00) , get(0,1f) >> Pass
+  -- Pattern 2  "^thro*th"
+       cycle acf, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 3  ".ree th"
+       cycle b1b, expect(1,0f) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 4  ".ree  fr"
+       cycle b2c, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 5  ".ree *re"
+       cycle b3d, expect(1,0a) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 6  "re. thr"
+       cycle b89, expect(1,05) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 7  "ee*ee fr"
+       cycle b97, expect(0,00) , get(0,1f) >> Pass
+  -- Pattern 8  "ee*ee th"
+       cycle ba5, expect(1,0c) , get([1;31m0,1f[0m) >> Fail
+  -- Pattern 9  "re*ee.$"
+       cycle bf1, expect(0,00) , get(0,00) >> Pass
+  -- Pattern a  "^...$"
+       cycle c3b, expect(0,00) , get(0,00) >> Pass
+  -- Pattern b  "^....$"
+       cycle c86, expect(1,0f) , get([1;31m0,00[0m) >> Fail
+----------------------------------
+-- Simulation finish            --
+-- cycle =3207 , Score =49       --
+----------------------------------
+$finish called at time : 64140 ns : File "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sim_1/imports/2020_grad_cell/tb_term.sv" Line 201
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj testfixture_vlog.prj"
+ECHO ¤wÃö³¬¡C
+ECHO ¤wÃö³¬¡C
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SME
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+ECHO ¤wÃö³¬¡C
+ECHO ¤wÃö³¬¡C
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" Line 1. Module SME doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" Line 1. Module SME doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_tb_term_sv
+Compiling module xil_defaultlib.SME
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Time resolution is 1 ps
+----------------------
+-- Simulation Start --
+----------------------
+  __________________________________________________________
+  == String 1  "abcdijk lmnop q rstuv"
+  -- Pattern 1  "1234"
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2626.160 ; gain = 0.000
+run all
+       cycle 62, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 2  "abcd"
+       cycle 78, expect(1,00) , get(1,00) >> Pass
+  -- Pattern 3  "dijk"
+       cycle 97, expect(1,03) , get(1,03) >> Pass
+  -- Pattern 4  "pqrst"
+       cycle e1, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 5  "pqr.t"
+       cycle 12b, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 6  "c...k"
+       cycle 14b, expect(1,02) , get(1,02) >> Pass
+  -- Pattern 7  "^lmno"
+       cycle 17a, expect(1,08) , get(1,08) >> Pass
+  -- Pattern 8  "rstuv$"
+       cycle 1c5, expect(1,10) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 9  "^rmn"
+       cycle 20e, expect(0,00) , get(0,00) >> Pass
+  -- Pattern a  "ijk l$"
+       cycle 259, expect(0,00) , get(0,00) >> Pass
+  -- Pattern b  "v"
+       cycle 29f, expect(1,14) , get(1,14) >> Pass
+  -- Pattern c  "lmnoprst"
+       cycle 2ad, expect(0,00) , get(0,1f) >> Pass
+  -- Pattern d  "^ijk$"
+       cycle 2f7, expect(0,00) , get(0,00) >> Pass
+  -- Pattern e  "^q$"
+       cycle 330, expect(1,0e) , get(1,0e) >> Pass
+  __________________________________________________________
+  == String 2  "2x1=2 2x2=4 2x3=6"
+  -- Pattern 1  "^2.2.2"
+       cycle 38c, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 2  "2.2.2"
+       cycle 3d6, expect(1,04) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 3  "^2.2.4$"
+       cycle 422, expect(1,06) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 4  "."
+       cycle 42c, expect(1,00) , get(1,00) >> Pass
+  -- Pattern 5  "^.."
+       cycle 43b, expect(1,00) , get(1,00) >> Pass
+  -- Pattern 6  "^.$"
+       cycle 47a, expect(0,00) , get([1;31m1[0m,0e) >> Fail
+  -- Pattern 7  "2.$"
+       cycle 4c2, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 8  "2x4=7"
+       cycle 50c, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 9  "3=6-3"
+       cycle 556, expect(0,00) , get(0,00) >> Pass
+  -- Pattern a  "1.2=2"
+       cycle 5a0, expect(0,00) , get(0,00) >> Pass
+  -- Pattern b  "2*2=4"
+       cycle 5ea, expect(1,00) , get([1;31m0,00[0m) >> Fail
+  __________________________________________________________
+  == String 3  "She sees cheese"
+  -- Pattern 1  "ees."
+       cycle 642, expect(1,05) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 2  "ees.$"
+       cycle 68c, expect(1,0b) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 3  "e..se"
+       cycle 6d6, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 4  "e..ee$"
+       cycle 721, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 5  "^ees*"
+       cycle 76b, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 6  "hee*se"
+       cycle 7b6, expect(1,0a) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 7  "he.s"
+       cycle 7ff, expect(1,01) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 8  "*see$"
+       cycle 84f, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 9  "se*ce"
+       cycle 899, expect(0,00) , get(0,00) >> Pass
+  __________________________________________________________
+  == String 4  "But she said the butter's bitter"
+  -- Pattern 1  "sa*said"
+       cycle 905, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 2  "b*tter"
+       cycle 956, expect(1,11) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 3  "b*tter$"
+       cycle 9a8, expect(1,11) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 4  "ut*r"
+       cycle 9f1, expect(1,01) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 5  "ut*tted"
+       cycle a3d, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 6  "^ut*tter"
+       cycle a4e, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 7  "*tered"
+       cycle a9f, expect(0,00) , get(0,00) >> Pass
+  __________________________________________________________
+  == String 5  "He threw three free throws"
+  -- Pattern 1  "thr*the$"
+       cycle ac7, expect(0,00) , get(0,1f) >> Pass
+  -- Pattern 2  "^thro*th"
+       cycle ad8, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 3  ".ree th"
+       cycle b5d, expect(1,0f) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 4  ".ree  fr"
+       cycle b6b, expect(0,00) , get(0,1f) >> Pass
+  -- Pattern 5  ".ree *re"
+       cycle b79, expect(1,0a) , get([1;31m0,1f[0m) >> Fail
+  -- Pattern 6  "re. thr"
+       cycle bc5, expect(1,05) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 7  "ee*ee fr"
+       cycle bd3, expect(0,00) , get(0,1f) >> Pass
+  -- Pattern 8  "ee*ee th"
+       cycle be1, expect(1,0c) , get([1;31m0,1f[0m) >> Fail
+  -- Pattern 9  "re*ee.$"
+       cycle c2d, expect(0,00) , get(0,00) >> Pass
+  -- Pattern a  "^...$"
+       cycle c80, expect(0,00) , get(0,00) >> Pass
+  -- Pattern b  "^....$"
+       cycle cd4, expect(1,0f) , get([1;31m0,00[0m) >> Fail
+----------------------------------
+-- Simulation finish            --
+-- cycle =3285 , Score =51       --
+----------------------------------
+$finish called at time : 65700 ns : File "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sim_1/imports/2020_grad_cell/tb_term.sv" Line 201
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj testfixture_vlog.prj"
+ECHO ¤wÃö³¬¡C
+ECHO ¤wÃö³¬¡C
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SME
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+ECHO ¤wÃö³¬¡C
+ECHO ¤wÃö³¬¡C
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" Line 1. Module SME doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" Line 1. Module SME doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_tb_term_sv
+Compiling module xil_defaultlib.SME
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+----------------------
+-- Simulation Start --
+----------------------
+  __________________________________________________________
+  == String 1  "abcdijk lmnop q rstuv"
+  -- Pattern 1  "1234"
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2626.160 ; gain = 0.000
+run all
+       cycle 59, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 2  "abcd"
+       cycle 99, expect(1,00) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 3  "dijk"
+       cycle d9, expect(1,03) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 4  "pqrst"
+--------------------------------------------------
+-- Failed waiting valid signal, Simulation STOP --
+--------------------------------------------------
+$finish called at time : 20000010 ns : File "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sim_1/imports/2020_grad_cell/tb_term.sv" Line 70
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: µ{§ÇµLªk¦s¨úÀÉ®×¡A¦]¬°ÀÉ®×¥¿¥Ñ¥t¤@­Óµ{§Ç¨Ï¥Î¡C: "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim/simulate.log"
+INFO: [Common 17-17] undo 'relaunch_sim'
+INFO: [Common 17-17] undo 'relaunch_sim'
+ERROR: [Common 17-69] Command failed: boost::filesystem::remove: µ{§ÇµLªk¦s¨úÀÉ®×¡A¦]¬°ÀÉ®×¥¿¥Ñ¥t¤@­Óµ{§Ç¨Ï¥Î¡C: "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim/simulate.log"
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj testfixture_vlog.prj"
+ECHO ¤wÃö³¬¡C
+ECHO ¤wÃö³¬¡C
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SME
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+ECHO ¤wÃö³¬¡C
+ECHO ¤wÃö³¬¡C
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" Line 1. Module SME doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" Line 1. Module SME doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_tb_term_sv
+Compiling module xil_defaultlib.SME
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Time resolution is 1 ps
+----------------------
+-- Simulation Start --
+----------------------
+  __________________________________________________________
+  == String 1  "abcdijk lmnop q rstuv"
+  -- Pattern 1  "1234"
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2626.160 ; gain = 0.000
+run all
+       cycle 62, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 2  "abcd"
+       cycle 78, expect(1,00) , get(1,00) >> Pass
+  -- Pattern 3  "dijk"
+       cycle 97, expect(1,03) , get(1,03) >> Pass
+  -- Pattern 4  "pqrst"
+       cycle e1, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 5  "pqr.t"
+       cycle 12b, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 6  "c...k"
+       cycle 14b, expect(1,02) , get(1,02) >> Pass
+  -- Pattern 7  "^lmno"
+       cycle 17a, expect(1,08) , get(1,08) >> Pass
+  -- Pattern 8  "rstuv$"
+       cycle 1c5, expect(1,10) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 9  "^rmn"
+       cycle 20e, expect(0,00) , get(0,00) >> Pass
+  -- Pattern a  "ijk l$"
+       cycle 259, expect(0,00) , get(0,00) >> Pass
+  -- Pattern b  "v"
+       cycle 29f, expect(1,14) , get(1,14) >> Pass
+  -- Pattern c  "lmnoprst"
+       cycle 2ad, expect(0,00) , get(0,1f) >> Pass
+  -- Pattern d  "^ijk$"
+       cycle 2f7, expect(0,00) , get(0,00) >> Pass
+  -- Pattern e  "^q$"
+       cycle 330, expect(1,0e) , get(1,0e) >> Pass
+  __________________________________________________________
+  == String 2  "2x1=2 2x2=4 2x3=6"
+  -- Pattern 1  "^2.2.2"
+       cycle 38c, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 2  "2.2.2"
+       cycle 3d6, expect(1,04) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 3  "^2.2.4$"
+       cycle 422, expect(1,06) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 4  "."
+       cycle 42c, expect(1,00) , get(1,00) >> Pass
+  -- Pattern 5  "^.."
+       cycle 43b, expect(1,00) , get(1,00) >> Pass
+  -- Pattern 6  "^.$"
+       cycle 47a, expect(0,00) , get([1;31m1[0m,0e) >> Fail
+  -- Pattern 7  "2.$"
+       cycle 4c2, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 8  "2x4=7"
+       cycle 50c, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 9  "3=6-3"
+       cycle 556, expect(0,00) , get(0,00) >> Pass
+  -- Pattern a  "1.2=2"
+       cycle 5a0, expect(0,00) , get(0,00) >> Pass
+  -- Pattern b  "2*2=4"
+       cycle 5ea, expect(1,00) , get([1;31m0,00[0m) >> Fail
+  __________________________________________________________
+  == String 3  "She sees cheese"
+  -- Pattern 1  "ees."
+       cycle 642, expect(1,05) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 2  "ees.$"
+       cycle 68c, expect(1,0b) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 3  "e..se"
+       cycle 6d6, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 4  "e..ee$"
+       cycle 721, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 5  "^ees*"
+       cycle 76b, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 6  "hee*se"
+       cycle 7b6, expect(1,0a) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 7  "he.s"
+       cycle 7ff, expect(1,01) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 8  "*see$"
+       cycle 84f, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 9  "se*ce"
+       cycle 899, expect(0,00) , get(0,00) >> Pass
+  __________________________________________________________
+  == String 4  "But she said the butter's bitter"
+  -- Pattern 1  "sa*said"
+       cycle 905, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 2  "b*tter"
+       cycle 956, expect(1,11) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 3  "b*tter$"
+       cycle 9a8, expect(1,11) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 4  "ut*r"
+       cycle 9f1, expect(1,01) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 5  "ut*tted"
+       cycle a3d, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 6  "^ut*tter"
+       cycle a4e, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 7  "*tered"
+       cycle a9f, expect(0,00) , get(0,00) >> Pass
+  __________________________________________________________
+  == String 5  "He threw three free throws"
+  -- Pattern 1  "thr*the$"
+       cycle ac7, expect(0,00) , get(0,1f) >> Pass
+  -- Pattern 2  "^thro*th"
+       cycle ad8, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 3  ".ree th"
+       cycle b5d, expect(1,0f) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 4  ".ree  fr"
+       cycle b6b, expect(0,00) , get(0,1f) >> Pass
+  -- Pattern 5  ".ree *re"
+       cycle b79, expect(1,0a) , get([1;31m0,1f[0m) >> Fail
+  -- Pattern 6  "re. thr"
+       cycle bc5, expect(1,05) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 7  "ee*ee fr"
+       cycle bd3, expect(0,00) , get(0,1f) >> Pass
+  -- Pattern 8  "ee*ee th"
+       cycle be1, expect(1,0c) , get([1;31m0,1f[0m) >> Fail
+  -- Pattern 9  "re*ee.$"
+       cycle c2d, expect(0,00) , get(0,00) >> Pass
+  -- Pattern a  "^...$"
+       cycle c80, expect(0,00) , get(0,00) >> Pass
+  -- Pattern b  "^....$"
+       cycle cd4, expect(1,0f) , get([1;31m0,00[0m) >> Fail
+----------------------------------
+-- Simulation finish            --
+-- cycle =3285 , Score =51       --
+----------------------------------
+$finish called at time : 65700 ns : File "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sim_1/imports/2020_grad_cell/tb_term.sv" Line 201
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj testfixture_vlog.prj"
+ECHO ¤wÃö³¬¡C
+ECHO ¤wÃö³¬¡C
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SME
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+ECHO ¤wÃö³¬¡C
+ECHO ¤wÃö³¬¡C
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" Line 1. Module SME doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" Line 1. Module SME doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_tb_term_sv
+Compiling module xil_defaultlib.SME
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+----------------------
+-- Simulation Start --
+----------------------
+  __________________________________________________________
+  == String 1  "abcdijk lmnop q rstuv"
+  -- Pattern 1  "1234"
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2626.160 ; gain = 0.000
+run all
+       cycle 65, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 2  "abcd"
+       cycle 7b, expect(1,00) , get(1,00) >> Pass
+  -- Pattern 3  "dijk"
+       cycle 9a, expect(1,03) , get(1,03) >> Pass
+  -- Pattern 4  "pqrst"
+       cycle e7, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 5  "pqr.t"
+       cycle 134, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 6  "c...k"
+       cycle 154, expect(1,02) , get(1,02) >> Pass
+  -- Pattern 7  "^lmno"
+       cycle 183, expect(1,08) , get(1,08) >> Pass
+  -- Pattern 8  "rstuv$"
+       cycle 1d1, expect(1,10) , get(1,10) >> Pass
+  -- Pattern 9  "^rmn"
+       cycle 21d, expect(0,00) , get(0,00) >> Pass
+  -- Pattern a  "ijk l$"
+       cycle 26b, expect(0,00) , get(0,00) >> Pass
+  -- Pattern b  "v"
+       cycle 2b1, expect(1,14) , get(1,14) >> Pass
+  -- Pattern c  "lmnoprst"
+       cycle 2bf, expect(0,00) , get(0,1f) >> Pass
+  -- Pattern d  "^ijk$"
+       cycle 30c, expect(0,00) , get(0,00) >> Pass
+  -- Pattern e  "^q$"
+       cycle 345, expect(1,0e) , get(1,0e) >> Pass
+  __________________________________________________________
+  == String 2  "2x1=2 2x2=4 2x3=6"
+  -- Pattern 1  "^2.2.2"
+       cycle 3a4, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 2  "2.2.2"
+       cycle 3f1, expect(1,04) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 3  "^2.2.4$"
+       cycle 440, expect(1,06) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 4  "."
+       cycle 44a, expect(1,00) , get(1,00) >> Pass
+  -- Pattern 5  "^.."
+       cycle 459, expect(1,00) , get(1,00) >> Pass
+  -- Pattern 6  "^.$"
+       cycle 498, expect(0,00) , get([1;31m1[0m,0e) >> Fail
+  -- Pattern 7  "2.$"
+       cycle 4e3, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 8  "2x4=7"
+       cycle 530, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 9  "3=6-3"
+       cycle 57d, expect(0,00) , get(0,00) >> Pass
+  -- Pattern a  "1.2=2"
+       cycle 5ca, expect(0,00) , get(0,00) >> Pass
+  -- Pattern b  "2*2=4"
+       cycle 617, expect(1,00) , get([1;31m0,00[0m) >> Fail
+  __________________________________________________________
+  == String 3  "She sees cheese"
+  -- Pattern 1  "ees."
+       cycle 672, expect(1,05) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 2  "ees.$"
+       cycle 6bf, expect(1,0b) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 3  "e..se"
+       cycle 70c, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 4  "e..ee$"
+       cycle 75a, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 5  "^ees*"
+       cycle 7a7, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 6  "hee*se"
+       cycle 7f5, expect(1,0a) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 7  "he.s"
+       cycle 841, expect(1,01) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 8  "*see$"
+       cycle 894, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 9  "se*ce"
+       cycle 8e1, expect(0,00) , get(0,00) >> Pass
+  __________________________________________________________
+  == String 4  "But she said the butter's bitter"
+  -- Pattern 1  "sa*said"
+       cycle 950, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 2  "b*tter"
+       cycle 9a4, expect(1,11) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 3  "b*tter$"
+       cycle 9f9, expect(1,11) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 4  "ut*r"
+       cycle a45, expect(1,01) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 5  "ut*tted"
+       cycle a94, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 6  "^ut*tter"
+       cycle aa5, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 7  "*tered"
+       cycle af9, expect(0,00) , get(0,00) >> Pass
+  __________________________________________________________
+  == String 5  "He threw three free throws"
+  -- Pattern 1  "thr*the$"
+       cycle b21, expect(0,00) , get(0,1f) >> Pass
+  -- Pattern 2  "^thro*th"
+       cycle b32, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 3  ".ree th"
+       cycle bbd, expect(1,0f) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 4  ".ree  fr"
+       cycle bcb, expect(0,00) , get(0,1f) >> Pass
+  -- Pattern 5  ".ree *re"
+       cycle bd9, expect(1,0a) , get([1;31m0,1f[0m) >> Fail
+  -- Pattern 6  "re. thr"
+       cycle c28, expect(1,05) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 7  "ee*ee fr"
+       cycle c36, expect(0,00) , get(0,1f) >> Pass
+  -- Pattern 8  "ee*ee th"
+       cycle c44, expect(1,0c) , get([1;31m0,1f[0m) >> Fail
+  -- Pattern 9  "re*ee.$"
+       cycle c93, expect(0,00) , get(0,00) >> Pass
+  -- Pattern a  "^...$"
+       cycle ce9, expect(0,00) , get(0,00) >> Pass
+  -- Pattern b  "^....$"
+       cycle d40, expect(1,0f) , get([1;31m0,00[0m) >> Fail
+----------------------------------
+-- Simulation finish            --
+-- cycle =3393 , Score =54       --
+----------------------------------
+$finish called at time : 67860 ns : File "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sim_1/imports/2020_grad_cell/tb_term.sv" Line 201
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj testfixture_vlog.prj"
+ECHO ¤wÃö³¬¡C
+ECHO ¤wÃö³¬¡C
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SME
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+ECHO ¤wÃö³¬¡C
+ECHO ¤wÃö³¬¡C
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" Line 1. Module SME doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" Line 1. Module SME doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_tb_term_sv
+Compiling module xil_defaultlib.SME
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Time resolution is 1 ps
+----------------------
+-- Simulation Start --
+----------------------
+  __________________________________________________________
+  == String 1  "abcdijk lmnop q rstuv"
+  -- Pattern 1  "1234"
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2626.160 ; gain = 0.000
+run all
+       cycle 65, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 2  "abcd"
+--------------------------------------------------
+-- Failed waiting valid signal, Simulation STOP --
+--------------------------------------------------
+$finish called at time : 20000010 ns : File "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sim_1/imports/2020_grad_cell/tb_term.sv" Line 70
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 5 us
+----------------------
+-- Simulation Start --
+----------------------
+  __________________________________________________________
+  == String 1  "abcdijk lmnop q rstuv"
+  -- Pattern 1  "1234"
+       cycle 65, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 2  "abcd"
+run 5 us
+run 5 us
+run 5 us
+run 5 us
+run 5 us
+run 5 us
+run 5 us
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj testfixture_vlog.prj"
+ECHO ¤wÃö³¬¡C
+ECHO ¤wÃö³¬¡C
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SME
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+ECHO ¤wÃö³¬¡C
+ECHO ¤wÃö³¬¡C
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" Line 1. Module SME doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" Line 1. Module SME doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_tb_term_sv
+Compiling module xil_defaultlib.SME
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Time resolution is 1 ps
+----------------------
+-- Simulation Start --
+----------------------
+  __________________________________________________________
+  == String 1  "abcdijk lmnop q rstuv"
+  -- Pattern 1  "1234"
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2668.215 ; gain = 0.000
+run all
+       cycle 65, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 2  "abcd"
+--------------------------------------------------
+-- Failed waiting valid signal, Simulation STOP --
+--------------------------------------------------
+$finish called at time : 20000010 ns : File "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sim_1/imports/2020_grad_cell/tb_term.sv" Line 70
+current_wave_config {testfixture_behav.wcfg}
+testfixture_behav.wcfg
+add_wave {{/testfixture/u_SME/string_len_comp}} 
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run all
+----------------------
+-- Simulation Start --
+----------------------
+  __________________________________________________________
+  == String 1  "abcdijk lmnop q rstuv"
+  -- Pattern 1  "1234"
+       cycle 65, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 2  "abcd"
+--------------------------------------------------
+-- Failed waiting valid signal, Simulation STOP --
+--------------------------------------------------
+$finish called at time : 20000010 ns : File "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sim_1/imports/2020_grad_cell/tb_term.sv" Line 70
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: µ{§ÇµLªk¦s¨úÀÉ®×¡A¦]¬°ÀÉ®×¥¿¥Ñ¥t¤@­Óµ{§Ç¨Ï¥Î¡C: "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim/simulate.log"
+INFO: [Common 17-17] undo 'relaunch_sim'
+INFO: [Common 17-17] undo 'relaunch_sim'
+ERROR: [Common 17-69] Command failed: boost::filesystem::remove: µ{§ÇµLªk¦s¨úÀÉ®×¡A¦]¬°ÀÉ®×¥¿¥Ñ¥t¤@­Óµ{§Ç¨Ï¥Î¡C: "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim/simulate.log"
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj testfixture_vlog.prj"
+ECHO ¤wÃö³¬¡C
+ECHO ¤wÃö³¬¡C
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SME
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+ECHO ¤wÃö³¬¡C
+ECHO ¤wÃö³¬¡C
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" Line 1. Module SME doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" Line 1. Module SME doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_tb_term_sv
+Compiling module xil_defaultlib.SME
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+----------------------
+-- Simulation Start --
+----------------------
+  __________________________________________________________
+  == String 1  "abcdijk lmnop q rstuv"
+  -- Pattern 1  "1234"
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2668.215 ; gain = 0.000
+run all
+       cycle 65, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 2  "abcd"
+       cycle 7b, expect(1,00) , get(1,00) >> Pass
+  -- Pattern 3  "dijk"
+       cycle 9a, expect(1,03) , get(1,03) >> Pass
+  -- Pattern 4  "pqrst"
+       cycle e7, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 5  "pqr.t"
+       cycle 134, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 6  "c...k"
+       cycle 154, expect(1,02) , get(1,02) >> Pass
+  -- Pattern 7  "^lmno"
+       cycle 183, expect(1,08) , get(1,08) >> Pass
+  -- Pattern 8  "rstuv$"
+       cycle 1d1, expect(1,10) , get(1,10) >> Pass
+  -- Pattern 9  "^rmn"
+       cycle 21d, expect(0,00) , get(0,00) >> Pass
+  -- Pattern a  "ijk l$"
+       cycle 26b, expect(0,00) , get(0,00) >> Pass
+  -- Pattern b  "v"
+       cycle 2b1, expect(1,14) , get(1,14) >> Pass
+  -- Pattern c  "lmnoprst"
+       cycle 2bf, expect(0,00) , get(0,1f) >> Pass
+  -- Pattern d  "^ijk$"
+       cycle 30c, expect(0,00) , get(0,00) >> Pass
+  -- Pattern e  "^q$"
+       cycle 345, expect(1,0e) , get(1,0e) >> Pass
+  __________________________________________________________
+  == String 2  "2x1=2 2x2=4 2x3=6"
+  -- Pattern 1  "^2.2.2"
+       cycle 3a1, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 2  "2.2.2"
+       cycle 3ca, expect(1,04) , get(1,04) >> Pass
+  -- Pattern 3  "^2.2.4$"
+       cycle 3fe, expect(1,06) , get(1,06) >> Pass
+  -- Pattern 4  "."
+       cycle 408, expect(1,00) , get(1,00) >> Pass
+  -- Pattern 5  "^.."
+       cycle 417, expect(1,00) , get(1,00) >> Pass
+  -- Pattern 6  "^.$"
+       cycle 45f, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 7  "2.$"
+       cycle 4ad, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 8  "2x4=7"
+       cycle 4ee, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 9  "3=6-3"
+       cycle 52f, expect(0,00) , get(0,00) >> Pass
+  -- Pattern a  "1.2=2"
+       cycle 573, expect(0,00) , get(0,00) >> Pass
+  -- Pattern b  "2*2=4"
+       cycle 5a8, expect(1,00) , get(1,00) >> Pass
+  __________________________________________________________
+  == String 3  "She sees cheese"
+  -- Pattern 1  "ees."
+       cycle 5dc, expect(1,05) , get(1,05) >> Pass
+  -- Pattern 2  "ees.$"
+       cycle 61a, expect(1,0b) , get(1,0b) >> Pass
+  -- Pattern 3  "e..se"
+       cycle 65e, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 4  "e..ee$"
+       cycle 6a0, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 5  "^ees*"
+       cycle 6db, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 6  "hee*se"
+       cycle 717, expect(1,0a) , get(1,0a) >> Pass
+  -- Pattern 7  "he.s"
+       cycle 730, expect(1,01) , get(1,01) >> Pass
+  -- Pattern 8  "*see$"
+       cycle 777, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 9  "se*ce"
+       cycle 7b8, expect(0,00) , get(0,00) >> Pass
+  __________________________________________________________
+  == String 4  "But she said the butter's bitter"
+  -- Pattern 1  "sa*said"
+       cycle 84e, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 2  "b*tter"
+       cycle 8a2, expect(1,11) , get(1,11) >> Pass
+  -- Pattern 3  "b*tter$"
+       cycle 918, expect(1,11) , get(1,11) >> Pass
+  -- Pattern 4  "ut*r"
+       cycle 96a, expect(1,01) , get(1,01) >> Pass
+  -- Pattern 5  "ut*tted"
+       cycle 9e6, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 6  "^ut*tter"
+       cycle 9f7, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 7  "*tered"
+       cycle a7b, expect(0,00) , get(0,00) >> Pass
+  __________________________________________________________
+  == String 5  "He threw three free throws"
+  -- Pattern 1  "thr*the$"
+       cycle aa3, expect(0,00) , get(0,1f) >> Pass
+  -- Pattern 2  "^thro*th"
+       cycle ab4, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 3  ".ree th"
+       cycle b1e, expect(1,0f) , get(1,0f) >> Pass
+  -- Pattern 4  ".ree  fr"
+       cycle b2c, expect(0,00) , get(0,1f) >> Pass
+  -- Pattern 5  ".ree *re"
+       cycle b3a, expect(1,0a) , get([1;31m0,1f[0m) >> Fail
+  -- Pattern 6  "re. thr"
+       cycle b6b, expect(1,05) , get(1,05) >> Pass
+  -- Pattern 7  "ee*ee fr"
+       cycle b79, expect(0,00) , get(0,1f) >> Pass
+  -- Pattern 8  "ee*ee th"
+       cycle b87, expect(1,0c) , get([1;31m0,1f[0m) >> Fail
+  -- Pattern 9  "re*ee.$"
+       cycle bee, expect(0,00) , get(0,00) >> Pass
+  -- Pattern a  "^...$"
+       cycle c56, expect(0,00) , get(0,00) >> Pass
+  -- Pattern b  "^....$"
+       cycle ca4, expect(1,0f) , get(1,0f) >> Pass
+----------------------------------
+-- Simulation finish            --
+-- cycle =3237 , Score =94       --
+----------------------------------
+$finish called at time : 64740 ns : File "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sim_1/imports/2020_grad_cell/tb_term.sv" Line 201
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj testfixture_vlog.prj"
+ECHO ¤wÃö³¬¡C
+ECHO ¤wÃö³¬¡C
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SME
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+ECHO ¤wÃö³¬¡C
+ECHO ¤wÃö³¬¡C
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" Line 1. Module SME doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" Line 1. Module SME doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_tb_term_sv
+Compiling module xil_defaultlib.SME
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+----------------------
+-- Simulation Start --
+----------------------
+  __________________________________________________________
+  == String 1  "abcdijk lmnop q rstuv"
+  -- Pattern 1  "1234"
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2668.215 ; gain = 0.000
+run all
+       cycle 65, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 2  "abcd"
+       cycle 7b, expect(1,00) , get(1,00) >> Pass
+  -- Pattern 3  "dijk"
+       cycle 9a, expect(1,03) , get(1,03) >> Pass
+  -- Pattern 4  "pqrst"
+       cycle e7, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 5  "pqr.t"
+       cycle 134, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 6  "c...k"
+       cycle 154, expect(1,02) , get(1,02) >> Pass
+  -- Pattern 7  "^lmno"
+       cycle 183, expect(1,08) , get(1,08) >> Pass
+  -- Pattern 8  "rstuv$"
+       cycle 1d1, expect(1,10) , get(1,10) >> Pass
+  -- Pattern 9  "^rmn"
+       cycle 21d, expect(0,00) , get(0,00) >> Pass
+  -- Pattern a  "ijk l$"
+       cycle 26b, expect(0,00) , get(0,00) >> Pass
+  -- Pattern b  "v"
+       cycle 2b1, expect(1,14) , get(1,14) >> Pass
+  -- Pattern c  "lmnoprst"
+       cycle 301, expect(0,00) , get(0,00) >> Pass
+  -- Pattern d  "^ijk$"
+       cycle 34e, expect(0,00) , get(0,00) >> Pass
+  -- Pattern e  "^q$"
+       cycle 387, expect(1,0e) , get(1,0e) >> Pass
+  __________________________________________________________
+  == String 2  "2x1=2 2x2=4 2x3=6"
+  -- Pattern 1  "^2.2.2"
+       cycle 3e3, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 2  "2.2.2"
+       cycle 40c, expect(1,04) , get(1,04) >> Pass
+  -- Pattern 3  "^2.2.4$"
+       cycle 440, expect(1,06) , get(1,06) >> Pass
+  -- Pattern 4  "."
+       cycle 44a, expect(1,00) , get(1,00) >> Pass
+  -- Pattern 5  "^.."
+       cycle 459, expect(1,00) , get(1,00) >> Pass
+  -- Pattern 6  "^.$"
+       cycle 4a1, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 7  "2.$"
+       cycle 4ef, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 8  "2x4=7"
+       cycle 530, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 9  "3=6-3"
+       cycle 571, expect(0,00) , get(0,00) >> Pass
+  -- Pattern a  "1.2=2"
+       cycle 5b5, expect(0,00) , get(0,00) >> Pass
+  -- Pattern b  "2*2=4"
+       cycle 5ea, expect(1,00) , get(1,00) >> Pass
+  __________________________________________________________
+  == String 3  "She sees cheese"
+  -- Pattern 1  "ees."
+       cycle 61e, expect(1,05) , get(1,05) >> Pass
+  -- Pattern 2  "ees.$"
+       cycle 65c, expect(1,0b) , get(1,0b) >> Pass
+  -- Pattern 3  "e..se"
+       cycle 6a0, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 4  "e..ee$"
+       cycle 6e2, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 5  "^ees*"
+       cycle 71d, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 6  "hee*se"
+       cycle 759, expect(1,0a) , get(1,0a) >> Pass
+  -- Pattern 7  "he.s"
+       cycle 772, expect(1,01) , get(1,01) >> Pass
+  -- Pattern 8  "*see$"
+       cycle 7b9, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 9  "se*ce"
+       cycle 7fa, expect(0,00) , get(0,00) >> Pass
+  __________________________________________________________
+  == String 4  "But she said the butter's bitter"
+  -- Pattern 1  "sa*said"
+       cycle 890, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 2  "b*tter"
+       cycle 8e4, expect(1,11) , get(1,11) >> Pass
+  -- Pattern 3  "b*tter$"
+       cycle 95a, expect(1,11) , get(1,11) >> Pass
+  -- Pattern 4  "ut*r"
+       cycle 9ac, expect(1,01) , get(1,01) >> Pass
+  -- Pattern 5  "ut*tted"
+       cycle a28, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 6  "^ut*tter"
+       cycle a99, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 7  "*tered"
+       cycle b1d, expect(0,00) , get(0,00) >> Pass
+  __________________________________________________________
+  == String 5  "He threw three free throws"
+  -- Pattern 1  "thr*the$"
+       cycle b9f, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 2  "^thro*th"
+       cycle c01, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 3  ".ree th"
+       cycle c6b, expect(1,0f) , get(1,0f) >> Pass
+  -- Pattern 4  ".ree  fr"
+       cycle cf7, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 5  ".ree *re"
+       cycle d77, expect(1,0a) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 6  "re. thr"
+       cycle da8, expect(1,05) , get(1,05) >> Pass
+  -- Pattern 7  "ee*ee fr"
+       cycle e0d, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 8  "ee*ee th"
+       cycle e72, expect(1,0c) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 9  "re*ee.$"
+       cycle ed9, expect(0,00) , get(0,00) >> Pass
+  -- Pattern a  "^...$"
+       cycle f41, expect(0,00) , get(0,00) >> Pass
+  -- Pattern b  "^....$"
+       cycle f8f, expect(1,0f) , get(1,0f) >> Pass
+----------------------------------
+-- Simulation finish            --
+-- cycle =3984 , Score =94       --
+----------------------------------
+$finish called at time : 79680 ns : File "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sim_1/imports/2020_grad_cell/tb_term.sv" Line 201
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj testfixture_vlog.prj"
+ECHO ¤wÃö³¬¡C
+ECHO ¤wÃö³¬¡C
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SME
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+ECHO ¤wÃö³¬¡C
+ECHO ¤wÃö³¬¡C
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" Line 1. Module SME doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" Line 1. Module SME doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_tb_term_sv
+Compiling module xil_defaultlib.SME
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+----------------------
+-- Simulation Start --
+----------------------
+  __________________________________________________________
+  == String 1  "abcdijk lmnop q rstuv"
+  -- Pattern 1  "1234"
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2668.215 ; gain = 0.000
+run all
+       cycle 65, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 2  "abcd"
+       cycle 7b, expect(1,00) , get(1,00) >> Pass
+  -- Pattern 3  "dijk"
+       cycle 9a, expect(1,03) , get(1,03) >> Pass
+  -- Pattern 4  "pqrst"
+       cycle e7, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 5  "pqr.t"
+       cycle 134, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 6  "c...k"
+       cycle 154, expect(1,02) , get(1,02) >> Pass
+  -- Pattern 7  "^lmno"
+       cycle 183, expect(1,08) , get(1,08) >> Pass
+  -- Pattern 8  "rstuv$"
+       cycle 1d1, expect(1,10) , get(1,10) >> Pass
+  -- Pattern 9  "^rmn"
+       cycle 21d, expect(0,00) , get(0,00) >> Pass
+  -- Pattern a  "ijk l$"
+       cycle 26b, expect(0,00) , get(0,00) >> Pass
+  -- Pattern b  "v"
+       cycle 2b1, expect(1,14) , get(1,14) >> Pass
+  -- Pattern c  "lmnoprst"
+       cycle 301, expect(0,00) , get(0,00) >> Pass
+  -- Pattern d  "^ijk$"
+       cycle 34e, expect(0,00) , get(0,00) >> Pass
+  -- Pattern e  "^q$"
+       cycle 387, expect(1,0e) , get(1,0e) >> Pass
+  __________________________________________________________
+  == String 2  "2x1=2 2x2=4 2x3=6"
+  -- Pattern 1  "^2.2.2"
+       cycle 3e3, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 2  "2.2.2"
+       cycle 40c, expect(1,04) , get(1,04) >> Pass
+  -- Pattern 3  "^2.2.4$"
+       cycle 440, expect(1,06) , get(1,06) >> Pass
+  -- Pattern 4  "."
+       cycle 44a, expect(1,00) , get(1,00) >> Pass
+  -- Pattern 5  "^.."
+       cycle 459, expect(1,00) , get(1,00) >> Pass
+  -- Pattern 6  "^.$"
+       cycle 4a1, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 7  "2.$"
+       cycle 4ef, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 8  "2x4=7"
+       cycle 530, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 9  "3=6-3"
+       cycle 571, expect(0,00) , get(0,00) >> Pass
+  -- Pattern a  "1.2=2"
+       cycle 5b5, expect(0,00) , get(0,00) >> Pass
+  -- Pattern b  "2*2=4"
+       cycle 5ea, expect(1,00) , get(1,00) >> Pass
+  __________________________________________________________
+  == String 3  "She sees cheese"
+  -- Pattern 1  "ees."
+       cycle 61e, expect(1,05) , get(1,05) >> Pass
+  -- Pattern 2  "ees.$"
+       cycle 65c, expect(1,0b) , get(1,0b) >> Pass
+  -- Pattern 3  "e..se"
+       cycle 6a0, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 4  "e..ee$"
+       cycle 6e2, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 5  "^ees*"
+       cycle 71d, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 6  "hee*se"
+       cycle 759, expect(1,0a) , get(1,0a) >> Pass
+  -- Pattern 7  "he.s"
+       cycle 772, expect(1,01) , get(1,01) >> Pass
+  -- Pattern 8  "*see$"
+       cycle 7b9, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 9  "se*ce"
+       cycle 7fa, expect(0,00) , get(0,00) >> Pass
+  __________________________________________________________
+  == String 4  "But she said the butter's bitter"
+  -- Pattern 1  "sa*said"
+       cycle 890, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 2  "b*tter"
+       cycle 8e4, expect(1,11) , get(1,11) >> Pass
+  -- Pattern 3  "b*tter$"
+       cycle 95a, expect(1,11) , get(1,11) >> Pass
+  -- Pattern 4  "ut*r"
+       cycle 9ac, expect(1,01) , get(1,01) >> Pass
+  -- Pattern 5  "ut*tted"
+       cycle a28, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 6  "^ut*tter"
+       cycle a99, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 7  "*tered"
+       cycle b1d, expect(0,00) , get(0,00) >> Pass
+  __________________________________________________________
+  == String 5  "He threw three free throws"
+  -- Pattern 1  "thr*the$"
+       cycle b9f, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 2  "^thro*th"
+       cycle c01, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 3  ".ree th"
+       cycle c6b, expect(1,0f) , get(1,0f) >> Pass
+  -- Pattern 4  ".ree  fr"
+       cycle cf7, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 5  ".ree *re"
+       cycle d77, expect(1,0a) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 6  "re. thr"
+       cycle da8, expect(1,05) , get(1,05) >> Pass
+  -- Pattern 7  "ee*ee fr"
+       cycle e0d, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 8  "ee*ee th"
+       cycle e72, expect(1,0c) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 9  "re*ee.$"
+       cycle ed9, expect(0,00) , get(0,00) >> Pass
+  -- Pattern a  "^...$"
+       cycle f41, expect(0,00) , get(0,00) >> Pass
+  -- Pattern b  "^....$"
+       cycle f8f, expect(1,0f) , get(1,0f) >> Pass
+----------------------------------
+-- Simulation finish            --
+-- cycle =3984 , Score =94       --
+----------------------------------
+$finish called at time : 79680 ns : File "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sim_1/imports/2020_grad_cell/tb_term.sv" Line 201
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: µ{§ÇµLªk¦s¨úÀÉ®×¡A¦]¬°ÀÉ®×¥¿¥Ñ¥t¤@­Óµ{§Ç¨Ï¥Î¡C: "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim/simulate.log"
+INFO: [Common 17-17] undo 'relaunch_sim'
+INFO: [Common 17-17] undo 'relaunch_sim'
+ERROR: [Common 17-69] Command failed: boost::filesystem::remove: µ{§ÇµLªk¦s¨úÀÉ®×¡A¦]¬°ÀÉ®×¥¿¥Ñ¥t¤@­Óµ{§Ç¨Ï¥Î¡C: "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim/simulate.log"
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj testfixture_vlog.prj"
+ECHO ¤wÃö³¬¡C
+ECHO ¤wÃö³¬¡C
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SME
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+ECHO ¤wÃö³¬¡C
+ECHO ¤wÃö³¬¡C
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" Line 1. Module SME doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sources_1/imports/2020_grad_cell/SME.v" Line 1. Module SME doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_tb_term_sv
+Compiling module xil_defaultlib.SME
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testfixture_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Time resolution is 1 ps
+----------------------
+-- Simulation Start --
+----------------------
+  __________________________________________________________
+  == String 1  "abcdijk lmnop q rstuv"
+  -- Pattern 1  "1234"
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2668.215 ; gain = 0.000
+run all
+       cycle 65, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 2  "abcd"
+       cycle 7b, expect(1,00) , get(1,00) >> Pass
+  -- Pattern 3  "dijk"
+       cycle 9a, expect(1,03) , get(1,03) >> Pass
+  -- Pattern 4  "pqrst"
+       cycle e7, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 5  "pqr.t"
+       cycle 134, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 6  "c...k"
+       cycle 154, expect(1,02) , get(1,02) >> Pass
+  -- Pattern 7  "^lmno"
+       cycle 183, expect(1,08) , get(1,08) >> Pass
+  -- Pattern 8  "rstuv$"
+       cycle 1d1, expect(1,10) , get(1,10) >> Pass
+  -- Pattern 9  "^rmn"
+       cycle 21d, expect(0,00) , get(0,00) >> Pass
+  -- Pattern a  "ijk l$"
+       cycle 26b, expect(0,00) , get(0,00) >> Pass
+  -- Pattern b  "v"
+       cycle 2b1, expect(1,14) , get(1,14) >> Pass
+  -- Pattern c  "lmnoprst"
+       cycle 301, expect(0,00) , get(0,00) >> Pass
+  -- Pattern d  "^ijk$"
+       cycle 34e, expect(0,00) , get(0,00) >> Pass
+  -- Pattern e  "^q$"
+       cycle 387, expect(1,0e) , get(1,0e) >> Pass
+  __________________________________________________________
+  == String 2  "2x1=2 2x2=4 2x3=6"
+  -- Pattern 1  "^2.2.2"
+       cycle 3e3, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 2  "2.2.2"
+       cycle 40c, expect(1,04) , get(1,04) >> Pass
+  -- Pattern 3  "^2.2.4$"
+       cycle 440, expect(1,06) , get(1,06) >> Pass
+  -- Pattern 4  "."
+       cycle 44a, expect(1,00) , get(1,00) >> Pass
+  -- Pattern 5  "^.."
+       cycle 459, expect(1,00) , get(1,00) >> Pass
+  -- Pattern 6  "^.$"
+       cycle 4a1, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 7  "2.$"
+       cycle 4ef, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 8  "2x4=7"
+       cycle 530, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 9  "3=6-3"
+       cycle 571, expect(0,00) , get(0,00) >> Pass
+  -- Pattern a  "1.2=2"
+       cycle 5b5, expect(0,00) , get(0,00) >> Pass
+  -- Pattern b  "2*2=4"
+       cycle 5ea, expect(1,00) , get(1,00) >> Pass
+  __________________________________________________________
+  == String 3  "She sees cheese"
+  -- Pattern 1  "ees."
+       cycle 61e, expect(1,05) , get(1,05) >> Pass
+  -- Pattern 2  "ees.$"
+       cycle 65c, expect(1,0b) , get(1,0b) >> Pass
+  -- Pattern 3  "e..se"
+       cycle 6a0, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 4  "e..ee$"
+       cycle 6e2, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 5  "^ees*"
+       cycle 71d, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 6  "hee*se"
+       cycle 759, expect(1,0a) , get(1,0a) >> Pass
+  -- Pattern 7  "he.s"
+       cycle 772, expect(1,01) , get(1,01) >> Pass
+  -- Pattern 8  "*see$"
+       cycle 7b9, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 9  "se*ce"
+       cycle 7fa, expect(0,00) , get(0,00) >> Pass
+  __________________________________________________________
+  == String 4  "But she said the butter's bitter"
+  -- Pattern 1  "sa*said"
+       cycle 890, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 2  "b*tter"
+       cycle 8e4, expect(1,11) , get(1,11) >> Pass
+  -- Pattern 3  "b*tter$"
+       cycle 95a, expect(1,11) , get(1,11) >> Pass
+  -- Pattern 4  "ut*r"
+       cycle 9ac, expect(1,01) , get(1,01) >> Pass
+  -- Pattern 5  "ut*tted"
+       cycle a28, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 6  "^ut*tter"
+       cycle a99, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 7  "*tered"
+       cycle b1d, expect(0,00) , get(0,00) >> Pass
+  __________________________________________________________
+  == String 5  "He threw three free throws"
+  -- Pattern 1  "thr*the$"
+       cycle b9f, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 2  "^thro*th"
+       cycle c01, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 3  ".ree th"
+       cycle c6b, expect(1,0f) , get(1,0f) >> Pass
+  -- Pattern 4  ".ree  fr"
+       cycle cf7, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 5  ".ree *re"
+       cycle d56, expect(1,0a) , get(1,0a) >> Pass
+  -- Pattern 6  "re. thr"
+       cycle d87, expect(1,05) , get(1,05) >> Pass
+  -- Pattern 7  "ee*ee fr"
+       cycle dec, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 8  "ee*ee th"
+       cycle e3f, expect(1,0c) , get(1,0c) >> Pass
+  -- Pattern 9  "re*ee.$"
+       cycle ea6, expect(0,00) , get(0,00) >> Pass
+  -- Pattern a  "^...$"
+       cycle f0e, expect(0,00) , get(0,00) >> Pass
+  -- Pattern b  "^....$"
+       cycle f5c, expect(1,0f) , get(1,0f) >> Pass
+----------------------------------
+-- Simulation finish, ALL PASS  --
+-- cycle =3933 , Score =100       --
+----------------------------------
+$finish called at time : 78660 ns : File "C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/SME.srcs/sim_1/imports/2020_grad_cell/tb_term.sv" Line 201
+save_wave_config {C:/Users/USER/Desktop/IC_Compete_Sync/108_IC_Contest_Preround/Verilog/SME/testfixture_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Mar  8 17:28:59 2024...
