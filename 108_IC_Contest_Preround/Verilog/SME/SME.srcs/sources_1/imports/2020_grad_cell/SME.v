@@ -20,15 +20,15 @@ localparam [1:0]IDLE_PATTERN = 2'd0,
                 GET_PATTERN_DONE = 2'd2;
 
 localparam [3:0]IDLE = 4'd0,
-                OVER = 4'd1,
-                S0 = 4'd2,
-                S1 = 4'd3,
-                S2 = 4'd4,
-                S3 = 4'd5,
-                S4 = 4'd6,
-                S5 = 4'd7,
-                S6 = 4'd8,
-                S7 = 4'd9,
+                DOT_WORD = 4'd1,
+                BEGIN_WORD = 4'd2,
+                DOLLAR_WORD = 4'd3,
+                CHAR = 4'd4,
+                STAR_CONI = 4'd5,
+                STAR_WORD = 4'd6,
+                MISS_MATCH = 4'd7,
+                IS_OVER = 4'd8,
+                OVER = 4'd9,
                 S8 = 4'd10,
                 S9 = 4'd11,
                 S10 = 4'd12,
@@ -80,28 +80,31 @@ always @(*) begin
         IDLE:begin
 
         end
-        S0:begin
+        DOT_WORD:begin
 
         end
-        S1:begin
+        BEGIN_WORD:begin
 
         end
-        S2:begin
+        DOLLAR_WORD:begin
 
         end
-        S3:begin
+        CHAR:begin
 
         end
-        S4:begin
+        STAR_CONI:begin
 
         end
-        S5:begin
+        STAR_WORD:begin
 
         end
-        S6:begin
+        MISS_MATCH:begin
 
         end
-        S7:begin
+        IS_OVER:begin
+
+        end
+        OVER:begin
 
         end
         S8:begin
@@ -120,9 +123,6 @@ always @(*) begin
 
         end
         S13:begin
-
-        end
-        OVER:begin
 
         end
         default: next_state = IDLE;
@@ -136,28 +136,31 @@ always @(posedge clk) begin
         IDLE:begin
 
         end
-        S0:begin
+        DOT_WORD:begin
 
         end
-        S1:begin
+        BEGIN_WORD:begin
 
         end
-        S2:begin
+        DOLLAR_WORD:begin
 
         end
-        S3:begin
+        CHAR:begin
 
         end
-        S4:begin
+        STAR_CONI:begin
 
         end
-        S5:begin
+        STAR_WORD:begin
 
         end
-        S6:begin
+        MISS_MATCH:begin
 
         end
-        S7:begin
+        IS_OVER:begin
+
+        end
+        OVER:begin
 
         end
         S8:begin
@@ -176,9 +179,6 @@ always @(posedge clk) begin
 
         end
         S13:begin
-
-        end
-        OVER:begin
 
         end
     endcase

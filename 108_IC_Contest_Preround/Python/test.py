@@ -21,7 +21,7 @@ for i in range(len(test_string_1)):
     string_1.append(test_string_1[i])
 
 string_1.append(' ')
-print(string_1)
+# print(string_1)
 # string space extned end--------------------------------
 
 #--------------------
@@ -31,10 +31,10 @@ match_index_of_string =[] #log "all" test data match index
 for test_data_pattern_index in range(len(test_pattern_1)): #for used to compare each pattern
 # for test_data_pattern_index in range(2,3): #for used to compare each pattern
     pattern = test_pattern_1[test_data_pattern_index] #pattern to compare with
-    print(pattern)
+    # print(pattern)
     # print(len(pattern))
     match = 0
-    match_index = -1        # log test data match index
+    match_index = 0        # log test data match index
     pattern_index = 0       # log index which pattern been compared
     string_index = 0        # log index which pattern been compared
     
@@ -45,22 +45,23 @@ for test_data_pattern_index in range(len(test_pattern_1)): #for used to compare 
     
     while (1):
         # "." str-------------------------------------------------------
-        print("----------------------------------------------------------")
-        print("dot_fg =",dot_fg)
-        print("star_cnt =",star_cnt)
-        print("star_fg =",star_fg)
-        print("match_index = ",match_index)
-        print("pattern_index = ",pattern_index)
-        print("string_index = ",string_index)
-        print("pattern = ",ord(pattern[pattern_index]),pattern[pattern_index])
-        print("string = ",ord(string_1[string_index]),string_1[string_index])
-        print("----------------------------------------------------------")  
+        # print("----------------------------------------------------------")
+        # print("dot_fg =",dot_fg)
+        # print("star_cnt =",star_cnt)
+        # print("star_fg =",star_fg)
+        # print("match_index = ",match_index)
+        # print("pattern_index = ",pattern_index)
+        # print("string_index = ",string_index)
+        # print("pattern = ",ord(pattern[pattern_index]),pattern[pattern_index])
+        # print("string = ",ord(string_1[string_index]),string_1[string_index])
+        # print("----------------------------------------------------------")  
 
         # "." str-------------------------------------------------------
         if(ord(pattern[pattern_index]) == 46):
             # pattern first match char with string and log string index
             # but can't be first string index, because the the first char of string is space which added extnedly by us
-            if match_index < 0 and string_index != 0:
+            if match == 0 and string_index != 0:
+                match = 1
                 match_index = string_index
 
             # avoid "." error match the first char of string is space which added extnedly by us
@@ -81,7 +82,8 @@ for test_data_pattern_index in range(len(test_pattern_1)): #for used to compare 
         # pattern char = "^" match string char = " "
         elif (ord(pattern[pattern_index]) == 94 and ord(string_1[string_index]) == 32): 
             # pattern first match char with string and log string index 
-            if match_index < 0:
+            if match == 0:
+                match = 1
                 match_index = string_index
 
             #string index & pattern index added 1 and begin_word_fg be 1
@@ -94,7 +96,8 @@ for test_data_pattern_index in range(len(test_pattern_1)): #for used to compare 
         # pattern char = "$" match string char = " "
         elif (ord(pattern[pattern_index]) == 36 and ord(string_1[string_index]) == 32):
             # pattern first match char with string and log string index 
-            if match_index < 0:
+            if match == 0:
+                match = 1
                 match_index = string_index
             
             #string index & pattern index added 1
@@ -105,7 +108,8 @@ for test_data_pattern_index in range(len(test_pattern_1)): #for used to compare 
         # "char" str----------------------------------------------------
         elif (ord(pattern[pattern_index]) == ord(string_1[string_index])):
             # pattern first match char with string and log string index 
-            if match_index < 0:
+            if match == 0:
+                match = 1
                 match_index = string_index
 
             # The first cahr to successfully compare after "*" 
@@ -131,7 +135,8 @@ for test_data_pattern_index in range(len(test_pattern_1)): #for used to compare 
         # "*" str-------------------------------------------------------
         elif (ord(pattern[pattern_index]) == 42):
             # pattern first match char with string and log string index 
-            if match_index < 0:
+            if match == 0:
+                match = 1
                 match_index = string_index
             
             # pattern index added 1
@@ -162,13 +167,15 @@ for test_data_pattern_index in range(len(test_pattern_1)): #for used to compare 
             elif dot_fg:
                 string_index = string_index
                 pattern_index = 0
-                match_index = -1
+                match = 0
+                match_index = 0
                 dot_fg = 0
             # Indicates that the char failed to match without "*" and "."
             else:
                 string_index = string_index + 1
                 pattern_index = 0
-                match_index = -1
+                match = 0
+                match_index = 0
         # "else" end----------------------------------------------------   
 
         # Determine whether pattern is found in string------------------
