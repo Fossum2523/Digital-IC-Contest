@@ -8,6 +8,9 @@ output match;
 output [4:0] match_index;
 output valid;
 
+
+// reg valid;
+
 localparam [1:0]IDLE_STRING = 2'd0,
                 GET_STRING = 2'd1,
                 GET_STRING_DONE = 2'd2;
@@ -51,6 +54,15 @@ reg [7:0]pattern[7:0];
 reg [3:0]curr_state;
 reg [3:0]next_state;
 
+reg match;
+reg [4:0] match_index;
+reg string_index;
+reg pattern_index;
+
+reg dot_fg;
+reg begin_word_fg;
+reg star_fg;
+reg stat_cnt;
 //variable definition end----------------------------
 
 //ALU sharing str----------------------------------

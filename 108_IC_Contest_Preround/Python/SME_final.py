@@ -1,6 +1,6 @@
 #create input data str-----------------------------------
 for opop in range(4,5): #can change test data
-    aoao =str(opop)
+    aoao = str(opop)
     f = open(('Btestdata_'+aoao+'.txt'),"r")
     text = f.read()
     f.close
@@ -21,16 +21,17 @@ for i in range(len(test_string_1)):
     string_1.append(test_string_1[i])
 
 string_1.append(' ')
+print(string_1)
 # string space extned end--------------------------------
 
 #--------------------
 match_index_of_string =[] #log "all" test data match index
 
 # print(string_1)
-for test_data_pattern_index in range(len(test_pattern_1)): #for used to compare each pattern
-# for test_data_pattern_index in range(11,12): #for used to compare each pattern
+# for test_data_pattern_index in range(len(test_pattern_1)): #for used to compare each pattern
+for test_data_pattern_index in range(11,12): #for used to compare each pattern
     pattern = test_pattern_1[test_data_pattern_index] #pattern to compare with
-    # print(pattern)
+    print(pattern)
     # print(len(pattern))
     match_index = -1        # log test data match index
     pattern_index = 0       # log index which pattern been compared
@@ -43,16 +44,16 @@ for test_data_pattern_index in range(len(test_pattern_1)): #for used to compare 
     
     while (1):
         # "." str-------------------------------------------------------
-        # print("----------------------------------------------------------")
-        # print("dot_fg =",dot_fg)
-        # print("star_cnt =",star_cnt)
-        # print("star_fg =",star_fg)
-        # print("match_index = ",match_index)
-        # print("pattern_index = ",pattern_index)
-        # print("string_index = ",string_index)
-        # print("pattern = ",ord(pattern[pattern_index]),pattern[pattern_index])
-        # print("string = ",ord(string_1[string_index]),string_1[string_index])
-        # print("----------------------------------------------------------")  
+        print("----------------------------------------------------------")
+        print("dot_fg =",dot_fg)
+        print("star_cnt =",star_cnt)
+        print("star_fg =",star_fg)
+        print("match_index = ",match_index)
+        print("pattern_index = ",pattern_index)
+        print("string_index = ",string_index)
+        print("pattern = ",ord(pattern[pattern_index]),pattern[pattern_index])
+        print("string = ",ord(string_1[string_index]),string_1[string_index])
+        print("----------------------------------------------------------")  
 
         # "." str-------------------------------------------------------
         if(ord(pattern[pattern_index]) == 46):
@@ -135,6 +136,7 @@ for test_data_pattern_index in range(len(test_pattern_1)): #for used to compare 
             # pattern index added 1
             # the comparison of string index is handed over to "*__"
             # because the "*" can represent any number of chars including 0
+            
             pattern_index = pattern_index + 1
             
             # star_fg  changes to 2
@@ -144,33 +146,31 @@ for test_data_pattern_index in range(len(test_pattern_1)): #for used to compare 
         # "else" str----------------------------------------------------
         else:
             # Indicates that the character after "*" failed to match
-            if star_fg == 1 :
+            if star_fg:
                 pattern_index = pattern_index - star_cnt
+                string_index = string_index
                 star_cnt = 0
                 star_fg = 2
-            # Indicates that the char failed to match without "*"
+            # Indicates that the character after "." failed to match
+            # keep sting index because the same char need to compare
+            # example:
+            # string =  "bbabbbb"
+            # pattern = ".a"
+            # 1 round error match : .a != bb
+            # 2 round match :.a == ba
+            elif dot_fg:
+                string_index = string_index
+                dot_fg = 0
+            # Indicates that the char failed to match without "*" and "."
             else:
+                string_index = string_index + 1
                 pattern_index = 0
                 match_index = -1
-            
-            # Indicates that the character after "." failed to match
-            if dot_fg:
-                dot_fg = 0
-                # keep sting index because the same char need to compare
-                # example:
-                # string =  "bbabbbb"
-                # pattern = ".a"
-                # 1 round error match : .a != bb
-                # 2 round match :.a == ba
-                string_index = string_index
-            # Indicates that the char failed to match without "."
-            else :
-                string_index = string_index + 1
         # "else" end----------------------------------------------------   
 
         # Determine whether pattern is found in string------------------
         # string have pattern  and ending char is "*" 
-        if pattern_index == len(pattern) and star_fg == 2: 
+        if len(pattern) == 1 and star_fg == 2: 
             match_index = 0
             break
         # string have pattern
@@ -180,7 +180,7 @@ for test_data_pattern_index in range(len(test_pattern_1)): #for used to compare 
             match_index = match_index - 1 + begin_word_fg
             break
         # string don't have pattern
-        elif string_index == (len(test_string_1)+2) :
+        elif string_index == (len(string_1)) :
             match_index = -1
             break
         # Determine whether pattern is found in string-----------------
