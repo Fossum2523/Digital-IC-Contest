@@ -1,0 +1,3 @@
+Command Line: /usr/cad/synopsys/verdi/2023.12/platform/LINUXAMD64/bin/Novas -nWave
+uname(Linux mergic.ntust.edu.tw 4.18.0-535.el8.x86_64 #1 SMP Sun Jan 14 23:40:17 UTC 2024 x86_64)
+au time 71.698254 1.605970 0.710765 delta 319950848 319950848 total 970584064 970584064

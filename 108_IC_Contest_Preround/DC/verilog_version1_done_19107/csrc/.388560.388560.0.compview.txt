@@ -1,0 +1,7 @@
+Command exited with non-zero status 255
+{"vcs1":{"timestamp_begin":1709899449.236960731, "rt":0.54, "ut":0.03, "st":0.01}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1709899449.043805409}
+{"VCS_COMP_START_TIME": 1709899449.043805409}
+{"VCS_COMP_END_TIME": 1709899449.810057195}
+{"VCS_USER_OPTIONS": "-R -sverilog tb.sv SME.v +define+USECOLOR +access+r +vcs+fsdbon +fsdb+mda +fsdbfile+SME.fsdb -l run.log"}
+{"vcs1": {"peak_mem": 250496}}

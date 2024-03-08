@@ -1,0 +1,42 @@
+version: (200506)
+
+available memory: 64M bytes
+used memory: 196608 bytes [need 192K bytes if disable swap]
+
+used block: 10 [memory(10) file(0)]
+                 [ 8K(8) 64K(2) { total 192K bytes } ]
+overhead: (9514) bytes for (10) blocks [Average: (951) bytes/block]
+
+write  => 0(times) 0K(bytes) [0K bytes to file]
+read   => 2(times) 73K(bytes) [10K bytes compressed data from file]
+access => 758057(times) 5942M(bytes)
+          [hit ratio: 99.9997%]
+
+time: write(0) read(0)  unit: second
+
+swap file directory: (/home/merg112/m11202141/IC_Contest/108_IC_Contest_Preround/verilog_version1/verdiLog)
+used swap file number: (3)
+
+
+
+swap file manager:
+arrSize: (256)
+idxCnt: (4)
+closeHead: (1)
+closeTail: (3)
+openCnt: (3)
+fid(3): fd(1073741825) fileName(/home/merg112/m11202141/IC_Contest/108_IC_Contest_Preround/verilog_version1/simv.daidir/kdb.elab++/work.lib++/SME.v.tdc)
+	size(10169) lastModTime(1709891704) curModTime(1709891704)
+	mode(rb)	hot(0) cool(2) pos(0)
+fid(2): fd(24) fileName(/home/merg112/m11202141/IC_Contest/108_IC_Contest_Preround/verilog_version1/verdiLog/_swap_0001#1988896627#368255)
+	size(0) lastModTime(0) curModTime(1709891867)
+	mode(w+b)	hot(3) cool(1) pos(0)
+fid(1): fd(1073741824) fileName(/home/merg112/m11202141/IC_Contest/108_IC_Contest_Preround/verilog_version1/simv.daidir/kdb.elab++/work.lib++/tb.sv.tdc)
+	size(9374) lastModTime(1709891704) curModTime(1709891704)
+	mode(rb)	hot(2) cool(0) pos(0)
+fid(0): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+==================================================
+mySelf(0x20d53310) pre(0x1efa0bd0) next((nil))
+version(200506)
+date(Oct 26 2023 02:39:12)

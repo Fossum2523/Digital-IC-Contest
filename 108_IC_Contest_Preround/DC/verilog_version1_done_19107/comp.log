@@ -1,0 +1,122 @@
+
+Warning-[LNX_OS_VERUN] Unsupported Linux version
+  Linux version 'CentOS Stream release 8' is not supported on 'x86_64' 
+  officially, assuming linux compatibility by default. Set VCS_ARCH_OVERRIDE 
+  to linux or suse32 to override.
+  Please refer to release notes for information on supported platforms.
+
+Command: vcs -sverilog -full64 -debug_acc -fastcomp -j2 -Xkeyopt=rtopt -lca -f filelist.f \
+-cm line +vcs+fsdbon -kdb -l comp.log
+*** Using c compiler gcc instead of cc ...
+                         Chronologic VCS (TM)
+         Version V-2023.12_Full64 -- Fri Mar  8 18:36:12 2024
+
+                    Copyright (c) 1991 - 2023 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+
+Warning-[DEPRECATED_SWITCH] Deprecated switch specified
+  Deprecated switch '-fastcomp' will be obsolete in future releases.
+  Please remove it from your compile command-line to avoid a warning in future
+  releases.
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS Release Notes
+
+Parsing design file 'SME_syn.v'
+Parsing design file 'tb.sv'
+Top Level Modules:
+       testfixture
+TimeScale is 1 ns / 10 ps
+
+Error-[URMI] Unresolved modules
+SME_syn.v, 582
+"DFFQX1 \pattern_reg[7][5] ( .D (n573),  .CK (clk),  .Q (\pattern[7][5] ));"
+  Module definition of above instance is not found in the design.
+
+
+Error-[URMI] Unresolved modules
+SME_syn.v, 1776
+"AOI2BB2X1 U1737( .B0 (n1456),  .B1 (n933),  .A0N (n1456),  .A1N (\string_v[20][3] ),  .Y (n747));"
+  Module definition of above instance is not found in the design.
+
+
+Error-[URMI] Unresolved modules
+SME_syn.v, 1691
+"AOI2BB2X1 U1670( .B0 (n1436),  .B1 (n1444),  .A0N (n1436),  .A1N (\string_v[12][3] ),  .Y (n811));"
+  Module definition of above instance is not found in the design.
+
+
+Error-[URMI] Unresolved modules
+SME_syn.v, 1606
+"AOI2BB2X1 U1618( .B0 (n1426),  .B1 (n929),  .A0N (n1426),  .A1N (\string_v[6][2] ),  .Y (n860));"
+  Module definition of above instance is not found in the design.
+
+
+Error-[URMI] Unresolved modules
+SME_syn.v, 817
+"NOR2BX1 U1100( .AN (star_cnt[0]),  .B (n964),  .Y (n1526));"
+  Module definition of above instance is not found in the design.
+
+
+Error-[URMI] Unresolved modules
+SME_syn.v, 1926
+"AO22X1 U1882( .A0 (n1502),  .A1 (chardata[2]),  .B0 (n1501),  .B1 (\pattern[3][2] ),  .Y (n608));"
+  Module definition of above instance is not found in the design.
+
+
+Error-[URMI] Unresolved modules
+SME_syn.v, 1137
+"AO22X1 U1306( .A0 (n1200),  .A1 (\string_v[18][6] ),  .B0 (n1183),  .B1 (\string_v[26][6] ),  .Y (n1125));"
+  Module definition of above instance is not found in the design.
+
+
+Error-[URMI] Unresolved modules
+SME_syn.v, 433
+"DFFQX1 \string_v_reg[31][5] ( .D (n657),  .CK (clk),  .Q (\string_v[31][5] ));"
+  Module definition of above instance is not found in the design.
+
+
+Error-[URMI] Unresolved modules
+SME_syn.v, 1841
+"AOI2BB2X1 U1802( .B0 (n1471),  .B1 (n931),  .A0N (n1471),  .A1N (\string_v[28][1] ),  .Y (n685));"
+  Module definition of above instance is not found in the design.
+
+
+Error-[URMI] Unresolved modules
+SME_syn.v, 1052
+"AOI211XL U1257( .A0 (n951),  .A1 (\pattern[1][0] ),  .B0 (n1240),  .C0 (n1082),  .Y (n1087));"
+  Module definition of above instance is not found in the design.
+
+
+Note-[MAX_ERROR_COUNT] Maximum error count reached
+  Current number of errors has reached the default maximum error count (10).
+  Please use +error+<count> to increase the limit.
+
+2 warnings
+10 errors
+
+Warning-[KDB-ELAB-E] Verdi KDB elaboration with error
+  Verdi KDB elaboration finished with 1397 error(s) and 0 warning(s).
+  Please look at this Verdi elaboration log file for details. 
+  /home/merg112/m11202141/IC_Contest/108_IC_Contest_Preround/verilog_version1/simv.daidir/elabcomLog/compiler.log
+
+CPU time: .148 seconds to compile
+Verdi KDB elaboration done and the database successfully generated: 1397 error(s), 0 warning(s)
+Please look at this Verdi elaboration log file for details: simv.daidir/elabcomLog/compiler.log

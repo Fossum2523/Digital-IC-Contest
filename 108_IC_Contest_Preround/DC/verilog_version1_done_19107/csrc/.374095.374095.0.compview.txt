@@ -1,0 +1,7 @@
+Command exited with non-zero status 255
+{"vcs1":{"timestamp_begin":1709893747.396736863, "rt":0.52, "ut":0.04, "st":0.01}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1709893747.181757268}
+{"VCS_COMP_START_TIME": 1709893747.181757268}
+{"VCS_COMP_END_TIME": 1709893747.943281423}
+{"VCS_USER_OPTIONS": "-R -sverilog tb.sv tb_term.sv SME_syn.v +define+USECOLOR+SDF +access+r +vcs+fsdbon +fsdb+mda +fsdbfile+SME.fsdb -v /cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v +maxdelays -l run_gate.log"}
+{"vcs1": {"peak_mem": 250760}}

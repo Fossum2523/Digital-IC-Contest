@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1709891197.069466418, "rt":0.83, "ut":0.24, "st":0.05}}
+{"vcselab":{"timestamp_begin":1709891197.934097004, "rt":0.57, "ut":0.11, "st":0.01}}
+{"link":{"timestamp_begin":1709891198.531522415, "rt":0.12, "ut":0.09, "st":0.03}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1709891196.849577697}
+{"VCS_COMP_START_TIME": 1709891196.849577697}
+{"VCS_COMP_END_TIME": 1709891199.735438918}
+{"VCS_USER_OPTIONS": "-R -sverilog tb.sv SME_syn.v +define+USECOLOR+SDF +access+r +vcs+fsdbon +fsdb+mda +fsdbfile+SME.fsdb -v /cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v +maxdelays -l run_gate.log"}
+{"vcs1": {"peak_mem": 286628}}
+{"vcselab": {"peak_mem": 157032}}

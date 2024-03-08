@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1709895595.697230744, "rt":0.62, "ut":0.10, "st":0.02}}
+{"vcselab":{"timestamp_begin":1709895596.352785164, "rt":0.56, "ut":0.09, "st":0.01}}
+{"link":{"timestamp_begin":1709895596.934970344, "rt":0.11, "ut":0.09, "st":0.03}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1709895595.501211692}
+{"VCS_COMP_START_TIME": 1709895595.501211692}
+{"VCS_COMP_END_TIME": 1709895597.889632046}
+{"VCS_USER_OPTIONS": "-R -sverilog tb.sv SME.v +define+USECOLOR +access+r +vcs+fsdbon +fsdb+mda +fsdbfile+SME.fsdb -l run.log"}
+{"vcs1": {"peak_mem": 266976}}
+{"vcselab": {"peak_mem": 135144}}

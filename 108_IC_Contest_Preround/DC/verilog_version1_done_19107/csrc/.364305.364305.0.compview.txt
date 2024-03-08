@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1709891608.720335667, "rt":0.69, "ut":0.09, "st":0.08}}
+{"vcselab":{"timestamp_begin":1709891609.445953402, "rt":0.66, "ut":0.09, "st":0.04}}
+{"link":{"timestamp_begin":1709891610.125555135, "rt":0.09, "ut":0.07, "st":0.02}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1709891608.510040846}
+{"VCS_COMP_START_TIME": 1709891608.510040846}
+{"VCS_COMP_END_TIME": 1709891610.269568247}
+{"VCS_USER_OPTIONS": "-full64 -debug_acc -fastcomp -j2 -Xkeyopt=rtopt -lca -f filelist.f +vcs+fsdbon -kdb -l comp.log"}
+{"vcs1": {"peak_mem": 555112}}
+{"vcselab": {"peak_mem": 239024}}
