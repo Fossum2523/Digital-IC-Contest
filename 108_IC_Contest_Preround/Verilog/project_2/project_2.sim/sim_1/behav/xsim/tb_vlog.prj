@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_2.srcs/sources_1/imports/B_ICC2018_priliminary_grad_cell_based/huffman.v" \
+"../../../../project_2.srcs/sim_1/imports/B_ICC2018_priliminary_grad_cell_based/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
