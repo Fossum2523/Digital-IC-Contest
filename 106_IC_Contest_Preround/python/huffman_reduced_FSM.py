@@ -1,5 +1,6 @@
 def insertionSort(array_prob,array_sym,array_weight,array_code):
 
+######### FSM 0 : STEP ########################################################################
     for step in range(1, len(array_prob)):
     # for step in range(len(array_prob) -1 , 1, -1):
         array_weight_orig= array_weight[step]
@@ -9,7 +10,9 @@ def insertionSort(array_prob,array_sym,array_weight,array_code):
         j = step - 1
         
         # Compare key with each element on the left of it until an element smaller than it is found
-        # For descending order, change key<array_prob[j] to key>array_prob[j].        
+        # For descending order, change key<array_prob[j] to key>array_prob[j].   
+
+######### FSM 1 : FIND_BIGGER ########################################################################     
         while (j >= 0 and key < array_prob[j] 
                or ((key == array_prob[j] and array_weight_orig == 0 and array_weight[j] == 0)
                    and array_sym[j] < array_sym_orig)):
@@ -18,12 +21,18 @@ def insertionSort(array_prob,array_sym,array_weight,array_code):
             array_code[j + 1] = array_code[j]
             array_weight[j + 1] = array_weight[j]
             j = j - 1
+######### FSM 1 : FIND_BIGGER ########################################################################    
         
+######### FSM 2 : SWAP_LAST ######################################################################## 
         # Place key at after the element just smaller than it.
         array_weight[j + 1 ] = array_weight_orig 
         array_sym[j + 1 ] = array_sym_orig
         array_code[j + 1 ] = array_code_orig
         array_prob[j + 1] = key
+######### FSM 2 : SWAP_LAST ######################################################################## 
+
+
+#######################################################################################################################
 
 ##### FSM 0 : RECIEVE_DATA #####################################################################
 
@@ -65,34 +74,34 @@ for gray_data_cnt in range(100):
 
 print(A_cnt[0],A_cnt[1],A_cnt[2],A_cnt[3],A_cnt[4],A_cnt[5])
 
-huffman_array_prob = []
-huffman_array_sym = []
+huffman_prob = []
+huffman_sym = []
 
 for insert_cnt in range(6):
-    huffman_array_prob.append(A_cnt[insert_cnt])
-    huffman_array_sym.append(insert_cnt)
+    huffman_prob.append(A_cnt[insert_cnt])
+    huffman_sym.append(insert_cnt)
 
 ##### FSM 0 : RECIEVE_DATA ###########################################################################
 
 
 ##### FSM 1 : INSERTION_SORT  ###########################################################################
-huffman_array_weight = [0,0,0,0,0,0]
+huffman_weight = [0,0,0,0,0,0]
 Huffman_code = ['','','','','','']
 
 print("------------------------------------------------------")
 print("Origin")
-print(f"prob = {huffman_array_prob}")
-print(f"wght = {huffman_array_weight}")
-print(f"symb = {huffman_array_sym}")
+print(f"prob = {huffman_prob}")
+print(f"wght = {huffman_weight}")
+print(f"symb = {huffman_sym}")
 print("------------------------------------------------------\n")
 
-insertionSort(huffman_array_prob,huffman_array_sym,huffman_array_weight,Huffman_code)
+insertionSort(huffman_prob,huffman_sym,huffman_weight,Huffman_code)
 
 print("------------------------------------------------------")
 print("C0")
-print(f"prob = {huffman_array_prob}")
-print(f"wght = {huffman_array_weight}")
-print(f"symb = {huffman_array_sym}")
+print(f"prob = {huffman_prob}")
+print(f"wght = {huffman_weight}")
+print(f"symb = {huffman_sym}")
 print(f"code = {Huffman_code}")
 print("------------------------------------------------------\n")
 ##### FSM 1 : INSERTION_SORT  ###########################################################################
@@ -108,15 +117,15 @@ for combine_cnt in range (5):
 
     for prob_cnt in range (5):
         print(f"prob_cnt = {prob_cnt}")
-        if huffman_array_prob[prob_cnt] != huffman_array_prob[prob_cnt + 1] and fg1 == 0:
+        if huffman_prob[prob_cnt] != huffman_prob[prob_cnt + 1] and fg1 == 0:
             fg1 = prob_cnt + 1
             print(f"flag1 = {fg1}")
-        elif huffman_array_prob[prob_cnt] != huffman_array_prob[prob_cnt + 1] and fg1 != 0: # CH_FSM 1
+        elif huffman_prob[prob_cnt] != huffman_prob[prob_cnt + 1] and fg1 != 0: # CH_FSM 1
             fg2 = prob_cnt + 1
             print(f"flag2 = {fg2}")
             break
-        elif (huffman_array_weight[prob_cnt] != huffman_array_weight[prob_cnt + 1] and fg1 == 0 # CH_FSM 2
-            and huffman_array_weight[prob_cnt + 1] == 0):
+        elif (huffman_weight[prob_cnt] != huffman_weight[prob_cnt + 1] and fg1 == 0 # CH_FSM 2
+            and huffman_weight[prob_cnt + 1] == 0):
             fg1 = prob_cnt + 1
             fg2 = prob_cnt + 2
             print(f"flag1 = {fg1}")
@@ -142,31 +151,31 @@ for combine_cnt in range (5):
 
 ##### FSM 6 : ADD_WEIGHT ##########################################################################    
     for (weight_cnt) in range (fg2):
-        huffman_array_weight[weight_cnt] = huffman_array_weight[weight_cnt] + 1
+        huffman_weight[weight_cnt] = huffman_weight[weight_cnt] + 1
 
-    prob_temp = huffman_array_prob[fg1 - 1] + huffman_array_prob[fg1]
+    prob_temp = huffman_prob[fg1 - 1] + huffman_prob[fg1]
 ##### FSM 6 : ADD_WEIGHT ##########################################################################
 
 
 ##### FSM 7 : ADJUST_PROB ##########################################################################
     for (prob_cnt) in range (fg2):
-        huffman_array_prob[prob_cnt] = prob_temp
+        huffman_prob[prob_cnt] = prob_temp
 ##### FSM 7 : ADJUST_PROB ##########################################################################
 
 ##### FSM 1 : INSERTION_SORT  ###########################################################################
     print("------------------------------------------------------")
     print(f"C{combine_cnt+1} after increasing weight and merge prob")        
-    print(f"prob = {huffman_array_prob}")
-    print(f"wght = {huffman_array_weight}")
-    print(f"symb = {huffman_array_sym}")
+    print(f"prob = {huffman_prob}")
+    print(f"wght = {huffman_weight}")
+    print(f"symb = {huffman_sym}")
     print(f"code = {Huffman_code}")
  
-    insertionSort(huffman_array_prob,huffman_array_sym,huffman_array_weight,Huffman_code)
+    insertionSort(huffman_prob,huffman_sym,huffman_weight,Huffman_code)
 
     print(f"C{combine_cnt+1} after insertion sort") 
-    print(f"prob = {huffman_array_prob}")
-    print(f"wght = {huffman_array_weight}")
-    print(f"symb = {huffman_array_sym}")
+    print(f"prob = {huffman_prob}")
+    print(f"wght = {huffman_weight}")
+    print(f"symb = {huffman_sym}")
     print(f"code = {Huffman_code}")
     print("------------------------------------------------------\n")
 ##### FSM 1 : INSERTION_SORT  ###########################################################################
@@ -174,13 +183,13 @@ for combine_cnt in range (5):
 
 ########################################################################################################################
 
-insertionSort(huffman_array_sym,huffman_array_prob,huffman_array_weight,Huffman_code)
+insertionSort(huffman_sym,huffman_prob,huffman_weight,Huffman_code)
 
 print("------------------------------------------------------")
 print("split")
-print(f"prob = {huffman_array_prob}")
-print(f"wght = {huffman_array_weight}")
-print(f"symb = {huffman_array_sym}")
+print(f"prob = {huffman_prob}")
+print(f"wght = {huffman_weight}")
+print(f"symb = {huffman_sym}")
 print(f"code = {Huffman_code}")
 print("------------------------------------------------------\n")
 ## Split end ----------------------------------------------------------------------------------------------------------
