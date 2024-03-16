@@ -13,3 +13,61 @@
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/USER/Desktop/IC_Compete_Sync/106_IC_Contest_Preround/verilog/huffman/huffman.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/USER/Desktop/IC_Compete_Sync/106_IC_Contest_Preround/verilog/huffman/tb_behav.wcfg
+source tb.tcl
+run 5 us
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+relaunch_sim
+run all
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run all
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+save_wave_config {C:/Users/USER/Desktop/IC_Compete_Sync/106_IC_Contest_Preround/verilog/huffman/tb_behav.wcfg}
+close_sim
