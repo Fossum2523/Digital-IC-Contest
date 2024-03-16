@@ -3,10 +3,10 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Sat Mar 16 22:46:49 2024
-# Process ID: 24320
+# Start of session at: Sun Mar 17 00:46:35 2024
+# Process ID: 10308
 # Current directory: C:/Users/USER/Desktop/IC_Compete_Sync/106_IC_Contest_Preround/verilog/huffman
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5540 C:\Users\USER\Desktop\IC_Compete_Sync\106_IC_Contest_Preround\verilog\huffman\huffman.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16108 C:\Users\USER\Desktop\IC_Compete_Sync\106_IC_Contest_Preround\verilog\huffman\huffman.xpr
 # Log file: C:/Users/USER/Desktop/IC_Compete_Sync/106_IC_Contest_Preround/verilog/huffman/vivado.log
 # Journal file: C:/Users/USER/Desktop/IC_Compete_Sync/106_IC_Contest_Preround/verilog/huffman\vivado.jou
 # Running On: LAPTOP-2P71OMBV, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 16542 MB
@@ -69,11 +69,10 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-INFO: [Project 1-313] Project file moved from 'E:/Projects/IC_Contest/106_IC_Contest_Preround/verilog/huffman' since last save.
 INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/USER/Desktop/IC_Compete_Sync/106_IC_Contest_Preround/verilog/huffman/huffman.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
-open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 1505.066 ; gain = 201.781
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:08 . Memory (MB): peak = 1506.883 ; gain = 179.629

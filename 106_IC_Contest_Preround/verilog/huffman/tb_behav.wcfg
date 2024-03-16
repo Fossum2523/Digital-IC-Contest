@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="1,053.177 ns"></ZoomStartTime>
-      <ZoomEndTime time="1,501.378 ns"></ZoomEndTime>
-      <Cursor1Time time="1,382.777 ns"></Cursor1Time>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="898.001 ns"></ZoomEndTime>
+      <Cursor1Time time="1,155.626 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="329"></NameColumnWidth>
-      <ValueColumnWidth column_width="238"></ValueColumnWidth>
+      <NameColumnWidth column_width="216"></NameColumnWidth>
+      <ValueColumnWidth column_width="156"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="20" />
+   <WVObjectSize size="47" />
    <wvobject fp_name="/tb/CLK" type="logic">
       <obj_property name="ElementShortName">CLK</obj_property>
       <obj_property name="ObjectShortName">CLK</obj_property>
@@ -44,76 +44,6 @@
    <wvobject fp_name="/tb/u_huffman/CH_INSERT_FIND_BIG" type="logic">
       <obj_property name="ElementShortName">CH_INSERT_FIND_BIG</obj_property>
       <obj_property name="ObjectShortName">CH_INSERT_FIND_BIG</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/u_huffman/huffman_prob" type="array">
-      <obj_property name="ElementShortName">huffman_prob[5:0][7:0]</obj_property>
-      <obj_property name="ObjectShortName">huffman_prob[5:0][7:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
-      <obj_property name="UseCustomSignalColor">true</obj_property>
-      <wvobject fp_name="/tb/u_huffman/huffman_prob[5]" type="array">
-         <obj_property name="ElementShortName">[5][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[5][7:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
-         <obj_property name="UseCustomSignalColor">true</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/u_huffman/huffman_prob[4]" type="array">
-         <obj_property name="ElementShortName">[4][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[4][7:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
-         <obj_property name="UseCustomSignalColor">true</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/u_huffman/huffman_prob[3]" type="array">
-         <obj_property name="ElementShortName">[3][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[3][7:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
-         <obj_property name="UseCustomSignalColor">true</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/u_huffman/huffman_prob[2]" type="array">
-         <obj_property name="ElementShortName">[2][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[2][7:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
-         <obj_property name="UseCustomSignalColor">true</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/u_huffman/huffman_prob[1]" type="array">
-         <obj_property name="ElementShortName">[1][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[1][7:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
-         <obj_property name="UseCustomSignalColor">true</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/u_huffman/huffman_prob[0]" type="array">
-         <obj_property name="ElementShortName">[0][7:0]</obj_property>
-         <obj_property name="ObjectShortName">[0][7:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
-         <obj_property name="UseCustomSignalColor">true</obj_property>
-      </wvobject>
-   </wvobject>
-   <wvobject fp_name="/tb/u_huffman/huffman_sym" type="array">
-      <obj_property name="ElementShortName">huffman_sym[5:0][4:0]</obj_property>
-      <obj_property name="ObjectShortName">huffman_sym[5:0][4:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
-      <obj_property name="UseCustomSignalColor">true</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/u_huffman/curr_state" type="array">
-      <obj_property name="ElementShortName">curr_state[3:0]</obj_property>
-      <obj_property name="ObjectShortName">curr_state[3:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-      <obj_property name="CustomSignalColor">#FFA500</obj_property>
-      <obj_property name="UseCustomSignalColor">true</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/u_huffman/next_state" type="array">
-      <obj_property name="ElementShortName">next_state[3:0]</obj_property>
-      <obj_property name="ObjectShortName">next_state[3:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-      <obj_property name="CustomSignalColor">#FFA500</obj_property>
-      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/u_huffman/step_cnt" type="array">
       <obj_property name="ElementShortName">step_cnt[9:0]</obj_property>
@@ -157,6 +87,75 @@
       <obj_property name="UseCustomSignalColor">true</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
+   <wvobject fp_name="/tb/u_huffman/prob_cnt_plus_one" type="array">
+      <obj_property name="ElementShortName">prob_cnt_plus_one[9:0]</obj_property>
+      <obj_property name="ObjectShortName">prob_cnt_plus_one[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_huffman/prob_cnt" type="array">
+      <obj_property name="ElementShortName">prob_cnt[9:0]</obj_property>
+      <obj_property name="ObjectShortName">prob_cnt[9:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_huffman/fg1" type="array">
+      <obj_property name="ElementShortName">fg1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">fg1[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_huffman/fg2" type="array">
+      <obj_property name="ElementShortName">fg2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">fg2[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_huffman/combine_cnt" type="array">
+      <obj_property name="ElementShortName">combine_cnt[9:0]</obj_property>
+      <obj_property name="ObjectShortName">combine_cnt[9:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_huffman/prob_temp" type="array">
+      <obj_property name="ElementShortName">prob_temp[9:0]</obj_property>
+      <obj_property name="ObjectShortName">prob_temp[9:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_huffman/curr_state" type="array">
+      <obj_property name="ElementShortName">curr_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">curr_state[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_huffman/next_state" type="array">
+      <obj_property name="ElementShortName">next_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">next_state[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_huffman/UNEQUAL_W_FG_0" type="logic">
+      <obj_property name="ElementShortName">UNEQUAL_W_FG_0</obj_property>
+      <obj_property name="ObjectShortName">UNEQUAL_W_FG_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_huffman/UNEQUAL_W_FG_1" type="logic">
+      <obj_property name="ElementShortName">UNEQUAL_W_FG_1</obj_property>
+      <obj_property name="ObjectShortName">UNEQUAL_W_FG_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_huffman/UNEQUAL_W_FG_2" type="logic">
+      <obj_property name="ElementShortName">UNEQUAL_W_FG_2</obj_property>
+      <obj_property name="ObjectShortName">UNEQUAL_W_FG_2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_huffman/huffman_prob" type="array">
+      <obj_property name="ElementShortName">huffman_prob[5:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">huffman_prob[5:0][7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
    <wvobject fp_name="/tb/u_huffman/huffman_weight" type="array">
       <obj_property name="ElementShortName">huffman_weight[5:0][4:0]</obj_property>
       <obj_property name="ObjectShortName">huffman_weight[5:0][4:0]</obj_property>
@@ -164,19 +163,253 @@
       <obj_property name="CustomSignalColor">#00FFFF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
+   <wvobject fp_name="/tb/u_huffman/code_valid" type="logic">
+      <obj_property name="ElementShortName">code_valid</obj_property>
+      <obj_property name="ObjectShortName">code_valid</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
    <wvobject fp_name="/tb/u_huffman/huffman_code" type="array">
       <obj_property name="ElementShortName">huffman_code[5:0][7:0]</obj_property>
       <obj_property name="ObjectShortName">huffman_code[5:0][7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <wvobject fp_name="/tb/u_huffman/huffman_code[5]" type="array">
+         <obj_property name="ElementShortName">[5][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/u_huffman/huffman_code[4]" type="array">
+         <obj_property name="ElementShortName">[4][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/u_huffman/huffman_code[3]" type="array">
+         <obj_property name="ElementShortName">[3][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/u_huffman/huffman_code[2]" type="array">
+         <obj_property name="ElementShortName">[2][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/u_huffman/huffman_code[1]" type="array">
+         <obj_property name="ElementShortName">[1][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/u_huffman/huffman_code[0]" type="array">
+         <obj_property name="ElementShortName">[0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb/u_huffman/HC1" type="array">
+      <obj_property name="ElementShortName">HC1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">HC1[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_huffman/HC2" type="array">
+      <obj_property name="ElementShortName">HC2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">HC2[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_huffman/HC3" type="array">
+      <obj_property name="ElementShortName">HC3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">HC3[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_huffman/HC4" type="array">
+      <obj_property name="ElementShortName">HC4[7:0]</obj_property>
+      <obj_property name="ObjectShortName">HC4[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_huffman/HC5" type="array">
+      <obj_property name="ElementShortName">HC5[7:0]</obj_property>
+      <obj_property name="ObjectShortName">HC5[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_huffman/HC6" type="array">
+      <obj_property name="ElementShortName">HC6[7:0]</obj_property>
+      <obj_property name="ObjectShortName">HC6[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_huffman/huffman_mask" type="array">
+      <obj_property name="ElementShortName">huffman_mask[5:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">huffman_mask[5:0][7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <wvobject fp_name="/tb/u_huffman/huffman_mask[5]" type="array">
+         <obj_property name="ElementShortName">[5][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/u_huffman/huffman_mask[4]" type="array">
+         <obj_property name="ElementShortName">[4][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/u_huffman/huffman_mask[3]" type="array">
+         <obj_property name="ElementShortName">[3][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/u_huffman/huffman_mask[2]" type="array">
+         <obj_property name="ElementShortName">[2][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/u_huffman/huffman_mask[1]" type="array">
+         <obj_property name="ElementShortName">[1][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/u_huffman/huffman_mask[0]" type="array">
+         <obj_property name="ElementShortName">[0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb/u_huffman/M1" type="array">
+      <obj_property name="ElementShortName">M1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">M1[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_huffman/M2" type="array">
+      <obj_property name="ElementShortName">M2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">M2[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_huffman/M3" type="array">
+      <obj_property name="ElementShortName">M3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">M3[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_huffman/M4" type="array">
+      <obj_property name="ElementShortName">M4[7:0]</obj_property>
+      <obj_property name="ObjectShortName">M4[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_huffman/M5" type="array">
+      <obj_property name="ElementShortName">M5[7:0]</obj_property>
+      <obj_property name="ObjectShortName">M5[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_huffman/M6" type="array">
+      <obj_property name="ElementShortName">M6[7:0]</obj_property>
+      <obj_property name="ObjectShortName">M6[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_huffman/huffman_sym" type="array">
+      <obj_property name="ElementShortName">huffman_sym[5:0][4:0]</obj_property>
+      <obj_property name="ObjectShortName">huffman_sym[5:0][4:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       <obj_property name="CustomSignalColor">#00FFFF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
+      <wvobject fp_name="/tb/u_huffman/huffman_sym[5]" type="array">
+         <obj_property name="ElementShortName">[5][4:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][4:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/u_huffman/huffman_sym[4]" type="array">
+         <obj_property name="ElementShortName">[4][4:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][4:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/u_huffman/huffman_sym[3]" type="array">
+         <obj_property name="ElementShortName">[3][4:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][4:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/u_huffman/huffman_sym[2]" type="array">
+         <obj_property name="ElementShortName">[2][4:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][4:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/u_huffman/huffman_sym[1]" type="array">
+         <obj_property name="ElementShortName">[1][4:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][4:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/u_huffman/huffman_sym[0]" type="array">
+         <obj_property name="ElementShortName">[0][4:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][4:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
    </wvobject>
-   <wvobject fp_name="/tb/u_huffman/combine_cnt" type="array">
-      <obj_property name="ElementShortName">combine_cnt[9:0]</obj_property>
-      <obj_property name="ObjectShortName">combine_cnt[9:0]</obj_property>
+   <wvobject fp_name="/tb/u_huffman/sym_1" type="array">
+      <obj_property name="ElementShortName">sym_1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">sym_1[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#D2691E</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/u_huffman/prob_cnt" type="array">
-      <obj_property name="ElementShortName">prob_cnt[9:0]</obj_property>
-      <obj_property name="ObjectShortName">prob_cnt[9:0]</obj_property>
+   <wvobject fp_name="/tb/u_huffman/sym_2" type="array">
+      <obj_property name="ElementShortName">sym_2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">sym_2[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#D2691E</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_huffman/sym_3" type="array">
+      <obj_property name="ElementShortName">sym_3[4:0]</obj_property>
+      <obj_property name="ObjectShortName">sym_3[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#D2691E</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_huffman/sym_4" type="array">
+      <obj_property name="ElementShortName">sym_4[4:0]</obj_property>
+      <obj_property name="ObjectShortName">sym_4[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#D2691E</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_huffman/sym_5" type="array">
+      <obj_property name="ElementShortName">sym_5[4:0]</obj_property>
+      <obj_property name="ObjectShortName">sym_5[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#D2691E</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_huffman/sym_6" type="array">
+      <obj_property name="ElementShortName">sym_6[4:0]</obj_property>
+      <obj_property name="ObjectShortName">sym_6[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#D2691E</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
 </wave_config>
