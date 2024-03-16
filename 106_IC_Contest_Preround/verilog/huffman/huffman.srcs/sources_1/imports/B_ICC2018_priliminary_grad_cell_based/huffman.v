@@ -13,17 +13,17 @@ output [7:0] M1, M2, M3, M4, M5, M6;
   
 localparam [3:0]IDLE = 4'd0,
                 RECIVE_DATA = 4'd1,
-                INSERTION_SORT = 4'd2,
-                COMBINE = 4'd3,
-                FIND_FLAG = 4'd4,
-                FIND_FLAG_FINAL = 4'd5,
-                GIVE_HUFFCODE = 4'd6,
-                ADD_WEIGHT = 4'd7,
-                ADJUST_PROB = 4'd8,
-                OVER = 4'd9,
-                S8 = 4'd10,
-                S9 = 4'd11,
-                S10 = 4'd12,
+                INSER_STEP = 4'd2,
+                INSERT_FIND_BIG = 4'd3,
+                INSERT_SWAP = 4'd4,
+                COMBINE = 4'd5,
+                FIND_FLAG = 4'd6,
+                FIND_FLAG_FINAL = 4'd7,
+                GIVE_HUFFCODE = 4'd8,
+                ADD_WEIGHT = 4'd9,
+                ADJUST_PROB = 4'd10,
+                SET_MASK = 4'd11,
+                OVER = 4'd12,
                 S11 = 4'd13,
                 S12 = 4'd14,
                 S13 = 4'd15;
@@ -45,7 +45,6 @@ reg [9:0]prob_temp;
 
 reg [9:0]combine_cnt;
 reg [9:0]prob_cnt;
-
 //variable definition end----------------------------
 
 
@@ -82,7 +81,16 @@ always @(*) begin
         IDLE:begin
 
         end
-        INSERTION_SORT:begin
+        RECIVE_DATA:begin
+
+        end
+        INSER_STEP:begin
+
+        end
+        INSERT_FIND_BIG:begin
+
+        end
+        INSERT_SWAP:begin
 
         end
         COMBINE:begin
@@ -103,16 +111,10 @@ always @(*) begin
         ADJUST_PROB:begin
 
         end
+        SET_MASK:begin
+
+        end
         OVER:begin
-
-        end
-        S8:begin
-
-        end
-        S9:begin
-
-        end
-        S10:begin
 
         end
         S11:begin
@@ -124,9 +126,7 @@ always @(*) begin
         S13:begin
 
         end
-        RECIVE_DATA:begin
 
-        end
         default: next_state = IDLE;
     endcase
 end
@@ -138,7 +138,16 @@ always @(posedge clk) begin
         IDLE:begin
 
         end
-        INSERTION_SORT:begin
+        RECIVE_DATA:begin
+
+        end
+        INSER_STEP:begin
+
+        end
+        INSERT_FIND_BIG:begin
+
+        end
+        INSERT_SWAP:begin
 
         end
         COMBINE:begin
@@ -159,16 +168,10 @@ always @(posedge clk) begin
         ADJUST_PROB:begin
 
         end
+        SET_MASK:begin
+
+        end
         OVER:begin
-
-        end
-        S8:begin
-
-        end
-        S9:begin
-
-        end
-        S10:begin
 
         end
         S11:begin
@@ -178,9 +181,6 @@ always @(posedge clk) begin
 
         end
         S13:begin
-
-        end
-        RECIVE_DATA:begin
 
         end
     endcase
