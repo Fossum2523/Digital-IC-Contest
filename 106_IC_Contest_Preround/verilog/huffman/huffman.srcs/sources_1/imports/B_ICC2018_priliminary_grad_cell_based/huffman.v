@@ -11,6 +11,8 @@ output code_valid;
 output [7:0] HC1, HC2, HC3, HC4, HC5, HC6;
 output [7:0] M1, M2, M3, M4, M5, M6;
   
+
+  
 localparam [3:0]IDLE = 4'd0,
                 RECIVE_DATA = 4'd1,
                 INSERT_STEP = 4'd2,
