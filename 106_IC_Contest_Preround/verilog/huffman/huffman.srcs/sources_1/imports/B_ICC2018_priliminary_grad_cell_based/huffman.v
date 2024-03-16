@@ -36,15 +36,11 @@ reg [3:0]curr_state;
 reg [3:0]next_state;
 
 reg [7:0]huffman_prob[5:0];
-reg [7:0]key;
 reg [4:0]huffman_sym[5:0];
-reg [4:0]array_sym_orig;
 reg [4:0]huffman_weight[5:0];
-reg [4:0]array_weight_orig;
 reg [7:0]huffman_code[5:0];
-reg [7:0]array_code_orig;
+reg [7:0]huffman_mask[5:0];
 
-reg recieve_fg;
 reg [4:0]fg1;
 reg [4:0]fg2;
 
@@ -52,13 +48,10 @@ reg [9:0]prob_temp;
 
 reg [9:0]combine_cnt;
 reg [9:0]prob_cnt;
-reg [9:0]step_cnt;
-reg [9:0]j;
 
-wire CH_INSERT_FIND_BIG;
-wire [9:0]step_plus_onel;
-wire [9:0]j_minus_one;
-wire j_is_zero;
+wire UNEQUAL_W_FG_0;
+wire UNEQUAL_W_FG_1;
+wire UNEQUAL_W_FG_2;
 //variable definition end----------------------------
 
 
@@ -76,20 +69,18 @@ assign HC3 = huffman_code[2];
 assign HC4 = huffman_code[3];
 assign HC5 = huffman_code[4];
 assign HC6 = huffman_code[5];
+
+assign UNEQUAL_W_FG_1 = (huffman_prob[prob_cnt] != huffman_prob[prob_cnt + 1])
+                        && (fg1 == 0) ? 1'b1 : 1'b0;
+assign UNEQUAL_W_FG_1 = (huffman_prob[prob_cnt] != huffman_prob[prob_cnt + 1]) 
+                        && (fg1 != 0) ? 1'b1 : 1'b0;
+assign UNEQUAL_W_FG_2 = (huffman_weight[prob_cnt] != huffman_weight[prob_cnt + 1]) 
+                        && (fg1 == 0) ? 1'b1 : 1'b0;
+
 // assignment end-----------------------------------
 
 
 //ALU sharing str----------------------------------
-assign j_minus_one = j - 10'd1;
-
-assign j_is_zero = (j==0) ? 1'b0 :
-                    ((key == huffman_prob[j_minus_one]) && !array_weight_orig && !huffman_weight[j_minus_one]) 
-                    && (huffman_sym[j_minus_one] < array_sym_orig) 
-                    ? 1'b1 : 1'b0;
-assign CH_INSERT_FIND_BIG = ((j > 0 && key < huffman_prob[j_minus_one]) || j_is_zero)
-                            ? 1'd1 : 1'd0;
-
-
 
 //ALU sharing end----------------------------------
 
@@ -103,52 +94,49 @@ end
 always @(*) begin
     case(curr_state)
         IDLE:begin
-            next_state = RECIVE_DATA;
+
         end
         RECIVE_DATA:begin
-            if (!gray_valid && recieve_fg) 
-                next_state = INSERT_STEP;
-            else
-                next_state = RECIVE_DATA;
+
         end
         INSERT_STEP:begin
-            next_state = INSERT_FIND_BIG;
+
         end
         INSERT_FIND_BIG:begin
-            if (CH_INSERT_FIND_BIG)
-                next_state = INSERT_FIND_BIG;
-            else
-                next_state = INSERT_SWAP;
+
         end
         INSERT_SWAP:begin
-            if (step_cnt == 5)
-                next_state = COMBINE;
-            else 
-                next_state = INSERT_STEP;
+
         end
         COMBINE:begin
-
+            if(combine_cnt < 4)
+                next_state = FIND_FLAG;
+            else
+                next_state = SET_MASK;
         end
         FIND_FLAG:begin
-
+            if(prob_cnt == 4 || UNEQUAL_W_FG_1 || UNEQUAL_W_FG_2)
+                next_state = FIND_FLAG_FINAL;
+            else
+                next_state = FIND_FLAG;
         end
         FIND_FLAG_FINAL:begin
-
+            next_state = GIVE_HUFFCODE;
         end
         GIVE_HUFFCODE:begin
-
+            next_state = ADD_WEIGHT;
         end
         ADD_WEIGHT:begin
-
+            next_state = ADJUST_PROB;
         end
         ADJUST_PROB:begin
-
+            next_state = INSERT_STEP;
         end
         SET_MASK:begin
-
+            next_state = OVER;
         end
         OVER:begin
-
+            next_state = OVER;
         end
         S11:begin
 
@@ -169,100 +157,67 @@ end
 always @(posedge clk) begin
     case(curr_state)
         IDLE:begin
-            huffman_prob[0] <= 8'd0;
-            huffman_prob[1] <= 8'd0;
-            huffman_prob[2] <= 8'd0;
-            huffman_prob[3] <= 8'd0;
-            huffman_prob[4] <= 8'd0;
-            huffman_prob[5] <= 8'd0;
-            huffman_weight[0] <= 5'd0;
-            huffman_weight[1] <= 5'd0;
-            huffman_weight[2] <= 5'd0;
-            huffman_weight[3] <= 5'd0;
-            huffman_weight[4] <= 5'd0;
-            huffman_weight[5] <= 5'd0;
-            huffman_sym[0] <= 5'd0;
-            huffman_sym[1] <= 5'd1;
-            huffman_sym[2] <= 5'd2;
-            huffman_sym[3] <= 5'd3;
-            huffman_sym[4] <= 5'd4;
-            huffman_sym[5] <= 5'd5;
-            huffman_code[0] <= 8'd0;
-            huffman_code[1] <= 8'd0;
-            huffman_code[2] <= 8'd0;
-            huffman_code[3] <= 8'd0;
-            huffman_code[4] <= 8'd0;
-            huffman_code[5] <= 8'd0;
-            recieve_fg <= 1'd0;
-            array_weight_orig <= 5'd0;
-            array_sym_orig <= 5'd0;
-            array_code_orig <= 8'd0;
-            key <= 8'd0;
-            j <= 10'd1;
             combine_cnt <= 10'd0;
+            fg1 <= 5'd0;
+            fg2 <= 5'd0;
+            prob_temp <= 10'd0;
             prob_cnt <= 10'd0;
-            step_cnt <= 10'd1;
         end
         RECIVE_DATA:begin
-            if (gray_valid) begin
-                recieve_fg <= 1'd1;
-                if(gray_data == 1)
-                    huffman_prob[0] = huffman_prob[0] + 8'd1;
-                else if (gray_data == 2)
-                    huffman_prob[1] = huffman_prob[1] + 8'd1;
-                else if(gray_data == 3)
-                    huffman_prob[2] = huffman_prob[2] + 8'd1;
-                else if(gray_data == 4)
-                    huffman_prob[3] = huffman_prob[3] + 8'd1;
-                else if(gray_data == 5)
-                    huffman_prob[4] = huffman_prob[4] + 8'd1;
-                else if(gray_data == 6)
-                    huffman_prob[5] = huffman_prob[5] + 8'd1;
-            end
+
         end
         INSERT_STEP:begin
-            array_weight_orig <= huffman_weight[step_cnt];
-            array_sym_orig <= huffman_sym[step_cnt];
-            array_code_orig <= huffman_code[step_cnt];
-            key <= huffman_prob[step_cnt];
-            j <= step_cnt;
+
         end
         INSERT_FIND_BIG:begin
-            if (CH_INSERT_FIND_BIG)begin
-                huffman_sym[j] <= huffman_sym[j_minus_one];
-                huffman_prob[j] <= huffman_prob[j_minus_one];
-                huffman_code[j] <= huffman_code[j_minus_one];
-                huffman_weight[j] <= huffman_weight[j_minus_one];
-                j <= j - 10'd1;
-            end
+
         end
         INSERT_SWAP:begin
-            huffman_weight[j ] <= array_weight_orig;
-            huffman_sym[j ] <= array_sym_orig;
-            huffman_code[j ] <= array_code_orig;
-            huffman_prob[j] <= key;
-            step_cnt <= step_cnt + 10'd1;
+
         end
         COMBINE:begin
-
+            combine_cnt <= combine_cnt + 1'b1;
+            fg1 <= 5'd0;
+            fg2 <= 5'd0;
+            prob_temp <= 10'd0;
+            prob_cnt <= 10'd0;
         end
         FIND_FLAG:begin
-
+            prob_cnt <= prob_cnt + 1'b1;
+            if(UNEQUAL_W_FG_0)
+                fg1 <= prob_cnt + 1'b1;
+            else if(UNEQUAL_W_FG_1)
+                fg2 <= prob_cnt + 1;
+            else if(UNEQUAL_W_FG_2)
+                fg1 <= prob_cnt + 1;
+                fg2 <= prob_cnt + 2;
         end
         FIND_FLAG_FINAL:begin
-
+            if(fg1 != 0 && fg2 == 0 && prob_cnt == 4)
+                fg2 <= 6;
         end
-        GIVE_HUFFCODE:begin
-
+        GIVE_HUFFCODE:begin//prob_cnt ?
+            for(prob_cnt = 0 ; prob_cnt<fg1 ; prob_cnt = prob_cnt + 1'b1)begin
+                huffman_code[prob_cnt] <= huffman_code[prob_cnt] + 1'b1 << huffman_weight[prob_cnt];
+            end
+            // for(prob_cnt = fg1 ; prob_cnt<fg2 ; prob_cnt = prob_cnt + 1'b1)begin
+            //     huffman_code[prob_cnt] <= huffman_code[prob_cnt] + 0 << huffman_weight[prob_cnt];
+            // end
         end
         ADD_WEIGHT:begin
-
+            for(prob_cnt = 0 ; prob_cnt<fg2 ; prob_cnt = prob_cnt + 1'b1)begin
+                huffman_mask[prob_cnt] <= mask[prob_cnt] + 1'b1 << huffman_weight[prob_cnt];
+                huffman_weight[prob_cnt] <= huffman_weight[prob_cnt] + 1'b1;
+            end
+            prob_temp <= huffman_prob[fg1 - 1] + huffman_prob[fg1];
         end
         ADJUST_PROB:begin
-
-        end
+            for(prob_cnt = 0 ; prob_cnt<fg2 ; prob_cnt = prob_cnt + 1'b1)begin
+                huffman_weight[prob_cnt] <= huffman_weight[prob_cnt] + 1'b1;
+            end
+        end 
         SET_MASK:begin
-
+            
         end
         OVER:begin
 
