@@ -7,30 +7,30 @@ def insertionSort(array_prob,array_sym,array_weight,array_code):
         array_sym_orig= array_sym[step]
         array_code_orig = array_code[step]
         key = array_prob[step]
-        j = step - 1
+        j = step
         
         # Compare key with each element on the left of it until an element smaller than it is found
         # For descending order, change key<array_prob[j] to key>array_prob[j].   
         print(f'step = {step}')
         
 ######### FSM 1 : FIND_BIGGER ########################################################################     
-        while (j >= 0 and key < array_prob[j] 
-               or ((key == array_prob[j] and array_weight_orig == 0 and array_weight[j] == 0)
-                   and array_sym[j] < array_sym_orig)):
+        while (j > 0 and key < array_prob[j -1 ] 
+               or ((key == array_prob[j - 1] and array_weight_orig == 0 and array_weight[j - 1] == 0)
+                   and array_sym[j - 1] < array_sym_orig)):
             print(f'j = {j}')
-            array_sym[j + 1] = array_sym[j]
-            array_prob[j + 1] = array_prob[j]
-            array_code[j + 1] = array_code[j]
-            array_weight[j + 1] = array_weight[j]
+            array_sym[j] = array_sym[j -1]
+            array_prob[j] = array_prob[j -1]
+            array_code[j] = array_code[j -1]
+            array_weight[j] = array_weight[j -1]
             j = j - 1
 ######### FSM 1 : FIND_BIGGER ########################################################################    
         
 ######### FSM 2 : SWAP_LAST ######################################################################## 
         # Place key at after the element just smaller than it.
-        array_weight[j + 1 ] = array_weight_orig 
-        array_sym[j + 1 ] = array_sym_orig
-        array_code[j + 1 ] = array_code_orig
-        array_prob[j + 1] = key
+        array_weight[j] = array_weight_orig 
+        array_sym[j] = array_sym_orig
+        array_code[j] = array_code_orig
+        array_prob[j] = key
 ######### FSM 2 : SWAP_LAST ######################################################################## 
 
 
