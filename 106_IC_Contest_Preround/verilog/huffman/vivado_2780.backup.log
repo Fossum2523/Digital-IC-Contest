@@ -3,17 +3,17 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Sat Mar 16 22:46:49 2024
-# Process ID: 24320
+# Start of session at: Sat Mar 16 22:45:23 2024
+# Process ID: 2780
 # Current directory: C:/Users/USER/Desktop/IC_Compete_Sync/106_IC_Contest_Preround/verilog/huffman
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5540 C:\Users\USER\Desktop\IC_Compete_Sync\106_IC_Contest_Preround\verilog\huffman\huffman.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent828 C:\Users\USER\Desktop\IC_Compete_Sync\106_IC_Contest_Preround\verilog\huffman\huffman.xpr
 # Log file: C:/Users/USER/Desktop/IC_Compete_Sync/106_IC_Contest_Preround/verilog/huffman/vivado.log
 # Journal file: C:/Users/USER/Desktop/IC_Compete_Sync/106_IC_Contest_Preround/verilog/huffman\vivado.jou
 # Running On: LAPTOP-2P71OMBV, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 16542 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/USER/Desktop/IC_Compete_Sync/106_IC_Contest_Preround/verilog/huffman/huffman.xpr
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARWARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
@@ -68,12 +68,10 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 avail
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-INFO: [Project 1-313] Project file moved from 'E:/Projects/IC_Contest/106_IC_Contest_Preround/verilog/huffman' since last save.
-INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/USER/Desktop/IC_Compete_Sync/106_IC_Contest_Preround/verilog/huffman/huffman.gen/sources_1'.
-Scanning sources...
-Finished scanning sources
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
-open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 1505.066 ; gain = 201.781
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not availabINFINFO: [Project 1-313] Project file moved from 'E:/Projects/IC_Contest/106_IC_Contest_Preround/verilog/huffman' since last savINFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/USER/Desktop/IC_Compete_Sync/106_IC_Contest_Preround/verilog/huffman/huffman.gen/sources_1'.
+ScaScanning sources.FinFinished scanning sourcINFINFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specifiINFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+open_project: Time (s): cpu = 00:00:29 ; elapsed = 00:00:11 . Memory (MB): peak = 1540.863 ; gain = 424.227
+update_compile_order -fileset sources_1
+exiexit
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 16 22:46:14 2024...
