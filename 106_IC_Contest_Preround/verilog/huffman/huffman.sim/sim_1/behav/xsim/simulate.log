@@ -1,7 +1,7 @@
 Time resolution is 1 ps
 ./pattern2.dat and ./golden2.dat were used for this simulation.
 Check CNT : PASS
-Check HC : PASS
-Check M : PASS
-You PASS the contest now.
-$finish called at time : 2660 ns : File "C:/Users/USER/Desktop/IC_Compete_Sync/106_IC_Contest_Preround/verilog/huffman/huffman.srcs/sim_1/imports/B_ICC2018_priliminary_grad_cell_based/tb.v" Line 175
+Check HC : ERROR
+Check M : ERROR
+Simulation stop here.
+$finish called at time : 2660 ns : File "C:/Users/USER/Desktop/IC_Compete_Sync/106_IC_Contest_Preround/verilog/huffman/huffman.srcs/sim_1/imports/B_ICC2018_priliminary_grad_cell_based/tb.v" Line 154
