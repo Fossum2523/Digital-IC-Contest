@@ -51,6 +51,7 @@ reg [7:0]array_code_orig;
 reg recieve_fg;
 reg [4:0]fg1;
 reg [4:0]fg2;
+wire [4:0]fg1_minus_one;
 
 reg [9:0]prob_temp;
 
@@ -147,6 +148,7 @@ assign UNEQUAL_W_FG_1 = ((huffman_prob[prob_cnt] != huffman_prob[prob_cnt_plus_o
 assign UNEQUAL_W_FG_2 = ((huffman_weight[prob_cnt] != huffman_weight[prob_cnt_plus_one]) 
                         && (fg1 == 0) && huffman_weight[prob_cnt_plus_one] == 0) ? 1'b1 : 1'b0;
 
+assign fg1_minus_one = fg1 - 5'd1;
 // assignment end-----------------------------------
 
 
@@ -367,7 +369,7 @@ always @(posedge clk) begin
                 huffman_mask[i] <= huffman_mask[i] + (8'b0000_0001 << huffman_weight[i]);
                 huffman_weight[i] <= huffman_weight[i] + 1'b1;
             end
-            prob_temp <= huffman_prob[fg1 - 1] + huffman_prob[fg1];
+            prob_temp <= huffman_prob[fg1_minus_one] + huffman_prob[fg1];
         end
         ADJUST_PROB:begin
             for(i = 0 ; i<fg2 ; i = i + 1'b1)begin

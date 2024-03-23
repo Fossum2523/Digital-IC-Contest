@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1711160541.871240658, "rt":0.59, "ut":0.09, "st":0.02}}
+{"vcselab":{"timestamp_begin":1711160542.491587528, "rt":0.60, "ut":0.11, "st":0.02}}
+{"link":{"timestamp_begin":1711160543.114553795, "rt":0.09, "ut":0.07, "st":0.02}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1711160541.670130773}
+{"VCS_COMP_START_TIME": 1711160541.670130773}
+{"VCS_COMP_END_TIME": 1711160544.011341580}
+{"VCS_USER_OPTIONS": "-R tb.v -f filelist.f +define+USECOLOR +access+r +vcs+fsdbon +fsdb+mda +fsdbfile+huffman.fsdb -l run.log"}
+{"vcs1": {"peak_mem": 267896}}
+{"vcselab": {"peak_mem": 150264}}

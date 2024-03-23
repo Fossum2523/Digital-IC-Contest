@@ -1,0 +1,437 @@
+
+Warning-[LNX_OS_VERUN] Unsupported Linux version
+  Linux version 'CentOS Stream release 8' is not supported on 'x86_64' 
+  officially, assuming linux compatibility by default. Set VCS_ARCH_OVERRIDE 
+  to linux or suse32 to override.
+  Please refer to release notes for information on supported platforms.
+
+Command: vcs -R tb.v huffman_syn.v +define+USECOLOR+SDF +access+r +vcs+fsdbon +fsdb+mda \
++fsdbfile+huffman.fsdb -v /cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v +maxdelays \
+-l run_gate.log
+*** Using c compiler gcc instead of cc ...
+                         Chronologic VCS (TM)
+            Version V-2023.12 -- Sat Mar 23 10:30:58 2024
+
+                    Copyright (c) 1991 - 2023 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'tb.v'
+Parsing design file 'huffman_syn.v'
+Parsing library file '/cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v'
+Top Level Modules:
+       tb
+TimeScale is 1 ns / 1 ps
+
+Warning-[TFIPC] Too few instance port connections
+huffman_syn.v, 924
+huffman, "huffman_DW01_add_0 add_372( .A ({N1620, N1621, N1622, N1623, N1624, N1625, N1626, N1627}),  .B ({N1634, N1635, N1636, N1637, N1638, N1639, N1640, N1641}),  .CI (1'b0),  .SUM ({N1649, N1648, N1647, N1646, N1645, N1644, N1643, N1642}));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+huffman_syn.v, 928
+huffman, "huffman_DW01_add_1 add_369_I6( .A ({\huffman_mask[5][7] , \huffman_mask[5][6] , \huffman_mask[5][5] , \huffman_mask[5][4] , \huffman_mask[5][3] , \huffman_mask[5][2] , \huffman_mask[5][1] , \huffman_mask[5][0] }),  .B ({N1427, N1426, N1425, N1424, N1423, N1422, N1421, N1420}),  .CI (1'b0),  .SUM ({N1588, N1587, N1586, N1585, N1584, N1583, N1582, N1581}));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+huffman_syn.v, 934
+huffman, "huffman_DW01_add_2 add_369_I5( .A ({\huffman_mask[4][7] , \huffman_mask[4][6] , \huffman_mask[4][5] , \huffman_mask[4][4] , \huffman_mask[4][3] , \huffman_mask[4][2] , \huffman_mask[4][1] , \huffman_mask[4][0] }),  .B ({N1410, N1409, N1408, N1407, N1406, N1405, N1404, N1403}),  .CI (1'b0),  .SUM ({N1566, N1565, N1564, N1563, N1562, N1561, N1560, N1559}));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+huffman_syn.v, 940
+huffman, "huffman_DW01_add_3 add_369_I4( .A ({\huffman_mask[3][7] , \huffman_mask[3][6] , \huffman_mask[3][5] , \huffman_mask[3][4] , \huffman_mask[3][3] , \huffman_mask[3][2] , \huffman_mask[3][1] , \huffman_mask[3][0] }),  .B ({N1392, N1391, N1390, N1389, N1388, N1387, N1386, N1385}),  .CI (1'b0),  .SUM ({N1543, N1542, N1541, N1540, N1539, N1538, N1537, N1536}));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+huffman_syn.v, 946
+huffman, "huffman_DW01_add_4 add_369_I3( .A ({\huffman_mask[2][7] , \huffman_mask[2][6] , \huffman_mask[2][5] , \huffman_mask[2][4] , \huffman_mask[2][3] , \huffman_mask[2][2] , \huffman_mask[2][1] , \huffman_mask[2][0] }),  .B ({N1374, N1373, N1372, N1371, N1370, N1369, N1368, N1367}),  .CI (1'b0),  .SUM ({N1520, N1519, N1518, N1517, N1516, N1515, N1514, N1513}));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+huffman_syn.v, 952
+huffman, "huffman_DW01_add_5 add_369_I2( .A ({\huffman_mask[1][7] , \huffman_mask[1][6] , \huffman_mask[1][5] , \huffman_mask[1][4] , \huffman_mask[1][3] , \huffman_mask[1][2] , \huffman_mask[1][1] , \huffman_mask[1][0] }),  .B ({N1356, N1355, N1354, N1353, N1352, N1351, N1350, N1349}),  .CI (1'b0),  .SUM ({N1497, N1496, N1495, N1494, N1493, N1492, N1491, N1490}));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+huffman_syn.v, 958
+huffman, "huffman_DW01_add_6 add_369( .A ({\huffman_mask[0][7] , \huffman_mask[0][6] , \huffman_mask[0][5] , \huffman_mask[0][4] , \huffman_mask[0][3] , \huffman_mask[0][2] , \huffman_mask[0][1] , \huffman_mask[0][0] }),  .B ({N1338, N1337, N1336, N1335, N1334, N1333, N1332, N1331}),  .CI (1'b0),  .SUM ({N1474, N1473, N1472, N1471, N1470, N1469, N1468, N1467}));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+huffman_syn.v, 962
+huffman, "huffman_DW01_add_7 add_364_I6( .A ({\huffman_code[5][7] , \huffman_code[5][6] , \huffman_code[5][5] , \huffman_code[5][4] , \huffman_code[5][3] , \huffman_code[5][2] , \huffman_code[5][1] , \huffman_code[5][0] }),  .B ({N1427, N1426, N1425, N1424, N1423, N1422, N1421, N1420}),  .CI (1'b0),  .SUM ({N1435, N1434, N1433, N1432, N1431, N1430, N1429, N1428}));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+huffman_syn.v, 968
+huffman, "huffman_DW01_add_8 add_364_I5( .A ({\huffman_code[4][7] , \huffman_code[4][6] , \huffman_code[4][5] , \huffman_code[4][4] , \huffman_code[4][3] , \huffman_code[4][2] , \huffman_code[4][1] , \huffman_code[4][0] }),  .B ({N1410, N1409, N1408, N1407, N1406, N1405, N1404, N1403}),  .CI (1'b0),  .SUM ({N1418, N1417, N1416, N1415, N1414, N1413, N1412, N1411}));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+huffman_syn.v, 974
+huffman, "huffman_DW01_add_9 add_364_I4( .A ({\huffman_code[3][7] , \huffman_code[3][6] , \huffman_code[3][5] , \huffman_code[3][4] , \huffman_code[3][3] , \huffman_code[3][2] , \huffman_code[3][1] , \huffman_code[3][0] }),  .B ({N1392, N1391, N1390, N1389, N1388, N1387, N1386, N1385}),  .CI (1'b0),  .SUM ({N1400, N1399, N1398, N1397, N1396, N1395, N1394, N1393}));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+huffman_syn.v, 980
+huffman, "huffman_DW01_add_10 add_364_I3( .A ({\huffman_code[2][7] , \huffman_code[2][6] , \huffman_code[2][5] , \huffman_code[2][4] , \huffman_code[2][3] , \huffman_code[2][2] , \huffman_code[2][1] , \huffman_code[2][0] }),  .B ({N1374, N1373, N1372, N1371, N1370, N1369, N1368, N1367}),  .CI (1'b0),  .SUM ({N1382, N1381, N1380, N1379, N1378, N1377, N1376, N1375}));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+huffman_syn.v, 986
+huffman, "huffman_DW01_add_11 add_364_I2( .A ({\huffman_code[1][7] , \huffman_code[1][6] , \huffman_code[1][5] , \huffman_code[1][4] , \huffman_code[1][3] , \huffman_code[1][2] , \huffman_code[1][1] , \huffman_code[1][0] }),  .B ({N1356, N1355, N1354, N1353, N1352, N1351, N1350, N1349}),  .CI (1'b0),  .SUM ({N1364, N1363, N1362, N1361, N1360, N1359, N1358, N1357}));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+huffman_syn.v, 992
+huffman, "huffman_DW01_add_12 add_364( .A ({\huffman_code[0][7] , \huffman_code[0][6] , \huffman_code[0][5] , \huffman_code[0][4] , \huffman_code[0][3] , \huffman_code[0][2] , \huffman_code[0][1] , \huffman_code[0][0] }),  .B ({N1338, N1337, N1336, N1335, N1334, N1333, N1332, N1331}),  .CI (1'b0),  .SUM ({N1346, N1345, N1344, N1343, N1342, N1341, N1340, N1339}));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+huffman_syn.v, 1153
+huffman, "DFFX1 \fg2_reg[1] ( .D (n1450),  .CK (clk),  .QN (n301));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+huffman_syn.v, 1160
+huffman, "DFFX1 \fg2_reg[3] ( .D (n1448),  .CK (clk),  .QN (n299));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+huffman_syn.v, 1161
+huffman, "DFFX1 \fg2_reg[2] ( .D (n1449),  .CK (clk),  .QN (n300));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+huffman_syn.v, 1162
+huffman, "DFFX1 \fg2_reg[4] ( .D (n1452),  .CK (clk),  .QN (n297));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+huffman_syn.v, 1196
+huffman, "DFFX1 \fg1_reg[3] ( .D (n1453),  .CK (clk),  .QN (n304));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+huffman_syn.v, 1197
+huffman, "DFFX1 \fg1_reg[4] ( .D (n1457),  .CK (clk),  .QN (n303));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+huffman_syn.v, 1199
+huffman, "DFFX1 \array_sym_orig_reg[4] ( .D (n1502),  .CK (clk),  .QN (n6111));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+huffman_syn.v, 1247
+huffman, "DFFX1 \array_sym_orig_reg[3] ( .D (n1500),  .CK (clk),  .QN (n6110));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+huffman_syn.v, 1256
+huffman, "DFFX1 \array_sym_orig_reg[1] ( .D (n1498),  .CK (clk),  .QN (n6109));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+huffman_syn.v, 1355
+huffman, "DFFRX1 \curr_state_reg[0] ( .D (n7031),  .CK (clk),  .RN (n7030),  .QN (n280));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+huffman_syn.v, 1364
+huffman, "DFFXL recieve_fg_reg( .D (n1501),  .CK (clk),  .Q (n7009));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+   ***   $sdf_annotate() version 1.2R
+   ***    SDF file: "./huffman_syn.sdf"
+   ***    Annotation scope: tb.u_huffman
+   ***    No MTM selection argument specified
+   ***    No SCALE FACTORS argument specified
+   ***    No SCALE TYPE argument specified
+   ***    MTM selection defaulted to "TOOL_CONTROL":
+               (+maxdelays compiled, MAXIMUM delays selected)
+   ***    SCALE FACTORS defaulted to "1.0:1.0:1.0":
+   ***    SCALE TYPE defaulted to: "FROM_MTM"
+   ***    Turnoff delay: "FROM_FILE"
+   ***    Approximation (mipd) policy: "MAXIMUM"
+
+   ***    SDF annotation begin: Sat Mar 23 10:30:59 2024
+
+
+SDF Info: +pulse_r/100, +pulse_e/100 in effect
+
+Warning-[SDFCOM_NNTC] Need timing check option +neg_tchk
+./huffman_syn.sdf, 43805
+module: DFFX1, "instance: tb.u_huffman.\huffman_sym_reg[1][2] "
+  SDF Error: Negative HOLD value replaced by 0.          
+  Add +neg_tchk to consider Negative delay value.
+
+
+Warning-[SDFCOM_NNTC] Need timing check option +neg_tchk
+./huffman_syn.sdf, 43821
+module: DFFX2, "instance: tb.u_huffman.\huffman_prob_reg[1][6] "
+  SDF Error: Negative HOLD value replaced by 0.          
+  Add +neg_tchk to consider Negative delay value.
+
+
+Warning-[SDFCOM_NNTC] Need timing check option +neg_tchk
+./huffman_syn.sdf, 43837
+module: DFFX2, "instance: tb.u_huffman.\huffman_prob_reg[1][3] "
+  SDF Error: Negative HOLD value replaced by 0.          
+  Add +neg_tchk to consider Negative delay value.
+
+
+Warning-[SDFCOM_NNTC] Need timing check option +neg_tchk
+./huffman_syn.sdf, 43853
+module: DFFX2, "instance: tb.u_huffman.\huffman_prob_reg[1][2] "
+  SDF Error: Negative HOLD value replaced by 0.          
+  Add +neg_tchk to consider Negative delay value.
+
+
+Warning-[SDFCOM_NNTC] Need timing check option +neg_tchk
+./huffman_syn.sdf, 43869
+module: DFFX2, "instance: tb.u_huffman.\huffman_prob_reg[1][4] "
+  SDF Error: Negative HOLD value replaced by 0.          
+  Add +neg_tchk to consider Negative delay value.
+
+
+Warning-[SDFCOM_NNTC] Need timing check option +neg_tchk
+./huffman_syn.sdf, 43885
+module: DFFX2, "instance: tb.u_huffman.\huffman_prob_reg[1][5] "
+  SDF Error: Negative HOLD value replaced by 0.          
+  Add +neg_tchk to consider Negative delay value.
+
+
+Warning-[SDFCOM_NNTC] Need timing check option +neg_tchk
+./huffman_syn.sdf, 43901
+module: DFFX2, "instance: tb.u_huffman.\huffman_prob_reg[1][0] "
+  SDF Error: Negative HOLD value replaced by 0.          
+  Add +neg_tchk to consider Negative delay value.
+
+
+Warning-[SDFCOM_NNTC] Need timing check option +neg_tchk
+./huffman_syn.sdf, 43916
+module: DFFQXL, "instance: tb.u_huffman.\huffman_prob_reg[3][0] "
+  SDF Error: Negative HOLD value replaced by 0.          
+  Add +neg_tchk to consider Negative delay value.
+
+
+Warning-[SDFCOM_NNTC] Need timing check option +neg_tchk
+./huffman_syn.sdf, 43931
+module: DFFQXL, "instance: tb.u_huffman.\huffman_prob_reg[3][2] "
+  SDF Error: Negative HOLD value replaced by 0.          
+  Add +neg_tchk to consider Negative delay value.
+
+
+Warning-[SDFCOM_NNTC] Need timing check option +neg_tchk
+./huffman_syn.sdf, 43946
+module: DFFQXL, "instance: tb.u_huffman.\huffman_prob_reg[3][4] "
+  SDF Error: Negative HOLD value replaced by 0.          
+  Add +neg_tchk to consider Negative delay value.
+
+All future errors not reported; use +sdfverbose to report them.
+
+          Total errors: 398
+          Total warnings: 0
+   ***    SDF annotation completed: Sat Mar 23 10:30:59 2024
+
+
+Notice: Ports coerced to inout, use -notice for details
+Starting vcs inline pass...
+56 modules and 2 UDPs read.
+recompiling module tb
+recompiling module huffman_DW01_inc_0_DW01_inc_1
+recompiling module huffman_DW01_add_0
+recompiling module huffman_DW01_add_9
+recompiling module huffman_DW01_inc_7_DW01_inc_8
+recompiling module huffman_DW01_inc_8_DW01_inc_9
+recompiling module huffman_DW01_inc_9_DW01_inc_10
+recompiling module huffman_DW01_inc_10_DW01_inc_11
+recompiling module huffman
+recompiling module INVXL
+recompiling module AND3X2
+recompiling module AND4X1
+recompiling module AOI21X1
+recompiling module AOI22X1
+recompiling module AOI222XL
+recompiling module AOI31X4
+recompiling module AOI2BB1X2
+recompiling module AOI2BB2XL
+recompiling module AO21XL
+recompiling module AO22XL
+recompiling module MX2XL
+recompiling module MXI2XL
+recompiling module NAND2XL
+recompiling module NAND3XL
+recompiling module NAND4X1
+recompiling module NAND2BXL
+recompiling module NAND3BXL
+recompiling module NOR2XL
+recompiling module NOR3XL
+recompiling module NOR4X1
+recompiling module NOR2BXL
+recompiling module NOR3BXL
+recompiling module NOR4BX1
+recompiling module OR2XL
+recompiling module OR3X1
+recompiling module OR4X1
+recompiling module OAI21XL
+recompiling module OAI211XL
+recompiling module OAI22XL
+recompiling module OAI221XL
+recompiling module OAI222XL
+recompiling module OAI31XL
+recompiling module OAI32X1
+recompiling module OAI2BB1XL
+recompiling module OAI2BB2XL
+recompiling module OA22X2
+recompiling module XOR2XL
+recompiling module XOR3XL
+recompiling module XNOR2X1
+recompiling module CLKBUFX3
+50 of 56 modules done
+recompiling module CLKAND2X6
+recompiling module ADDHXL
+recompiling module ADDFXL
+recompiling module DFFXL
+recompiling module DFFQXL
+recompiling module DFFRX1
+All of 56 modules done
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -m32 -m32 -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
+-Wl,-rpath=/usr/cad/synopsys/vcs/2023.12/linux/lib -L/usr/cad/synopsys/vcs/2023.12/linux/lib \
+-Wl,-rpath-link=./   objs/amcQw_d.o   _693029_archive_1.so objs/udps/U7Vwg.o objs/udps/exIG1.o \
+SIM_l.o       rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o \
+-lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /usr/cad/synopsys/vcs/2023.12/linux/lib/vcs_tls.o \
+-Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   \
+/usr/cad/synopsys/vcs/2023.12/linux/lib/vcs_save_restore_new.o /usr/cad/synopsys/verdi/2023.12/share/PLI/VCS/LINUX/pli.a \
+/usr/cad/synopsys/vcs/2023.12/linux/lib/ctype-stubs_32.a -ldl  -lc -lm -lpthread \
+-ldl 
+../simv up to date
+Command: /home/merg112/m11202141/IC_Contest/106_IC_Contest_Preround/Verilog_version1/./simv +define+USECOLOR+SDF +access+r +fsdb+mda +fsdbfile+huffman.fsdb +maxdelays -a run_gate.log
+Chronologic VCS simulator copyright 1991-2023
+Contains Synopsys proprietary information.
+Compiler version V-2023.12; Runtime version V-2023.12;  Mar 23 10:31 2024
+Doing SDF annotation ...... Done
+*Verdi* Loading libsscore_vcs202312.so
+FSDB Dumper for VCS, Release Verdi_V-2023.12, Linux, 11/15/2023
+(C) 1996 - 2023 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'huffman.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : Enable +mda dumping.
+*Verdi* : End of traversing.
+./pattern1.dat and ./golden1.dat were used for this simulation.
+
+"/cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v", 18064: Timing violation in tb.u_huffman.\huffman_sym_reg[2][0] 
+    $setup( negedge D:14875, posedge CK &&& (flag == 1'b1):15000, limit: 332 );
+
+"/cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v", 18064: Timing violation in tb.u_huffman.\huffman_sym_reg[0][0] 
+    $setup( negedge D:14875, posedge CK &&& (flag == 1'b1):15000, limit: 347 );
+
+"/cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v", 18064: Timing violation in tb.u_huffman.\huffman_prob_reg[5][0] 
+    $setup( negedge D:14846, posedge CK &&& (flag == 1'b1):15000, limit: 315 );
+
+"/cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v", 17904: Timing violation in tb.u_huffman.\huffman_sym_reg[4][0] 
+    $setup( negedge D:14824, posedge CK &&& (flag == 1'b1):15000, limit: 347 );
+
+"/cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v", 17904: Timing violation in tb.u_huffman.\huffman_sym_reg[4][1] 
+    $setup( negedge D:14994, posedge CK &&& (flag == 1'b1):15000, limit: 347 );
+
+Check CNT : PASS
+Check HC : PASS
+Check M : PASS
+You PASS the contest now.
+$finish called from file "tb.v", line 175.
+$finish at simulation time              2550000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 2550000 ps
+CPU Time:      0.220 seconds;       Data structure size:   0.5Mb
+Sat Mar 23 10:31:01 2024
+CPU time: .422 seconds to compile + .154 seconds to elab + .170 seconds to link + .231 seconds in simulation
