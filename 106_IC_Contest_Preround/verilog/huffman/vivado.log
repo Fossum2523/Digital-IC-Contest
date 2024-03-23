@@ -3,10 +3,10 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Sat Mar 23 10:25:54 2024
-# Process ID: 30792
+# Start of session at: Sat Mar 23 11:58:04 2024
+# Process ID: 35012
 # Current directory: C:/Users/USER/Desktop/IC_Compete_Sync/106_IC_Contest_Preround/verilog/huffman
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13428 C:\Users\USER\Desktop\IC_Compete_Sync\106_IC_Contest_Preround\verilog\huffman\huffman.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent35976 C:\Users\USER\Desktop\IC_Compete_Sync\106_IC_Contest_Preround\verilog\huffman\huffman.xpr
 # Log file: C:/Users/USER/Desktop/IC_Compete_Sync/106_IC_Contest_Preround/verilog/huffman/vivado.log
 # Journal file: C:/Users/USER/Desktop/IC_Compete_Sync/106_IC_Contest_Preround/verilog/huffman\vivado.jou
 # Running On: LAPTOP-2P71OMBV, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 16542 MB
@@ -75,9 +75,4 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
-open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:09 . Memory (MB): peak = 1496.023 ; gain = 114.750
-update_compile_order -fileset sources_1
-create_bd_design "design_1"
-Wrote  : <C:\Users\USER\Desktop\IC_Compete_Sync\106_IC_Contest_Preround\verilog\huffman\huffman.srcs\sources_1\bd\design_1\design_1.bd> 
-update_compile_order -fileset sources_1
-open_bd_design {C:/Users/USER/Desktop/IC_Compete_Sync/106_IC_Contest_Preround/verilog/huffman/huffman.srcs/sources_1/bd/design_1/design_1.bd}
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:08 . Memory (MB): peak = 1488.312 ; gain = 185.062
