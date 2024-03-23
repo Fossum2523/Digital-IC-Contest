@@ -288,17 +288,17 @@ always @(posedge clk) begin
             if (gray_valid) begin
                 recieve_fg <= 1'd1;
                 if(gray_data == 1)
-                    huffman_prob[0] = huffman_prob[0] + 8'd1;
+                    huffman_prob[0] <= huffman_prob[0] + 8'd1;
                 else if (gray_data == 2)
-                    huffman_prob[1] = huffman_prob[1] + 8'd1;
+                    huffman_prob[1] <= huffman_prob[1] + 8'd1;
                 else if(gray_data == 3)
-                    huffman_prob[2] = huffman_prob[2] + 8'd1;
+                    huffman_prob[2] <= huffman_prob[2] + 8'd1;
                 else if(gray_data == 4)
-                    huffman_prob[3] = huffman_prob[3] + 8'd1;
+                    huffman_prob[3] <= huffman_prob[3] + 8'd1;
                 else if(gray_data == 5)
-                    huffman_prob[4] = huffman_prob[4] + 8'd1;
+                    huffman_prob[4] <= huffman_prob[4] + 8'd1;
                 else if(gray_data == 6)
-                    huffman_prob[5] = huffman_prob[5] + 8'd1;
+                    huffman_prob[5] <= huffman_prob[5] + 8'd1;
             end
         end
         INSERT_STEP:begin
