@@ -119,20 +119,21 @@ for combine_cnt in range (5):
 
     for prob_cnt in range (5):
         print(f"prob_cnt = {prob_cnt}")
-        if huffman_prob[prob_cnt] != huffman_prob[prob_cnt + 1] and fg1 == 0:
-            fg1 = prob_cnt + 1
-            print(f"flag1 = {fg1}")
-        elif huffman_prob[prob_cnt] != huffman_prob[prob_cnt + 1] and fg1 != 0: # CH_FSM 1
+        if (huffman_weight[prob_cnt] == 0 and huffman_weight[prob_cnt + 1] == 0 and fg1 == 0):
+            fg1 = prob_cnt + 1 
+        elif(huffman_weight[prob_cnt] == 0 and huffman_weight[prob_cnt + 1] == 0 and fg1 != 0):
             fg2 = prob_cnt + 1
-            print(f"flag2 = {fg2}")
-            break
-        elif (huffman_weight[prob_cnt] != huffman_weight[prob_cnt + 1] and fg1 == 0 # CH_FSM 2
-            and huffman_weight[prob_cnt + 1] == 0):
-            fg1 = prob_cnt + 1
-            fg2 = prob_cnt + 2
             print(f"flag1 = {fg1}")
             print(f"flag2 = {fg2}")
-            break
+            break 
+        elif (huffman_weight[prob_cnt] != huffman_weight[prob_cnt + 1] and fg1 == 0):
+            fg1 = prob_cnt + 1
+        elif (huffman_weight[prob_cnt] != huffman_weight[prob_cnt + 1] and fg1 != 0):
+            fg2 = prob_cnt + 1
+            print(f"flag1 = {fg1}")
+            print(f"flag2 = {fg2}")
+            break 
+        
 ##### FSM 3 : FIND_FLAG ##########################################################################
 
 ##### FSM 4 : FIND_FLAG_FINAL ##########################################################################
@@ -153,7 +154,7 @@ for combine_cnt in range (5):
 
 ##### FSM 6 : ADD_WEIGHT ##########################################################################    
     for (weight_cnt) in range (fg2):
-        huffman_weight[weight_cnt] = huffman_weight[weight_cnt] + 1
+        huffman_weight[weight_cnt] = combine_cnt + 1
 
     prob_temp = huffman_prob[fg1 - 1] + huffman_prob[fg1]
 ##### FSM 6 : ADD_WEIGHT ##########################################################################

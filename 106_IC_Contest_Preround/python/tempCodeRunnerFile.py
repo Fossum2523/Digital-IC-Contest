@@ -1,0 +1,1 @@
+nsertionSort(huffman_sym,huffman_prob,huffman_weight,Huffman_code)
