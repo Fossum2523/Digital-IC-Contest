@@ -3,6 +3,12 @@ vcs_cov:comp_cov run_cov
 vcs_unr:comp_unr run_unr
 vcs_xprop:comp_xprop run_xprop
 
+vcs_presim:
+	vcs -R $DESIGN_TB.v -f filelist.f +define+USECOLOR +access+r +vcs+fsdbon +fsdb+mda +fsdbfile+$DESIGN.fsdb -l run.log
+
+vcs_postsim:
+	vcs -R $DESIGN_TB.v $DESIGN_syn.v +define+USECOLOR+SDF +access+r +vcs+fsdbon +fsdb+mda +fsdbfile+$DESIGN.fsdb -v /cad/CBDK/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v +maxdelays -l run_gate.log
+
 comp_kdb:
 	vcs -full64 -debug_acc -fastcomp -j2 -Xkeyopt=rtopt -lca -f filelist.f +vcs+fsdbon -kdb -l comp.log
 
@@ -40,4 +46,4 @@ verdi_unr:
 	verdi -cov -covdir simv.vdb -elfile unreachables.el
 
 clean:
-	rm -rf unrSimv* simv* csrc* *.log *key *fsdb *Log *bak *el *report no_trace* vhdl* partition* dprof* clk* *DB *dir work *lib *syn.v *novas*
+	rm -rf unrSimv* simv* csrc* *.log *key *fsdb *Log *bak *el *report no_trace* vhdl* partition* dprof* clk* *DB *dir work *lib

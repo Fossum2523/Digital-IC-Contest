@@ -11,13 +11,13 @@ def insertionSort(array_prob,array_sym,array_weight,array_code):
         
         # Compare key with each element on the left of it until an element smaller than it is found
         # For descending order, change key<array_prob[j] to key>array_prob[j].   
-        print(f'step = {step}')
+        # print(f'step = {step}')
         
 ######### FSM 1 : FIND_BIGGER ########################################################################     
         while (j > 0 and key < array_prob[j -1 ] 
                or ((key == array_prob[j - 1] and array_weight_orig == 0 and array_weight[j - 1] == 0)
                    and array_sym[j - 1] < array_sym_orig)):
-            print(f'j = {j}')
+            # print(f'j = {j}')
             array_sym[j] = array_sym[j -1]
             array_prob[j] = array_prob[j -1]
             array_code[j] = array_code[j -1]

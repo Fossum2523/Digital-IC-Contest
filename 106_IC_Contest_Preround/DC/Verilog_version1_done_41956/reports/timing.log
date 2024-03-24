@@ -1,0 +1,74 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : huffman
+Version: U-2022.12-SP6
+Date   : Sat Mar 23 10:30:03 2024
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: j_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: huffman_mask_reg[2][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  huffman            tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  j_reg[1]/CK (DFFHQX8)                    0.00       0.50 r
+  j_reg[1]/Q (DFFHQX8)                     0.25       0.75 r
+  U5891/Y (CLKINVX1)                       0.38       1.13 f
+  U6011/Y (NAND2X2)                        0.43       1.56 r
+  U6062/Y (XOR2X4)                         0.32       1.88 r
+  U5806/Y (CLKINVX1)                       0.26       2.14 f
+  U6029/Y (NOR2X1)                         0.40       2.54 r
+  U5811/Y (BUFX2)                          0.59       3.12 r
+  U6092/Y (AND2XL)                         0.37       3.49 r
+  U6093/Y (NOR3X1)                         0.21       3.70 f
+  U5797/Y (NAND2X1)                        0.38       4.09 r
+  U7352/Y (AOI21X1)                        0.23       4.32 f
+  U7353/Y (AOI2BB2X1)                      0.30       4.62 r
+  U6191/Y (OAI22X1)                        0.23       4.84 f
+  U5812/Y (OAI2BB2X1)                      0.28       5.13 r
+  U5793/Y (OAI21XL)                        0.24       5.36 f
+  U5792/Y (NAND2X1)                        0.24       5.61 r
+  U6038/Y (NOR4X1)                         0.16       5.77 f
+  U8091/Y (NAND4X1)                        0.24       6.01 r
+  U8090/Y (AOI2BB2X1)                      0.40       6.41 r
+  U6013/Y (NAND2BX4)                       0.30       6.70 r
+  U6014/Y (NAND2X1)                        0.25       6.95 f
+  U5798/Y (NAND3X2)                        0.29       7.24 r
+  U8058/Y (CLKINVX1)                       0.18       7.42 f
+  U7323/Y (AOI31X4)                        0.55       7.98 r
+  U6346/Y (OAI21XL)                        0.23       8.20 f
+  U5802/Y (CLKBUFX3)                       0.71       8.92 f
+  U6304/Y (AND2X2)                         0.69       9.61 f
+  U6118/Y (AO21XL)                         0.45      10.05 f
+  huffman_mask_reg[2][1]/D (DFFQX1)        0.00      10.05 f
+  data arrival time                                  10.05
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.50      10.50
+  clock uncertainty                       -0.10      10.40
+  huffman_mask_reg[2][1]/CK (DFFQX1)       0.00      10.40 r
+  library setup time                      -0.28      10.12
+  data required time                                 10.12
+  -----------------------------------------------------------
+  data required time                                 10.12
+  data arrival time                                 -10.05
+  -----------------------------------------------------------
+  slack (MET)                                         0.07
+
+
+1

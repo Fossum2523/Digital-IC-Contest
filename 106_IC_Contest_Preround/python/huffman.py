@@ -26,7 +26,7 @@ def insertionSort(array_prob,array_sym,array_weight,array_code):
         array_prob[j + 1] = key
 
 #create input data str-----------------------------------
-pattern_num = 3
+pattern_num = 1
 
 f = open(('pattern'+str(pattern_num)+'.dat'),"r")
 text = f.read()
@@ -99,25 +99,25 @@ for combine_cnt in range (5):
     prob_temp = 0
 
     for prob_cnt in range (5):
-        print(f"prob_cnt = {prob_cnt}")
+        # print(f"prob_cnt = {prob_cnt}")
         if huffman_array_prob[prob_cnt] != huffman_array_prob[prob_cnt + 1] and fg1 == 0:
             fg1 = prob_cnt + 1
-            print(f"flag1 = {fg1}")
+            # print(f"flag1 = {fg1}")
         elif huffman_array_prob[prob_cnt] != huffman_array_prob[prob_cnt + 1] and fg1 != 0:
             fg2 = prob_cnt + 1
-            print(f"flag2 = {fg2}")
+            # print(f"flag2 = {fg2}")
             break
         elif (huffman_array_weight[prob_cnt] != huffman_array_weight[prob_cnt + 1] and fg1 == 0 
             and huffman_array_weight[prob_cnt + 1] == 0):
             fg1 = prob_cnt + 1
             fg2 = prob_cnt + 2
-            print(f"flag1 = {fg1}")
-            print(f"flag2 = {fg2}")
+            # print(f"flag1 = {fg1}")
+            # print(f"flag2 = {fg2}")
             break
 
     if (fg1 != 0 and fg2 == 0 and prob_cnt == 4):
         fg2 = 6
-        print(f"flag2 = {fg2}")
+        # print(f"flag2 = {fg2}")
         
 #----------------------------------------------------------------------------------
     for (weight_cnt) in range (fg1):
