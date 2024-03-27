@@ -20,6 +20,7 @@ wire [9:0]ratio_h;
 
 reg [9:0]cnt_row;
 reg [9:0]cnt_col;
+reg [9:0]cnt_rom;
 
 reg [17:0]ini_pos;
 reg [19:0]col_ratio;
@@ -28,6 +29,8 @@ reg [19:0]ini_pos_plus_coldis;
 reg [19:0]col_dis;
 
 wire[19:0]floor_colratio;
+
+reg [7:0]pattern[3:0];
 // ImgROM define str--------------------------------------------
 wire [7:0] ImgROM_Q;
 reg  ImgROM_CEN;
@@ -44,7 +47,7 @@ ImgROM u_ImgROM (.Q(ImgROM_Q), .CLK(CLK), .CEN(ImgROM_CEN), .A(ImgROM_A));
 ResultSRAM u_ResultSRAM (.Q(ResultSRAM_Q), .CLK(CLK), .CEN(ResultSRAM_CEN), .WEN(ResultSRAM_WEN), .A(ResultSRAM_A), .D(ResultSRAM_D));
 
 //define localparam str------------------------------
-localparam [3:0]IDLE = 4'd0,
+localparam [5:0]IDLE = 4'd0,
                 GET_WORK_DATA = 4'd1,
                 PREP_WORK_DATA = 4'd2,
                 FOR_ROW_1 = 4'd3,
@@ -58,13 +61,14 @@ localparam [3:0]IDLE = 4'd0,
                 PIUS_ROW_DIS = 4'd12,
                 TARGET_FINAL = 4'd13,
                 OVER = 4'd14,
-                FOR_ROW_13 = 4'd15;
+                IMROM_GET = 4'd15,
+                IMROM_data = 4'd16;
 //define localparam end------------------------------
 
 
 //variable definition str----------------------------
-reg [3:0]curr_state;
-reg [3:0]next_state;
+reg [5:0]curr_state;
+reg [5:0]next_state;
 //variable definition end----------------------------
 
 
@@ -108,13 +112,13 @@ always @(*) begin
 
         end
         INITAL_POS:begin
-
+            next_state = PLUS_COL_DIS;
         end
         PLUS_COL_DIS:begin
-
+            next_state = TARGET_MIDDLE;
         end
         TARGET_MIDDLE:begin
-
+            next_state = IMROM_GET;
         end
         FOR_ROW_2:begin
 
@@ -134,10 +138,15 @@ always @(*) begin
         OVER:begin
 
         end
-        FOR_ROW_13:begin
-
+        IMROM_GET:begin
+            if(cnt_rom < 3)
+                next_state = IMROM_data;
+            else
+                next_state = IMROM_GET;
         end
-
+        IMROM_data:begin
+            next_state = IMROM_GET;
+        end
         default: next_state = IDLE;
     endcase
 end
@@ -149,6 +158,7 @@ always @(posedge CLK) begin
     case(curr_state)
         IDLE:begin
             cnt_row <= 10'd0;
+            cnt_rom <= 10'd0;
         end
         GET_WORK_DATA:begin
 
@@ -191,8 +201,14 @@ always @(posedge CLK) begin
         OVER:begin
 
         end
-        FOR_ROW_13:begin
-
+        IMROM_GET:begin
+            ImgROM_CEN <= 1'b1;
+            ImgROM_A <= ini_pos_plus_coldis - 1 + cnt_rom;
+            
+        end
+        IMROM_data:begin
+            pattern[cnt_rom] <= ImgROM_Q;
+            cnt_rom <= cnt_rom + 1'b1;
         end
     endcase
 end
