@@ -57,6 +57,8 @@ def find_abcd(pattern):
 
 
 # main--------------------------------------------------------------------------
+
+# step0--------------------------------------------------------------------------
 sw_n = SW - 1
 tw_n = TW - 1
 ratio_w = sw_n / tw_n
@@ -72,31 +74,37 @@ ratio_h = sh_n / th_n
 target = np.zeros((TH, TW))
 target_final = np.zeros((TH, TW))
 
+
+# step1--------------------------------------------------------------------------
 for row in range(SH+2):
+# step2--------------------------------------------------------------------------
     for col in range(TW):
+# step3--------------------------------------------------------------------------
         ini_pos = (V0 + row - 1) * 100 + (H0)
-        ini_pos_plus_coldis = ini_pos + math.floor(col * ratio_w)
-        col_dis = col * ratio_w - math.floor(col * ratio_w)
+        col_ratio = math.floor(col * ratio_w)
+# step4--------------------------------------------------------------------------
+        ini_pos_plus_coldis = ini_pos + col_ratio
+        col_dis = col * ratio_w - col_ratio
+# step5--------------------------------------------------------------------------
         pattern = [pattern_image[ini_pos_plus_coldis - 1], pattern_image[ini_pos_plus_coldis], pattern_image[ini_pos_plus_coldis + 1], pattern_image[ini_pos_plus_coldis + 2]]
-        target_col = p(col_dis, pattern)
-        target[row][col] = target_col
+        target[row][col] = p(col_dis, pattern)
 
 print (target)
 
+# step6--------------------------------------------------------------------------
 for col in range(TW):
+# step7--------------------------------------------------------------------------
     for row in range(TH):
+# step8--------------------------------------------------------------------------
         ini_row = 1
+# step9--------------------------------------------------------------------------
         ini_row_plus_row_dis = ini_row + math.floor(row * ratio_h)
-        # print(f"ini_row_plus_row_dis = {ini_row_plus_row_dis}\n", end=" ")
+        
         row_dis = row * ratio_h - math.floor(row * ratio_h)
-        # print(f"row_dis = {row_dis}\n", end=" ")
+# step10--------------------------------------------------------------------------
         pattern = [target[ini_row_plus_row_dis - 1][col], target[ini_row_plus_row_dis][col], target[ini_row_plus_row_dis + 1][col], target[ini_row_plus_row_dis + 2][col]]
-        # for i in range(len(pattern)):
-        #     pattern[i] = int(pattern[i])
-        #     print(f"{hex(pattern[i])}\n", end=" ")
-        target_row = p(row_dis, pattern)
-        # print(f"\ntarget_row = {hex(target_row)}\n")
-        target_final[row][col] = target_row
+
+        target_final[row][col] = p(row_dis, pattern)
         
     
 target_final = target_final.astype(int)
