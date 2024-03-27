@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../IC_Contest_112.srcs/sources_1/imports/2024_grad_cell/Bicubic.v" \
+"../../../../IC_Contest_112.srcs/sources_1/imports/2024_grad_cell/ImgROM.v" \
+"../../../../IC_Contest_112.srcs/sources_1/imports/2024_grad_cell/ResultSRAM.v" \
+
+sv xil_defaultlib  \
+"../../../../IC_Contest_112.srcs/sim_1/imports/2024_grad_cell/tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
