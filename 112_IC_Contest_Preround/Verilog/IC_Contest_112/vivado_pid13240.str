@@ -597,3 +597,6 @@ dismissDialog("Critical Messages"); // a (dialog16)
 // Tcl Message: update_compile_order -fileset sim_1 
 // Elapsed Time for: 'L.f': 43m:29s
 // Elapsed Time for: 'L.f': 43m:31s
+// [GUI Memory]: 160 MB (+313kb) [00:49:18]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,176 MB. GUI used memory: 80 MB. Current time: 3/27/24, 9:25:34 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,176 MB. GUI used memory: 63 MB. Current time: 3/27/24, 9:55:34 AM CST

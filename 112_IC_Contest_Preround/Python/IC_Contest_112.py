@@ -1,22 +1,109 @@
-#load race data str---------------------------------------------------------
-f = open(('image'),"r")
+import math
+import numpy as np
+# load race data str---------------------------------------------------------
+f = open(('image'), "r")
 text = f.read()
 f.close
 
 pattern_image = text.split('\n')
 
-print(pattern_image)
+for row in range(10000):
+    val = int(pattern_image[row], 2)
+    pattern_image[row] = val
+
+f = open(('pattern3_workdata.txt'), "r")
+text = f.read()
+f.close
+
+workdata = text.split('\n')
+
+H0 = int(workdata[0])
+V0 = int(workdata[1])
+SW = int(workdata[2])
+SH = int(workdata[3])
+TW = int(workdata[4])
+TH = int(workdata[5])
+
+print(f"H0 = {H0}")
+print(f"V0 = {V0}")
+print(f"SW = {SW}")
+print(f"SH = {SH}")
+print(f"TW = {TW}")
+print(f"TH = {TH}")
+
+# load race data end--------------------------------------------------------
 
 
-num = 0 
-for row in range(1):
-    for col in range(7,-1,-1):
-        if(pattern_image[row][col]=='1'):
-            num = num + pow(2,col)
-            print(col)
+# -------------------------------------------------------------------------
+def p(x, pattern):
+    a, b, c, d = find_abcd (pattern)
+    px = a*pow(x,3) + b*pow(x,2) + c*x + d
+    p_round = round(px)
+    if (p_round < 0):
+        return 0
+    elif (p_round > 255):
+        return 255
+    else:
+        return p_round
     
-    pattern_image[row] = num
-    num = 0 
 
-print(pattern_image[0])
-#load race data str---------------------------------------------------------
+def find_abcd(pattern):
+    a = (-1/2)*pattern[0] + (3/2)*pattern[1] - (3/2)*pattern[2] + (1/2)*pattern[3]
+    b = pattern[0] - (5/2)*pattern[1] + 2*pattern[2] - (1/2)*pattern[3]
+    c = (-1/2)*pattern[0] + (1/2)*pattern[2]
+    d = pattern[1]
+    return a, b, c, d
+# -------------------------------------------------------------------------
+
+
+# main--------------------------------------------------------------------------
+sw_n = SW - 1
+tw_n = TW - 1
+ratio_w = sw_n / tw_n
+
+sh_n = SH - 1
+th_n = TH - 1
+ratio_h = sh_n / th_n
+
+# print(f"ratio_w={ratio_w}")
+# print(f"ratio_h={ratio_h}")
+# print()
+
+target = np.zeros((TH, TW))
+target_final = np.zeros((TH, TW))
+
+for row in range(SH+2):
+    for col in range(TW):
+        ini_pos = (V0 + row - 1) * 100 + (H0)
+        ini_pos_plus_coldis = ini_pos + math.floor(col * ratio_w)
+        col_dis = col * ratio_w - math.floor(col * ratio_w)
+        pattern = [pattern_image[ini_pos_plus_coldis - 1], pattern_image[ini_pos_plus_coldis], pattern_image[ini_pos_plus_coldis + 1], pattern_image[ini_pos_plus_coldis + 2]]
+        target_col = p(col_dis, pattern)
+        target[row][col] = target_col
+
+print (target)
+
+for col in range(TW):
+    for row in range(TH):
+        ini_row = 1
+        ini_row_plus_row_dis = ini_row + math.floor(row * ratio_h)
+        # print(f"ini_row_plus_row_dis = {ini_row_plus_row_dis}\n", end=" ")
+        row_dis = row * ratio_h - math.floor(row * ratio_h)
+        # print(f"row_dis = {row_dis}\n", end=" ")
+        pattern = [target[ini_row_plus_row_dis - 1][col], target[ini_row_plus_row_dis][col], target[ini_row_plus_row_dis + 1][col], target[ini_row_plus_row_dis + 2][col]]
+        # for i in range(len(pattern)):
+        #     pattern[i] = int(pattern[i])
+        #     print(f"{hex(pattern[i])}\n", end=" ")
+        target_row = p(row_dis, pattern)
+        # print(f"\ntarget_row = {hex(target_row)}\n")
+        target_final[row][col] = target_row
+        
+    
+target_final = target_final.astype(int)
+
+for i in range(TH):
+    for j in range(TW):
+        print(f"{hex(target_final[i][j])}", end=" ")
+    print()
+
+#--------------------------------------------------------------------------
