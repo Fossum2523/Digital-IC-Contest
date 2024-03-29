@@ -1,0 +1,2 @@
+
+# s = text.split()
