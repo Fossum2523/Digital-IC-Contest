@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Mar 27 08:29:27 2024
+# Process ID: 13240
+# Current directory: C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15212 C:\Users\USER\Desktop\IC_Compete_Sync\112_IC_Contest_Preround\Verilog\IC_Contest_112\IC_Contest_112.xpr
+# Log file: C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/vivado.log
+# Journal file: C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112\vivado.jou
+# Running On: LAPTOP-2P71OMBV, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 16542 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.xpr
+add_files -norecurse -scan_for_includes {C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/2024_grad_cell/Bicubic.v C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/2024_grad_cell/ImgROM.v C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/2024_grad_cell/ResultSRAM.v}
+import_files -norecurse {C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/2024_grad_cell/Bicubic.v C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/2024_grad_cell/ImgROM.v C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/2024_grad_cell/ResultSRAM.v}
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse -scan_for_includes {C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/2024_grad_cell/pattern1 C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/2024_grad_cell/pattern3 C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/2024_grad_cell/pattern2}
+import_files -fileset sim_1 -norecurse {C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/2024_grad_cell/pattern1 C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/2024_grad_cell/pattern3 C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/2024_grad_cell/pattern2}
+add_files -fileset sim_1 -norecurse -scan_for_includes C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/2024_grad_cell/tb.sv
+import_files -fileset sim_1 -norecurse C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/2024_grad_cell/tb.sv
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+add_files -norecurse -scan_for_includes {C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/2024_grad_cell/ImgROM_slow.lib C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/2024_grad_cell/ResultSRAM_slow.lib C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/2024_grad_cell/ImgROM_slow.db C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/2024_grad_cell/ResultSRAM_slow.db C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/2024_grad_cell/ImgROM.rcf}
+import_files -norecurse {C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/2024_grad_cell/ImgROM_slow.lib C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/2024_grad_cell/ResultSRAM_slow.lib C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/2024_grad_cell/ImgROM_slow.db C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/2024_grad_cell/ResultSRAM_slow.db C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/2024_grad_cell/ImgROM.rcf}
+launch_simulation
+update_compile_order -fileset sources_1
+launch_simulation
+update_compile_order -fileset sources_1
+launch_simulation
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse -scan_for_includes {C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/2024_grad_cell/ImgROM_slow.lib C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/2024_grad_cell/ResultSRAM_slow.lib C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/2024_grad_cell/ImgROM_slow.db C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/2024_grad_cell/ResultSRAM_slow.db C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/2024_grad_cell/ImgROM.rcf}
+import_files -fileset sim_1 -norecurse {C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/2024_grad_cell/ImgROM_slow.lib C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/2024_grad_cell/ResultSRAM_slow.lib C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/2024_grad_cell/ImgROM_slow.db C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/2024_grad_cell/ResultSRAM_slow.db C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/2024_grad_cell/ImgROM.rcf}
+launch_simulation
+launch_simulation
+update_compile_order -fileset sim_1
+launch_simulation
+update_compile_order -fileset sim_1
