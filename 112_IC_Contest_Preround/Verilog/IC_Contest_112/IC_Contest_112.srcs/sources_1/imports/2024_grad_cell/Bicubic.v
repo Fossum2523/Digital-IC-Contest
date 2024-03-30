@@ -31,6 +31,8 @@ reg [19:0]col_dis;
 wire[19:0]floor_colratio;
 
 reg [7:0]pattern[3:0];
+
+wire signed  [13:0]a,b,c,d;
 // ImgROM define str--------------------------------------------
 wire [7:0] ImgROM_Q;
 reg  ImgROM_CEN;
@@ -47,22 +49,22 @@ ImgROM u_ImgROM (.Q(ImgROM_Q), .CLK(CLK), .CEN(ImgROM_CEN), .A(ImgROM_A));
 ResultSRAM u_ResultSRAM (.Q(ResultSRAM_Q), .CLK(CLK), .CEN(ResultSRAM_CEN), .WEN(ResultSRAM_WEN), .A(ResultSRAM_A), .D(ResultSRAM_D));
 
 //define localparam str------------------------------
-localparam [5:0]IDLE = 4'd0,
-                GET_WORK_DATA = 4'd1,
-                PREP_WORK_DATA = 4'd2,
-                FOR_ROW_1 = 4'd3,
-                FOR_COL_1 = 4'd4,
-                INITAL_POS = 4'd6,
-                PLUS_COL_DIS = 4'd7,
-                TARGET_MIDDLE = 4'd8,
-                FOR_ROW_2 = 4'd9,
-                FOR_COL_2 = 4'd10,
-                INITAL_ROW = 4'd11,
-                PIUS_ROW_DIS = 4'd12,
-                TARGET_FINAL = 4'd13,
-                OVER = 4'd14,
-                IMROM_GET = 4'd15,
-                IMROM_data = 4'd16;
+localparam [5:0]IDLE = 6'd0,
+                GET_WORK_DATA = 6'd1,
+                PREP_WORK_DATA = 6'd2,
+                FOR_ROW_1 = 6'd3,
+                FOR_COL_1 = 6'd4,
+                INITAL_POS = 6'd6,
+                PLUS_COL_DIS = 6'd7,
+                TARGET_MIDDLE = 6'd8,
+                FOR_ROW_2 = 6'd9,
+                FOR_COL_2 = 6'd10,
+                INITAL_ROW = 6'd11,
+                PIUS_ROW_DIS = 6'd12,
+                TARGET_FINAL = 6'd13,
+                OVER = 6'd14,
+                IMROM_GET = 6'd15,
+                IMROM_data = 6'd16;
 //define localparam end------------------------------
 
 
@@ -80,6 +82,11 @@ assign TH_n = TH - 1;
 assign ratio_h = {1'd0,SH_n,4'd0} / {TH_n,4'd0} ;
 assign ratio_w = {1'd0,SW_n,4'd0} / {TW_n,4'd0} ;
 assign floor_colratio = cnt_col * ratio_w;
+
+// assign a = (-1*(pattern[0]>>1)) + ((3*pattern[1])>>1) - ((3*pattern)>>1) + (pattern[3]>>1);
+// assign b = pattern[0] - ((5*pattern[1])>>1) + (2*pattern) - (pattern[3]>>1);
+// assign c = (-1*(pattern[0]>>1)) + ((pattern[2]>>1))
+// assign d = pattern[1];
 //assignment end--------------------------------------
 
 

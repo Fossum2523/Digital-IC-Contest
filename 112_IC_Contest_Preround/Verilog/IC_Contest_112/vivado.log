@@ -694,3 +694,310 @@ ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct 
 launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1550.379 ; gain = 0.000
 ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
 update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.srcs/sim_1/imports/2024_grad_cell/tb.sv] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.srcs/sim_1/imports/2024_grad_cell/tb.sv
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse -scan_for_includes C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/2024_grad_cell/tb2.sv
+import_files -fileset sim_1 -norecurse C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/2024_grad_cell/tb2.sv
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/pattern1'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/pattern3'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/pattern2'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/ImgROM_slow.lib'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/ResultSRAM_slow.lib'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/ImgROM_slow.db'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/ResultSRAM_slow.db'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/ImgROM.rcf'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj testfixture_vlog.prj"
+ECHO 已關閉。
+ECHO 已關閉。
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.srcs/sim_1/imports/2024_grad_cell/tb2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testfixture
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+ECHO 已關閉。
+ECHO 已關閉。
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ImgROM_default
+Compiling module xil_defaultlib.ResultSRAM_default
+Compiling module xil_defaultlib.Bicubic
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+ERROR: [XSIM 43-3294] Signal EXCEPTION_ACCESS_VIOLATION received.
+Printing stacktrace...
+
+[0] (KiUserExceptionDispatcher+0x2e) [0x7ffe6bfb0ebe]
+[1] (boost::archive::detail::iserializer<boost::archive::binary_iarchive,ModuleSerialization>::load_object_data+0x14cd490) [0x7ff7c9fa02b0]
+[2] (boost::archive::detail::iserializer<boost::archive::binary_iarchive,ModuleSerialization>::load_object_data+0x14d05ae) [0x7ff7c9fa33ce]
+[3] (OPENSSL_Applink+0x13f0af) [0x7ff7c89a09af]
+[4] (OPENSSL_Applink+0x13f76d) [0x7ff7c89a106d]
+[5] (OPENSSL_Applink+0x140a0d) [0x7ff7c89a230d]
+[6] (OPENSSL_Applink+0x137bd0) [0x7ff7c89994d0]
+[7] (OPENSSL_Applink+0x1368a1) [0x7ff7c89981a1]
+[8] (OPENSSL_Applink+0x80c65) [0x7ff7c88e2565]
+[9] (OPENSSL_Applink+0xf46b3) [0x7ff7c8955fb3]
+[10] (ISIMC::VhdlCompiler::saveParserDump+0xccfc1) [0x7ff7c88393c1]
+[11] (XSIM::OutputFileNames::operator=+0x9474) [0x7ff7c84545f4]
+[12] (boost::serialization::singleton_module::unlock+0x42a9) [0x7ff7c846e269]
+[13] (boost::serialization::singleton_module::unlock+0x1ffe) [0x7ff7c846bfbe]
+[14] (boost::archive::detail::iserializer<boost::archive::binary_iarchive,ModuleSerialization>::load_object_data+0x1684c2c) [0x7ff7ca157a4c]
+[15] (BaseThreadInitThunk+0x14) [0x7ffe6b717344]
+
+Done
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1555.449 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/pattern1'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/pattern3'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/pattern2'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/ImgROM_slow.lib'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/ResultSRAM_slow.lib'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/ImgROM_slow.db'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/ResultSRAM_slow.db'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/ImgROM.rcf'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj testfixture_vlog.prj"
+ECHO 已關閉。
+ECHO 已關閉。
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+ECHO 已關閉。
+ECHO 已關閉。
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ImgROM_default
+Compiling module xil_defaultlib.ResultSRAM_default
+Compiling module xil_defaultlib.Bicubic
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+ERROR: [XSIM 43-3294] Signal EXCEPTION_ACCESS_VIOLATION received.
+Printing stacktrace...
+
+[0] (KiUserExceptionDispatcher+0x2e) [0x7ffe6bfb0ebe]
+[1] (boost::archive::detail::iserializer<boost::archive::binary_iarchive,ModuleSerialization>::load_object_data+0x14cd490) [0x7ff7c9fa02b0]
+[2] (boost::archive::detail::iserializer<boost::archive::binary_iarchive,ModuleSerialization>::load_object_data+0x14d05ae) [0x7ff7c9fa33ce]
+[3] (OPENSSL_Applink+0x13f0af) [0x7ff7c89a09af]
+[4] (OPENSSL_Applink+0x13f76d) [0x7ff7c89a106d]
+[5] (OPENSSL_Applink+0x140a0d) [0x7ff7c89a230d]
+[6] (OPENSSL_Applink+0x137bd0) [0x7ff7c89994d0]
+[7] (OPENSSL_Applink+0x1368a1) [0x7ff7c89981a1]
+[8] (OPENSSL_Applink+0x80c65) [0x7ff7c88e2565]
+[9] (OPENSSL_Applink+0xf46b3) [0x7ff7c8955fb3]
+[10] (ISIMC::VhdlCompiler::saveParserDump+0xccfc1) [0x7ff7c88393c1]
+[11] (XSIM::OutputFileNames::operator=+0x9474) [0x7ff7c84545f4]
+[12] (boost::serialization::singleton_module::unlock+0x42a9) [0x7ff7c846e269]
+[13] (boost::serialization::singleton_module::unlock+0x1ffe) [0x7ff7c846bfbe]
+[14] (boost::archive::detail::iserializer<boost::archive::binary_iarchive,ModuleSerialization>::load_object_data+0x1684c2c) [0x7ff7ca157a4c]
+[15] (BaseThreadInitThunk+0x14) [0x7ffe6b717344]
+
+Done
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1555.449 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/pattern1'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/pattern3'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/pattern2'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/ImgROM_slow.lib'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/ResultSRAM_slow.lib'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/ImgROM_slow.db'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/ResultSRAM_slow.db'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/ImgROM.rcf'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj testfixture_vlog.prj"
+ECHO 已關閉。
+ECHO 已關閉。
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.srcs/sources_1/imports/2024_grad_cell/Bicubic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Bicubic
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.srcs/sources_1/imports/2024_grad_cell/ImgROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImgROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.srcs/sources_1/imports/2024_grad_cell/ResultSRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ResultSRAM
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+ECHO 已關閉。
+ECHO 已關閉。
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ImgROM_default
+Compiling module xil_defaultlib.ResultSRAM_default
+Compiling module xil_defaultlib.Bicubic
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+ERROR: [XSIM 43-3294] Signal EXCEPTION_ACCESS_VIOLATION received.
+Printing stacktrace...
+
+[0] (KiUserExceptionDispatcher+0x2e) [0x7ffe6bfb0ebe]
+[1] (boost::archive::detail::iserializer<boost::archive::binary_iarchive,ModuleSerialization>::load_object_data+0x14cd490) [0x7ff7c9fa02b0]
+[2] (boost::archive::detail::iserializer<boost::archive::binary_iarchive,ModuleSerialization>::load_object_data+0x14d05ae) [0x7ff7c9fa33ce]
+[3] (OPENSSL_Applink+0x13f0af) [0x7ff7c89a09af]
+[4] (OPENSSL_Applink+0x13f76d) [0x7ff7c89a106d]
+[5] (OPENSSL_Applink+0x140a0d) [0x7ff7c89a230d]
+[6] (OPENSSL_Applink+0x137bd0) [0x7ff7c89994d0]
+[7] (OPENSSL_Applink+0x1368a1) [0x7ff7c89981a1]
+[8] (OPENSSL_Applink+0x80c65) [0x7ff7c88e2565]
+[9] (OPENSSL_Applink+0xf46b3) [0x7ff7c8955fb3]
+[10] (ISIMC::VhdlCompiler::saveParserDump+0xccfc1) [0x7ff7c88393c1]
+[11] (XSIM::OutputFileNames::operator=+0x9474) [0x7ff7c84545f4]
+[12] (boost::serialization::singleton_module::unlock+0x42a9) [0x7ff7c846e269]
+[13] (boost::serialization::singleton_module::unlock+0x1ffe) [0x7ff7c846bfbe]
+[14] (boost::archive::detail::iserializer<boost::archive::binary_iarchive,ModuleSerialization>::load_object_data+0x1684c2c) [0x7ff7ca157a4c]
+[15] (BaseThreadInitThunk+0x14) [0x7ffe6b717344]
+
+Done
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1573.547 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'testfixture'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'testfixture' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/pattern1'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/pattern3'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/pattern2'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/ImgROM_slow.lib'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/ResultSRAM_slow.lib'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/ImgROM_slow.db'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/ResultSRAM_slow.db'
+INFO: [SIM-utils-43] Exported 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/ImgROM.rcf'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj testfixture_vlog.prj"
+ECHO 已關閉。
+ECHO 已關閉。
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.srcs/sim_1/imports/2024_grad_cell/tb2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testfixture
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log"
+ECHO 已關閉。
+ECHO 已關閉。
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testfixture_behav xil_defaultlib.testfixture xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ImgROM_default
+Compiling module xil_defaultlib.ResultSRAM_default
+Compiling module xil_defaultlib.Bicubic
+Compiling module xil_defaultlib.testfixture
+Compiling module xil_defaultlib.glbl
+ERROR: [XSIM 43-3294] Signal EXCEPTION_ACCESS_VIOLATION received.
+Printing stacktrace...
+
+[0] (KiUserExceptionDispatcher+0x2e) [0x7ffe6bfb0ebe]
+[1] (boost::archive::detail::iserializer<boost::archive::binary_iarchive,ModuleSerialization>::load_object_data+0x14cd490) [0x7ff7c9fa02b0]
+[2] (boost::archive::detail::iserializer<boost::archive::binary_iarchive,ModuleSerialization>::load_object_data+0x14d05ae) [0x7ff7c9fa33ce]
+[3] (OPENSSL_Applink+0x13f0af) [0x7ff7c89a09af]
+[4] (OPENSSL_Applink+0x13f76d) [0x7ff7c89a106d]
+[5] (OPENSSL_Applink+0x140a0d) [0x7ff7c89a230d]
+[6] (OPENSSL_Applink+0x137bd0) [0x7ff7c89994d0]
+[7] (OPENSSL_Applink+0x1368a1) [0x7ff7c89981a1]
+[8] (OPENSSL_Applink+0x80c65) [0x7ff7c88e2565]
+[9] (OPENSSL_Applink+0xf46b3) [0x7ff7c8955fb3]
+[10] (ISIMC::VhdlCompiler::saveParserDump+0xccfc1) [0x7ff7c88393c1]
+[11] (XSIM::OutputFileNames::operator=+0x9474) [0x7ff7c84545f4]
+[12] (boost::serialization::singleton_module::unlock+0x42a9) [0x7ff7c846e269]
+[13] (boost::serialization::singleton_module::unlock+0x1ffe) [0x7ff7c846bfbe]
+[14] (boost::archive::detail::iserializer<boost::archive::binary_iarchive,ModuleSerialization>::load_object_data+0x1684c2c) [0x7ff7ca157a4c]
+[15] (BaseThreadInitThunk+0x14) [0x7ffe6b717344]
+
+Done
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/USER/Desktop/IC_Compete_Sync/112_IC_Contest_Preround/Verilog/IC_Contest_112/IC_Contest_112.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1573.547 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 29 10:07:35 2024...
