@@ -1,0 +1,19 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/AES.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AES
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/Add_Round_Key.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Add_Round_Key
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/Key_Expansion.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Key_Expansion
+INFO: [VRFC 10-311] analyzing module Rot_Word
+INFO: [VRFC 10-311] analyzing module Sub_Word
+INFO: [VRFC 10-311] analyzing module Rcon
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/Mix_Column.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mix_Column
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module S_Box
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/Shif_Row.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Shift_Row
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/Sub_Bytes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sub_Bytes
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sim_1/imports/AES_source/AES_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AES_tb
