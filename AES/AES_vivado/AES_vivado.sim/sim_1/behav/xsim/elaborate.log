@@ -1,0 +1,83 @@
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot AES_tb_behav xil_defaultlib.AES_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'key_round' [C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/AES.v:38]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/AES.v" Line 1. Module AES doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/Key_Expansion.v" Line 1. Module Key_Expansion doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/Key_Expansion.v" Line 24. Module Rot_Word doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/Key_Expansion.v" Line 33. Module Sub_Word_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/Key_Expansion.v" Line 48. Module Rcon doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/Sub_Bytes.v" Line 1. Module Sub_Bytes_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/Shif_Row.v" Line 1. Module Shift_Row doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/Mix_Column.v" Line 1. Module Mix_Column doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/Add_Round_Key.v" Line 1. Module Add_Round_Key doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/AES.v" Line 1. Module AES doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/Key_Expansion.v" Line 1. Module Key_Expansion doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/Key_Expansion.v" Line 24. Module Rot_Word doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/Key_Expansion.v" Line 33. Module Sub_Word_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/Key_Expansion.v" Line 48. Module Rcon doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/Sub_Bytes.v" Line 1. Module Sub_Bytes_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/S_Box.v" Line 1. Module S_Box doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/Shif_Row.v" Line 1. Module Shift_Row doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/Mix_Column.v" Line 1. Module Mix_Column doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/USER/Desktop/AES_vivado/AES_vivado.srcs/sources_1/imports/AES_source/Add_Round_Key.v" Line 1. Module Add_Round_Key doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Rot_Word
+Compiling module xil_defaultlib.S_Box
+Compiling module xil_defaultlib.Sub_Word_default
+Compiling module xil_defaultlib.Rcon
+Compiling module xil_defaultlib.Key_Expansion
+Compiling module xil_defaultlib.Sub_Bytes_default
+Compiling module xil_defaultlib.Shift_Row
+Compiling module xil_defaultlib.Mix_Column
+Compiling module xil_defaultlib.Add_Round_Key
+Compiling module xil_defaultlib.AES
+Compiling module xil_defaultlib.AES_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot AES_tb_behav

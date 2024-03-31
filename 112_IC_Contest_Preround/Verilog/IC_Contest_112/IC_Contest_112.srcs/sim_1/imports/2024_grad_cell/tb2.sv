@@ -34,9 +34,9 @@ Bicubic u_Bicubic(
 .TH(TH),
 .DONE(DONE));
 
-`ifdef SDF
-    initial $sdf_annotate(`SDFFILE, u_Bicubic);
-`endif
+// `ifdef SDF
+//     initial $sdf_annotate(`SDFFILE, u_Bicubic);
+// `endif
 
 always begin #(`CYCLE_TIME/2) CLK = ~CLK; end
 
@@ -46,10 +46,10 @@ always begin #(`CYCLE_TIME/2) CLK = ~CLK; end
 //    $fsdbDumpMDA;
 //end
 
-initial begin
-    $dumpvars();
-    $dumpfile("Bicubic.vcd");
-end
+// initial begin
+//     $dumpvars();
+//     $dumpfile("Bicubic.vcd");
+// end
 
 `ifdef P1
     string PAT [1] = {"pattern1"};
