@@ -11,6 +11,7 @@ module AES(
 // define reg & wire str-------------------------------------
 reg [3:0] round;
 
+wire [127:0]KE_in;
 wire [127:0]KE_out;
 
 wire [127:0]SB_out;
@@ -18,18 +19,29 @@ wire [127:0]SR_out;
 wire [127:0]MC_out;
 wire [127:0]ARK_in;
 wire [127:0]ARK_out;
+wire [127:0]ARK_key_in;
+
+reg [127:0]sub_key;
+reg [127:0]cipher_data;
 // define reg & wire -------------------------------------
 
+// assignment str--------------------------------------
+assign ARK_in = (round == 0) ? plaintext :
+                (round == 10) ? SR_out : MC_out;
+
+assign KE_in = (round == 0) ? key : sub_key;
+
+assign ARK_key_in = (round == 0) ? key : sub_key;
+// assignment end--------------------------------------
 
 // module use str--------------------------------------
-Key_Expansion KE1(.key_in(key), .key_round(round), .key_out(KE_out));
+Key_Expansion KE1(.key_in(KE_in), .key_round(round + 1), .key_out(KE_out));
 
-Sub_Bytes SB1(.in(ARK_out), .out(SB_out));
+Sub_Bytes SB1(.in(ciphertext), .out(SB_out));
 Shift_Row SR1(.in(SB_out), .out(SR_out));
 Mix_Column MC1(.in(SR_out), .out(MC_out));
-Add_Round_Key ARK1(.in(ARK_in), .key(KE_out), .out(ARK_out));
+Add_Round_Key ARK1(.in(ARK_in), .key(ARK_key_in), .out(ARK_out));
 // module use end--------------------------------------
-
 
 //define localparam str------------------------------
 localparam [3:0]IDLE    = 4'd0,
@@ -37,27 +49,14 @@ localparam [3:0]IDLE    = 4'd0,
                 OVER    = 4'd2;
 //define localparam end------------------------------
 
-
 //variable definition str----------------------------
 reg [3:0]curr_state;
 reg [3:0]next_state;
 //variable definition end----------------------------
 
-
-//assignment str--------------------------------------
-assign ARK_in =  (round==0) ? plaintext :
-                (round==10) ? SR_out : MC_out;
-//assignment end--------------------------------------
-
-
-//ALU sharing str----------------------------------
-
-//ALU sharing end----------------------------------
-
-
 //state control str----------------------------------
-always @(posedge CLK or posedge RST) begin
-    if(RST)curr_state <= IDLE;
+always @(posedge clk or posedge reset) begin
+    if(reset)curr_state <= IDLE;
     else curr_state <= next_state;
 end
 
@@ -85,22 +84,33 @@ end
 
 
 //RTL operation str----------------------------------
-always @(posedge CLK) begin
-    case(curr_state)
-        IDLE:begin
-            ciphertext <= ARK_out;
+always @(posedge clk or posedge reset) begin
+    if(reset)begin
+            sub_key <= 128'd0;
+            ciphertext <= 128'd0;
             round <= 4'd0;
             done <= 1'b0;
-        end
-        ENCRY:begin
-            round <= round + 1'b1; 
-        end
-        OVER:begin
-            ciphertext <= ARK_out;
-            round <= 4'd0;
-            done <= 1'b1;
-        end
-    endcase
+    end
+    else begin
+        case(curr_state)
+            IDLE:begin
+                sub_key <= 128'd0;
+                ciphertext <= 128'd0;
+                round <= 4'd0;
+                done <= 1'b0;
+            end
+            ENCRY:begin
+                ciphertext <= ARK_out;
+                sub_key <= KE_out;
+                round <= round + 1'b1; 
+            end
+            OVER:begin
+                // ciphertext <= ARK_out;
+                round <= 4'd0;
+                done <= 1'b1;
+            end
+        endcase
+    end
 end
 //RTL operation end----------------------------------
 endmodule

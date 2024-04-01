@@ -6,7 +6,7 @@ module Sub_Bytes(
 genvar i;
 generate 
     for (i = 0 ; i < 16 ; i = i + 1) begin : SubBytes
-        S_Box (.in(in[i*8 +: 8]), .out(out[i*8 +: 8]));
+        S_Box SB(.in(in[(i*8) +: 8]), .out(out[(i*8) +: 8]));
     end
 endgenerate
 endmodule

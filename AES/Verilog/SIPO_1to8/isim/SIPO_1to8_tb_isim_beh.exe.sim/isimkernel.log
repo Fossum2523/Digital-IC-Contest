@@ -1,0 +1,10 @@
+Command line:
+   SIPO_1to8_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  57812
+
+Mon Apr 01 21:59:31 2024
+
+
+ Elaboration Time: 0.046875 sec

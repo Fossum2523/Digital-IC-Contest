@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Theo/Desktop/AES/SIPO_1to8/SIPO_1to8_tb_isim_beh.exe" -prj "C:/Users/Theo/Desktop/AES/SIPO_1to8/SIPO_1to8_tb_beh.prj" "work.SIPO_1to8_tb" "work.glbl" 

@@ -8,17 +8,21 @@ module Mix_Column
 genvar col;
 generate 
     for (col = 0 ; col < 4 ; col = col + 1)begin  :  Sub_Mix_Column
-        assign out[31+col*32  :  24+col*32] = mul_2(in[7+col*32  : 0+col*32]  ^ in[15+col*32 : 8+col*32])  ^ mul_1(in[15+col*32 : 8+col*32]  ^ (in[23+col*32 : 16+col*32] ^ in[31+col*32 : 24+col*32]));
-        assign out[23+col*32  :  16+col*32] = mul_2(in[15+col*32 : 8+col*32]  ^ in[23+col*32 : 16+col*32]) ^ mul_1(in[23+col*32 : 16+col*32] ^ (in[7+col*32 : 0+col*32]   ^ in[31+col*32 : 24+col*32]));
-        assign out[15+col*32  :  8+col*32]  = mul_2(in[23+col*32 : 16+col*32] ^ in[31+col*32 : 24+col*32]) ^ mul_1(in[31+col*32 : 24+col*32] ^ (in[7+col*32 : 0+col*32]   ^ in[15+col*32 : 8+col*32]));
-        assign out[7+col*32   :  0+col*32]  = mul_2(in[7+col*32  : 0+col*32]  ^ in[31+col*32 : 24+col*32]) ^ mul_1(in[7+col*32  : 0+col*32]  ^ (in[15+col*32 : 8+col*32]  ^ in[23+col*32 : 16+col*32] ));
+        // assign out[(31+col*32)-:8] = mul_2(in[(31+col*32)-:8]) ^ mul_3(in[(23+col*32)-:8]) ^ mul_1(in[(15+col*32)-:8]) ^ mul_1(in[(7 +col*32)-:8]);
+        // assign out[(23+col*32)-:8] = mul_1(in[(31+col*32)-:8]) ^ mul_2(in[(23+col*32)-:8]) ^ mul_3(in[(15+col*32)-:8]) ^ mul_1(in[(7 +col*32)-:8]);
+        // assign out[(15+col*32)-:8] = mul_1(in[(31+col*32)-:8]) ^ mul_1(in[(23+col*32)-:8]) ^ mul_2(in[(15+col*32)-:8]) ^ mul_3(in[(7 +col*32)-:8]);
+        // assign out[(7 +col*32)-:8] = mul_3(in[(31+col*32)-:8]) ^ mul_1(in[(23+col*32)-:8]) ^ mul_1(in[(15+col*32)-:8]) ^ mul_2(in[(7 +col*32)-:8]);
+        assign out[(31+col*32)-:8] = mul_2(in[(31+col*32)-:8] ^ in[(23+col*32)-:8]) ^ mul_1(in[(23+col*32)-:8] ^ in[(15+col*32)-:8] ^ in[(7 +col*32)-:8]);
+        assign out[(23+col*32)-:8] = mul_2(in[(23+col*32)-:8] ^ in[(15+col*32)-:8]) ^ mul_1(in[(31+col*32)-:8] ^ in[(15+col*32)-:8] ^ in[(7 +col*32)-:8]);
+        assign out[(15+col*32)-:8] = mul_2(in[(15+col*32)-:8] ^ in[(7 +col*32)-:8]) ^ mul_1(in[(31+col*32)-:8] ^ in[(23+col*32)-:8] ^ in[(7 +col*32)-:8]);
+        assign out[(7 +col*32)-:8] = mul_2(in[(7 +col*32)-:8] ^ in[(31+col*32)-:8]) ^ mul_1(in[(31+col*32)-:8] ^ in[(23+col*32)-:8] ^ in[(15+col*32)-:8]);
     end
 endgenerate
 
 function [N-1 : 0] xtime; //inverse nedd to revise
     input [N-1 : 0] dividend;
     begin
-        if(xtime[N-1])
+        if(dividend[N-1])
             xtime = (dividend << 1) ^ 8'h1b;
         else
             xtime = dividend << 1;
@@ -45,8 +49,5 @@ function [N-1 : 0] mul_3;
         mul_3 = xtime(mul_3_in) ^ mul_3_in;
     end
 endfunction	
-
-
-
 
 endmodule
