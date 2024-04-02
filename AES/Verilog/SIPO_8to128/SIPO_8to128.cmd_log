@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/fossu/Desktop/IC_Contest_syn/AES/Verilog/SIPO_8to128/SIPO_8to128.xst" -ofn "C:/Users/fossu/Desktop/IC_Contest_syn/AES/Verilog/SIPO_8to128/SIPO_8to128.syr" 

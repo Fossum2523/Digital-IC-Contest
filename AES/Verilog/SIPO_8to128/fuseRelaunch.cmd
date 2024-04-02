@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/fossu/Desktop/IC_Contest_syn/AES/Verilog/SIPO_8to128/SIPO_8to128_isim_beh.exe" -prj "C:/Users/fossu/Desktop/IC_Contest_syn/AES/Verilog/SIPO_8to128/SIPO_8to128_beh.prj" "work.SIPO_8to128" "work.glbl" 

@@ -9,6 +9,8 @@ module SIPO_1to8 #(
     output reg[N-1:0]out
 );
 
+reg [3:0]cnt;
+
 assign valid = cnt == 8 ? 1'b1 : 1'b0;
 
 always @(posedge clk or posedge reset) begin
